@@ -1,0 +1,69 @@
+<ion-header class="static">
+  <ion-toolbar color='main'>
+    <ion-title>Verifikasi Lembaga</ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <span ion-text color="clear" showWhen="ios">Cancel</span>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item color='light' class="no-border">
+      <ion-avatar item-start>
+        <img src="assets/imgs/sample.jpg">
+      </ion-avatar>
+      <h2>Nama lembaganya</h2>
+      <p>Yayasan</p>
+    </ion-item>
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        Konfimasi keabsahan data
+      </ion-label>
+      <ion-icon color="main" name='md-checkmark-circle-outline' item-start></ion-icon>
+    </ion-item>
+    <button ion-item (click)="openRevision()">
+      <ion-icon name="chatbubbles" item-start color="secondary"></ion-icon>
+      Catatan revisi
+    </button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header color="clear">Kelengkapan legalitas</ion-list-header>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Akta Notaris</ion-label>
+        <ion-checkbox color="main"></ion-checkbox>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="main">
+          Lihat Berkas
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>SK Kemenkumham</ion-label>
+        <ion-checkbox color="main"></ion-checkbox>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="main">
+          Lihat Berkas
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <ion-list>
+    <ion-list-header color="clear">Kelengkapan lainnya</ion-list-header>
+    <ion-item>
+      <ion-label>Survey Lapangan</ion-label>
+      <ion-checkbox color="main"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

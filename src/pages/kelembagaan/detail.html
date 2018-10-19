@@ -1,0 +1,107 @@
+<ion-header class="static">
+  <ion-toolbar color='main'>
+    <ion-title>Profil Lembaga</ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <span ion-text color="clear" showWhen="ios">Cancel</span>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="ios-create-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list no-margin> -->
+    <ion-list>
+      <ion-item color="main" text-center class="no-border">
+        <ion-avatar margin-bottom class="medium">
+          <img class="margin-auto" src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{detail.avatar}}">
+        </ion-avatar>
+        <p>{{ detail.namaBentukLembaga }}</p>
+        <h1>{{ detail.nama }}</h1>
+        <p class="text-{{ detail.statusVerifikasi == 1 ? 'white' : 'bright' }}" (click)="openModal(6)">{{ detail.statusVerifikasi == 1 ? 'Sudah Verifikasi' : 'Belum Verifikasi' }}</p>
+      </ion-item>
+    </ion-list>
+    <ion-list padding>
+      <ion-item>
+        <p><b>No Registrasi.</b><br/> {{ detail.noreg }}</p>
+      </ion-item>
+      <ion-item>
+        <p><b>Telp.</b><br/> {{ detail.telp }}</p>
+      </ion-item>
+      <ion-item>
+        <p><b>Email.</b><br/> {{ detail.email }}</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Alamat.</b><br/> {{ detail.alamat }}</p>
+      </ion-item>
+      <ion-item>
+        <p><b>Bergerak dalam bidang.</b><br/> {{ detail.namaBidangGerak }}</p>
+      </ion-item>
+      <ion-item>
+        <p><b>Jumlah pengurus.</b><br/> {{ detail.jumlahPengurus }} Orang</p>
+      </ion-item>
+      <ion-item>
+        <p><b>NPWP.</b> {{ detail.noNpwp }}</p>
+      </ion-item>
+      <ion-item>
+        <p><b>Afiliasi.</b> {{ detail.organisasiAfiliasi }}</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Visi.</b> {{ detail.visiLembaga }}</p>
+      </ion-item>
+      <ion-item text-wrap >
+        <p><b>Misi.</b> {{ detail.misiLembaga }}</p>
+      </ion-item>
+      <ion-item margin-bottom class="no-border">
+        <p><b>Media sosial.</b> {{ detail.mediaSosial }}</p>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-list-header class="text-main">Informasi lainnya</ion-list-header>
+      <button ion-item (click)="openModal(0)">
+        <ion-icon name="paper" item-start color="main"></ion-icon>
+        Legalitas
+      </button>
+      <button ion-item (click)="openModal(1)">
+        <ion-icon name="time" item-start color="bright"></ion-icon>
+        Sejarah
+      </button>
+      <button ion-item (click)="openModal(2)">
+        <ion-icon name="people" item-start color="vibrant"></ion-icon>
+        Kepengurusan
+      </button>
+      <button ion-item (click)="openModal(3)">
+        <ion-icon name="pricetag" item-start color="primary"></ion-icon>
+        Usaha
+      </button>
+      <button ion-item (click)="openModal(4)">
+        <ion-icon name="trophy" item-start color="bright"></ion-icon>
+        Prestasi
+      </button>
+      <button ion-item (click)="openModal(5)">
+        <ion-icon name="book" item-start color="secondary"></ion-icon>
+        Koleksi
+      </button>
+      <button ion-item (click)="openMaps()">
+        <ion-icon name="globe" item-start color="primary"></ion-icon>
+        Lihat Maps
+      </button>
+    </ion-list>
+    <ion-list>
+      <ion-list-header class="text-main">Aplikasi</ion-list-header>
+      <button ion-item (click)="openModal(6)">
+        <ion-icon name="md-create" item-start color="secondary"></ion-icon>
+        Verifikasi Lembaga
+      </button>
+    </ion-list>
+  <!-- </ion-list> -->
+</ion-content>

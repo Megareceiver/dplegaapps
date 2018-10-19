@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color='main' hideBackButton>
+    <ion-title>Pengaturan</ion-title>
+    <ion-buttons left>
+      <button ion-button navPop icon-only>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list margin-top>
+    <button ion-item *ngFor="let o of other; let i = index" (click)="openModal(i)" class="no-border-top">
+      <ion-icon name="{{o.icon}}" item-start color="{{o.color}}"></ion-icon>
+      {{o.title}}
+    </button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,59 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.text-white { color: #ffffff !important; }
+.text-main { color: #EB1460 !important; }
+.text-primary { color: #488aff !important; }
+.text-secondary { color: #29b653 !important; }
+.text-danger { color: #f53d3d !important; }
+.text-light { color: #f4f4f4 !important; }
+.text-dark { color: #222222 !important; }
+.text-bright { color: #ffc125 !important; }
+.text-vibrant { color: #663399 !important; }
+
+.no-border, .no-border .item-inner { border: 0 !important; }
+.no-border-top, .no-border-top .item-inner { border-top: 0 !important; }
+.border-bottom { border-bottom: 0.55px solid #c8c7cc !important; }
+
+.no-shadow {
+    box-shadow: none !important;
+}
+
+.margin-auto { margin: auto; }
+
+ion-header.static:after {
+    background-image: none !important;
+}
+
+.item-ios ion-avatar.medium img,
+.item-md ion-avatar.medium img {
+    width: 72px;
+    height: 72px;
+}
+
+
+.searchbar.clear .searchbar-input {
+    color: #f4f4f4;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

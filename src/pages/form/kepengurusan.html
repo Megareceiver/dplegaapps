@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-toolbar color='dark'>
+    <ion-title>Form Kepengurusan</ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <span ion-text color="clear" showWhen="ios">Cancel</span>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row margin-top padding>
+    <ion-item text-wrap>
+      <p>Informasi mengenai kepengurusan Lembaga terkait.</p>
+      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>
+      <ion-icon name="people" item-end color="vibrant"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>Penanggung Jawab</ion-label>
+      <ion-input type="text" no-border></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>No. KTP</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Alamat</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+    <ion-col col-6 no-padding>
+      <ion-item class="no-border">
+        <ion-label>RT</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col col-6 no-padding>
+      <ion-item class="no-border">
+        <ion-label>RW</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-item>
+      <ion-label>Kelurahan</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Telp</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item class="no-border-child">
+      <ion-label>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Warga Negara</ion-label>
+      <ion-select>
+        <ion-option value="1">WNI</ion-option>
+        <ion-option value="2">WNA</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tempat Lahir</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tanggal Lahir</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Jenis Kelamin</ion-label>
+      <ion-select>
+        <ion-option value="1">Laki-laki</ion-option>
+        <ion-option value="2">Perempuan</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Agama</ion-label>
+      <ion-select>
+        <ion-option value="islam">Islam</ion-option>
+        <ion-option value="kristen">Kristen</ion-option>
+        <ion-option value="hindu">Hindu</ion-option>
+        <ion-option value="budha">Budha</ion-option>
+        <ion-option value="lainnya">Agama lainnya</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Jabatan lainnya</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pendidikan</ion-label>
+      <ion-select>
+        <ion-option value="0">SMA / SMK</ion-option>
+        <ion-option value="1">D3</ion-option>
+        <ion-option value="2">S1</ion-option>
+        <ion-option value="3">S2</ion-option>
+        <ion-option value="4">Pendidikan lainnya</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Kompetensi</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+    <ion-item class="no-border" margin-bottom>
+      <ion-label>Catatan</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="main" text-center>
+    <button class="text-white" ion-button clear>Simpan</button>
+  </ion-toolbar>
+</ion-footer>

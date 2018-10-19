@@ -1,0 +1,71 @@
+<ion-header class="static">
+  <ion-toolbar color='dark'>
+    <ion-title>Filter Lembaga</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear" >Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header class="text-dark">Pencarian</ion-list-header>
+    <ion-item color="clear">
+      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Berdasarkan nama" showWhen="ios" value=""></ion-searchbar>
+      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Berdasarkan nama"showWhen="android,windows" no-padding></ion-searchbar>
+    </ion-item>
+    <ion-item>
+      <ion-label>Bentuk Lembaga</ion-label>
+      <ion-select [(ngModel)]="filterData.bentukLembaga">
+        <ion-option value="" selected="{{filterData.bentukLembaga == '' ? selected : '' }}">Semua</ion-option>
+        <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{filterData.bentukLembaga == d.value ? selected : '' }}">{{ d.caption }}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header class="text-dark">Lokasi</ion-list-header>
+    <ion-item>
+      <ion-label>Wilayah</ion-label>
+      <ion-select [(ngModel)]="filterData.wilayah" (ionChange)="loadKecamatan(filterData.wilayah)">
+        <ion-option value="" selected="{{filterData.wilayah == '' ? selected : '' }}">Semua</ion-option>
+        <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{filterData.wilayah == d.value ? selected : '' }}">{{ d.caption }}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Kecamatan</ion-label>
+      <ion-select [(ngModel)]="filterData.kecamatan" (ionChange)="loadKelurahan(filterData.kecamatan)">
+        <ion-option value="" selected="{{filterData.kecamatan == '' ? selected : '' }}">Semua</ion-option>
+        <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{filterData.kecamatan == d.value ? selected : '' }}">{{ d.caption }}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Kelurahan</ion-label>
+      <ion-select [(ngModel)]="filterData.kelurahan">
+        <ion-option value="" selected="{{filterData.kelurahan == '' ? selected : '' }}">Semua</ion-option>
+        <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{filterData.kelurahan == d.value ? selected : '' }}">{{ d.caption }}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-list-header class="text-dark">Status</ion-list-header>
+    <ion-item>
+      <ion-label>Belum Verifikasi</ion-label>
+      <ion-checkbox [(ngModel)]="filterData.ajuan" color="main" checked="{{filterData.ajuan != 'false' ? 'true' : 'false' }}" item-end></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sudah Verifikasi</ion-label>
+      <ion-checkbox [(ngModel)]="filterData.valid" color="main" checked="{{filterData.valid != 'false' ? 'true' : 'false' }}" item-end></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="main">
+      <button type="button" (click)="filter()" class="text-white" ion-button block clear>Aktifkan</button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,21 @@
+<ion-header class="static">
+  <ion-toolbar color='dark'>
+    <ion-title>Baca pesan</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-group margin-top>
+    <ion-item-divider>Title</ion-item-divider>
+    <ion-item-divider>Subject</ion-item-divider>
+    <ion-item text-wrap>The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.</ion-item>
+  </ion-item-group>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-content>
+  <h3 padding-left class="text-main">KOTAK MASUK</h3>
+  <ion-list>
+    <ion-item-group>
+      <div  *ngFor="let d of data; let idx = index;">
+        <ion-list-header color="light" *ngIf="d.tanggal != dataClone[idx-1].tanggal"> {{d.tanggal | date:'yyyy MMM dd'}}</ion-list-header>
+        <ion-item-sliding>
+          <button ion-item (click)="openModal({charNum: 0})">
+            <ion-icon name="notifications" color="{{d.statusBaca == '0' ? 'bright' : 'light'}}" item-start></ion-icon>
+            <h2 class="{{d.statusBaca == '0' ? 'text-main' : ''}}">{{d.judul}}</h2>
+            <!-- <h3>{{d.waktu}}</h3> -->
+            <p text-nowrap>{{d.deskripsi}}</p>
+            <ion-note item-end>{{d.jam}}</ion-note>
+          </button>
+          <ion-item-options side="right">
+            <button ion-button color="danger">Hapus</button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </div>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

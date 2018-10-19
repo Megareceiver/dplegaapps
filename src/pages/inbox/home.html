@@ -1,0 +1,24 @@
+<ion-content>
+  <ion-img width='40' height='40' src="assets/imgs/icon.png" margin float-left></ion-img>
+  <h3 padding-left class="text-main header-logo-text">DPLEGA APPS</h3>
+  <ion-list>
+    <ion-list-header>Menu</ion-list-header>
+    <button ion-item *ngFor="let p of pages" (click)="navigateTo(p)">
+      <ion-icon name="{{p.icon}}" item-start color="{{p.color}}"></ion-icon>
+      {{p.title}}
+    </button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>Lainnya</ion-list-header>
+    <button ion-item *ngFor="let o of other" (click)="navigateTo(o)">
+      <ion-icon name="{{o.icon}}" item-start color="{{o.color}}"></ion-icon>
+      {{o.title}}
+    </button>
+  </ion-list>
+</ion-content>
+
+<!-- <ion-footer>
+  <ion-toolbar>
+    <p text-center>Copyright © 2018 Pemerintah Provinsi Jawa Barat.</p>
+  </ion-toolbar>
+</ion-footer> -->

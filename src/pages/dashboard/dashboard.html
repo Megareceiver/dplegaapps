@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar color='main' hideBackButton> 
+    <ion-title>Rekapitulasi</ion-title>
+    <ion-buttons left>
+      <button ion-button navPop icon-only>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6 no-padding>
+              <button ion-item (click)="navigateTo(2, 'ajuan')" class="border-bottom">
+                <ion-badge color='danger'>Data Ajuan</ion-badge>
+                <h1 margin-top>{{ simpleNumber(ajuan) }}</h1>
+              </button>
+          </ion-col>
+          <ion-col col-6 no-padding>
+              <button ion-item (click)="navigateTo(2, 'valid')" class="border-bottom">
+                <ion-badge color='secondary'>Data Terverifikasi</ion-badge>
+                <h1 margin-top>{{ simpleNumber(valid) }}</h1>
+              </button>
+          </ion-col>
+          <ion-col col-6 no-padding>
+            <button ion-item (click)="navigateTo(0)" >
+              <ion-badge color='bright'>Total Prestasi</ion-badge>
+              <h1 margin-top>{{ simpleNumber(prestasi) }}</h1>
+            </button>
+          </ion-col>
+          <ion-col col-6 no-padding>
+            <button ion-item (click)="navigateTo(1)">
+              <ion-badge color='vibrant'>Total Koleksi</ion-badge>
+              <h1 margin-top>{{ simpleNumber(koleksi) }}</h1>
+            </button>
+          </ion-col>
+        </ion-row>
+
+        
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card margin-top>
+    <ion-card-content>
+      <ion-list>
+        <ion-list-header class="no-border" no-margin>Berdasarkan bentuk Lembaga</ion-list-header>
+        <ion-item *ngFor="let c of countLembaga" class="border-bottom">
+          {{ c.namaBentukLembaga }}
+          <ion-badge item-end color='danger'>{{ simpleNumber(c.ajuan) }}</ion-badge>
+          <ion-badge item-end color='secondary'>{{ simpleNumber(c.valid) }}</ion-badge>
+        </ion-item>
+      </ion-list>
+      <button (click)="navigateTo(2)" ion-button color="vibrant" icon-end full margin-top>
+        DATA LEMBAGA
+        <ion-icon name='arrow-forward'></ion-icon>
+      </button>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>

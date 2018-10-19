@@ -1,0 +1,43 @@
+page-form {
+    
+}
+
+.no-border-child, .no-border-child .item-inner {
+    border: 0 !important;
+}
+
+.big-avatar-frame {
+    position: relative;
+}
+
+.big-avatar-frame ion-item {
+    display: block;
+    height: 120px;
+}
+
+.big-avatar-frame .item-inner {
+    border: 0 !important;
+}
+
+.big-avatar {
+    position: absolute;
+    z-index: 9;
+    top: 65px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.big-avatar img {
+    width: 100px !important;
+    height: 100px !important;
+    margin: auto;
+    -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+page-formLegalitas .content {
+    background: #f4f4f4;
+}

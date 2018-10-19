@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar color='main' hideBackButton>
+    <ion-title>Berita</ion-title>
+    <ion-buttons left>
+      <button ion-button navPop icon-only>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openForm()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let d of data" margin-bottom>
+    <img src="http://dplega.yanbangsos.jabarprov.go.id/img/news/{{d.urlGambar}}" />
+    <ion-card-content padding-right>
+      <ion-card-title>{{d.judulBerita}}</ion-card-title>
+      <p margin-bottom><ion-icon name='time'></ion-icon> {{d.createdDate}} oleh <b class="capitalize">{{d.createdBy}}</b></p>
+      <p>{{d.deskripsi}} ...</p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="vibrant" icon-start (click)="openModal(0)">
+          <ion-icon name='search'></ion-icon>
+          Baca berita
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="vibrant" icon-start (click)="openForm()">
+          <ion-icon name='md-create'></ion-icon>
+          Ubah
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="vibrant" icon-start>
+          <ion-icon name='trash'></ion-icon>
+          Hapus
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">
+    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

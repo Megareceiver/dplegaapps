@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color='main' hideBackButton>
+    <ion-title>Koleksi</ion-title>
+    <ion-buttons left>
+      <button ion-button navPop icon-only>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <p>Total data ({{ summary }})</p>
+    </ion-item>
+    <button ion-item *ngFor="let d of data" padding-right>
+      <ion-icon name="book" class="text-secondary" item-start></ion-icon>
+      <h3 text-wrap>({{d.jenisKoleksi}}) {{d.judulKoleksi}}</h3>
+      <p text-nowrap>{{d.namaBentukLembaga}} {{d.nama}}</p>
+    </button>
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">
+    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

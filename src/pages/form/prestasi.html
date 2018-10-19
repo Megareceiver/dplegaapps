@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color='dark' hideBackButton>
+    <ion-title>Form Prestasi</ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <span ion-text color="clear" showWhen="ios">Cancel</span>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list padding>
+    <ion-item class="no-border-top" text-wrap>
+      <p>Informasi mengenai prestasi yang dimiliki oleh Lembaga terkait.</p>
+      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>
+      <ion-icon name="trophy" item-end color="bright"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <p>Total data ({{ data.length }})</p>
+    </ion-item>
+    <button ion-item *ngFor="let d of data">
+      <ion-icon name="trophy" class="text-bright" item-start></ion-icon>
+      <h2>{{d.nama_prestasi}}</h2>
+    </button>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="clear">
+    <ion-item class="no-border">
+      <ion-input type="text" placeholder="Tambah prestasi.."></ion-input>
+      <ion-icon item-right name="md-create"></ion-icon>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>

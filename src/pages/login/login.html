@@ -1,0 +1,19 @@
+<ion-content padding center text-center>
+  <ion-img id="logo" width='72'height='72' src="assets/imgs/gedung-sate-200x200_.png"></ion-img>
+  <ion-title>DPLEGA APPS</ion-title>
+  <form (submit)="doLogin()" method="POST">
+    <ion-list class="form-style" padding margin-top> 
+      <ion-item>
+        <ion-input [(ngModel)]="loginData.username" name="username" type="text" placeholder="Username"></ion-input>
+      </ion-item>
+      <ion-item class="no-border">
+        <ion-input [(ngModel)]="loginData.password" name="password" placeholder="Password" type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-buttons padding>
+      <button color="dark" ion-button full type="submit">Masuk</button>
+    </ion-buttons>
+  </form>
+  <p text-center>v.012</p>
+  <!-- <p text-center>Copyright © 2018 Pemerintah Provinsi Jawa Barat.</p> -->
+</ion-content>

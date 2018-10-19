@@ -1,0 +1,4 @@
+#Thu Oct 11 22:24:28 WIB 2018
+base.0=/Users/megan/Ionic App/dplegamobile/platforms/android/app/build/intermediates/transforms/dex/release/0
+renamed.0=classes.dex
+file.0=/Users/megan/Ionic App/dplegamobile/platforms/android/app/build/intermediates/transforms/dex/release/0/classes.dex

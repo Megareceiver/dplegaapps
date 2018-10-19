@@ -1,0 +1,124 @@
+<ion-header class="static">
+  <ion-toolbar color='dark'>
+    <ion-title>Form Kelembagaan</ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <span ion-text color="clear" showWhen="ios">Cancel</span>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-row class="big-avatar-frame">
+      <div class="big-avatar">
+        <img src="assets/imgs/sample.jpg">
+        <ion-buttons margin-top>
+          <button class="no-shadow" color="bright" ion-button text-capitalize small round>
+            Unggah logo
+          </button>
+        </ion-buttons>
+      </div>
+      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>
+      <ion-item></ion-item>
+    </ion-row>
+  </ion-list>
+  <ion-list padding>
+    <ion-list-header class="text-main no-border-top">Kelembagaan</ion-list-header>
+    <ion-row margin-bottom>
+      <ion-item>
+        <ion-label>Bentuk lembaga (*)</ion-label>
+        <ion-select>
+          <ion-option value="1">Yayasan</ion-option>
+          <ion-option value="2">Pondok pesantren</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nama lembaga (*)</ion-label>
+        <ion-input type="text" no-border></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Alamat (*)</ion-label>
+        <ion-textarea type="text"></ion-textarea>
+      </ion-item>
+      <ion-col col-6 no-padding>
+        <ion-item class="no-border">
+          <ion-label>RT (*)</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-6 no-padding>
+        <ion-item class="no-border">
+          <ion-label>RW (*)</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-item>
+        <ion-label>Kelurahan (*)</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Telp (*)</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item class="no-border" margin-bottom>
+        <ion-label>Email (*)</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-list-header class="text-main">Informasi pendukung</ion-list-header>
+    <ion-row>
+      <ion-item>
+        <ion-label>Bidang gerak</ion-label>
+        <ion-select>
+          <ion-option value="1">Organisasi</ion-option>
+          <ion-option value="2">Pendidikan</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Jumlah pengurus</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>NPWP</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Afiliasi</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Visi</ion-label>
+        <ion-textarea type="text"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Misi</ion-label>
+        <ion-textarea type="text"></ion-textarea>
+      </ion-item>
+      <ion-item class="no-border-child" margin-bottom>
+        <ion-label>Media sosial</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-list-header class="text-main" margin-top>Maps</ion-list-header>
+    <ion-item>
+      <ion-label>Latitude</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item class="no-border">
+      <ion-label>Longitude</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="main">
+    <button class="text-white" ion-button block clear>Daftarkan</button>
+  </ion-toolbar>
+</ion-footer>

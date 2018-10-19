@@ -1,0 +1,41 @@
+<ion-header class="static">
+  <ion-navbar color='dark' hideBackButton>
+    <ion-title>Form berita</ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <span ion-text color="clear" showWhen="ios">Cancel</span>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item><p>Catatan : Setiap poin pada form ini wajib diisi.</p></ion-item>
+    <ion-item>
+      <img src="assets/imgs/sample.jpg">
+      <ion-buttons margin-top>
+        <button class="no-shadow" color="bright" ion-button text-capitalize small round>
+          Unggah gambar
+        </button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-label>Judul berita</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item class="no-border">
+      <ion-label>Isi berita</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="main" text-center>
+    <button class="text-white" ion-button clear>Simpan</button>
+  </ion-toolbar>
+</ion-footer>

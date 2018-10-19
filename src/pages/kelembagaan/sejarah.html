@@ -1,0 +1,73 @@
+<ion-header class="static">
+  <ion-toolbar color='main'>
+    <ion-title>Sejarah</ion-title>
+    <ion-buttons left>
+      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
+        <span ion-text color="clear" showWhen="ios">Cancel</span>
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      </button>
+      <button ion-button (click)="dismiss()" showWhen="ios">
+        <span ion-text color="clear">Cancel</span>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="ios-create-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-row padding>
+      <ion-item text-wrap>
+        <p>Informasi mengenai sejarah Lembaga terkait.</p>
+        <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>
+        <ion-icon name="time" item-end color="bright"></ion-icon>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Sejarah singkat.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Tanggal didirikan.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Kepemilikan.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Sertifikasi.</b> -</p>
+      </ion-item>
+      <ion-item>
+        <p><b>Luas Tanah.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Luas Bangunan.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Saranan / Prasarana.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap>
+        <p><b>Struktur Organisasi.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap >
+        <p><b>Bahasa Pengantar.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap >
+        <p><b>Sensus.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap >
+        <p><b>Bantuan Pemerintah.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap >
+        <p><b>Kondisi Geografis.</b> -</p>
+      </ion-item>
+      <ion-item text-wrap >
+        <p><b>Potensi Wilayah.</b> -</p>
+      </ion-item>
+      <ion-item margin-bottom class="no-border">
+        <p><b>Catatan.</b> -</p>
+      </ion-item>
+    </ion-row>
+  </ion-list>
+</ion-content>
