@@ -37,6 +37,8 @@ import { InboxDetailPage } from '../pages/inbox/inbox';
 import { SearchPage } from '../pages/search/search';
 import { SettingPage } from '../pages/setting/setting';
 import { SettingAccountPage } from '../pages/setting/setting';
+import { SettingChangePasswordPage } from '../pages/setting/setting';
+import { SettingFormAccountPage } from '../pages/setting/setting';
 
 import { FormPage } from '../pages/form/form';
 import { FormKelembagaanPage } from '../pages/form/form';
@@ -90,6 +92,8 @@ import { HttpModule } from '@angular/http';
     SearchPage,
     SettingPage,
     SettingAccountPage,
+    SettingChangePasswordPage,
+    SettingFormAccountPage,
     
     FormPage,
     FormKelembagaanPage,
@@ -143,6 +147,8 @@ import { HttpModule } from '@angular/http';
     SearchPage,
     SettingPage,
     SettingAccountPage,
+    SettingChangePasswordPage,
+    SettingFormAccountPage,
     
     FormPage,
     FormKelembagaanPage,

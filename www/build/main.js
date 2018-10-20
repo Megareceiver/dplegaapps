@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 105:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -49,20 +49,17 @@ var LoginPage = /** @class */ (function () {
                 localStorage.setItem('nama', _this.data.nama);
                 localStorage.setItem('jabatan', _this.data.jabatan);
                 localStorage.setItem('alamat', _this.data.alamat);
-                localStorage.setItem('noRt', _this.data.noRt);
-                localStorage.setItem('noRw', _this.data.noRw);
-                localStorage.setItem('kodeKelurahan', _this.data.kodeKelurahan);
-                localStorage.setItem('kodeKecamatan', _this.data.kodeKecamatan);
-                localStorage.setItem('kodeWilayah', _this.data.kodeWilayah);
-                localStorage.setItem('kodeProvinsi', _this.data.kodeProvinsi);
+                localStorage.setItem('alamatLengkap', _this.data.alamatLengkap);
                 localStorage.setItem('noTelp', _this.data.noTelp);
                 localStorage.setItem('email', _this.data.email);
                 localStorage.setItem('username', _this.data.username);
                 localStorage.setItem('urlGambar', _this.data.urlGambar);
                 localStorage.setItem('userLevel', _this.data.userLevel);
-                localStorage.setItem('lingkupArea', _this.data.lingkupArea);
-                localStorage.setItem('idBatasArea', _this.data.idBatasArea);
-                localStorage.setItem('statusActive', _this.data.statusActive);
+                localStorage.setItem('noRt', _this.data.noRt);
+                localStorage.setItem('noRw', _this.data.noRw);
+                localStorage.setItem('kodeKelurahan', _this.data.kodeKelurahan);
+                localStorage.setItem('kodeKecamatan', _this.data.kodeKecamatan);
+                localStorage.setItem('kodeWilayah', _this.data.kodeWilayah);
                 // empty initial 
                 localStorage.setItem('kelembagaan-filter-keyword', '');
                 localStorage.setItem('kelembagaan-filter-bentukLembaga', '');
@@ -83,7 +80,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage.prototype.showLoader = function () {
         this.loading = this.loadingCtrl.create({
-            content: 'Authenticating...'
+            content: 'Memeriksa...'
         });
         this.loading.present();
     };
@@ -104,7 +101,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/login/login.html"*/'<ion-content padding center text-center>\n  <ion-img id="logo" width=\'72\'height=\'72\' src="assets/imgs/gedung-sate-200x200_.png"></ion-img>\n  <ion-title>DPLEGA APPS</ion-title>\n  <form (submit)="doLogin()" method="POST">\n    <ion-list class="form-style" padding margin-top> \n      <ion-item>\n        <ion-input [(ngModel)]="loginData.username" name="username" type="text" placeholder="Username"></ion-input>\n      </ion-item>\n      <ion-item class="no-border">\n        <ion-input [(ngModel)]="loginData.password" name="password" placeholder="Password" type="password"></ion-input>\n      </ion-item>\n    </ion-list>\n    <ion-buttons padding>\n      <button color="dark" ion-button full type="submit">Masuk</button>\n    </ion-buttons>\n  </form>\n  <p text-center>v.012</p>\n  <!-- <p text-center>Copyright © 2018 Pemerintah Provinsi Jawa Barat.</p> -->\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/login/login.html"*/
+            selector: 'page-login',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/login/login.html"*/'<ion-content padding center text-center>\n  <ion-img id="logo" width=\'72\'height=\'72\' src="assets/imgs/gedung-sate-200x200_.png"></ion-img>\n  <ion-title>DPLEGA APPS</ion-title>\n  <form (submit)="doLogin()" method="POST">\n    <ion-list class="form-style" padding margin-top> \n      <ion-item>\n        <ion-input [(ngModel)]="loginData.username" name="username" type="text" placeholder="Username"></ion-input>\n      </ion-item>\n      <ion-item class="no-border">\n        <ion-input [(ngModel)]="loginData.password" name="password" placeholder="Password" type="password"></ion-input>\n      </ion-item>\n    </ion-list>\n    <ion-buttons padding>\n      <button color="dark" ion-button full type="submit">Masuk</button>\n    </ion-buttons>\n  </form>\n  <p text-center>Copyright © 2018 Pemerintah Provinsi Jawa Barat.</p>\n  <p text-center>v.01</p>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/login/login.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
     ], LoginPage);
@@ -115,14 +112,14 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__inbox_inbox__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_search__ = __webpack_require__(210);
@@ -164,7 +161,7 @@ var TabsPage = /** @class */ (function () {
         });
     };
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/tabs/tabs.html"*/'<ion-tabs color=\'dark\'>\n  <ion-tab [root]="home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="inbox" tabIcon="notifications" tabBadge="{{inboxCounter != \'0\' ? inboxCounter : \'\'}}" tabBadgeStyle="bright"></ion-tab>\n  <ion-tab [root]="search" tabIcon="search"></ion-tab>\n  <ion-tab [root]="form" tabIcon="add"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/tabs/tabs.html"*/'<ion-tabs color=\'dark\'>\n  <ion-tab [root]="search" tabIcon="search"></ion-tab>\n  <ion-tab [root]="home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="inbox" tabIcon="notifications" tabBadge="{{inboxCounter != \'0\' ? inboxCounter : \'\'}}" tabBadgeStyle="bright"></ion-tab>\n  <ion-tab [root]="form" tabIcon="add"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */]])
     ], TabsPage);
@@ -175,14 +172,14 @@ var TabsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 107:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrestasiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -270,14 +267,14 @@ var PrestasiPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KoleksiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -365,7 +362,7 @@ var KoleksiPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -429,70 +426,6 @@ var RevisionPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 110:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SettingPage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingAccountPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var SettingPage = /** @class */ (function () {
-    function SettingPage(navCtrl, modalCtrl) {
-        // set our app's pages
-        this.navCtrl = navCtrl;
-        this.modalCtrl = modalCtrl;
-        this.other = [
-            { title: 'Manjemen Akun', component: SettingAccountPage, icon: 'lock', color: 'bright' },
-        ];
-    }
-    SettingPage.prototype.openModal = function (index) {
-        var modal = this.modalCtrl.create(this.other[index].component);
-        modal.present();
-    };
-    SettingPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-setting',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/setting.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Pengaturan</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list margin-top>\n    <button ion-item *ngFor="let o of other; let i = index" (click)="openModal(i)" class="no-border-top">\n      <ion-icon name="{{o.icon}}" item-start color="{{o.color}}"></ion-icon>\n      {{o.title}}\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/setting.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]])
-    ], SettingPage);
-    return SettingPage;
-}());
-
-var SettingAccountPage = /** @class */ (function () {
-    function SettingAccountPage(navCtrl, modalCtrl, viewCtrl) {
-        // set our app's pages
-        this.navCtrl = navCtrl;
-        this.modalCtrl = modalCtrl;
-        this.viewCtrl = viewCtrl;
-    }
-    SettingAccountPage.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
-    };
-    SettingAccountPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-account',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Manajemen Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar">\n        <img src="assets/imgs/sample.jpg">\n        <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-list-header class="text-main no-border-top">Ubah password</ion-list-header>\n    <ion-row margin-bottom>\n      <ion-item>\n        <ion-label>Password lama (*)</ion-label>\n        <ion-input type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Password baru (*)</ion-label>\n        <ion-input type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Ulangi Password baru (*)</ion-label>\n        <ion-input type="text" no-border></ion-input>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-buttons text-center>\n    <button ion-button class="no-shadow" color="main" round>Ubah Password</button>\n  </ion-buttons>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */]])
-    ], SettingAccountPage);
-    return SettingAccountPage;
-}());
-
-//# sourceMappingURL=setting.js.map
-
-/***/ }),
-
 /***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -501,7 +434,7 @@ var SettingAccountPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InboxDetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -688,24 +621,7 @@ webpackEmptyAsyncContext.id = 120;
 
 /***/ }),
 
-/***/ 162:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 162;
-
-/***/ }),
-
-/***/ 19:
+/***/ 14:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -746,15 +662,43 @@ var AuthService = /** @class */ (function () {
             });
         });
     };
-    AuthService.prototype.logout = function () {
+    AuthService.prototype.relogin = function (credentials) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            // let headers = new Headers();
-            // headers.append('Content-Type', 'application/json');
-            // headers.append('X-Auth-Token', localStorage.getItem('token'));
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/books/', {})
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post('http://api.syncardtech.com/dplega-api/public/fetch/auth/', JSON.stringify(credentials), { headers: headers })
                 .subscribe(function (res) {
-                localStorage.clear();
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.logout = function () {
+        localStorage.clear();
+        return true;
+    };
+    AuthService.prototype.changePassword = function (credentials) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post('http://api.syncardtech.com/dplega-api/public/update/password/', JSON.stringify(credentials), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.changeAccount = function (credentials) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post('http://api.syncardtech.com/dplega-api/public/update/account/', JSON.stringify(credentials), { headers: headers })
+                .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
                 reject(err);
@@ -776,6 +720,41 @@ var AuthService = /** @class */ (function () {
                 'valid': localStorage.getItem('kelembagaan-filter-valid'),
             };
             _this.http.post('http://api.syncardtech.com/dplega-api/public/list/lembaga/' + page, JSON.stringify(filterData), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getDetailLembaga = function (noRegistrasi) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get('http://api.syncardtech.com/dplega-api/public/detail/lembaga/' + noRegistrasi, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getSummaryLembaga = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            var filterData = {
+                'keyword': localStorage.getItem('kelembagaan-filter-keyword'),
+                'bentukLembaga': localStorage.getItem('kelembagaan-filter-bentukLembaga'),
+                'wilayah': localStorage.getItem('kelembagaan-filter-wilayah'),
+                'kecamatan': localStorage.getItem('kelembagaan-filter-kecamatan'),
+                'kelurahan': localStorage.getItem('kelembagaan-filter-kelurahan'),
+                'ajuan': localStorage.getItem('kelembagaan-filter-ajuan'),
+                'valid': localStorage.getItem('kelembagaan-filter-valid'),
+            };
+            _this.http.post('http://api.syncardtech.com/dplega-api/public/summary/lembaga/', JSON.stringify(filterData), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -861,6 +840,18 @@ var AuthService = /** @class */ (function () {
             });
         });
     };
+    AuthService.prototype.searchData = function (keyword) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get('http://api.syncardtech.com/dplega-api/public/search/' + keyword, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
     AuthService.prototype.presentToast = function (msg) {
         var toast = this.toastCtrl.create({
             message: msg,
@@ -875,16 +866,34 @@ var AuthService = /** @class */ (function () {
     };
     AuthService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* ToastController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* ToastController */]) === "function" && _b || Object])
     ], AuthService);
     return AuthService;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=auth-service.js.map
 
 /***/ }),
 
-/***/ 20:
+/***/ 162:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 162;
+
+/***/ }),
+
+/***/ 17:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -899,9 +908,9 @@ var AuthService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return KelembagaanKoleksiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__verification_verification__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__verification_verification__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -934,20 +943,30 @@ var KelembagaanPage = /** @class */ (function () {
             { component: KelembagaanDetailPage },
         ];
         events.subscribe('kelembagaan:reload', function () {
+            _this.page = 1;
             _this.getData();
         });
     }
-    KelembagaanPage.prototype.openModal = function (index) {
-        var modal = this.modalCtrl.create(this.pages[index].component);
+    KelembagaanPage.prototype.openModal = function (index, reff) {
+        if (reff === void 0) { reff = null; }
+        var modal = this.modalCtrl.create(this.pages[index].component, { reff: reff });
         modal.present();
     };
     KelembagaanPage.prototype.getData = function () {
         var _this = this;
         this.showLoader();
         this.authService.getListLembaga(this.page).then(function (result) {
-            _this.loading.dismiss();
             _this.data = result;
             _this.page = _this.page + 1;
+            _this.authService.getSummaryLembaga().then(function (result) {
+                _this.summary = result;
+                _this.summary = _this.summary.summary;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
         }, function (err) {
             _this.loading.dismiss();
             _this.presentToast(err);
@@ -1003,14 +1022,15 @@ var KelembagaanFilterPage = /** @class */ (function () {
         this.authService = authService;
         this.loadingCtrl = loadingCtrl;
         this.toastCtrl = toastCtrl;
-        // keyword: string = "";
-        // filterBentukLembaga: string = "";
-        // filterWilayah: string = "";
-        // filterKecamatan: string = "";
-        // filterKelurahan: string = "";
-        // filterAjuan: string = "";
-        // filterValid: string = "";
-        this.filterData = { keyword: '', bentukLembaga: '', wilayah: '', kecamatan: '', kelurahan: '', ajuan: '', valid: '' };
+        this.filterData = {
+            keyword: localStorage.getItem('kelembagaan-filter-keyword'),
+            bentukLembaga: localStorage.getItem('kelembagaan-filter-bentukLembaga'),
+            wilayah: localStorage.getItem('kelembagaan-filter-wilayah'),
+            kecamatan: localStorage.getItem('kelembagaan-filter-kecamatan'),
+            kelurahan: localStorage.getItem('kelembagaan-filter-kelurahan'),
+            ajuan: localStorage.getItem('kelembagaan-filter-ajuan'),
+            valid: localStorage.getItem('kelembagaan-filter-valid')
+        };
         this.loadInit();
     }
     KelembagaanFilterPage.prototype.dismiss = function () {
@@ -1023,7 +1043,31 @@ var KelembagaanFilterPage = /** @class */ (function () {
             _this.bentukLembaga = result;
             _this.authService.getOptionList('wilayah').then(function (result) {
                 _this.wilayah = result;
-                _this.loading.dismiss();
+                if (_this.filterData.kecamatan != "") {
+                    _this.authService.getOptionList('kecamatan', _this.filterData.wilayah).then(function (result) {
+                        _this.kecamatan = result;
+                        if (_this.filterData.kelurahan != "") {
+                            _this.authService.getOptionList('kelurahan', _this.filterData.kecamatan).then(function (result) {
+                                _this.kelurahan = result;
+                                _this.loading.dismiss();
+                            }, function (err) {
+                                _this.loading.dismiss();
+                                _this.presentToast(err);
+                                return false;
+                            });
+                        }
+                        else {
+                            _this.loading.dismiss();
+                        }
+                    }, function (err) {
+                        _this.loading.dismiss();
+                        _this.presentToast(err);
+                        return false;
+                    });
+                }
+                else {
+                    _this.loading.dismiss();
+                }
             }, function (err) {
                 _this.loading.dismiss();
                 _this.presentToast(err);
@@ -1037,27 +1081,41 @@ var KelembagaanFilterPage = /** @class */ (function () {
     };
     KelembagaanFilterPage.prototype.loadKecamatan = function (idWilayah) {
         var _this = this;
-        this.showLoader();
-        this.authService.getOptionList('kecamatan', idWilayah).then(function (result) {
-            _this.kecamatan = result;
-            _this.loading.dismiss();
-        }, function (err) {
-            _this.loading.dismiss();
-            _this.presentToast(err);
-            return false;
-        });
+        if (idWilayah != "") {
+            this.showLoader();
+            this.authService.getOptionList('kecamatan', idWilayah).then(function (result) {
+                _this.kecamatan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kecamatan = [];
+            this.kelurahan = [];
+            this.filterData.kecamatan = "";
+            this.filterData.kelurahan = "";
+        }
     };
     KelembagaanFilterPage.prototype.loadKelurahan = function (idKecamatan) {
         var _this = this;
-        this.showLoader();
-        this.authService.getOptionList('kelurahan', idKecamatan).then(function (result) {
-            _this.kelurahan = result;
-            _this.loading.dismiss();
-        }, function (err) {
-            _this.loading.dismiss();
-            _this.presentToast(err);
-            return false;
-        });
+        if (idKecamatan != "") {
+            this.showLoader();
+            this.authService.getOptionList('kelurahan', idKecamatan).then(function (result) {
+                _this.kelurahan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kelurahan = [];
+            this.filterData.kelurahan = "";
+        }
     };
     KelembagaanFilterPage.prototype.showLoader = function () {
         this.loading = this.loadingCtrl.create({
@@ -1107,12 +1165,36 @@ var KelembagaanFilterPage = /** @class */ (function () {
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
 var KelembagaanDetailPage = /** @class */ (function () {
-    function KelembagaanDetailPage(platform, params, viewCtrl, modalCtrl, launchNavigator) {
+    function KelembagaanDetailPage(platform, params, viewCtrl, modalCtrl, launchNavigator, authService, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
         this.modalCtrl = modalCtrl;
         this.launchNavigator = launchNavigator;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.detail = {
+            avatar: "",
+            noreg: "",
+            nama: "",
+            kodeBentukLembaga: "",
+            namaBentukLembaga: "",
+            catatanLain: "",
+            telp: "",
+            email: "",
+            mediaSosial: "",
+            langitude: 0,
+            latitude: 0,
+            alamat: "",
+            namaBidangGerak: "",
+            jumlahPengurus: "",
+            noNpwp: "",
+            organisasiAfiliasi: "",
+            visiLembaga: "",
+            misiLembaga: ""
+        };
+        this.noRegistrasi = params.get('reff');
         // set our app's pages
         this.detailPages = [
             { component: KelembagaanLegalitasPage },
@@ -1123,27 +1205,62 @@ var KelembagaanDetailPage = /** @class */ (function () {
             { component: KelembagaanKoleksiPage },
             { component: __WEBPACK_IMPORTED_MODULE_4__verification_verification__["b" /* VerificationPage */] },
         ];
+        this.loadData();
     }
+    KelembagaanDetailPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getDetailLembaga(this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.detail = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     KelembagaanDetailPage.prototype.openModal = function (index) {
         var modal = this.modalCtrl.create(this.detailPages[index].component);
         modal.present();
     };
     KelembagaanDetailPage.prototype.openMaps = function () {
-        this.launchNavigator.navigate([-6.902401, 107.618815], {
-            start: "-6.902401, 107.618815"
+        this.launchNavigator.navigate([this.detail.langitude, this.detail.latitude], {
+            start: this.detail.langitude + ", " + this.detail.latitude
         }).then(function (success) { return console.log('Launched navigator'); }, function (error) { return console.log('Error launching navigator', error); });
     };
     KelembagaanDetailPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    KelembagaanDetailPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanDetailPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     KelembagaanDetailPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Profil Lembaga</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <!-- <ion-list no-margin> -->\n    <ion-list>\n      <ion-item color="main" text-center class="no-border">\n        <ion-avatar margin-bottom class="medium">\n          <img class="margin-auto" src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{detail.avatar}}">\n        </ion-avatar>\n        <p>{{ detail.namaBentukLembaga }}</p>\n        <h1>{{ detail.nama }}</h1>\n        <p class="text-{{ detail.statusVerifikasi == 1 ? \'white\' : \'bright\' }}" (click)="openModal(6)">{{ detail.statusVerifikasi == 1 ? \'Sudah Verifikasi\' : \'Belum Verifikasi\' }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list padding>\n      <ion-item>\n        <p><b>No Registrasi.</b><br/> {{ detail.noreg }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Telp.</b><br/> {{ detail.telp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Email.</b><br/> {{ detail.email }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b><br/> {{ detail.alamat }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Bergerak dalam bidang.</b><br/> {{ detail.namaBidangGerak }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Jumlah pengurus.</b><br/> {{ detail.jumlahPengurus }} Orang</p>\n      </ion-item>\n      <ion-item>\n        <p><b>NPWP.</b> {{ detail.noNpwp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Afiliasi.</b> {{ detail.organisasiAfiliasi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Visi.</b> {{ detail.visiLembaga }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Misi.</b> {{ detail.misiLembaga }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Media sosial.</b> {{ detail.mediaSosial }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Informasi lainnya</ion-list-header>\n      <button ion-item (click)="openModal(0)">\n        <ion-icon name="paper" item-start color="main"></ion-icon>\n        Legalitas\n      </button>\n      <button ion-item (click)="openModal(1)">\n        <ion-icon name="time" item-start color="bright"></ion-icon>\n        Sejarah\n      </button>\n      <button ion-item (click)="openModal(2)">\n        <ion-icon name="people" item-start color="vibrant"></ion-icon>\n        Kepengurusan\n      </button>\n      <button ion-item (click)="openModal(3)">\n        <ion-icon name="pricetag" item-start color="primary"></ion-icon>\n        Usaha\n      </button>\n      <button ion-item (click)="openModal(4)">\n        <ion-icon name="trophy" item-start color="bright"></ion-icon>\n        Prestasi\n      </button>\n      <button ion-item (click)="openModal(5)">\n        <ion-icon name="book" item-start color="secondary"></ion-icon>\n        Koleksi\n      </button>\n      <button ion-item (click)="openMaps()">\n        <ion-icon name="globe" item-start color="primary"></ion-icon>\n        Lihat Maps\n      </button>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Aplikasi</ion-list-header>\n      <button ion-item (click)="openModal(6)">\n        <ion-icon name="md-create" item-start color="secondary"></ion-icon>\n        Verifikasi Lembaga\n      </button>\n    </ion-list>\n  <!-- </ion-list> -->\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Profil Lembaga</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <!-- <ion-list no-margin> -->\n    <ion-list>\n      <ion-item color="main" text-center class="no-border">\n        <ion-avatar margin-bottom class="medium">\n          <img class="margin-auto" src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{detail.avatar}}">\n        </ion-avatar>\n        <p>{{ detail.namaBentukLembaga }}</p>\n        <h1>{{ detail.nama }}</h1>\n        <p class="text-{{ detail.statusVerifikasi == 1 ? \'white\' : \'bright\' }}" (click)="openModal(6)">{{ detail.statusVerifikasi == 1 ? \'Sudah Verifikasi\' : \'Belum Verifikasi\' }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list padding>\n      <ion-item>\n        <p><b>No Registrasi.</b><br/><br /> {{ detail.noreg }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Telp.</b><br/><br/> {{ detail.telp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Email.</b><br/><br/> {{ detail.email }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b><br/><br/> {{ detail.alamat }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Bergerak dalam bidang.</b><br/><br/> {{ detail.namaBidangGerak }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Jumlah pengurus.</b><br/><br/> {{ detail.jumlahPengurus }} Orang</p>\n      </ion-item>\n      <ion-item>\n        <p><b>NPWP.</b><br/> {{ detail.noNpwp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Afiliasi.</b><br /> {{ detail.organisasiAfiliasi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Visi.</b><br /> {{ detail.visiLembaga }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Misi.</b><br /> {{ detail.misiLembaga }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Media sosial.</b><br /> {{ detail.mediaSosial }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Informasi lainnya</ion-list-header>\n      <button ion-item (click)="openModal(0)">\n        <ion-icon name="paper" item-start color="main"></ion-icon>\n        Legalitas\n      </button>\n      <button ion-item (click)="openModal(1)">\n        <ion-icon name="time" item-start color="bright"></ion-icon>\n        Sejarah\n      </button>\n      <button ion-item (click)="openModal(2)">\n        <ion-icon name="people" item-start color="vibrant"></ion-icon>\n        Kepengurusan\n      </button>\n      <button ion-item (click)="openModal(3)">\n        <ion-icon name="pricetag" item-start color="primary"></ion-icon>\n        Usaha\n      </button>\n      <button ion-item (click)="openModal(4)">\n        <ion-icon name="trophy" item-start color="bright"></ion-icon>\n        Prestasi\n      </button>\n      <button ion-item (click)="openModal(5)">\n        <ion-icon name="book" item-start color="secondary"></ion-icon>\n        Koleksi\n      </button>\n      <button ion-item (click)="openMaps()">\n        <ion-icon name="globe" item-start color="primary"></ion-icon>\n        Lihat Maps\n      </button>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Aplikasi</ion-list-header>\n      <button ion-item (click)="openModal(6)">\n        <ion-icon name="md-create" item-start color="secondary"></ion-icon>\n        Verifikasi Lembaga\n      </button>\n    </ion-list>\n  <!-- </ion-list> -->\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__["a" /* LaunchNavigator */]])
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__["a" /* LaunchNavigator */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
     ], KelembagaanDetailPage);
     return KelembagaanDetailPage;
 }());
@@ -1292,14 +1409,14 @@ var KelembagaanKoleksiPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__prestasi_prestasi__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__koleksi_koleksi__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__news_news__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__prestasi_prestasi__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__koleksi_koleksi__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__news_news__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__setting_setting__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__login_login__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__setting_setting__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__login_login__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_auth_service_auth_service__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1337,21 +1454,15 @@ var HomePage = /** @class */ (function () {
             { title: 'Berita', component: __WEBPACK_IMPORTED_MODULE_6__news_news__["c" /* NewsPage */], icon: 'paper', color: 'primary' },
         ];
         this.other = [
-            { title: 'Pengaturan', component: __WEBPACK_IMPORTED_MODULE_8__setting_setting__["b" /* SettingPage */], icon: 'settings', color: '' },
+            { title: 'Pengaturan', component: __WEBPACK_IMPORTED_MODULE_8__setting_setting__["d" /* SettingPage */], icon: 'settings', color: '' },
             { title: 'Tentang Aplikasi', component: __WEBPACK_IMPORTED_MODULE_7__about_about__["a" /* AboutPage */], icon: 'ios-information-circle-outline', color: 'primary' },
         ];
     }
     HomePage.prototype.logout = function () {
         this.showLoader();
-        this.loading.dismiss();
+        this.authService.logout();
         this.appCtrl.getRootNav().push(__WEBPACK_IMPORTED_MODULE_9__login_login__["a" /* LoginPage */]);
-        // this.authService.logout().then((result) => {
-        //   this.loading.dismiss();
-        //   this.appCtrl.getRootNav().push(LoginPage);
-        // }, (err) => {
-        //   this.loading.dismiss();
-        //   this.presentToast(err);
-        // });
+        this.loading.dismiss();
     };
     HomePage.prototype.showLoader = function () {
         this.loading = this.loadingCtrl.create({
@@ -1395,9 +1506,10 @@ var HomePage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prestasi_prestasi__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__koleksi_koleksi__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prestasi_prestasi__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__koleksi_koleksi__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__kelembagaan_kelembagaan__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1407,6 +1519,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1423,10 +1536,26 @@ var DashboardPage = /** @class */ (function () {
         this.pages = [
             { title: 'Prestasi', component: __WEBPACK_IMPORTED_MODULE_3__prestasi_prestasi__["a" /* PrestasiPage */], icon: 'trophy', color: 'bright' },
             { title: 'Koleksi', component: __WEBPACK_IMPORTED_MODULE_4__koleksi_koleksi__["a" /* KoleksiPage */], icon: 'book', color: 'secondary' },
+            { title: 'Kelembagaan', component: __WEBPACK_IMPORTED_MODULE_5__kelembagaan_kelembagaan__["f" /* KelembagaanPage */], icon: 'people', color: 'vibrant' },
         ];
         this.loadSummary();
     }
-    DashboardPage.prototype.navigateTo = function (index) {
+    DashboardPage.prototype.navigateTo = function (index, reff) {
+        if (reff === void 0) { reff = null; }
+        if (index == 2) {
+            localStorage.setItem('kelembagaan-filter-ajuan', 'false');
+            localStorage.setItem('kelembagaan-filter-valid', 'false');
+            if (reff == 'ajuan') {
+                localStorage.setItem('kelembagaan-filter-ajuan', '');
+            }
+            else if (reff == 'valid') {
+                localStorage.setItem('kelembagaan-filter-valid', '');
+            }
+            else {
+                localStorage.setItem('kelembagaan-filter-ajuan', '');
+                localStorage.setItem('kelembagaan-filter-valid', '');
+            }
+        }
         this.navCtrl.push(this.pages[index].component);
     };
     DashboardPage.prototype.loadSummary = function () {
@@ -1632,7 +1761,7 @@ var FormKelembagaanPage = /** @class */ (function () {
     };
     FormKelembagaanPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-formKelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar">\n        <img src="assets/imgs/sample.jpg">\n        <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah logo\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-list-header class="text-main no-border-top">Kelembagaan</ion-list-header>\n    <ion-row margin-bottom>\n      <ion-item>\n        <ion-label>Bentuk lembaga (*)</ion-label>\n        <ion-select>\n          <ion-option value="1">Yayasan</ion-option>\n          <ion-option value="2">Pondok pesantren</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Nama lembaga (*)</ion-label>\n        <ion-input type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat (*)</ion-label>\n        <ion-textarea type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border">\n          <ion-label>RT (*)</ion-label>\n          <ion-input type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border">\n          <ion-label>RW (*)</ion-label>\n          <ion-input type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Kelurahan (*)</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp (*)</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email (*)</ion-label>\n        <ion-input type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main">Informasi pendukung</ion-list-header>\n    <ion-row>\n      <ion-item>\n        <ion-label>Bidang gerak</ion-label>\n        <ion-select>\n          <ion-option value="1">Organisasi</ion-option>\n          <ion-option value="2">Pendidikan</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jumlah pengurus</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>NPWP</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Afiliasi</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Visi</ion-label>\n        <ion-textarea type="text"></ion-textarea>\n      </ion-item>\n      <ion-item>\n        <ion-label>Misi</ion-label>\n        <ion-textarea type="text"></ion-textarea>\n      </ion-item>\n      <ion-item class="no-border-child" margin-bottom>\n        <ion-label>Media sosial</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main" margin-top>Maps</ion-list-header>\n    <ion-item>\n      <ion-label>Latitude</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n    <ion-item class="no-border">\n      <ion-label>Longitude</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" ion-button block clear>Daftarkan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/
+            selector: 'page-formKelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar">\n        <img src="assets/imgs/sample.jpg">\n        <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah logo\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-list-header class="text-main no-border-top">Kelembagaan</ion-list-header>\n    <ion-row margin-bottom>\n      <ion-item>\n        <ion-label>Bentuk lembaga (*)</ion-label>\n        <ion-select>\n          <ion-option value="1">Yayasan</ion-option>\n          <ion-option value="2">Pondok pesantren</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Nama lembaga (*)</ion-label>\n        <ion-input type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat (*)</ion-label>\n        <ion-textarea type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT (*)</ion-label>\n          <ion-input type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW (*)</ion-label>\n          <ion-input type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Kelurahan (*)</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp (*)</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email (*)</ion-label>\n        <ion-input type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main">Informasi pendukung</ion-list-header>\n    <ion-row>\n      <ion-item>\n        <ion-label>Bidang gerak</ion-label>\n        <ion-select>\n          <ion-option value="1">Organisasi</ion-option>\n          <ion-option value="2">Pendidikan</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jumlah pengurus</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>NPWP</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Afiliasi</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Visi</ion-label>\n        <ion-textarea type="text"></ion-textarea>\n      </ion-item>\n      <ion-item>\n        <ion-label>Misi</ion-label>\n        <ion-textarea type="text"></ion-textarea>\n      </ion-item>\n      <ion-item class="no-border-child" margin-bottom>\n        <ion-label>Media sosial</ion-label>\n        <ion-input type="text"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main" margin-top>Maps</ion-list-header>\n    <ion-item>\n      <ion-label>Latitude</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n    <ion-item class="no-border">\n      <ion-label>Longitude</ion-label>\n      <ion-input type="text"></ion-input>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" ion-button block clear>Daftarkan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */]])
     ], FormKelembagaanPage);
@@ -1785,6 +1914,8 @@ var FormPrestasiPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1796,17 +1927,70 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var SearchPage = /** @class */ (function () {
-    function SearchPage(navCtrl) {
+    function SearchPage(navCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
         this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.keyword = "";
     }
+    SearchPage.prototype.searchData = function (keyCode) {
+        var _this = this;
+        if (keyCode == 13) {
+            if (this.keyword != "") {
+                this.showLoader();
+                this.authService.searchData(this.keyword).then(function (result) {
+                    _this.data = result;
+                    _this.dataClone = _this.data;
+                    _this.dataClone[-1] = { grup: 'start' };
+                    console.log(_this.data);
+                    _this.loading.dismiss();
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                    return false;
+                });
+            }
+            else {
+                this.data = [];
+                this.dataClone = [];
+            }
+        }
+    };
+    SearchPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    SearchPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    SearchPage.prototype.openLembaga = function (reff) {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__["a" /* KelembagaanDetailPage */], { reff: reff });
+        modal.present();
+    };
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/'<ion-header>\n  <ion-toolbar color=\'main\'> \n    <ion-searchbar placeholder="Pencarian" class="clear"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content></ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/
+            selector: 'page-search',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/'<ion-header>\n  <ion-toolbar color=\'main\'> \n    <ion-searchbar [(ngModel)]="keyword" (keypress)="searchData($event.keyCode)" placeholder="Pencarian" class="clear"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <div *ngFor="let d of data; let idx = index;">\n      <ion-list-header color="light" *ngIf="d.grup != dataClone[idx-1].grup"> {{ d.grup }} </ion-list-header>\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Lembaga\'" ion-item padding-right>\n        <ion-avatar item-start>\n          <img src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{d.kolom_4}}">\n        </ion-avatar>\n        <h3 text-wrap>{{d.kolom_2}}</h3>\n        <p>{{d.kolom_3}} &nbsp; <span class="text-{{d.kolom_5 == \'0\' ? \'danger\' : \'secondary\'}}">\n            <ion-icon name="compass"></ion-icon>\n          </span></p>\n      </button>\n\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Prestasi\'" ion-item padding-right>\n        <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n        <h3 text-wrap>{{d.kolom_3}}</h3>\n        <p text-nowrap>{{d.kolom_4}} {{d.kolom_2}}</p>\n      </button>\n\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Koleksi\'" ion-item padding-right>\n        <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n        <h3 text-wrap>({{d.kolom_3}}) {{d.kolom_4}}</h3>\n        <p text-nowrap>{{d.kolom_5}} {{d.kolom_2}}</p>\n      </button>\n    </div>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]) === "function" && _e || Object])
     ], SearchPage);
     return SearchPage;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=search.js.map
@@ -1837,23 +2021,23 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prestasi_prestasi__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_koleksi_koleksi__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_news_news__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prestasi_prestasi__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_koleksi_koleksi__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_news_news__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_search_search__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_form_form__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_about_about__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_status_bar__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_splash_screen__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_auth_service_auth_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_storage__ = __webpack_require__(285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_http__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1862,6 +2046,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -1937,8 +2123,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["b" /* InboxPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["a" /* InboxDetailPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_search_search__["a" /* SearchPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["b" /* SettingPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["d" /* SettingPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["a" /* SettingAccountPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["b" /* SettingChangePasswordPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["c" /* SettingFormAccountPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["f" /* FormPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["b" /* FormKelembagaanPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["e" /* FormLegalitasPage */],
@@ -1984,8 +2172,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["b" /* InboxPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["a" /* InboxDetailPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_search_search__["a" /* SearchPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["b" /* SettingPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["d" /* SettingPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["a" /* SettingAccountPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["b" /* SettingChangePasswordPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["c" /* SettingFormAccountPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["f" /* FormPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["b" /* FormKelembagaanPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["e" /* FormLegalitasPage */],
@@ -2022,8 +2212,8 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2070,7 +2260,394 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 53:
+/***/ 43:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SettingPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingAccountPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SettingChangePasswordPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SettingFormAccountPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SettingPage = /** @class */ (function () {
+    function SettingPage(navCtrl, modalCtrl) {
+        // set our app's pages
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.other = [
+            { title: 'Informasi Akun', component: SettingAccountPage, icon: 'information-circle', color: 'primary' },
+            { title: 'Ganti Password', component: SettingChangePasswordPage, icon: 'lock', color: 'bright' },
+        ];
+    }
+    SettingPage.prototype.openModal = function (index) {
+        var modal = this.modalCtrl.create(this.other[index].component);
+        modal.present();
+    };
+    SettingPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-setting',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/setting.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Pengaturan</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list margin-top>\n    <button ion-item *ngFor="let o of other; let i = index" (click)="openModal(i)" class="no-border-top">\n      <ion-icon name="{{o.icon}}" item-start color="{{o.color}}"></ion-icon>\n      {{o.title}}\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/setting.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */]])
+    ], SettingPage);
+    return SettingPage;
+}());
+
+var SettingAccountPage = /** @class */ (function () {
+    function SettingAccountPage(events, navCtrl, modalCtrl, viewCtrl) {
+        var _this = this;
+        this.events = events;
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.accountData = {
+            avatar: localStorage.getItem('urlGambar'),
+            noRegistrasi: localStorage.getItem('noRegistrasi'),
+            nama: localStorage.getItem('nama'),
+            jabatan: localStorage.getItem('jabatan'),
+            alamat: localStorage.getItem('alamatLengkap'),
+            noTelp: localStorage.getItem('noTelp'),
+            email: localStorage.getItem('email'),
+            username: localStorage.getItem('username'),
+            userLevel: localStorage.getItem('userLevel'),
+            statusAkses: ''
+        };
+        if (this.accountData.userLevel == '7') {
+            this.accountData.statusAkses = "Super Admin";
+        }
+        else if (this.accountData.userLevel == '3') {
+            this.accountData.statusAkses = "Operator";
+        }
+        else if (this.accountData.userLevel == '2') {
+            this.accountData.statusAkses = "Penyuluh";
+        }
+        else if (this.accountData.userLevel == '1') {
+            this.accountData.statusAkses = "Lembaga";
+        }
+        events.subscribe('accountPage:reload', function () {
+            _this.refreshData();
+        });
+    }
+    SettingAccountPage.prototype.refreshData = function () {
+        this.accountData = {
+            avatar: localStorage.getItem('urlGambar'),
+            noRegistrasi: localStorage.getItem('noRegistrasi'),
+            nama: localStorage.getItem('nama'),
+            jabatan: localStorage.getItem('jabatan'),
+            alamat: localStorage.getItem('alamatLengkap'),
+            noTelp: localStorage.getItem('noTelp'),
+            email: localStorage.getItem('email'),
+            username: localStorage.getItem('username'),
+            userLevel: localStorage.getItem('userLevel'),
+            statusAkses: this.accountData.statusAkses
+        };
+    };
+    SettingAccountPage.prototype.openForm = function () {
+        var modal = this.modalCtrl.create(SettingFormAccountPage);
+        modal.present();
+    };
+    SettingAccountPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    SettingAccountPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-account',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Manajemen Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <img src="http://dplega.yanbangsos.jabarprov.go.id/img/avatar/{{accountData.avatar}}">\n        <!-- <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons> -->\n        <h3>{{accountData.nama}}</h3>\n        <p><b>{{accountData.username}}</b> | {{accountData.statusAkses}}</p>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding margin-top>\n    <!-- <ion-list-header class="text-main">Informasi Akun</ion-list-header> -->\n    <ion-item>\n      <p><b>No Registrasi.</b><br /><br /> {{ accountData.noRegistrasi != "" ? accountData.noRegistrasi : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Jabatan.</b><br /><br /> {{accountData.jabatan != "" ? accountData.jabatan : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Telp.</b><br /><br /> {{accountData.noTelp != "" ? accountData.noTelp : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Email.</b><br /><br /> {{accountData.email != "" ? accountData.email : \'-\'}}</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <p><b>Alamat.</b><br /><br /> {{accountData.alamat != "" ? accountData.alamat : \'-\'}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- <ion-list padding no-margin>\n    <ion-list-header class="text-main">Ubah Password</ion-list-header>\n    <ion-item>\n      <ion-label>Password lama (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Password baru (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Ulangi Password baru (*)</ion-label>\n      <ion-input type="password" class="no-border"></ion-input>\n    </ion-item>\n  </ion-list>\n  <ion-buttons padding-horizontal padding-bottom text-center>\n    <button ion-button class="no-shadow" color="main" round>Ubah Password</button>\n  </ion-buttons> -->\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */]])
+    ], SettingAccountPage);
+    return SettingAccountPage;
+}());
+
+var SettingChangePasswordPage = /** @class */ (function () {
+    function SettingChangePasswordPage(navCtrl, modalCtrl, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.data = {
+            status: 'failed',
+            data: '0'
+        };
+        this.accountData = {
+            username: localStorage.getItem('username'),
+            oldPassword: '',
+            newPassword: '',
+            retypePassword: ''
+        };
+    }
+    SettingChangePasswordPage.prototype.changePassword = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.changePassword(this.accountData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+            if (_this.data.status == 'success') {
+                _this.presentToast('Password berhasil diubah!');
+            }
+            else {
+                _this.presentToast('Password gagal diubah, perika kembali Password Anda!');
+            }
+            _this.accountData = {
+                username: localStorage.getItem('username'),
+                oldPassword: '',
+                newPassword: '',
+                retypePassword: ''
+            };
+        }, function (err) {
+            _this.accountData = {
+                username: localStorage.getItem('username'),
+                oldPassword: '',
+                newPassword: '',
+                retypePassword: ''
+            };
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    SettingChangePasswordPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Harap tunggu...'
+        });
+        this.loading.present();
+    };
+    SettingChangePasswordPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    SettingChangePasswordPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    SettingChangePasswordPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-changePassword',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/changePassword.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Ganti Password</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list padding no-margin>\n    <ion-list-header class="no-border-top" text-wrap>Penuhi semua poin pada form berikut untuk dapat mengubah Password Anda.</ion-list-header>\n    <ion-item>\n      <ion-label>Password lama (*)</ion-label>\n      <ion-input [(ngModel)]="accountData.oldPassword" type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Password baru (*)</ion-label>\n      <ion-input [(ngModel)]="accountData.newPassword" type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Ulangi Password baru (*)</ion-label>\n      <ion-input [(ngModel)]="accountData.retypePassword" type="password" class="no-border"></ion-input>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button type="button" (click)="changePassword()" class="text-white" ion-button block clear>Ubah Password</button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/changePassword.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], SettingChangePasswordPage);
+    return SettingChangePasswordPage;
+}());
+
+var SettingFormAccountPage = /** @class */ (function () {
+    function SettingFormAccountPage(events, navCtrl, modalCtrl, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.events = events;
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.data = { status: 'failed', data: '0' };
+        this.accountData = {
+            avatar: localStorage.getItem('urlGambar'),
+            nama: localStorage.getItem('nama'),
+            jabatan: localStorage.getItem('jabatan'),
+            alamat: localStorage.getItem('alamat'),
+            noTelp: localStorage.getItem('noTelp'),
+            email: localStorage.getItem('email'),
+            username: localStorage.getItem('username'),
+            noRt: localStorage.getItem('noRt'),
+            noRw: localStorage.getItem('noRw'),
+            kodeKelurahan: localStorage.getItem('kodeKelurahan'),
+            kodeKecamatan: localStorage.getItem('kodeKecamatan'),
+            kodeWilayah: localStorage.getItem('kodeWilayah')
+        };
+        this.loadInit();
+    }
+    SettingFormAccountPage.prototype.loadInit = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getOptionList('wilayah').then(function (result) {
+            _this.wilayah = result;
+            if (_this.accountData.kodeKecamatan != "") {
+                _this.authService.getOptionList('kecamatan', _this.accountData.kodeWilayah).then(function (result) {
+                    _this.kecamatan = result;
+                    if (_this.accountData.kodeKelurahan != "") {
+                        _this.authService.getOptionList('kelurahan', _this.accountData.kodeKecamatan).then(function (result) {
+                            _this.kelurahan = result;
+                            _this.loading.dismiss();
+                        }, function (err) {
+                            _this.loading.dismiss();
+                            _this.presentToast(err);
+                            return false;
+                        });
+                    }
+                    else {
+                        _this.loading.dismiss();
+                    }
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                    return false;
+                });
+            }
+            else {
+                _this.loading.dismiss();
+            }
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    SettingFormAccountPage.prototype.loadKecamatan = function (idWilayah) {
+        var _this = this;
+        if (idWilayah != "") {
+            this.showLoader();
+            this.authService.getOptionList('kecamatan', idWilayah).then(function (result) {
+                _this.kecamatan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kecamatan = [];
+            this.kelurahan = [];
+            this.accountData.kodeKecamatan = "";
+            this.accountData.kodeKelurahan = "";
+        }
+    };
+    SettingFormAccountPage.prototype.loadKelurahan = function (idKecamatan) {
+        var _this = this;
+        if (idKecamatan != "") {
+            this.showLoader();
+            this.authService.getOptionList('kelurahan', idKecamatan).then(function (result) {
+                _this.kelurahan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kelurahan = [];
+            this.accountData.kodeKelurahan = "";
+        }
+    };
+    SettingFormAccountPage.prototype.changeAccount = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.changeAccount(this.accountData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            if (_this.data.status == 'success') {
+                localStorage.setItem('nama', _this.accountData.nama);
+                localStorage.setItem('jabatan', _this.accountData.jabatan);
+                localStorage.setItem('alamat', _this.accountData.alamat);
+                localStorage.setItem('noTelp', _this.accountData.noTelp);
+                localStorage.setItem('email', _this.accountData.email);
+                localStorage.setItem('noRt', _this.accountData.noRt);
+                localStorage.setItem('noRw', _this.accountData.noRw);
+                localStorage.setItem('kodeKelurahan', _this.accountData.kodeKelurahan);
+                localStorage.setItem('kodeKecamatan', _this.accountData.kodeKecamatan);
+                localStorage.setItem('kodeWilayah', _this.accountData.kodeWilayah);
+                _this.authService.relogin(_this.accountData).then(function (result) {
+                    _this.loading.dismiss();
+                    _this.presentToast('Informasi Akun berhasil diubah!');
+                    _this.reloginData = result;
+                    localStorage.setItem('nama', _this.reloginData.nama);
+                    localStorage.setItem('jabatan', _this.reloginData.jabatan);
+                    localStorage.setItem('alamat', _this.reloginData.alamat);
+                    localStorage.setItem('alamatLengkap', _this.reloginData.alamatLengkap);
+                    localStorage.setItem('noTelp', _this.reloginData.noTelp);
+                    localStorage.setItem('email', _this.reloginData.email);
+                    // localStorage.setItem('urlGambar', this.reloginData.urlGambar);
+                    localStorage.setItem('noRt', _this.reloginData.noRt);
+                    localStorage.setItem('noRw', _this.reloginData.noRw);
+                    localStorage.setItem('kodeKelurahan', _this.reloginData.kodeKelurahan);
+                    localStorage.setItem('kodeKecamatan', _this.reloginData.kodeKecamatan);
+                    localStorage.setItem('kodeWilayah', _this.reloginData.kodeWilayah);
+                    _this.accountData = {
+                        avatar: localStorage.getItem('urlGambar'),
+                        nama: localStorage.getItem('nama'),
+                        jabatan: localStorage.getItem('jabatan'),
+                        alamat: localStorage.getItem('alamat'),
+                        noTelp: localStorage.getItem('noTelp'),
+                        email: localStorage.getItem('email'),
+                        username: localStorage.getItem('username'),
+                        noRt: localStorage.getItem('noRt'),
+                        noRw: localStorage.getItem('noRw'),
+                        kodeKelurahan: localStorage.getItem('kodeKelurahan'),
+                        kodeKecamatan: localStorage.getItem('kodeKecamatan'),
+                        kodeWilayah: localStorage.getItem('kodeWilayah')
+                    };
+                    _this.events.publish('accountPage:reload');
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                });
+            }
+            else {
+                _this.presentToast('Informasi Akun gagal diubah, perika kembali inputan Anda!');
+            }
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    SettingFormAccountPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Harap tunggu...'
+        });
+        this.loading.present();
+    };
+    SettingFormAccountPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    SettingFormAccountPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    SettingFormAccountPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formAccount',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <img src="http://dplega.yanbangsos.jabarprov.go.id/img/avatar/{{accountData.avatar}}">\n        <ion-buttons margin-top>\n            <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n              Unggah avatar\n            </button>\n          </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-row>\n      <ion-item>\n        <ion-label>Nama</ion-label>\n        <ion-input [(ngModel)]="accountData.nama" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jabatan</ion-label>\n        <ion-input [(ngModel)]="accountData.jabatan" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat</ion-label>\n        <ion-textarea [(ngModel)]="accountData.alamat" type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT</ion-label>\n          <ion-input [(ngModel)]="accountData.noRt" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW</ion-label>\n          <ion-input [(ngModel)]="accountData.noRw" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Wilayah</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeWilayah" (ionChange)="loadKecamatan(accountData.kodeWilayah)">\n          <ion-option value="" selected="{{accountData.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{accountData.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kecamatan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKecamatan" (ionChange)="loadKelurahan(accountData.kodeKecamatan)">\n          <ion-option value="" selected="{{accountData.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{accountData.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kelurahan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKelurahan">\n          <ion-option value="" selected="{{accountData.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{accountData.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp</ion-label>\n        <ion-input [(ngModel)]="accountData.noTelp" type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="accountData.email" type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n\n  </ion-list>\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" (click)="changeAccount()" ion-button block clear>Ubah data Akun</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]])
+    ], SettingFormAccountPage);
+    return SettingFormAccountPage;
+}());
+
+//# sourceMappingURL=setting.js.map
+
+/***/ }),
+
+/***/ 54:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2079,7 +2656,7 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NewsFormPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

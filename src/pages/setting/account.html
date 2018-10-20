@@ -10,42 +10,65 @@
         <span ion-text color="clear">Cancel</span>
       </button>
     </ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openForm()">
+        <ion-icon name="ios-create-outline"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
     <ion-row class="big-avatar-frame">
-      <div class="big-avatar">
-        <img src="assets/imgs/sample.jpg">
-        <ion-buttons margin-top>
+      <div class="big-avatar" text-center>
+        <img src="http://dplega.yanbangsos.jabarprov.go.id/img/avatar/{{accountData.avatar}}">
+        <!-- <ion-buttons margin-top>
           <button class="no-shadow" color="bright" ion-button text-capitalize small round>
             Unggah avatar
           </button>
-        </ion-buttons>
+        </ion-buttons> -->
+        <h3>{{accountData.nama}}</h3>
+        <p><b>{{accountData.username}}</b> | {{accountData.statusAkses}}</p>
       </div>
       <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>
       <ion-item></ion-item>
     </ion-row>
   </ion-list>
-  <ion-list padding>
-    <ion-list-header class="text-main no-border-top">Ubah password</ion-list-header>
-    <ion-row margin-bottom>
-      <ion-item>
-        <ion-label>Password lama (*)</ion-label>
-        <ion-input type="text" no-border></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Password baru (*)</ion-label>
-        <ion-input type="text" no-border></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Ulangi Password baru (*)</ion-label>
-        <ion-input type="text" no-border></ion-input>
-      </ion-item>
-    </ion-row>
+  <ion-list padding margin-top>
+    <!-- <ion-list-header class="text-main">Informasi Akun</ion-list-header> -->
+    <ion-item>
+      <p><b>No Registrasi.</b><br /><br /> {{ accountData.noRegistrasi != "" ? accountData.noRegistrasi : '-'}}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Jabatan.</b><br /><br /> {{accountData.jabatan != "" ? accountData.jabatan : '-'}}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Telp.</b><br /><br /> {{accountData.noTelp != "" ? accountData.noTelp : '-'}}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>Email.</b><br /><br /> {{accountData.email != "" ? accountData.email : '-'}}</p>
+    </ion-item>
+    <ion-item text-wrap>
+      <p><b>Alamat.</b><br /><br /> {{accountData.alamat != "" ? accountData.alamat : '-'}}</p>
+    </ion-item>
   </ion-list>
-  <ion-buttons text-center>
+  <!-- <ion-list padding no-margin>
+    <ion-list-header class="text-main">Ubah Password</ion-list-header>
+    <ion-item>
+      <ion-label>Password lama (*)</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password baru (*)</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ulangi Password baru (*)</ion-label>
+      <ion-input type="password" class="no-border"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-buttons padding-horizontal padding-bottom text-center>
     <button ion-button class="no-shadow" color="main" round>Ubah Password</button>
-  </ion-buttons>
+  </ion-buttons> -->
 </ion-content>

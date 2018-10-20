@@ -36474,7 +36474,7 @@ ion-navbar.toolbar {
   color: #663399 !important;
 }
 
-.no-border, .no-border .item-inner {
+.no-border, .no-border .item-inner, .no-border-1-layer {
   border: 0 !important;
 }
 

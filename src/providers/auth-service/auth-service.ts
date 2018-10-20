@@ -23,15 +23,46 @@ export class AuthService {
     });
   }
 
-  logout() {
+  relogin(credentials) {
     return new Promise((resolve, reject) => {
-      // let headers = new Headers();
-      // headers.append('Content-Type', 'application/json');
-      // headers.append('X-Auth-Token', localStorage.getItem('token'));
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
 
-      this.http.get('http://api.syncardtech.com/dplega-api/public/books/', {})
+      this.http.post('http://api.syncardtech.com/dplega-api/public/fetch/auth/', JSON.stringify(credentials), { headers: headers })
         .subscribe(res => {
-          localStorage.clear();
+          resolve(res.json());
+        }, (err) => {
+          reject(err);
+        });
+    });
+  }
+  
+  logout() {
+    localStorage.clear();
+    return true;
+  }
+
+  changePassword(credentials) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+
+      this.http.post('http://api.syncardtech.com/dplega-api/public/update/password/', JSON.stringify(credentials), { headers: headers })
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          reject(err);
+        });
+    });
+  }
+
+  changeAccount(credentials) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+
+      this.http.post('http://api.syncardtech.com/dplega-api/public/update/account/', JSON.stringify(credentials), { headers: headers })
+        .subscribe(res => {
           resolve(res.json());
         }, (err) => {
           reject(err);
@@ -166,6 +197,18 @@ export class AuthService {
       target = target + '/' ;
       if (idRef != null){ target = target + idRef; }
       this.http.get('http://api.syncardtech.com/dplega-api/public/option/' + target, {})
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
+  searchData(keyword) {
+    return new Promise((resolve, reject) => {
+      this.http.get('http://api.syncardtech.com/dplega-api/public/search/' + keyword, {})
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {

@@ -36,20 +36,17 @@ export class LoginPage {
         localStorage.setItem('nama', this.data.nama);
         localStorage.setItem('jabatan', this.data.jabatan);
         localStorage.setItem('alamat', this.data.alamat);
-        localStorage.setItem('noRt', this.data.noRt);
-        localStorage.setItem('noRw', this.data.noRw);
-        localStorage.setItem('kodeKelurahan', this.data.kodeKelurahan);
-        localStorage.setItem('kodeKecamatan', this.data.kodeKecamatan);
-        localStorage.setItem('kodeWilayah', this.data.kodeWilayah);
-        localStorage.setItem('kodeProvinsi', this.data.kodeProvinsi);
+        localStorage.setItem('alamatLengkap', this.data.alamatLengkap);
         localStorage.setItem('noTelp', this.data.noTelp);
         localStorage.setItem('email', this.data.email);
         localStorage.setItem('username', this.data.username);
         localStorage.setItem('urlGambar', this.data.urlGambar);
         localStorage.setItem('userLevel', this.data.userLevel);
-        localStorage.setItem('lingkupArea', this.data.lingkupArea);
-        localStorage.setItem('idBatasArea', this.data.idBatasArea);
-        localStorage.setItem('statusActive', this.data.statusActive);
+        localStorage.setItem('noRt', this.data.noRt);
+        localStorage.setItem('noRw', this.data.noRw);
+        localStorage.setItem('kodeKelurahan', this.data.kodeKelurahan);
+        localStorage.setItem('kodeKecamatan', this.data.kodeKecamatan);
+        localStorage.setItem('kodeWilayah', this.data.kodeWilayah);
 
         // empty initial 
         localStorage.setItem('kelembagaan-filter-keyword', '');
@@ -72,7 +69,7 @@ export class LoginPage {
 
   showLoader() {
     this.loading = this.loadingCtrl.create({
-      content: 'Authenticating...'
+      content: 'Memeriksa...'
     });
 
     this.loading.present();

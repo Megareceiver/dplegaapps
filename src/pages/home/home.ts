@@ -40,15 +40,9 @@ export class HomePage {
 
   logout() {
     this.showLoader();
-    this.loading.dismiss();
+    this.authService.logout();
     this.appCtrl.getRootNav().push(LoginPage);
-    // this.authService.logout().then((result) => {
-    //   this.loading.dismiss();
-    //   this.appCtrl.getRootNav().push(LoginPage);
-    // }, (err) => {
-    //   this.loading.dismiss();
-    //   this.presentToast(err);
-    // });
+    this.loading.dismiss();
   }
 
   showLoader() {

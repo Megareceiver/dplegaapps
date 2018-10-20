@@ -1,7 +1,34 @@
 <ion-header>
   <ion-toolbar color='main'> 
-    <ion-searchbar placeholder="Pencarian" class="clear"></ion-searchbar>
+    <ion-searchbar [(ngModel)]="keyword" (keypress)="searchData($event.keyCode)" placeholder="Pencarian" class="clear"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-list>
+    <div *ngFor="let d of data; let idx = index;">
+      <ion-list-header color="light" *ngIf="d.grup != dataClone[idx-1].grup"> {{ d.grup }} </ion-list-header>
+      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == 'Lembaga'" ion-item padding-right>
+        <ion-avatar item-start>
+          <img src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{d.kolom_4}}">
+        </ion-avatar>
+        <h3 text-wrap>{{d.kolom_2}}</h3>
+        <p>{{d.kolom_3}} &nbsp; <span class="text-{{d.kolom_5 == '0' ? 'danger' : 'secondary'}}">
+            <ion-icon name="compass"></ion-icon>
+          </span></p>
+      </button>
+
+      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == 'Prestasi'" ion-item padding-right>
+        <ion-icon name="trophy" class="text-bright" item-start></ion-icon>
+        <h3 text-wrap>{{d.kolom_3}}</h3>
+        <p text-nowrap>{{d.kolom_4}} {{d.kolom_2}}</p>
+      </button>
+
+      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == 'Koleksi'" ion-item padding-right>
+        <ion-icon name="book" class="text-secondary" item-start></ion-icon>
+        <h3 text-wrap>({{d.kolom_3}}) {{d.kolom_4}}</h3>
+        <p text-nowrap>{{d.kolom_5}} {{d.kolom_2}}</p>
+      </button>
+    </div>
+  </ion-list>
+</ion-content>
