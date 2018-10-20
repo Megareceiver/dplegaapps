@@ -10,8 +10,11 @@ export class NewsPage {
   data: any;
   loading: any;
   page = 1;
+  urlServer = "";
 
   constructor(public modalCtrl: ModalController, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController) {
+    this.urlServer = authService.urlServer;
+    
     // get initial data
     this.getData();
   }

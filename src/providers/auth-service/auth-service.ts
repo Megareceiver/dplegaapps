@@ -3,18 +3,20 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { ToastController } from 'ionic-angular';
 
-
 @Injectable()
 export class AuthService {
+  urlServer: string = "http://dplega.syncardtech.com";
+  urlApi: string = this.urlServer + "/slim-api";
 
   constructor(public http: Http, private toastCtrl: ToastController) { }
+
 
   login(credentials) {
     return new Promise((resolve, reject) => {
       let headers = new Headers();
       headers.append('Content-Type', 'application/json');
 
-      this.http.post('http://api.syncardtech.com/dplega-api/public/auth/', JSON.stringify(credentials), { headers: headers })
+      this.http.post(this.urlApi + '/public/auth/', JSON.stringify(credentials), { headers: headers })
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {
@@ -28,7 +30,7 @@ export class AuthService {
       let headers = new Headers();
       headers.append('Content-Type', 'application/json');
 
-      this.http.post('http://api.syncardtech.com/dplega-api/public/fetch/auth/', JSON.stringify(credentials), { headers: headers })
+      this.http.post(this.urlApi + '/public/fetch/auth/', JSON.stringify(credentials), { headers: headers })
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {
@@ -47,7 +49,7 @@ export class AuthService {
       let headers = new Headers();
       headers.append('Content-Type', 'application/json');
 
-      this.http.post('http://api.syncardtech.com/dplega-api/public/update/password/', JSON.stringify(credentials), { headers: headers })
+      this.http.post(this.urlApi + '/public/update/password/', JSON.stringify(credentials), { headers: headers })
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {
@@ -61,7 +63,7 @@ export class AuthService {
       let headers = new Headers();
       headers.append('Content-Type', 'application/json');
 
-      this.http.post('http://api.syncardtech.com/dplega-api/public/update/account/', JSON.stringify(credentials), { headers: headers })
+      this.http.post(this.urlApi + '/public/update/account/', JSON.stringify(credentials), { headers: headers })
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {
@@ -85,7 +87,7 @@ export class AuthService {
         'valid': localStorage.getItem('kelembagaan-filter-valid'),
       };
 
-      this.http.post('http://api.syncardtech.com/dplega-api/public/list/lembaga/' + page, JSON.stringify(filterData), { headers: headers })
+      this.http.post(this.urlApi + '/public/list/lembaga/' + page, JSON.stringify(filterData), { headers: headers })
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
@@ -97,7 +99,7 @@ export class AuthService {
 
   getDetailLembaga(noRegistrasi) {
     return new Promise((resolve, reject) => {
-      this.http.get('http://api.syncardtech.com/dplega-api/public/detail/lembaga/' + noRegistrasi, {},)
+      this.http.get(this.urlApi + '/public/detail/lembaga/' + noRegistrasi, {},)
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
@@ -122,7 +124,7 @@ export class AuthService {
         'valid': localStorage.getItem('kelembagaan-filter-valid'),
       };
 
-      this.http.post('http://api.syncardtech.com/dplega-api/public/summary/lembaga/', JSON.stringify(filterData), { headers: headers })
+      this.http.post(this.urlApi + '/public/summary/lembaga/', JSON.stringify(filterData), { headers: headers })
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
@@ -134,7 +136,7 @@ export class AuthService {
 
   getCountNotifications() {
     return new Promise((resolve, reject) => {
-      this.http.get('http://api.syncardtech.com/dplega-api/public/count/notifications/' + localStorage.getItem('userNotif'), {})
+      this.http.get(this.urlApi + '/public/count/notifications/' + localStorage.getItem('userNotif'), {})
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
@@ -146,7 +148,7 @@ export class AuthService {
 
   getListNotifications() {
     return new Promise((resolve, reject) => {
-      this.http.get('http://api.syncardtech.com/dplega-api/public/list/notifications/' + localStorage.getItem('userNotif'), {})
+      this.http.get(this.urlApi + '/public/list/notifications/' + localStorage.getItem('userNotif'), {})
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
@@ -158,7 +160,7 @@ export class AuthService {
 
   getList(target) {
     return new Promise((resolve, reject) => {
-      this.http.get('http://api.syncardtech.com/dplega-api/public/' + target, {})
+      this.http.get(this.urlApi + '/public/' + target, {})
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
@@ -170,7 +172,7 @@ export class AuthService {
 
   getSummary(target) {
     return new Promise((resolve, reject) => {
-      this.http.get('http://api.syncardtech.com/dplega-api/public/summary/' + target + '/', {})
+      this.http.get(this.urlApi + '/public/summary/' + target + '/', {})
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
@@ -182,7 +184,7 @@ export class AuthService {
 
   getListPage(target, page) {
     return new Promise((resolve, reject) => {
-      this.http.get('http://api.syncardtech.com/dplega-api/public/list/' + target + '/' + page, {})
+      this.http.get(this.urlApi + '/public/list/' + target + '/' + page, {})
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {
@@ -196,7 +198,7 @@ export class AuthService {
     return new Promise((resolve, reject) => {
       target = target + '/' ;
       if (idRef != null){ target = target + idRef; }
-      this.http.get('http://api.syncardtech.com/dplega-api/public/option/' + target, {})
+      this.http.get(this.urlApi + '/public/option/' + target, {})
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {
@@ -208,7 +210,7 @@ export class AuthService {
 
   searchData(keyword) {
     return new Promise((resolve, reject) => {
-      this.http.get('http://api.syncardtech.com/dplega-api/public/search/' + keyword, {})
+      this.http.get(this.urlApi + '/public/search/' + keyword, {})
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {

@@ -23,7 +23,7 @@
       <ion-item-sliding *ngFor="let d of data">
         <button ion-item (click)="openModal(1, d.noRegistrasi)" padding-right>
           <ion-avatar item-start>
-            <img src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{d.urlGambarLogo}}">
+            <img src="{{urlServer}}/img/logo/{{d.urlGambarLogo}}">
           </ion-avatar>
           <h3 text-wrap>{{d.nama}}</h3>
           <p>{{d.namaBentukLembaga}} &nbsp; <span class="text-{{d.statusVerifikasi == '0' ? 'danger' : 'secondary'}}"><ion-icon name="compass"></ion-icon></span></p>

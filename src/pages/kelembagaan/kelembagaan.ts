@@ -15,8 +15,11 @@ export class KelembagaanPage {
   pages: Array<{ component: any }>;
   loading: any;
   page = 1;
+  urlServer = "";
   
   constructor(public events: Events, public navCtrl: NavController, public authService: AuthService, public loadingCtrl: LoadingController, public modalCtrl: ModalController, private toastCtrl: ToastController) {
+    this.urlServer = authService.urlServer;
+
     // get initial data
     this.getData();
 
@@ -263,6 +266,7 @@ export class KelembagaanFilterPage {
 })
 export class KelembagaanDetailPage {
   character;
+  urlServer = "";
   detailPages: Array<{ component: any }>;
   noRegistrasi: string;
   loading: any;
@@ -298,6 +302,7 @@ export class KelembagaanDetailPage {
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
   ) {
+    this.urlServer = authService.urlServer;
     this.noRegistrasi = params.get('reff');
 
     // set our app's pages

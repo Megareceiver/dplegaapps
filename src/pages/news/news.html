@@ -16,7 +16,7 @@
 
 <ion-content padding>
   <ion-card *ngFor="let d of data" margin-bottom>
-    <img src="http://dplega.yanbangsos.jabarprov.go.id/img/news/{{d.urlGambar}}" />
+    <img src="{{urlServer}}/img/news/{{d.urlGambar}}" />
     <ion-card-content padding-right>
       <ion-card-title>{{d.judulBerita}}</ion-card-title>
       <p margin-bottom><ion-icon name='time'></ion-icon> {{d.createdDate}} oleh <b class="capitalize">{{d.createdBy}}</b></p>

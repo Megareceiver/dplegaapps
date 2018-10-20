@@ -36474,7 +36474,7 @@ ion-navbar.toolbar {
   color: #663399 !important;
 }
 
-.no-border, .no-border .item-inner {
+.no-border, .no-border .item-inner, .no-border-1-layer {
   border: 0 !important;
 }
 
@@ -36510,6 +36510,10 @@ ion-header.static:after {
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 page-dashboard .content {
@@ -36558,6 +36562,18 @@ page-formLegalitas .content {
   margin: 4px 10px;
 }
 
+ion-note {
+  font-size: 12px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-top: 14px;
+}
+
+[class^=group-]:first-child {
+  background: red;
+}
+
 .searchbar-ios {
   background: #fff;
   border-bottom: 0;
@@ -36585,7 +36601,7 @@ page-news .content {
   background-color: #f4f4f4;
 }
 
-textarea {
+page-news textarea {
   max-width: 100%;
   width: 100%;
   height: 30vh;

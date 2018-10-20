@@ -10,7 +10,7 @@
       <ion-list-header color="light" *ngIf="d.grup != dataClone[idx-1].grup"> {{ d.grup }} </ion-list-header>
       <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == 'Lembaga'" ion-item padding-right>
         <ion-avatar item-start>
-          <img src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{d.kolom_4}}">
+          <img src="{{urlServer}}/img/logo/{{d.kolom_4}}">
         </ion-avatar>
         <h3 text-wrap>{{d.kolom_2}}</h3>
         <p>{{d.kolom_3}} &nbsp; <span class="text-{{d.kolom_5 == '0' ? 'danger' : 'secondary'}}">

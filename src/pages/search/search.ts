@@ -12,9 +12,10 @@ export class SearchPage {
   data: any;
   dataClone: any;
   keyword: string = "";
+  urlServer = "";
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController) {
-
+    this.urlServer = authService.urlServer;
   }
 
   searchData(keyCode) {
