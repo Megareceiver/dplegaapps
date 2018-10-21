@@ -21,7 +21,7 @@
     </ion-item>
     <ion-item-group>
       <ion-item-sliding *ngFor="let d of data">
-        <button ion-item (click)="openModal(1, d.noRegistrasi)" padding-right>
+        <button ion-item (click)="openModal(1, d.noRegistrasi, d.namaBentukLembaga + ' ' + d.nama)" padding-right>
           <ion-avatar item-start>
             <img src="{{urlServer}}/img/logo/{{d.urlGambarLogo}}">
           </ion-avatar>

@@ -43,6 +43,9 @@
     },
     "cordova-plugin-filepath": {
       "PACKAGE_NAME": "com.syncard.apps"
+    },
+    "com-badrit-base64": {
+      "PACKAGE_NAME": "com.syncard.apps"
     }
   },
   "dependent_plugins": {

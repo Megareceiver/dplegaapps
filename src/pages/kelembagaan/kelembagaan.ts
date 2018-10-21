@@ -35,8 +35,8 @@ export class KelembagaanPage {
     });
   }
 
-  openModal(index, reff = null) {
-    let modal = this.modalCtrl.create(this.pages[index].component, { reff: reff });
+  openModal(index, reff = null, reff2 = null) {
+    let modal = this.modalCtrl.create(this.pages[index].component, { reff: reff, reff2: reff2 });
     modal.present();
   }
 
@@ -269,6 +269,7 @@ export class KelembagaanDetailPage {
   urlServer = "";
   detailPages: Array<{ component: any }>;
   noRegistrasi: string;
+  namaLembaga: string;
   loading: any;
   temp: any;
   detail = {
@@ -304,6 +305,7 @@ export class KelembagaanDetailPage {
   ) {
     this.urlServer = authService.urlServer;
     this.noRegistrasi = params.get('reff');
+    this.namaLembaga = params.get('reff2');
 
     // set our app's pages
     this.detailPages = [
@@ -332,18 +334,28 @@ export class KelembagaanDetailPage {
     });
   }
 
-  openModal(index) {
-    let modal = this.modalCtrl.create(this.detailPages[index].component);
+  openModal(index, reff = null, reff2 = null) {
+    let modal = this.modalCtrl.create(this.detailPages[index].component, { reff: reff, reff2: reff2 });
     modal.present();
   }
 
   openMaps() {
-    this.launchNavigator.navigate([this.detail.langitude, this.detail.latitude], {
-      start: this.detail.langitude + ", " + this.detail.latitude
-    }).then(
-        success => console.log('Launched navigator'),
-        error => console.log('Error launching navigator', error)
-      );
+    let destination = this.detail.latitude + ',' + this.detail.langitude;
+
+    if (this.platform.is('ios')) {
+      window.open('maps://?q=' + destination, '_system');
+    } else {
+      let label = encodeURI('My Label');
+      window.open('geo:0,0?q=' + destination + '(' + label + ')', '_system');
+    }
+    
+    // console.log(":" + this.detail.langitude + " : " + this.detail.latitude);
+    // this.launchNavigator.navigate([this.detail.langitude, this.detail.latitude], {
+    //   start: this.detail.langitude + ", " + this.detail.latitude
+    // }).then(
+    //     success => console.log('Launched navigator'),
+    //     error => console.log('Error launching navigator', error)
+    //   );
   }
 
   dismiss() {
@@ -380,17 +392,66 @@ export class KelembagaanDetailPage {
   templateUrl: 'legalitas.html'
 })
 export class KelembagaanLegalitasPage {
-
+  urlServer = "";
+  noRegistrasi: string;
+  namaLembaga: string;
+  loading: any;
+  temp: any;
+  data: any;
+  countData : number = 0;
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public authService: AuthService,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
   ) {
-    
+    this.urlServer = authService.urlServer;
+    this.noRegistrasi = params.get('reff');
+    this.namaLembaga = params.get('reff2');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getKelengkapanLembaga('legalitas', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+      this.countData = Object.keys(this.data).length;
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }
 
@@ -400,17 +461,89 @@ export class KelembagaanLegalitasPage {
   templateUrl: 'sejarah.html'
 })
 export class KelembagaanSejarahPage {
+  urlServer = "";
+  noRegistrasi: string;
+  namaLembaga: string;
+  loading: any;
+  temp: any;
+  data = {
+    noRegistrasi: "-",
+    deskripsi: "-",
+    tanggalDidirikan: "-",
+    kepemilikan: "-",
+    statusTanah: "-",
+    statusSertifikasi: "-",
+    luasTanah: "-",
+    satuanLuasTanah: "-",
+    luasBangunan: "-",
+    satuanLuasBangunan: "-",
+    kondisiBangunan: "-",
+    JumlahBangunan: "-",
+    statusSarana: "-",
+    statusStrukturKepengurusan: "-",
+    urlGambarStrukturKepengurusan: "-",
+    bahasaPengantar: "-",
+    statusSensus: "-",
+    statusBantuanPemerintah: "-",
+    kondisiGeografis: "-",
+    potensiWilayah: "-",
+    jenisWilayah: "-",
+    catatanLain: "-"
+  };
 
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public authService: AuthService,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
   ) {
-    
+    this.urlServer = authService.urlServer;
+    this.noRegistrasi = params.get('reff');
+    this.namaLembaga = params.get('reff2');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getKelengkapanLembaga('sejarah', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+   
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }
 
@@ -420,17 +553,82 @@ export class KelembagaanSejarahPage {
   templateUrl: 'kepengurusan.html'
 })
 export class KelembagaanKepengurusanPage {
+  urlServer = "";
+  noRegistrasi: string;
+  namaLembaga: string;
+  loading: any;
+  temp: any;
+  data = {
+    noRegistrasi: "-",
+    penanggungJawab: "-",
+    jabatan: "-",
+    alamat: "-",
+    alamatLengkap: "-",
+    noTelp: "-",
+    kewarganegaraan: "-",
+    tempatLahir: "-",
+    tanggalLahir: "-",
+    jenisKelamin: "-",
+    agama: "-",
+    jabatanLain: "-",
+    pendidikan: "-",
+    kompetensi: "-",
+    catatan: "-"
+  };
 
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public authService: AuthService,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
   ) {
-    
+    this.urlServer = authService.urlServer;
+    this.noRegistrasi = params.get('reff');
+    this.namaLembaga = params.get('reff2');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getKelengkapanLembaga('kepengurusan', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }
 
@@ -440,17 +638,73 @@ export class KelembagaanKepengurusanPage {
   templateUrl: 'usaha.html'
 })
 export class KelembagaanUsahaPage {
+  urlServer = "";
+  noRegistrasi: string;
+  namaLembaga: string;
+  loading: any;
+  temp: any;
+  data = {
+    noRegistrasi: "-",
+    namaUsaha: "-",
+    jenisUsaha: "-",
+    detailUsaha: "-",
+    jumlahPekerja: "-",
+    catatan: "-"
+  };
 
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public authService: AuthService,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
   ) {
-    
+    this.urlServer = authService.urlServer;
+    this.noRegistrasi = params.get('reff');
+    this.namaLembaga = params.get('reff2');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getKelengkapanLembaga('usaha', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }
 
@@ -460,25 +714,68 @@ export class KelembagaanUsahaPage {
   templateUrl: 'prestasi.html'
 })
 export class KelembagaanPrestasiPage {
-  character;
-  data: Array<{ noreg: string, nama_prestasi: string, nama_lembaga: string, bentuk_lembaga: string }>;
+  urlServer = "";
+  noRegistrasi: string;
+  namaLembaga: string;
+  loading: any;
+  temp: any;
+  data: any;
+  countData: number = 0;
 
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public authService: AuthService,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
   ) {
     
-    this.data = [
-      { noreg: '1', nama_prestasi: 'Prestasi 1', nama_lembaga: 'Lembaga 1', bentuk_lembaga: 'Yayasan' },
-      { noreg: '2', nama_prestasi: 'Prestasi 2', nama_lembaga: 'Lembaga 2', bentuk_lembaga: 'Pondok pesantren' },
-      { noreg: '3', nama_prestasi: 'Prestasi 3', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-      { noreg: '3', nama_prestasi: 'Prestasi 4', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-    ]
+    this.urlServer = authService.urlServer;
+    this.noRegistrasi = params.get('reff');
+    this.namaLembaga = params.get('reff2');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getKelengkapanLembaga('prestasi', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+      this.countData = Object.keys(this.data).length;
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }
 
@@ -488,24 +785,67 @@ export class KelembagaanPrestasiPage {
   templateUrl: 'koleksi.html'
 })
 export class KelembagaanKoleksiPage {
-  character;
-  data: Array<{ noreg: string, nama_koleksi: string, nama_lembaga: string, bentuk_lembaga: string }>;
+  urlServer = "";
+  noRegistrasi: string;
+  namaLembaga: string;
+  loading: any;
+  temp: any;
+  data: any;
+  countData: number = 0;
 
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public authService: AuthService,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
   ) {
     
-    this.data = [
-      { noreg: '1', nama_koleksi: 'Koleksi 1', nama_lembaga: 'Lembaga 1', bentuk_lembaga: 'Yayasan' },
-      { noreg: '2', nama_koleksi: 'Koleksi 2', nama_lembaga: 'Lembaga 2', bentuk_lembaga: 'Pondok pesantren' },
-      { noreg: '3', nama_koleksi: 'Koleksi 3', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-      { noreg: '3', nama_koleksi: 'Koleksi 4', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-    ]
+    this.urlServer = authService.urlServer;
+    this.noRegistrasi = params.get('reff');
+    this.namaLembaga = params.get('reff2');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getKelengkapanLembaga('koleksi', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+      this.countData = Object.keys(this.data).length;
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }

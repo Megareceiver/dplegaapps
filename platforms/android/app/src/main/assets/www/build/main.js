@@ -648,13 +648,15 @@ var AuthService = /** @class */ (function () {
     function AuthService(http, toastCtrl) {
         this.http = http;
         this.toastCtrl = toastCtrl;
+        this.urlServer = "http://dplega.syncardtech.com";
+        this.urlApi = this.urlServer + "/slim-api";
     }
     AuthService.prototype.login = function (credentials) {
         var _this = this;
         return new Promise(function (resolve, reject) {
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
             headers.append('Content-Type', 'application/json');
-            _this.http.post('http://api.syncardtech.com/dplega-api/public/auth/', JSON.stringify(credentials), { headers: headers })
+            _this.http.post(_this.urlApi + '/public/auth/', JSON.stringify(credentials), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -667,7 +669,7 @@ var AuthService = /** @class */ (function () {
         return new Promise(function (resolve, reject) {
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
             headers.append('Content-Type', 'application/json');
-            _this.http.post('http://api.syncardtech.com/dplega-api/public/fetch/auth/', JSON.stringify(credentials), { headers: headers })
+            _this.http.post(_this.urlApi + '/public/fetch/auth/', JSON.stringify(credentials), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -684,7 +686,7 @@ var AuthService = /** @class */ (function () {
         return new Promise(function (resolve, reject) {
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
             headers.append('Content-Type', 'application/json');
-            _this.http.post('http://api.syncardtech.com/dplega-api/public/update/password/', JSON.stringify(credentials), { headers: headers })
+            _this.http.post(_this.urlApi + '/public/update/password/', JSON.stringify(credentials), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -697,7 +699,7 @@ var AuthService = /** @class */ (function () {
         return new Promise(function (resolve, reject) {
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
             headers.append('Content-Type', 'application/json');
-            _this.http.post('http://api.syncardtech.com/dplega-api/public/update/account/', JSON.stringify(credentials), { headers: headers })
+            _this.http.post(_this.urlApi + '/public/update/account/', JSON.stringify(credentials), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -719,7 +721,7 @@ var AuthService = /** @class */ (function () {
                 'ajuan': localStorage.getItem('kelembagaan-filter-ajuan'),
                 'valid': localStorage.getItem('kelembagaan-filter-valid'),
             };
-            _this.http.post('http://api.syncardtech.com/dplega-api/public/list/lembaga/' + page, JSON.stringify(filterData), { headers: headers })
+            _this.http.post(_this.urlApi + '/public/list/lembaga/' + page, JSON.stringify(filterData), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -731,7 +733,19 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.getDetailLembaga = function (noRegistrasi) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/detail/lembaga/' + noRegistrasi, {})
+            _this.http.get(_this.urlApi + '/public/detail/lembaga/' + noRegistrasi, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getKelengkapanLembaga = function (target, noRegistrasi) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/detail/lembaga/' + target + '/' + noRegistrasi, {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -754,7 +768,7 @@ var AuthService = /** @class */ (function () {
                 'ajuan': localStorage.getItem('kelembagaan-filter-ajuan'),
                 'valid': localStorage.getItem('kelembagaan-filter-valid'),
             };
-            _this.http.post('http://api.syncardtech.com/dplega-api/public/summary/lembaga/', JSON.stringify(filterData), { headers: headers })
+            _this.http.post(_this.urlApi + '/public/summary/lembaga/', JSON.stringify(filterData), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -766,7 +780,7 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.getCountNotifications = function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/count/notifications/' + localStorage.getItem('userNotif'), {})
+            _this.http.get(_this.urlApi + '/public/count/notifications/' + localStorage.getItem('userNotif'), {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -778,7 +792,7 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.getListNotifications = function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/list/notifications/' + localStorage.getItem('userNotif'), {})
+            _this.http.get(_this.urlApi + '/public/list/notifications/' + localStorage.getItem('userNotif'), {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -790,7 +804,7 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.getList = function (target) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/' + target, {})
+            _this.http.get(_this.urlApi + '/public/' + target, {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -802,7 +816,7 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.getSummary = function (target) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/summary/' + target + '/', {})
+            _this.http.get(_this.urlApi + '/public/summary/' + target + '/', {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -814,7 +828,7 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.getListPage = function (target, page) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/list/' + target + '/' + page, {})
+            _this.http.get(_this.urlApi + '/public/list/' + target + '/' + page, {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -831,7 +845,7 @@ var AuthService = /** @class */ (function () {
             if (idRef != null) {
                 target = target + idRef;
             }
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/option/' + target, {})
+            _this.http.get(_this.urlApi + '/public/option/' + target, {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -843,7 +857,7 @@ var AuthService = /** @class */ (function () {
     AuthService.prototype.searchData = function (keyword) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get('http://api.syncardtech.com/dplega-api/public/search/' + keyword, {})
+            _this.http.get(_this.urlApi + '/public/search/' + keyword, {})
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
@@ -917,6 +931,8 @@ var KelembagaanPage = /** @class */ (function () {
         this.modalCtrl = modalCtrl;
         this.toastCtrl = toastCtrl;
         this.page = 1;
+        this.urlServer = "";
+        this.urlServer = authService.urlServer;
         // get initial data
         this.getData();
         // set our app's pages
@@ -929,9 +945,10 @@ var KelembagaanPage = /** @class */ (function () {
             _this.getData();
         });
     }
-    KelembagaanPage.prototype.openModal = function (index, reff) {
+    KelembagaanPage.prototype.openModal = function (index, reff, reff2) {
         if (reff === void 0) { reff = null; }
-        var modal = this.modalCtrl.create(this.pages[index].component, { reff: reff });
+        if (reff2 === void 0) { reff2 = null; }
+        var modal = this.modalCtrl.create(this.pages[index].component, { reff: reff, reff2: reff2 });
         modal.present();
     };
     KelembagaanPage.prototype.getData = function () {
@@ -988,7 +1005,7 @@ var KelembagaanPage = /** @class */ (function () {
     };
     KelembagaanPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-kelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kelembagaan.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openModal(0)">\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <p>Total data ({{ summary }})</p>\n    </ion-item>\n    <ion-item-group>\n      <ion-item-sliding *ngFor="let d of data">\n        <button ion-item (click)="openModal(1, d.noRegistrasi)" padding-right>\n          <ion-avatar item-start>\n            <img src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{d.urlGambarLogo}}">\n          </ion-avatar>\n          <h3 text-wrap>{{d.nama}}</h3>\n          <p>{{d.namaBentukLembaga}} &nbsp; <span class="text-{{d.statusVerifikasi == \'0\' ? \'danger\' : \'secondary\'}}"><ion-icon name="compass"></ion-icon></span></p>\n        </button>\n        <ion-item-options side="right">\n          <button ion-button color="light" class="text-vibrant">\n            <!-- <ion-icon name="checkmark-circle"></ion-icon> -->\n            Verifikasi\n          </button>\n          <button ion-button color="light" class="text-primary">\n            <!-- <ion-icon name="create"></ion-icon> -->\n            Edit\n          </button>\n          <button ion-button color="light" class="text-danger">\n            <!-- <ion-icon name="trash"></ion-icon> -->\n            Hapus\n          </button>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-item-group>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kelembagaan.html"*/
+            selector: 'page-kelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kelembagaan.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openModal(0)">\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <p>Total data ({{ summary }})</p>\n    </ion-item>\n    <ion-item-group>\n      <ion-item-sliding *ngFor="let d of data">\n        <button ion-item (click)="openModal(1, d.noRegistrasi, d.namaBentukLembaga + \' \' + d.nama)" padding-right>\n          <ion-avatar item-start>\n            <img src="{{urlServer}}/img/logo/{{d.urlGambarLogo}}">\n          </ion-avatar>\n          <h3 text-wrap>{{d.nama}}</h3>\n          <p>{{d.namaBentukLembaga}} &nbsp; <span class="text-{{d.statusVerifikasi == \'0\' ? \'danger\' : \'secondary\'}}"><ion-icon name="compass"></ion-icon></span></p>\n        </button>\n        <ion-item-options side="right">\n          <button ion-button color="light" class="text-vibrant">\n            <!-- <ion-icon name="checkmark-circle"></ion-icon> -->\n            Verifikasi\n          </button>\n          <button ion-button color="light" class="text-primary">\n            <!-- <ion-icon name="create"></ion-icon> -->\n            Edit\n          </button>\n          <button ion-button color="light" class="text-danger">\n            <!-- <ion-icon name="trash"></ion-icon> -->\n            Hapus\n          </button>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-item-group>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kelembagaan.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], KelembagaanPage);
@@ -1129,7 +1146,7 @@ var KelembagaanFilterPage = /** @class */ (function () {
         this.events.publish('kelembagaan:reload');
     };
     KelembagaanFilterPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/filter.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Filter Lembaga</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear" >Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header class="text-dark">Pencarian</ion-list-header>\n    <ion-item color="clear">\n      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Berdasarkan nama" showWhen="ios" value=""></ion-searchbar>\n      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Berdasarkan nama"showWhen="android,windows" no-padding></ion-searchbar>\n    </ion-item>\n    <ion-item>\n      <ion-label>Bentuk Lembaga</ion-label>\n      <ion-select [(ngModel)]="filterData.bentukLembaga">\n        <ion-option value="" selected="{{filterData.bentukLembaga == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{filterData.bentukLembaga == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header class="text-dark">Lokasi</ion-list-header>\n    <ion-item>\n      <ion-label>Wilayah</ion-label>\n      <ion-select [(ngModel)]="filterData.wilayah" (ionChange)="loadKecamatan(filterData.wilayah)">\n        <ion-option value="" selected="{{filterData.wilayah == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{filterData.wilayah == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kecamatan</ion-label>\n      <ion-select [(ngModel)]="filterData.kecamatan" (ionChange)="loadKelurahan(filterData.kecamatan)">\n        <ion-option value="" selected="{{filterData.kecamatan == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{filterData.kecamatan == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kelurahan</ion-label>\n      <ion-select [(ngModel)]="filterData.kelurahan">\n        <ion-option value="" selected="{{filterData.kelurahan == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{filterData.kelurahan == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header class="text-dark">Status</ion-list-header>\n    <ion-item>\n      <ion-label>Belum Verifikasi</ion-label>\n      <ion-checkbox [(ngModel)]="filterData.ajuan" color="main" checked="{{filterData.ajuan != \'false\' ? \'true\' : \'false\' }}" item-end></ion-checkbox>\n    </ion-item>\n    <ion-item>\n      <ion-label>Sudah Verifikasi</ion-label>\n      <ion-checkbox [(ngModel)]="filterData.valid" color="main" checked="{{filterData.valid != \'false\' ? \'true\' : \'false\' }}" item-end></ion-checkbox>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n      <button type="button" (click)="filter()" class="text-white" ion-button block clear>Aktifkan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/filter.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/filter.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Filter Lembaga</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear" >Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header class="text-dark">Pencarian</ion-list-header>\n    <ion-item color="clear">\n      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Ketik Nama / No Registrasi" showWhen="ios" value=""></ion-searchbar>\n      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Ketik Nama / No Registrasi"showWhen="android,windows" no-padding></ion-searchbar>\n    </ion-item>\n    <ion-item>\n      <ion-label>Bentuk Lembaga</ion-label>\n      <ion-select [(ngModel)]="filterData.bentukLembaga">\n        <ion-option value="" selected="{{filterData.bentukLembaga == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{filterData.bentukLembaga == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header class="text-dark">Lokasi</ion-list-header>\n    <ion-item>\n      <ion-label>Wilayah</ion-label>\n      <ion-select [(ngModel)]="filterData.wilayah" (ionChange)="loadKecamatan(filterData.wilayah)">\n        <ion-option value="" selected="{{filterData.wilayah == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{filterData.wilayah == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kecamatan</ion-label>\n      <ion-select [(ngModel)]="filterData.kecamatan" (ionChange)="loadKelurahan(filterData.kecamatan)">\n        <ion-option value="" selected="{{filterData.kecamatan == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{filterData.kecamatan == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kelurahan</ion-label>\n      <ion-select [(ngModel)]="filterData.kelurahan">\n        <ion-option value="" selected="{{filterData.kelurahan == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{filterData.kelurahan == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header class="text-dark">Status</ion-list-header>\n    <ion-item>\n      <ion-label>Belum Verifikasi</ion-label>\n      <ion-checkbox [(ngModel)]="filterData.ajuan" color="main" checked="{{filterData.ajuan != \'false\' ? \'true\' : \'false\' }}" item-end></ion-checkbox>\n    </ion-item>\n    <ion-item>\n      <ion-label>Sudah Verifikasi</ion-label>\n      <ion-checkbox [(ngModel)]="filterData.valid" color="main" checked="{{filterData.valid != \'false\' ? \'true\' : \'false\' }}" item-end></ion-checkbox>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n      <button type="button" (click)="filter()" class="text-white" ion-button block clear>Aktifkan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/filter.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
@@ -1156,6 +1173,7 @@ var KelembagaanDetailPage = /** @class */ (function () {
         this.authService = authService;
         this.loadingCtrl = loadingCtrl;
         this.toastCtrl = toastCtrl;
+        this.urlServer = "";
         this.detail = {
             avatar: "",
             noreg: "",
@@ -1176,7 +1194,9 @@ var KelembagaanDetailPage = /** @class */ (function () {
             visiLembaga: "",
             misiLembaga: ""
         };
+        this.urlServer = authService.urlServer;
         this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
         // set our app's pages
         this.detailPages = [
             { component: KelembagaanLegalitasPage },
@@ -1202,14 +1222,28 @@ var KelembagaanDetailPage = /** @class */ (function () {
             return false;
         });
     };
-    KelembagaanDetailPage.prototype.openModal = function (index) {
-        var modal = this.modalCtrl.create(this.detailPages[index].component);
+    KelembagaanDetailPage.prototype.openModal = function (index, reff, reff2) {
+        if (reff === void 0) { reff = null; }
+        if (reff2 === void 0) { reff2 = null; }
+        var modal = this.modalCtrl.create(this.detailPages[index].component, { reff: reff, reff2: reff2 });
         modal.present();
     };
     KelembagaanDetailPage.prototype.openMaps = function () {
-        this.launchNavigator.navigate([this.detail.langitude, this.detail.latitude], {
-            start: this.detail.langitude + ", " + this.detail.latitude
-        }).then(function (success) { return console.log('Launched navigator'); }, function (error) { return console.log('Error launching navigator', error); });
+        var destination = this.detail.latitude + ',' + this.detail.langitude;
+        if (this.platform.is('ios')) {
+            window.open('maps://?q=' + destination, '_system');
+        }
+        else {
+            var label = encodeURI('My Label');
+            window.open('geo:0,0?q=' + destination + '(' + label + ')', '_system');
+        }
+        // console.log(":" + this.detail.langitude + " : " + this.detail.latitude);
+        // this.launchNavigator.navigate([this.detail.langitude, this.detail.latitude], {
+        //   start: this.detail.langitude + ", " + this.detail.latitude
+        // }).then(
+        //     success => console.log('Launched navigator'),
+        //     error => console.log('Error launching navigator', error)
+        //   );
     };
     KelembagaanDetailPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
@@ -1233,7 +1267,7 @@ var KelembagaanDetailPage = /** @class */ (function () {
         toast.present();
     };
     KelembagaanDetailPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Profil Lembaga</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <!-- <ion-list no-margin> -->\n    <ion-list>\n      <ion-item color="main" text-center class="no-border">\n        <ion-avatar margin-bottom class="medium">\n          <img class="margin-auto" src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{detail.avatar}}">\n        </ion-avatar>\n        <p>{{ detail.namaBentukLembaga }}</p>\n        <h1>{{ detail.nama }}</h1>\n        <p class="text-{{ detail.statusVerifikasi == 1 ? \'white\' : \'bright\' }}" (click)="openModal(6)">{{ detail.statusVerifikasi == 1 ? \'Sudah Verifikasi\' : \'Belum Verifikasi\' }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list padding>\n      <ion-item>\n        <p><b>No Registrasi.</b><br/><br /> {{ detail.noreg }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Telp.</b><br/><br/> {{ detail.telp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Email.</b><br/><br/> {{ detail.email }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b><br/><br/> {{ detail.alamat }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Bergerak dalam bidang.</b><br/><br/> {{ detail.namaBidangGerak }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Jumlah pengurus.</b><br/><br/> {{ detail.jumlahPengurus }} Orang</p>\n      </ion-item>\n      <ion-item>\n        <p><b>NPWP.</b><br/> {{ detail.noNpwp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Afiliasi.</b><br /> {{ detail.organisasiAfiliasi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Visi.</b><br /> {{ detail.visiLembaga }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Misi.</b><br /> {{ detail.misiLembaga }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Media sosial.</b><br /> {{ detail.mediaSosial }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Informasi lainnya</ion-list-header>\n      <button ion-item (click)="openModal(0)">\n        <ion-icon name="paper" item-start color="main"></ion-icon>\n        Legalitas\n      </button>\n      <button ion-item (click)="openModal(1)">\n        <ion-icon name="time" item-start color="bright"></ion-icon>\n        Sejarah\n      </button>\n      <button ion-item (click)="openModal(2)">\n        <ion-icon name="people" item-start color="vibrant"></ion-icon>\n        Kepengurusan\n      </button>\n      <button ion-item (click)="openModal(3)">\n        <ion-icon name="pricetag" item-start color="primary"></ion-icon>\n        Usaha\n      </button>\n      <button ion-item (click)="openModal(4)">\n        <ion-icon name="trophy" item-start color="bright"></ion-icon>\n        Prestasi\n      </button>\n      <button ion-item (click)="openModal(5)">\n        <ion-icon name="book" item-start color="secondary"></ion-icon>\n        Koleksi\n      </button>\n      <button ion-item (click)="openMaps()">\n        <ion-icon name="globe" item-start color="primary"></ion-icon>\n        Lihat Maps\n      </button>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Aplikasi</ion-list-header>\n      <button ion-item (click)="openModal(6)">\n        <ion-icon name="md-create" item-start color="secondary"></ion-icon>\n        Verifikasi Lembaga\n      </button>\n    </ion-list>\n  <!-- </ion-list> -->\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Profil Lembaga</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <!-- <ion-list no-margin> -->\n    <ion-list>\n      <ion-item color="main" text-center class="no-border">\n        <ion-avatar margin-bottom class="medium">\n          <img class="margin-auto" src="{{urlServer}}/img/logo/{{detail.avatar}}">\n        </ion-avatar>\n        <p>{{ detail.namaBentukLembaga }}</p>\n        <h1>{{ detail.nama }}</h1>\n        <p class="text-{{ detail.statusVerifikasi == 1 ? \'white\' : \'bright\' }}" (click)="openModal(6)">{{ detail.statusVerifikasi == 1 ? \'Sudah Verifikasi\' : \'Belum Verifikasi\' }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list padding>\n      <ion-item>\n        <p><b>No Registrasi.</b><br/><br /> {{ detail.noreg }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Telp.</b><br/><br/> {{ detail.telp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Email.</b><br/><br/> {{ detail.email }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b><br/><br/> {{ detail.alamat }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Bergerak dalam bidang.</b><br/><br/> {{ detail.namaBidangGerak }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Jumlah pengurus.</b><br/><br/> {{ detail.jumlahPengurus }} Orang</p>\n      </ion-item>\n      <ion-item>\n        <p><b>NPWP.</b><br/> {{ detail.noNpwp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Afiliasi.</b><br /> {{ detail.organisasiAfiliasi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Visi.</b><br /> {{ detail.visiLembaga }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Misi.</b><br /> {{ detail.misiLembaga }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Media sosial.</b><br /> {{ detail.mediaSosial }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Informasi lainnya</ion-list-header>\n      <button ion-item (click)="openModal(0, noRegistrasi, namaLembaga)">\n        <ion-icon name="paper" item-start color="main"></ion-icon>\n        Legalitas\n      </button>\n      <button ion-item (click)="openModal(1, noRegistrasi, namaLembaga)">\n        <ion-icon name="time" item-start color="bright"></ion-icon>\n        Sejarah\n      </button>\n      <button ion-item (click)="openModal(2, noRegistrasi, namaLembaga)">\n        <ion-icon name="people" item-start color="vibrant"></ion-icon>\n        Kepengurusan\n      </button>\n      <button ion-item (click)="openModal(3, noRegistrasi, namaLembaga)">\n        <ion-icon name="pricetag" item-start color="primary"></ion-icon>\n        Usaha\n      </button>\n      <button ion-item (click)="openModal(4, noRegistrasi, namaLembaga)">\n        <ion-icon name="trophy" item-start color="bright"></ion-icon>\n        Prestasi\n      </button>\n      <button ion-item (click)="openModal(5, noRegistrasi, namaLembaga)">\n        <ion-icon name="book" item-start color="secondary"></ion-icon>\n        Koleksi\n      </button>\n      <button ion-item (click)="openMaps()">\n        <ion-icon name="globe" item-start color="primary"></ion-icon>\n        Lihat Maps\n      </button>\n    </ion-list>\n    <ion-list>\n      <ion-list-header class="text-main">Aplikasi</ion-list-header>\n      <button ion-item (click)="openModal(6)">\n        <ion-icon name="md-create" item-start color="secondary"></ion-icon>\n        Verifikasi Lembaga\n      </button>\n    </ion-list>\n  <!-- </ion-list> -->\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
@@ -1249,132 +1283,427 @@ var KelembagaanDetailPage = /** @class */ (function () {
 
 // ---------------------------------------------------------------------------
 var KelembagaanLegalitasPage = /** @class */ (function () {
-    function KelembagaanLegalitasPage(platform, params, viewCtrl) {
+    function KelembagaanLegalitasPage(platform, params, viewCtrl, authService, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.countData = 0;
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
     }
+    KelembagaanLegalitasPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('legalitas', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.countData = Object.keys(_this.data).length;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     KelembagaanLegalitasPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    KelembagaanLegalitasPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanLegalitasPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     KelembagaanLegalitasPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n        <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n        <ion-icon name="paper" item-end color="main"></ion-icon>\n      </ion-item>\n      <ion-item>\n        <p>Total data (2)</p>\n      </ion-item>\n      <button ion-item text-wrap>\n        <ion-icon name="document" item-start color="main"></ion-icon>\n        <p><b>Akta Notaris.</b><br /><br /> <span class="text-vibrant">2123029</span> | 2017-11-02</p>\n      </button>\n      <button ion-item text-wrap margin-bottom class="no-border">\n        <ion-icon name="document" item-start color="main"></ion-icon>\n        <p><b>SK Kemenkumham.</b><br /><br /> <span class="text-vibrant">2123029</span> | 2017-11-02</p>\n      </button>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="paper" item-end color="main"></ion-icon>\n      </ion-item>\n      <ion-item>\n        <p>Total data ({{ countData }})</p>\n      </ion-item>\n      <button *ngFor="let d of data; let first = first; let last = last" [class.no-border]="last" ion-item text-wrap>\n        <ion-icon name="document" item-start color="main"></ion-icon>\n        <p><b>{{d.namaPersyaratan}}.</b><br /><br /> <span class="text-vibrant">{{d.noLegalitas}}</span> | {{d.tanggalLegalitas}}</p>\n      </button>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], KelembagaanLegalitasPage);
     return KelembagaanLegalitasPage;
 }());
 
 // ---------------------------------------------------------------------------
 var KelembagaanSejarahPage = /** @class */ (function () {
-    function KelembagaanSejarahPage(platform, params, viewCtrl) {
+    function KelembagaanSejarahPage(platform, params, viewCtrl, authService, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "-",
+            deskripsi: "-",
+            tanggalDidirikan: "-",
+            kepemilikan: "-",
+            statusTanah: "-",
+            statusSertifikasi: "-",
+            luasTanah: "-",
+            satuanLuasTanah: "-",
+            luasBangunan: "-",
+            satuanLuasBangunan: "-",
+            kondisiBangunan: "-",
+            JumlahBangunan: "-",
+            statusSarana: "-",
+            statusStrukturKepengurusan: "-",
+            urlGambarStrukturKepengurusan: "-",
+            bahasaPengantar: "-",
+            statusSensus: "-",
+            statusBantuanPemerintah: "-",
+            kondisiGeografis: "-",
+            potensiWilayah: "-",
+            jenisWilayah: "-",
+            catatanLain: "-"
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
     }
+    KelembagaanSejarahPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('sejarah', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     KelembagaanSejarahPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    KelembagaanSejarahPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanSejarahPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     KelembagaanSejarahPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/sejarah.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Sejarah</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai sejarah Lembaga terkait.</p>\n        <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n        <ion-icon name="time" item-end color="bright"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Sejarah singkat.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Tanggal didirikan.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kepemilikan.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Sertifikasi.</b> -</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Luas Tanah.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Luas Bangunan.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Saranan / Prasarana.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Struktur Organisasi.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Bahasa Pengantar.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Sensus.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Bantuan Pemerintah.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Kondisi Geografis.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Potensi Wilayah.</b> -</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b> -</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/sejarah.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/sejarah.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Sejarah</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai sejarah Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="time" item-end color="bright"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Sejarah singkat.</b> <br/><br/> {{ data.deskripsi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Tanggal didirikan.</b> <br /><br /> {{ data.tanggalDidirikan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kepemilikan.</b> <br /><br /> {{ data.kepemilikan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Sertifikasi.</b>  <br/><br/> {{ data.statusSertifikasi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Status Tanah.</b>  <br/><br/> {{ data.statusTanah }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Luas Tanah.</b>  <br/><br/> {{ data.luasTanah }} {{ data.satuanLuasTanah }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Luas Bangunan.</b>  <br/><br/> {{ data.luasBangunan }} {{ data.satuanLuasBangunan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kondisi Bangunan.</b>  <br/><br/> {{ data.kondisiBangunan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jumlah Bangunan.</b>  <br/><br/> {{ data.JumlahBangunan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Saranan / Prasarana.</b>  <br/><br/> {{ data.statusSarana }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Struktur Organisasi.</b>  <br/><br/> {{ data.statusStrukturKepengurusan }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Bahasa Pengantar.</b>  <br/><br/> {{ data.bahasaPengantar }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Sensus.</b>  <br/><br/> {{ data.statusSensus }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Bantuan Pemerintah.</b>  <br/><br/> {{ data.statusBantuanPemerintah }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Kondisi Geografis.</b>  <br/><br/> {{ data.kondisiGeografis }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Potensi Wilayah.</b>  <br/><br/> {{ data.potensiWilayah }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Jenis Wilayah.</b>  <br/><br/> {{ data.jenisWilayah }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b>  <br/><br/> {{ data.catatanLain }}</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/sejarah.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], KelembagaanSejarahPage);
     return KelembagaanSejarahPage;
 }());
 
 // ---------------------------------------------------------------------------
 var KelembagaanKepengurusanPage = /** @class */ (function () {
-    function KelembagaanKepengurusanPage(platform, params, viewCtrl) {
+    function KelembagaanKepengurusanPage(platform, params, viewCtrl, authService, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "-",
+            penanggungJawab: "-",
+            jabatan: "-",
+            alamat: "-",
+            alamatLengkap: "-",
+            noTelp: "-",
+            kewarganegaraan: "-",
+            tempatLahir: "-",
+            tanggalLahir: "-",
+            jenisKelamin: "-",
+            agama: "-",
+            jabatanLain: "-",
+            pendidikan: "-",
+            kompetensi: "-",
+            catatan: "-"
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
     }
+    KelembagaanKepengurusanPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('kepengurusan', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     KelembagaanKepengurusanPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    KelembagaanKepengurusanPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanKepengurusanPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     KelembagaanKepengurusanPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kepengurusan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Kepengurusan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai kepengurusan Lembaga terkait.</p>\n        <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n        <ion-icon name="people" item-end color="vibrant"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Penanggung jawab.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Telp.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kewarganegaraan.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Tempat, Tanggal Lahir.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jenis Kelamin.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Agama.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jabatan lain.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Pendidikan.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Kompetensi.</b> -</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b> -</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kepengurusan.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kepengurusan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Kepengurusan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai kepengurusan Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="people" item-end color="vibrant"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Penanggung jawab.</b> <br/><br/> {{ data.penanggungJawab }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jabatan.</b> <br/><br/> {{ data.jabatan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b> <br/><br/> {{ data.alamatLengkap }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Telp.</b> <br/><br/> {{ data.noTelp }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kewarganegaraan.</b> <br/><br/> {{ data.kewarganegaraan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Tempat, Tanggal Lahir.</b> <br/><br/> {{ data.tempatLahir }}, {{ data.tanggalLahir }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jenis Kelamin.</b> <br/><br/> {{ data.jenisKelamin == "L" ? \'Laki-laki\' : \'\' }}{{ data.jenisKelamin == "P" ? \'Perempuan\' : \'\' }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Agama.</b> <br/><br/> {{ data.agama }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jabatan lain.</b> <br/><br/> {{ data.jabatanLain }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Pendidikan.</b> <br/><br/> {{ data.pendidikan }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Kompetensi.</b> <br/><br/> {{ data.kompetensi }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b> <br/><br/> {{ data.catatan }}</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kepengurusan.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], KelembagaanKepengurusanPage);
     return KelembagaanKepengurusanPage;
 }());
 
 // ---------------------------------------------------------------------------
 var KelembagaanUsahaPage = /** @class */ (function () {
-    function KelembagaanUsahaPage(platform, params, viewCtrl) {
+    function KelembagaanUsahaPage(platform, params, viewCtrl, authService, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "-",
+            namaUsaha: "-",
+            jenisUsaha: "-",
+            detailUsaha: "-",
+            jumlahPekerja: "-",
+            catatan: "-"
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
     }
+    KelembagaanUsahaPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('usaha', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     KelembagaanUsahaPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    KelembagaanUsahaPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanUsahaPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     KelembagaanUsahaPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/usaha.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Usaha</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai usaha yang sedang dijalankan oleh Lembaga terkait.</p>\n        <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n        <ion-icon name="pricetag" item-end color="primary"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Nama Usaha.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Detail Usaha.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jenis Usaha.</b> -</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jumlah Pekerja.</b> -</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b> -</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/usaha.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/usaha.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Usaha</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai usaha yang sedang dijalankan oleh Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="pricetag" item-end color="primary"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Nama Usaha.</b> <br/><br/> {{ data.namaUsaha }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Detail Usaha.</b> <br/><br/> {{ data.detailUsaha }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jenis Usaha.</b> <br/><br/> {{ data.jenisUsaha }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jumlah Pekerja.</b> <br/><br/> {{ data.jumlahPekerja }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b> <br/><br/> {{ data.catatan }}</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/usaha.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], KelembagaanUsahaPage);
     return KelembagaanUsahaPage;
 }());
 
 // ---------------------------------------------------------------------------
 var KelembagaanPrestasiPage = /** @class */ (function () {
-    function KelembagaanPrestasiPage(platform, params, viewCtrl) {
+    function KelembagaanPrestasiPage(platform, params, viewCtrl, authService, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
-        this.data = [
-            { noreg: '1', nama_prestasi: 'Prestasi 1', nama_lembaga: 'Lembaga 1', bentuk_lembaga: 'Yayasan' },
-            { noreg: '2', nama_prestasi: 'Prestasi 2', nama_lembaga: 'Lembaga 2', bentuk_lembaga: 'Pondok pesantren' },
-            { noreg: '3', nama_prestasi: 'Prestasi 3', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-            { noreg: '3', nama_prestasi: 'Prestasi 4', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-        ];
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.countData = 0;
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
     }
+    KelembagaanPrestasiPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('prestasi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.countData = Object.keys(_this.data).length;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     KelembagaanPrestasiPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    KelembagaanPrestasiPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanPrestasiPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     KelembagaanPrestasiPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/prestasi.html"*/'<ion-header class="static">\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Prestasi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai prestasi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n      <ion-icon name="trophy" item-end color="bright"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ data.length }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data">\n      <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n      <h2>{{d.nama_prestasi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input type="text" placeholder="Tambah prestasi.."></ion-input>\n      <ion-icon item-right name="md-create"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/prestasi.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/prestasi.html"*/'<ion-header class="static">\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Prestasi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai prestasi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n      <ion-icon name="trophy" item-end color="bright"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ countData }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data; let first = first; let last = last" [class.no-border]="last">\n      <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n      <h2 text-wrap>{{d.deskripsi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input type="text" placeholder="Tambah prestasi.."></ion-input>\n      <ion-icon item-right name="md-create"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/prestasi.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], KelembagaanPrestasiPage);
     return KelembagaanPrestasiPage;
 }());
 
 // ---------------------------------------------------------------------------
 var KelembagaanKoleksiPage = /** @class */ (function () {
-    function KelembagaanKoleksiPage(platform, params, viewCtrl) {
+    function KelembagaanKoleksiPage(platform, params, viewCtrl, authService, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
-        this.data = [
-            { noreg: '1', nama_koleksi: 'Koleksi 1', nama_lembaga: 'Lembaga 1', bentuk_lembaga: 'Yayasan' },
-            { noreg: '2', nama_koleksi: 'Koleksi 2', nama_lembaga: 'Lembaga 2', bentuk_lembaga: 'Pondok pesantren' },
-            { noreg: '3', nama_koleksi: 'Koleksi 3', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-            { noreg: '3', nama_koleksi: 'Koleksi 4', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-        ];
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.countData = 0;
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
     }
+    KelembagaanKoleksiPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('koleksi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.countData = Object.keys(_this.data).length;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     KelembagaanKoleksiPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    KelembagaanKoleksiPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanKoleksiPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     KelembagaanKoleksiPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/koleksi.html"*/'<ion-header class="static">\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Koleksi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai koleksi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n      <ion-icon name="book" item-end color="secondary"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ data.length }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data">\n      <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n      <h2>{{d.nama_koleksi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input type="text" placeholder="Tambah koleksi.."></ion-input>\n      <ion-icon item-right name="md-create"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/koleksi.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/koleksi.html"*/'<ion-header class="static">\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Koleksi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai koleksi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n      <ion-icon name="book" item-end color="secondary"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ countData }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data">\n      <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n      <p>{{d.jenisKoleksi}}</p>\n      <h2 text-wrap>{{d.judulKoleksi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input type="text" placeholder="Tambah koleksi.."></ion-input>\n      <ion-icon item-right name="md-create"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/koleksi.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], KelembagaanKoleksiPage);
     return KelembagaanKoleksiPage;
 }());
@@ -1936,6 +2265,8 @@ var SearchPage = /** @class */ (function () {
         this.loadingCtrl = loadingCtrl;
         this.toastCtrl = toastCtrl;
         this.keyword = "";
+        this.urlServer = "";
+        this.urlServer = authService.urlServer;
     }
     SearchPage.prototype.searchData = function (keyCode) {
         var _this = this;
@@ -1984,7 +2315,7 @@ var SearchPage = /** @class */ (function () {
     };
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/'<ion-header>\n  <ion-toolbar color=\'main\'> \n    <ion-searchbar [(ngModel)]="keyword" (keypress)="searchData($event.keyCode)" placeholder="Pencarian" class="clear"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <div *ngFor="let d of data; let idx = index;">\n      <ion-list-header color="light" *ngIf="d.grup != dataClone[idx-1].grup"> {{ d.grup }} </ion-list-header>\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Lembaga\'" ion-item padding-right>\n        <ion-avatar item-start>\n          <img src="http://dplega.yanbangsos.jabarprov.go.id/img/logo/{{d.kolom_4}}">\n        </ion-avatar>\n        <h3 text-wrap>{{d.kolom_2}}</h3>\n        <p>{{d.kolom_3}} &nbsp; <span class="text-{{d.kolom_5 == \'0\' ? \'danger\' : \'secondary\'}}">\n            <ion-icon name="compass"></ion-icon>\n          </span></p>\n      </button>\n\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Prestasi\'" ion-item padding-right>\n        <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n        <h3 text-wrap>{{d.kolom_3}}</h3>\n        <p text-nowrap>{{d.kolom_4}} {{d.kolom_2}}</p>\n      </button>\n\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Koleksi\'" ion-item padding-right>\n        <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n        <h3 text-wrap>({{d.kolom_3}}) {{d.kolom_4}}</h3>\n        <p text-nowrap>{{d.kolom_5}} {{d.kolom_2}}</p>\n      </button>\n    </div>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/
+            selector: 'page-search',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/'<ion-header>\n  <ion-toolbar color=\'main\'> \n    <ion-searchbar [(ngModel)]="keyword" (keypress)="searchData($event.keyCode)" placeholder="Pencarian" class="clear"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <div *ngFor="let d of data; let idx = index;">\n      <ion-list-header color="light" *ngIf="d.grup != dataClone[idx-1].grup"> {{ d.grup }} </ion-list-header>\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Lembaga\'" ion-item padding-right>\n        <ion-avatar item-start>\n          <img src="{{urlServer}}/img/logo/{{d.kolom_4}}">\n        </ion-avatar>\n        <h3 text-wrap>{{d.kolom_2}}</h3>\n        <p>{{d.kolom_3}} &nbsp; <span class="text-{{d.kolom_5 == \'0\' ? \'danger\' : \'secondary\'}}">\n            <ion-icon name="compass"></ion-icon>\n          </span></p>\n      </button>\n\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Prestasi\'" ion-item padding-right>\n        <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n        <h3 text-wrap>{{d.kolom_3}}</h3>\n        <p text-nowrap>{{d.kolom_4}} {{d.kolom_2}}</p>\n      </button>\n\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Koleksi\'" ion-item padding-right>\n        <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n        <h3 text-wrap>({{d.kolom_3}}) {{d.kolom_4}}</h3>\n        <p text-nowrap>{{d.kolom_5}} {{d.kolom_2}}</p>\n      </button>\n    </div>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], SearchPage);
@@ -2015,7 +2346,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(287);
@@ -2042,12 +2373,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_transfer__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_camera__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_base64__ = __webpack_require__(293);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -2202,7 +2535,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_24__ionic_native_file__["a" /* File */],
                 __WEBPACK_IMPORTED_MODULE_25__ionic_native_transfer__["a" /* Transfer */],
                 __WEBPACK_IMPORTED_MODULE_27__ionic_native_camera__["a" /* Camera */],
-                __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__["a" /* FilePath */]
+                __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__["a" /* FilePath */],
+                __WEBPACK_IMPORTED_MODULE_28__ionic_native_base64__["a" /* Base64 */]
             ]
         })
     ], AppModule);
@@ -2325,12 +2659,14 @@ var SettingPage = /** @class */ (function () {
 }());
 
 var SettingAccountPage = /** @class */ (function () {
-    function SettingAccountPage(events, navCtrl, modalCtrl, viewCtrl) {
+    function SettingAccountPage(events, navCtrl, modalCtrl, viewCtrl, authService) {
         var _this = this;
         this.events = events;
         this.navCtrl = navCtrl;
         this.modalCtrl = modalCtrl;
         this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.urlServer = "";
         this.accountData = {
             avatar: localStorage.getItem('urlGambar'),
             noRegistrasi: localStorage.getItem('noRegistrasi'),
@@ -2343,6 +2679,8 @@ var SettingAccountPage = /** @class */ (function () {
             userLevel: localStorage.getItem('userLevel'),
             statusAkses: ''
         };
+        this.random_ = Math.floor(Math.random() * 20) + 1;
+        this.urlServer = authService.urlServer;
         if (this.accountData.userLevel == '7') {
             this.accountData.statusAkses = "Super Admin";
         }
@@ -2382,9 +2720,9 @@ var SettingAccountPage = /** @class */ (function () {
     };
     SettingAccountPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-account',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Manajemen Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <img src="http://dplega.yanbangsos.jabarprov.go.id/img/avatar/{{accountData.avatar}}">\n        <!-- <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons> -->\n        <h3>{{accountData.nama}}</h3>\n        <p><b>{{accountData.username}}</b> | {{accountData.statusAkses}}</p>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding margin-top>\n    <!-- <ion-list-header class="text-main">Informasi Akun</ion-list-header> -->\n    <ion-item>\n      <p><b>No Registrasi.</b><br /><br /> {{ accountData.noRegistrasi != "" ? accountData.noRegistrasi : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Jabatan.</b><br /><br /> {{accountData.jabatan != "" ? accountData.jabatan : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Telp.</b><br /><br /> {{accountData.noTelp != "" ? accountData.noTelp : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Email.</b><br /><br /> {{accountData.email != "" ? accountData.email : \'-\'}}</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <p><b>Alamat.</b><br /><br /> {{accountData.alamat != "" ? accountData.alamat : \'-\'}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- <ion-list padding no-margin>\n    <ion-list-header class="text-main">Ubah Password</ion-list-header>\n    <ion-item>\n      <ion-label>Password lama (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Password baru (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Ulangi Password baru (*)</ion-label>\n      <ion-input type="password" class="no-border"></ion-input>\n    </ion-item>\n  </ion-list>\n  <ion-buttons padding-horizontal padding-bottom text-center>\n    <button ion-button class="no-shadow" color="main" round>Ubah Password</button>\n  </ion-buttons> -->\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/
+            selector: 'page-account',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Manajemen Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <img src="{{urlServer}}/img/avatar/{{accountData.avatar}}?random={{random_}}">\n        <!-- <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons> -->\n        <h3>{{accountData.nama}}</h3>\n        <p><b>{{accountData.username}}</b> | {{accountData.statusAkses}}</p>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding margin-top>\n    <!-- <ion-list-header class="text-main">Informasi Akun</ion-list-header> -->\n    <ion-item>\n      <p><b>No Registrasi.</b><br /><br /> {{ accountData.noRegistrasi != "" ? accountData.noRegistrasi : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Jabatan.</b><br /><br /> {{accountData.jabatan != "" ? accountData.jabatan : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Telp.</b><br /><br /> {{accountData.noTelp != "" ? accountData.noTelp : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Email.</b><br /><br /> {{accountData.email != "" ? accountData.email : \'-\'}}</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <p><b>Alamat.</b><br /><br /> {{accountData.alamat != "" ? accountData.alamat : \'-\'}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- <ion-list padding no-margin>\n    <ion-list-header class="text-main">Ubah Password</ion-list-header>\n    <ion-item>\n      <ion-label>Password lama (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Password baru (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Ulangi Password baru (*)</ion-label>\n      <ion-input type="password" class="no-border"></ion-input>\n    </ion-item>\n  </ion-list>\n  <ion-buttons padding-horizontal padding-bottom text-center>\n    <button ion-button class="no-shadow" color="main" round>Ubah Password</button>\n  </ion-buttons> -->\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */]])
     ], SettingAccountPage);
     return SettingAccountPage;
 }());
@@ -2484,6 +2822,8 @@ var SettingFormAccountPage = /** @class */ (function () {
         this.filePath = filePath;
         this.actionSheetCtrl = actionSheetCtrl;
         this.platform = platform;
+        this.urlServer = "";
+        this.urlApi = "";
         this.data = { status: 'failed', data: '0' };
         this.accountData = {
             avatar: localStorage.getItem('urlGambar'),
@@ -2500,7 +2840,10 @@ var SettingFormAccountPage = /** @class */ (function () {
             kodeWilayah: localStorage.getItem('kodeWilayah')
         };
         this.lastImage = null;
+        this.random_ = Math.floor(Math.random() * 20) + 1;
         this.loadInit();
+        this.urlServer = authService.urlServer;
+        this.urlApi = authService.urlApi;
     }
     SettingFormAccountPage.prototype.loadInit = function () {
         var _this = this;
@@ -2724,6 +3067,7 @@ var SettingFormAccountPage = /** @class */ (function () {
         var _this = this;
         this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(function (success) {
             _this.lastImage = newFileName;
+            _this.uploadImage();
         }, function (error) {
             _this.presentToast('Terjadi kesalahan : Error saat menyimpan gambar!.');
         });
@@ -2740,7 +3084,7 @@ var SettingFormAccountPage = /** @class */ (function () {
     SettingFormAccountPage.prototype.uploadImage = function () {
         var _this = this;
         // Destination URL
-        var url = "http://api.syncardtech.com/dplega-api/public/upload/account/avatar/";
+        var url = this.urlApi + "/public/upload/account/avatar/";
         // File for Upload
         var targetPath = this.pathForImage(this.lastImage);
         // File name only
@@ -2750,7 +3094,7 @@ var SettingFormAccountPage = /** @class */ (function () {
             fileName: filename,
             chunkedMode: false,
             mimeType: "multipart/form-data",
-            params: { 'fileName': filename }
+            params: { 'fileName': filename, 'username': localStorage.getItem('username') }
         };
         var fileTransfer = this.transfer.create();
         this.loading = this.loadingCtrl.create({
@@ -2760,15 +3104,27 @@ var SettingFormAccountPage = /** @class */ (function () {
         // Use the FileTransfer to upload the image
         fileTransfer.upload(targetPath, url, options).then(function (data) {
             _this.loading.dismissAll();
-            _this.presentToast('Image succesful uploaded.');
+            _this.presentToast('Avatar berhasil diubah.');
+            _this.uploadData = data;
+            _this.uploadData.response = JSON.parse(_this.uploadData.response);
+            _this.accountData.avatar = _this.uploadData.response.filename;
+            _this.random_ = Math.floor(Math.random() * 20) + 1;
+            _this.authService.relogin(_this.accountData).then(function (result) {
+                _this.reloginData = result;
+                localStorage.setItem('urlGambar', _this.reloginData.urlGambar);
+                _this.events.publish('accountPage:reload');
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+            });
         }, function (err) {
             _this.loading.dismissAll();
-            _this.presentToast('Error while uploading file.');
+            _this.presentToast('Terjadi kesalahan! gagal mengubah Avatar.');
         });
     };
     SettingFormAccountPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-formAccount',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <img src="{{pathForImage(lastImage)}}" [hidden]="lastImage === null">\n        <img src="http://dplega.yanbangsos.jabarprov.go.id/img/avatar/{{accountData.avatar}}" [hidden]="lastImage">\n        <ion-buttons margin-top>\n          <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Pilih avatar\n          </button>\n          <button (click)="uploadImage()" [disabled]="lastImage === null" class="no-shadow" color="primary" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-row>\n      <ion-item>\n        <ion-label>Nama</ion-label>\n        <ion-input [(ngModel)]="accountData.nama" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jabatan</ion-label>\n        <ion-input [(ngModel)]="accountData.jabatan" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat</ion-label>\n        <ion-textarea [(ngModel)]="accountData.alamat" type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT</ion-label>\n          <ion-input [(ngModel)]="accountData.noRt" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW</ion-label>\n          <ion-input [(ngModel)]="accountData.noRw" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Wilayah</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeWilayah" (ionChange)="loadKecamatan(accountData.kodeWilayah)">\n          <ion-option value="" selected="{{accountData.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{accountData.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kecamatan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKecamatan" (ionChange)="loadKelurahan(accountData.kodeKecamatan)">\n          <ion-option value="" selected="{{accountData.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{accountData.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kelurahan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKelurahan">\n          <ion-option value="" selected="{{accountData.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{accountData.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp</ion-label>\n        <ion-input [(ngModel)]="accountData.noTelp" type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="accountData.email" type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n\n  </ion-list>\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" (click)="changeAccount()" ion-button block clear>Ubah data Akun</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/
+            selector: 'page-formAccount',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <!-- <img src="{{lastImageBase64}}" [hidden]="lastImage === null"> -->\n        <img src="{{urlServer}}/img/avatar/{{accountData.avatar}}?random={{random_}}">\n        <ion-buttons margin-top>\n          <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-row>\n      <ion-item>\n        <ion-label>Nama</ion-label>\n        <ion-input [(ngModel)]="accountData.nama" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jabatan</ion-label>\n        <ion-input [(ngModel)]="accountData.jabatan" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat</ion-label>\n        <ion-textarea [(ngModel)]="accountData.alamat" type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT</ion-label>\n          <ion-input [(ngModel)]="accountData.noRt" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW</ion-label>\n          <ion-input [(ngModel)]="accountData.noRw" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Wilayah</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeWilayah" (ionChange)="loadKecamatan(accountData.kodeWilayah)">\n          <ion-option value="" selected="{{accountData.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{accountData.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kecamatan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKecamatan" (ionChange)="loadKelurahan(accountData.kodeKecamatan)">\n          <ion-option value="" selected="{{accountData.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{accountData.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kelurahan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKelurahan">\n          <ion-option value="" selected="{{accountData.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{accountData.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp</ion-label>\n        <ion-input [(ngModel)]="accountData.noTelp" type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="accountData.email" type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n\n  </ion-list>\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" (click)="changeAccount()" ion-button block clear>Ubah data Akun</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
@@ -2820,6 +3176,8 @@ var NewsPage = /** @class */ (function () {
         this.loadingCtrl = loadingCtrl;
         this.toastCtrl = toastCtrl;
         this.page = 1;
+        this.urlServer = "";
+        this.urlServer = authService.urlServer;
         // get initial data
         this.getData();
     }
@@ -2877,7 +3235,7 @@ var NewsPage = /** @class */ (function () {
     };
     NewsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-news',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/news/news.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Berita</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openForm()">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card *ngFor="let d of data" margin-bottom>\n    <img src="http://dplega.yanbangsos.jabarprov.go.id/img/news/{{d.urlGambar}}" />\n    <ion-card-content padding-right>\n      <ion-card-title>{{d.judulBerita}}</ion-card-title>\n      <p margin-bottom><ion-icon name=\'time\'></ion-icon> {{d.createdDate}} oleh <b class="capitalize">{{d.createdBy}}</b></p>\n      <p>{{d.deskripsi}} ...</p>\n    </ion-card-content>\n\n    <ion-row no-padding>\n      <ion-col>\n        <button ion-button clear small color="vibrant" icon-start (click)="openModal(0)">\n          <ion-icon name=\'search\'></ion-icon>\n          Baca berita\n        </button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button clear small color="vibrant" icon-start (click)="openForm()">\n          <ion-icon name=\'md-create\'></ion-icon>\n          Ubah\n        </button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button clear small color="vibrant" icon-start>\n          <ion-icon name=\'trash\'></ion-icon>\n          Hapus\n        </button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/news/news.html"*/
+            selector: 'page-news',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/news/news.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Berita</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openForm()">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card *ngFor="let d of data" margin-bottom>\n    <img src="{{urlServer}}/img/news/{{d.urlGambar}}" />\n    <ion-card-content padding-right>\n      <ion-card-title>{{d.judulBerita}}</ion-card-title>\n      <p margin-bottom><ion-icon name=\'time\'></ion-icon> {{d.createdDate}} oleh <b class="capitalize">{{d.createdBy}}</b></p>\n      <p>{{d.deskripsi}} ...</p>\n    </ion-card-content>\n\n    <ion-row no-padding>\n      <ion-col>\n        <button ion-button clear small color="vibrant" icon-start (click)="openModal(0)">\n          <ion-icon name=\'search\'></ion-icon>\n          Baca berita\n        </button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button clear small color="vibrant" icon-start (click)="openForm()">\n          <ion-icon name=\'md-create\'></ion-icon>\n          Ubah\n        </button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button clear small color="vibrant" icon-start>\n          <ion-icon name=\'trash\'></ion-icon>\n          Hapus\n        </button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/news/news.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], NewsPage);

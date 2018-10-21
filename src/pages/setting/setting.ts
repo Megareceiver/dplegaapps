@@ -52,6 +52,8 @@ export class SettingAccountPage {
     statusAkses: ''
   }
 
+  random_ = Math.floor(Math.random() * 20) + 1 ;
+
   constructor(public events: Events, public navCtrl: NavController, public modalCtrl: ModalController, public viewCtrl: ViewController, public authService: AuthService) {
     this.urlServer = authService.urlServer;
     if(this.accountData.userLevel == '7'){
@@ -187,6 +189,7 @@ export class SettingFormAccountPage {
   loading: any;
   temp: any;
   urlServer = "";
+  urlApi = "";
   wilayah: any;
   kecamatan: any;
   kelurahan: any;
@@ -208,6 +211,9 @@ export class SettingFormAccountPage {
   }
 
   lastImage: string = null;
+  random_ = Math.floor(Math.random() * 20) + 1;
+  lastImageBase64: any;
+  uploadData: any;
 
   constructor(
       public events: Events, 
@@ -226,6 +232,7 @@ export class SettingFormAccountPage {
     ) {
     this.loadInit();
     this.urlServer = authService.urlServer;
+    this.urlApi = authService.urlApi;
   }
 
   loadInit() {
@@ -400,6 +407,7 @@ export class SettingFormAccountPage {
 
   // UPLOAD package
   public presentActionSheet() {
+   
     let actionSheet = this.actionSheetCtrl.create({
       title: 'Pilih gambar',
       buttons: [
@@ -465,6 +473,7 @@ export class SettingFormAccountPage {
   private copyFileToLocalDir(namePath, currentName, newFileName) {
     this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(success => {
       this.lastImage = newFileName;
+      this.uploadImage();
     }, error => {
       this.presentToast('Terjadi kesalahan : Error saat menyimpan gambar!.');
     });
@@ -475,13 +484,15 @@ export class SettingFormAccountPage {
     if (img === null) {
       return '';
     } else {
+
       return cordova.file.dataDirectory + img;
+      
     }
   }
 
   public uploadImage() {
     // Destination URL
-    var url = "http://http://dplega.syncardtech.com/slim-api/public/upload/account/avatar/";
+    var url = this.urlApi + "/public/upload/account/avatar/";
 
     // File for Upload
     var targetPath = this.pathForImage(this.lastImage);
@@ -494,7 +505,7 @@ export class SettingFormAccountPage {
       fileName: filename,
       chunkedMode: false,
       mimeType: "multipart/form-data",
-      params: { 'fileName': filename }
+      params: { 'fileName': filename, 'username': localStorage.getItem('username') }
     };
 
     const fileTransfer: TransferObject = this.transfer.create();
@@ -507,10 +518,27 @@ export class SettingFormAccountPage {
     // Use the FileTransfer to upload the image
     fileTransfer.upload(targetPath, url, options).then(data => {
       this.loading.dismissAll()
-      this.presentToast('Image succesful uploaded.');
+      this.presentToast('Avatar berhasil diubah.');
+
+      this.uploadData = data;
+      this.uploadData.response = JSON.parse(this.uploadData.response);
+      this.accountData.avatar = this.uploadData.response.filename;
+      this.random_ = Math.floor(Math.random() * 20) + 1;
+
+      this.authService.relogin(this.accountData).then((result) => {
+        this.reloginData = result;
+
+        localStorage.setItem('urlGambar', this.reloginData.urlGambar);
+        this.events.publish('accountPage:reload');
+
+      }, (err) => {
+        this.loading.dismiss();
+        this.presentToast(err);
+      });
+
     }, err => {
       this.loading.dismissAll()
-      this.presentToast('Error while uploading file.');
+      this.presentToast('Terjadi kesalahan! gagal mengubah Avatar.');
     });
   }
 

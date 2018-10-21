@@ -62,6 +62,7 @@ import { File } from '@ionic-native/file';
 import { Transfer } from '@ionic-native/transfer';
 import { FilePath } from '@ionic-native/file-path';
 import { Camera } from '@ionic-native/camera';
+import { Base64 } from '@ionic-native/base64';
 
 @NgModule({
   declarations: [
@@ -176,7 +177,8 @@ import { Camera } from '@ionic-native/camera';
     File,
     Transfer,
     Camera,
-    FilePath
+    FilePath,
+    Base64
   ]
 })
 export class AppModule {}

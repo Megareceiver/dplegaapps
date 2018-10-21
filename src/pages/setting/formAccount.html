@@ -17,13 +17,10 @@
   <ion-list>
     <ion-row class="big-avatar-frame">
       <div class="big-avatar" text-center>
-        <img src="{{pathForImage(lastImage)}}" [hidden]="lastImage === null">
-        <img src="{{urlServer}}/img/avatar/{{accountData.avatar}}" [hidden]="lastImage">
+        <!-- <img src="{{lastImageBase64}}" [hidden]="lastImage === null"> -->
+        <img src="{{urlServer}}/img/avatar/{{accountData.avatar}}?random={{random_}}">
         <ion-buttons margin-top>
           <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>
-            Pilih avatar
-          </button>
-          <button (click)="uploadImage()" [disabled]="lastImage === null" class="no-shadow" color="primary" ion-button text-capitalize small round>
             Unggah avatar
           </button>
         </ion-buttons>
