@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController, ModalController, Platform, NavParams, ViewController, ToastController, Events } from 'ionic-angular';
 import { AuthService } from '../../providers/auth-service/auth-service';
-import { LaunchNavigator } from '@ionic-native/launch-navigator';
+// import { LaunchNavigator } from '@ionic-native/launch-navigator';
 
 import { VerificationPage } from '../verification/verification';
+import { FormKelembagaanPage } from '../form/form';
+import { FormLegalitasPage } from '../form/form';
+import { FormSejarahPage } from '../form/form';
+import { FormKepengurusanPage } from '../form/form';
+import { FormUsahaPage } from '../form/form';
+// import { FormHirarkiPage } from '../form/form';
+// import { FormPrestasiPage } from '../form/form';
+// import { FormKoleksiPage } from '../form/form';
 
 @Component({
   selector: 'page-kelembagaan',
@@ -298,7 +306,7 @@ export class KelembagaanDetailPage {
     public params: NavParams,
     public viewCtrl: ViewController,
     public modalCtrl: ModalController,
-    private launchNavigator: LaunchNavigator, 
+    // private launchNavigator: LaunchNavigator, 
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
@@ -308,6 +316,17 @@ export class KelembagaanDetailPage {
     this.namaLembaga = params.get('reff2');
 
     // set our app's pages
+    this.detailPages = [
+      { component: KelembagaanLegalitasPage },
+      { component: KelembagaanSejarahPage },
+      { component: KelembagaanKepengurusanPage },
+      { component: KelembagaanUsahaPage },
+      { component: KelembagaanPrestasiPage },
+      { component: KelembagaanKoleksiPage },
+      { component: VerificationPage },
+    ];
+
+    // set our form's pages
     this.detailPages = [
       { component: KelembagaanLegalitasPage },
       { component: KelembagaanSejarahPage },
@@ -334,8 +353,13 @@ export class KelembagaanDetailPage {
     });
   }
 
-  openModal(index, reff = null, reff2 = null) {
-    let modal = this.modalCtrl.create(this.detailPages[index].component, { reff: reff, reff2: reff2 });
+  openModal(index, reff = null, reff2 = null, reff3 = null, reff4 = null) {
+    let modal = this.modalCtrl.create(this.detailPages[index].component, { reff: reff, reff2: reff2, reff3: reff3, reff4: reff4 });
+    modal.present();
+  }
+
+  loadForm() {
+    let modal = this.modalCtrl.create(FormKelembagaanPage, { noRegistrasi: this.noRegistrasi });
     modal.present();
   }
 
@@ -345,10 +369,10 @@ export class KelembagaanDetailPage {
     if (this.platform.is('ios')) {
       window.open('maps://?q=' + destination, '_system');
     } else {
-      let label = encodeURI('My Label');
+      let label = encodeURI('');
       window.open('geo:0,0?q=' + destination + '(' + label + ')', '_system');
     }
-    
+
     // console.log(":" + this.detail.langitude + " : " + this.detail.latitude);
     // this.launchNavigator.navigate([this.detail.langitude, this.detail.latitude], {
     //   start: this.detail.langitude + ", " + this.detail.latitude
@@ -356,6 +380,8 @@ export class KelembagaanDetailPage {
     //     success => console.log('Launched navigator'),
     //     error => console.log('Error launching navigator', error)
     //   );
+
+    
   }
 
   dismiss() {
@@ -403,6 +429,7 @@ export class KelembagaanLegalitasPage {
     public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
@@ -453,6 +480,11 @@ export class KelembagaanLegalitasPage {
 
     toast.present();
   }
+
+  loadForm(){
+    let modal = this.modalCtrl.create(FormLegalitasPage, { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+    modal.present();
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -495,6 +527,7 @@ export class KelembagaanSejarahPage {
     public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
@@ -545,6 +578,11 @@ export class KelembagaanSejarahPage {
 
     toast.present();
   }
+
+  loadForm() {
+    let modal = this.modalCtrl.create(FormSejarahPage, { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+    modal.present();
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -580,6 +618,7 @@ export class KelembagaanKepengurusanPage {
     public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
@@ -630,6 +669,11 @@ export class KelembagaanKepengurusanPage {
 
     toast.present();
   }
+
+  loadForm() {
+    let modal = this.modalCtrl.create(FormKepengurusanPage, { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+    modal.present();
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -656,6 +700,7 @@ export class KelembagaanUsahaPage {
     public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
@@ -706,6 +751,11 @@ export class KelembagaanUsahaPage {
 
     toast.present();
   }
+
+  loadForm() {
+    let modal = this.modalCtrl.create(FormUsahaPage, { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+    modal.present();
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -726,6 +776,7 @@ export class KelembagaanPrestasiPage {
     public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
@@ -792,11 +843,17 @@ export class KelembagaanKoleksiPage {
   temp: any;
   data: any;
   countData: number = 0;
+  formData = {
+    judulKoleksi: "",
+    jenisKoleksi: "",
+    deskripsi: ""
+  }
 
   constructor(
     public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController

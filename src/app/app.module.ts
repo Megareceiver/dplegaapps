@@ -63,6 +63,9 @@ import { Transfer } from '@ionic-native/transfer';
 import { FilePath } from '@ionic-native/file-path';
 import { Camera } from '@ionic-native/camera';
 import { Base64 } from '@ionic-native/base64';
+import { Geolocation } from '@ionic-native/geolocation';
+import { LocationAccuracy } from '@ionic-native/location-accuracy';
+
 
 @NgModule({
   declarations: [
@@ -178,7 +181,9 @@ import { Base64 } from '@ionic-native/base64';
     Transfer,
     Camera,
     FilePath,
-    Base64
+    Base64,
+    Geolocation,
+    LocationAccuracy
   ]
 })
 export class AppModule {}

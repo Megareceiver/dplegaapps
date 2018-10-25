@@ -1,6 +1,10 @@
 page-form {
     
 }
+page-formKelembagaan textarea,
+page-formSejarah textarea,
+page-formUsaha textarea,
+page-formKepengurusan textarea { max-width: 100%; width: 100%; height: 15vh; }
 
 .no-border-child, .no-border-child .item-inner {
     border: 0 !important;

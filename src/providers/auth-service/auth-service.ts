@@ -145,6 +145,20 @@ export class AuthService {
     });
   }
 
+  insertDataLembaga(target, data) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      this.http.post(this.urlApi + '/public/insert/lembaga/' + target + '/' + data.noRegistrasi, JSON.stringify(data), { headers: headers })
+      .subscribe(res => {
+        resolve(res.json());
+      }, (err) => {
+        this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
   getCountNotifications() {
     return new Promise((resolve, reject) => {
       this.http.get(this.urlApi + '/public/count/notifications/' + localStorage.getItem('userNotif'), {})
@@ -168,6 +182,19 @@ export class AuthService {
         });
     });
   }
+
+  getNotifications(idData) {
+    return new Promise((resolve, reject) => {
+      this.http.get(this.urlApi + '/public/detail/notifications/' + idData , {})
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
 
   getList(target) {
     return new Promise((resolve, reject) => {

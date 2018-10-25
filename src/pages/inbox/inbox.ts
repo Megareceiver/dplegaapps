@@ -19,7 +19,7 @@ export class InboxPage {
 
   openModal(inboxId) {
 
-    let modal = this.modalCtrl.create(InboxDetailPage, inboxId);
+    let modal = this.modalCtrl.create(InboxDetailPage, { inboxId: inboxId });
     modal.present();
   }
 
@@ -29,55 +29,6 @@ export class InboxPage {
       this.data = result;
       this.dataClone = this.data;
       this.dataClone[-1] = { tanggal: 'start' };
-
-      // this.data.forEach(function (o) {
-      //   if (!this[o.tanggal]) {
-      //     this[o.tanggal] = {
-      //       t_id: o.idData,
-      //       val1: 0,
-      //       title: o.judul
-      //     };
-      //     this.groupedData.push(this[o.tanggal]);
-      //   }
-      //   // this[o.t_id].val1 += Number(o.val1);
-      // }, Object.create(null));
-
-      // console.log("******");
-      // console.log(this.data);
-      var array = [{ t_id: "1", val1: "1", title: "cash to purchase", unit: "bag" }, { t_id: "1", val1: "1", title: "cash to purchase", unit: "bag" }, { t_id: "1", val1: "1", title: "cash to purchase", unit: "bag" }, { t_id: "2", val1: "4", title: "offload", unit: "bag" }, { t_id: "2", val1: "5", title: "onroad", unit: "bag" }, { t_id: "3", val1: "5", title: "Onroad", unit: "bag" }, { t_id: "3", val1: "6", title: "Onroad", unit: "bag" }];
-      // console.log(array);
-      // console.log("******");
-
-      var grouped = [];
-      var grouped2 = [];
-
-      array.forEach(function (o) {
-        if (!this[o.t_id]) {
-          this[o.t_id] = {
-            t_id: o.t_id,
-            val1: 0,
-            title: o.title
-          };
-          grouped.push(this[o.t_id]);
-        }
-        this[o.t_id].val1 += Number(o.val1);
-      }, Object.create(null));
-
-      this.data.forEach(function (o) {
-        if (!this[o.tanggal]) {
-          this[o.tanggal] = {
-            tanggal: o.tanggal,
-            val1: 0
-          };
-          grouped2.push(this[o.tanggal]);
-        }
-        this[o.tanggal].val1 += 1;
-      }, Object.create(null));
-
-      console.log(grouped);
-      console.log(grouped2);
-
-      // console.log(this.groupedData);
       this.loading.dismiss();
     }, (err) => {
       this.loading.dismiss();
@@ -117,54 +68,76 @@ export class InboxPage {
   templateUrl: 'detail.html'
 })
 export class InboxDetailPage {
-  character;
-
+  idData: string = "";
   filterWilayah: string = "";
   filterKecamatan: string = "";
   filterKelurahan: string = "";
   filterStatus: string = "";
+  loading: any;
+  temp: any;
+  data= {
+    judul: "",
+    subjek: "",
+    deskripsi: "",
+    waktu: "",
+    statusBaca: "",
+    timestamp: "",
+    tanggal: "",
+    jam: "",
+    createdBy: ""
+  };
+
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    public authService: AuthService,
+    public modalCtrl: ModalController,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
   ) {
-    var characters = [
-      {
-        name: 'Gollum',
-        quote: 'Sneaky little hobbitses!',
-        image: 'assets/img/avatar-gollum.jpg',
-        items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'River Folk' },
-          { title: 'Alter Ego', note: 'Smeagol' }
-        ]
-      },
-      {
-        name: 'Frodo',
-        quote: 'Go back, Sam! I\'m going to Mordor alone!',
-        image: 'assets/img/avatar-frodo.jpg',
-        items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'Shire Folk' },
-          { title: 'Weapon', note: 'Sting' }
-        ]
-      },
-      {
-        name: 'Samwise Gamgee',
-        quote: 'What we need is a few good taters.',
-        image: 'assets/img/avatar-samwise.jpg',
-        items: [
-          { title: 'Race', note: 'Hobbit' },
-          { title: 'Culture', note: 'Shire Folk' },
-          { title: 'Nickname', note: 'Sam' }
-        ]
-      }
-    ];
-    this.character = characters[this.params.get('charNum')];
+    this.idData = params.get('inboxId');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getNotifications(this.idData).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }
 

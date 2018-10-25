@@ -88,6 +88,6 @@
       <string>iosamap</string>
     </array>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>This app requires access to your location for navigation purposes</string>
+    <string>We use your location for full functionality of certain app features.</string>
   </dict>
 </plist>

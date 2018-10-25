@@ -5,7 +5,7 @@
       <div  *ngFor="let d of data; let idx = index;">
         <ion-list-header color="light" *ngIf="d.tanggal != dataClone[idx-1].tanggal"> {{d.tanggal | date:'yyyy MMM dd'}}</ion-list-header>
         <ion-item-sliding>
-          <button ion-item (click)="openModal({charNum: 0})">
+          <button ion-item (click)="openModal(d.idData)">
             <ion-icon name="notifications" color="{{d.statusBaca == '0' ? 'bright' : 'light'}}" item-start></ion-icon>
             <h2 class="{{d.statusBaca == '0' ? 'text-main' : ''}}">{{d.judul}}</h2>
             <!-- <h3>{{d.waktu}}</h3> -->

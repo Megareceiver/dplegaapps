@@ -12,10 +12,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
   <ion-item-group margin-top>
-    <ion-item-divider>Title</ion-item-divider>
-    <ion-item-divider>Subject</ion-item-divider>
-    <ion-item text-wrap>The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.</ion-item>
+    <ion-item-divider>Judul : {{ data.judul }}</ion-item-divider>
+    <ion-item-divider>Subjek : {{ data.subjek }}</ion-item-divider>
+    <ion-item-divider>Waktu : {{ data.tanggal | date:'yyyy MMM dd' }} {{ data.jam }}</ion-item-divider>
+    <ion-item text-wrap>{{ data.deskripsi }}</ion-item>
   </ion-item-group>
 </ion-content>

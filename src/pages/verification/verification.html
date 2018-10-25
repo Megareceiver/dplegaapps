@@ -19,51 +19,33 @@
       <ion-avatar item-start>
         <img src="assets/imgs/sample.jpg">
       </ion-avatar>
-      <h2>Nama lembaganya</h2>
-      <p>Yayasan</p>
+      <h2>{{ namaLembaga }}</h2>
+      <p>{{ bentukLembaga }}</p>
     </ion-item>
     <ion-item>
-      <ion-toggle checked="false"></ion-toggle>
+      <ion-toggle checked="{{ statusValid == 'valid' ? 'true' : 'false' }}"></ion-toggle>
       <ion-label>
         Konfimasi keabsahan data
       </ion-label>
       <ion-icon color="main" name='md-checkmark-circle-outline' item-start></ion-icon>
     </ion-item>
-    <button ion-item (click)="openRevision()">
+    <button ion-item (click)="openRevision(noRegistrasi, lembaga)" class="no-border">
       <ion-icon name="chatbubbles" item-start color="secondary"></ion-icon>
       Catatan revisi
     </button>
-  </ion-list>
-  <ion-list>
-    <ion-list-header color="clear">Kelengkapan legalitas</ion-list-header>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-label>Akta Notaris</ion-label>
-        <ion-checkbox color="main"></ion-checkbox>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="main">
-          Lihat Berkas
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-    <ion-item-sliding>
-      <ion-item>
-        <ion-label>SK Kemenkumham</ion-label>
-        <ion-checkbox color="main"></ion-checkbox>
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="main">
-          Lihat Berkas
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
-  <ion-list>
-    <ion-list-header color="clear">Kelengkapan lainnya</ion-list-header>
-    <ion-item>
-      <ion-label>Survey Lapangan</ion-label>
-      <ion-checkbox color="main"></ion-checkbox>
-    </ion-item>
+    <div *ngFor="let d of data; let idx = index;">
+      <ion-list-header color="light" *ngIf="d.idGrup != dataClone[idx-1].idGrup"> {{d.namaGrup}}</ion-list-header>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>{{ d.nama }}</ion-label>
+          <ion-checkbox color="main" checked="{{ d.statusVerifikasi == '1' ? 'true' : 'false' }}"></ion-checkbox>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="main">
+            Lihat Berkas
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </div>
   </ion-list>
 </ion-content>

@@ -19,23 +19,23 @@
       <ion-row padding>
         <ion-item text-wrap>
           <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>
-          <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>
+          <p class="text-main"><b>{{namaLembaga}}.</b></p>
           <ion-icon name="paper" item-end color="main"></ion-icon>
         </ion-item>
       </ion-row>
     </ion-list>
   </ion-card>
   <ion-card *ngFor="let d of data" margin-top>
-    <ion-card-header text-uppercase>{{d.nama_legalitas}}</ion-card-header>
+    <ion-card-header text-uppercase>{{d.namaPersyaratan}}</ion-card-header>
     <ion-card-content no-padding>
       <ion-list>
         <ion-item class="border-bottom">
           <ion-label>Nomor (*)</ion-label>
-          <ion-input type="text" no-border></ion-input>
+          <ion-input text-right [(ngModel)]="d.noLegalitas" type="text" no-border></ion-input>
         </ion-item>
         <ion-item class="border-bottom">
           <ion-label>Tanggal (*)</ion-label>
-          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+          <ion-datetime [(ngModel)]="d.tanggalLegalitas" displayFormat="DD/MM/YYYY"></ion-datetime>
         </ion-item>
         <ion-item class="border-bottom">
           <ion-buttons item-start>
@@ -47,9 +47,7 @@
         </ion-item>
       </ion-list>
       <ion-buttons text-center>
-        <button color="main" ion-button full text-capitalize>
-          Simpan
-        </button>
+        <button color="main" ion-button full>Simpan</button>
       </ion-buttons>
     </ion-card-content>
   </ion-card>

@@ -11,7 +11,7 @@
       </button>
     </ion-buttons>
     <ion-buttons end>
-      <button ion-button icon-only>
+      <button ion-button icon-only (click)="loadForm()">
         <ion-icon name="ios-create-outline"></ion-icon>
       </button>
     </ion-buttons>
@@ -31,7 +31,8 @@
       </ion-item>
       <button *ngFor="let d of data; let first = first; let last = last" [class.no-border]="last" ion-item text-wrap>
         <ion-icon name="document" item-start color="main"></ion-icon>
-        <p><b>{{d.namaPersyaratan}}.</b><br /><br /> <span class="text-vibrant">{{d.noLegalitas}}</span> | {{d.tanggalLegalitas}}</p>
+        <p><b>{{d.namaPersyaratan}}.</b> <span class="text-{{d.statusVerifikasi == '0' ? 'danger' : 'secondary'}}"><ion-icon name="compass"></ion-icon></span></p>
+        <p><span class="text-vibrant">{{d.noLegalitas}}</span> | {{d.tanggalLegalitas}}</p>
       </button>
     </ion-row>
   </ion-list>

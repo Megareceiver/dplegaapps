@@ -46,6 +46,12 @@
     },
     "com-badrit-base64": {
       "PACKAGE_NAME": "com.syncard.apps"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.syncard.apps"
+    },
+    "cordova-plugin-request-location-accuracy": {
+      "PACKAGE_NAME": "com.syncard.apps"
     }
   },
   "dependent_plugins": {

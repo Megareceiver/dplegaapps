@@ -17,28 +17,28 @@
   <ion-row margin-top padding>
     <ion-item text-wrap>
       <p>Informasi mengenai usaha yang sedang dijalankan oleh Lembaga terkait.</p>
-      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>
+      <p class="text-main"><b>{{namaLembaga}}.</b></p>
       <ion-icon name="pricetag" item-end color="primary"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-label>Nama usaha</ion-label>
-      <ion-input type="text" no-border></ion-input>
+      <ion-input text-right [(ngModel)]="data.namaUsaha" type="text" no-border></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Jenis usaha</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.jenisUsaha" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Detail usaha</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.detailUsaha" type="text"></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-label>Jumlah pekerja</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.jumlahPekerja" type="text"></ion-input>
     </ion-item>
     <ion-item margin-bottom>
       <ion-label>Catatan</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.catatan" type="text"></ion-textarea>
     </ion-item>
   </ion-row>
 </ion-content>

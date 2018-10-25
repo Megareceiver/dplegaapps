@@ -22,93 +22,109 @@
     </ion-item>
     <ion-item>
       <ion-label>Penanggung Jawab</ion-label>
-      <ion-input type="text" no-border></ion-input>
+      <ion-input text-right [(ngModel)]="data.penanggungJawab" type="text" no-border></ion-input>
     </ion-item>
-    <ion-item>
+    <!-- <ion-item>
       <ion-label>No. KTP</ion-label>
       <ion-input type="text"></ion-input>
-    </ion-item>
+    </ion-item> -->
     <ion-item>
       <ion-label>Alamat</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.alamat" type="text"></ion-textarea>
     </ion-item>
     <ion-col col-6 no-padding>
-      <ion-item class="no-border">
-        <ion-label>RT</ion-label>
-        <ion-input type="text"></ion-input>
+      <ion-item class="no-border-1-layer">
+        <ion-label>RT (*)</ion-label>
+        <ion-input [(ngModel)]="data.noRt" type="text"></ion-input>
       </ion-item>
     </ion-col>
     <ion-col col-6 no-padding>
-      <ion-item class="no-border">
-        <ion-label>RW</ion-label>
-        <ion-input type="text"></ion-input>
+      <ion-item class="no-border-1-layer">
+        <ion-label>RW (*)</ion-label>
+        <ion-input [(ngModel)]="data.noRw" type="text"></ion-input>
       </ion-item>
     </ion-col>
+    <ion-item>
+      <ion-label>Wilayah</ion-label>
+      <ion-select [(ngModel)]="data.kodeWilayah" (ionChange)="loadKecamatan(data.kodeWilayah)">
+        <ion-option value="" selected="{{data.wilayah == '' ? selected : '' }}"></ion-option>
+        <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{data.kodeWilayah == d.value ? selected : '' }}">{{d.caption
+          }}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Kecamatan</ion-label>
+      <ion-select [(ngModel)]="data.kodeKecamatan" (ionChange)="loadKelurahan(data.kodeKecamatan)">
+        <ion-option value="" selected="{{data.kecamatan == '' ? selected : '' }}"></ion-option>
+        <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{data.kodeKecamatan == d.value ? selected : '' }}">{{d.caption
+          }}</ion-option>
+      </ion-select>
+    </ion-item>
     <ion-item>
       <ion-label>Kelurahan</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-select [(ngModel)]="data.kodeKelurahan">
+        <ion-option value="" selected="{{data.kelurahan == '' ? selected : '' }}"></ion-option>
+        <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{data.kodeKelurahan == d.value ? selected : '' }}">{{d.caption
+          }}</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
-      <ion-label>Telp</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item class="no-border-child">
-      <ion-label>Email</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-label>Telp (*)</ion-label>
+      <ion-input text-right [(ngModel)]="data.noTelp" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Warga Negara</ion-label>
-      <ion-select>
-        <ion-option value="1">WNI</ion-option>
-        <ion-option value="2">WNA</ion-option>
+      <ion-select [(ngModel)]="data.kewarganegaraan">
+        <ion-option value="WNI" selected="{{data.kewarganegaraan == 'WNI' ? selected : '' }}">WNI</ion-option>
+        <ion-option value="WNA" selected="{{data.kewarganegaraan == 'WNA' ? selected : '' }}">WNA</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Tempat Lahir</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.tempatLahir" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Tanggal Lahir</ion-label>
-      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      <ion-datetime [(ngModel)]="data.tanggalLahir" displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>
     </ion-item>
     <ion-item>
       <ion-label>Jenis Kelamin</ion-label>
-      <ion-select>
-        <ion-option value="1">Laki-laki</ion-option>
-        <ion-option value="2">Perempuan</ion-option>
+      <ion-select [(ngModel)]="data.jenisKelamin">
+        <ion-option value="L" selected="{{data.jenisKelamin == 'L' ? selected : '' }}">Laki-laki</ion-option>
+        <ion-option value="P" selected="{{data.jenisKelamin == 'P' ? selected : '' }}">Perempuan</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Agama</ion-label>
-      <ion-select>
-        <ion-option value="islam">Islam</ion-option>
-        <ion-option value="kristen">Kristen</ion-option>
-        <ion-option value="hindu">Hindu</ion-option>
-        <ion-option value="budha">Budha</ion-option>
-        <ion-option value="lainnya">Agama lainnya</ion-option>
+      <ion-select [(ngModel)]="data.agama">
+        <ion-option value="Islam" selected="{{data.agama == 'Islam' ? selected : '' }}">Islam</ion-option>
+        <ion-option value="Kristen" selected="{{data.agama == 'Kristen' ? selected : '' }}">Kristen</ion-option>
+        <ion-option value="Hindu" selected="{{data.agama == 'Hindu' ? selected : '' }}">Hindu</ion-option>
+        <ion-option value="Budha" selected="{{data.agama == 'Budha' ? selected : '' }}">Budha</ion-option>
+        <ion-option value="Lainnya" selected="{{data.agama == 'Lainnya' ? selected : '' }}">Agama lainnya</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Jabatan lainnya</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.jabatanLain" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Pendidikan</ion-label>
-      <ion-select>
-        <ion-option value="0">SMA / SMK</ion-option>
-        <ion-option value="1">D3</ion-option>
-        <ion-option value="2">S1</ion-option>
-        <ion-option value="3">S2</ion-option>
-        <ion-option value="4">Pendidikan lainnya</ion-option>
+      <ion-select [(ngModel)]="data.pendidikan">
+        <ion-option value="SMA / SMK" selected="{{data.pendidikan == 'Islam' ? selected : '' }}">SMA / SMK</ion-option>
+        <ion-option value="D3" selected="{{data.pendidikan == 'Islam' ? selected : '' }}">D3</ion-option>
+        <ion-option value="S1" selected="{{data.pendidikan == 'Islam' ? selected : '' }}">S1</ion-option>
+        <ion-option value="s2" selected="{{data.pendidikan == 'Islam' ? selected : '' }}">S2</ion-option>
+        <ion-option value="Lainnya" selected="{{data.pendidikan == 'Islam' ? selected : '' }}">Pendidikan lainnya</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Kompetensi</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.kompetensi" type="text"></ion-textarea>
     </ion-item>
     <ion-item class="no-border" margin-bottom>
       <ion-label>Catatan</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.catatan" type="text"></ion-textarea>
     </ion-item>
   </ion-row>
 </ion-content>

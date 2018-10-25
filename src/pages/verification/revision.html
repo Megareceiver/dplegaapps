@@ -18,24 +18,35 @@
   <ion-list padding>
     <ion-item class="no-border-top" text-wrap>
       <p>Historial catatan revisi yang dikirimkan ke Lembaga, terkait verifikasi.</p>
-      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>
+      <p class="text-main"><b>{{ lembaga }}</b></p>
       <ion-icon name="chatbubbles" item-end color="secondary"></ion-icon>
     </ion-item>
-    <!-- <ion-item>
-      <p>Total data ({{ data.length }})</p>
-    </ion-item> -->
-    <!-- <button ion-item *ngFor="let d of data">
-      <ion-icon name="trophy" class="text-bright" item-start></ion-icon>
-      <h2>{{d.nama_prestasi}}</h2>
-    </button> -->
+    <ion-item class="no-border">
+      <p>Total data ({{ countData }})</p>
+    </ion-item>
+    <div *ngFor="let d of data; let idx = index; let first = first; let last = last">
+      <ion-list-header color="light" *ngIf="d.tanggal != dataClone[idx-1].tanggal"> {{d.tanggal | date:'yyyy MMM dd'}}</ion-list-header>
+      <ion-item *ngIf="d.grup == 'verifikasi'" text-wrap [class.no-border]="last">
+          <ion-icon name="document" class="text-vibrant" item-start></ion-icon>
+          <h3 class="text-main">{{d.namaPersyaratan}}</h3>
+          <p>({{ d.type }})</p>
+          <p>{{d.catatan}}</p>
+          <ion-note item-end>{{d.jam}}</ion-note>
+      </ion-item>
+      <ion-item *ngIf="d.grup == 'revisi'" text-wrap [class.no-border]="last">
+          <ion-icon name="ios-chatbubbles" class="text-secondary" item-start></ion-icon>
+          {{d.catatan}}
+          <ion-note item-end>{{d.jam}}</ion-note>
+      </ion-item>
+    </div>
   </ion-list>
 </ion-content>
 
 <ion-footer>
   <ion-toolbar color="clear">
     <ion-item class="no-border">
-      <ion-input type="text" placeholder="Ketik catatan revisi.."></ion-input>
-      <ion-icon item-right name="md-create"></ion-icon>
+      <ion-input [(ngModel)]="catatanRevisi" (keypress)="insertData($event.keyCode)" type="text" placeholder="Ketik catatan revisi.."></ion-input>
+      <ion-icon item-right name="md-create" (click)="insertData(13)"></ion-icon>
     </ion-item>
   </ion-toolbar>
 </ion-footer>

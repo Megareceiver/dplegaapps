@@ -14,7 +14,6 @@
 </ion-header>
 
 <ion-content>
-  
   <ion-list padding>
     <ion-item class="no-border-top" text-wrap>
       <p>Informasi mengenai koleksi yang dimiliki oleh Lembaga terkait.</p>
@@ -34,9 +33,21 @@
 
 <ion-footer>
   <ion-toolbar color="clear">
-    <ion-item class="no-border">
-      <ion-input type="text" placeholder="Tambah koleksi.."></ion-input>
+    <ion-item>
+      <ion-label>Judul Koleksi</ion-label>
+      <ion-input [(ngModel)]="formData.judulKoleksi" type="text"></ion-input>
       <ion-icon item-right name="md-create"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>Jenis Koleksi</ion-label>
+      <ion-select [(ngModel)]="formData.jenisKoleksi">
+        <ion-option value="Buku">Buku</ion-option>
+        <ion-option value="Kitab">Kitab</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item class="no-border" margin-bottom>
+      <ion-label>Keterangan</ion-label>
+      <ion-textarea [(ngModel)]="formData.deskripsi" type="text"></ion-textarea>
     </ion-item>
   </ion-toolbar>
 </ion-footer>

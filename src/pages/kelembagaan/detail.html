@@ -11,7 +11,7 @@
       </button>
     </ion-buttons>
     <ion-buttons end>
-      <button ion-button icon-only>
+      <button ion-button icon-only (click)="loadForm()">
         <ion-icon name="ios-create-outline"></ion-icon>
       </button>
     </ion-buttons>
@@ -27,7 +27,7 @@
         </ion-avatar>
         <p>{{ detail.namaBentukLembaga }}</p>
         <h1>{{ detail.nama }}</h1>
-        <p class="text-{{ detail.statusVerifikasi == 1 ? 'white' : 'bright' }}" (click)="openModal(6)">{{ detail.statusVerifikasi == 1 ? 'Sudah Verifikasi' : 'Belum Verifikasi' }}</p>
+        <p class="text-{{ detail.statusVerifikasi == 1 ? 'white' : 'bright' }}" (click)="openModal(6, noRegistrasi, namaLembaga, detail.namaBentukLembaga, detail.nama)">{{ detail.statusVerifikasi == 1 ? 'Sudah Verifikasi' : 'Belum Verifikasi' }}</p>
       </ion-item>
     </ion-list>
     <ion-list padding>
@@ -98,7 +98,7 @@
     </ion-list>
     <ion-list>
       <ion-list-header class="text-main">Aplikasi</ion-list-header>
-      <button ion-item (click)="openModal(6)">
+      <button ion-item (click)="openModal(6, noRegistrasi, namaLembaga, detail.namaBentukLembaga, detail.nama)">
         <ion-icon name="md-create" item-start color="secondary"></ion-icon>
         Verifikasi Lembaga
       </button>

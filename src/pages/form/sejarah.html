@@ -17,127 +17,127 @@
   <ion-row margin-top padding>
     <ion-item text-wrap>
       <p>Informasi mengenai sejarah Lembaga terkait.</p>
-      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>
+      <p class="text-main"><b>{{namaLembaga}}.</b></p>
       <ion-icon name="time" item-end color="bright"></ion-icon>
     </ion-item>
     <ion-item>
       <ion-label>Sejarah singkat</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.deskripsi" type="text"></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-label>Tanggal didirikan</ion-label>
-      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      <ion-datetime [(ngModel)]="data.tanggalDidirikan" displayFormat="DD/MM/YYYY"></ion-datetime>
     </ion-item>
     <ion-item>
       <ion-label>Kepemelikan</ion-label>
-      <ion-select>
-        <ion-option value="Pribadi">Pribadi</ion-option>
-        <ion-option value="Keluarga">Keluarga</ion-option>
-        <ion-option value="Lembaga">Lembaga</ion-option>
+      <ion-select [(ngModel)]="data.kepemilikan">
+        <ion-option value="Pribadi" selected="{{data.kepemilikan == 'Pribadi' ? selected : '' }}">Pribadi</ion-option>
+        <ion-option value="Keluarga" selected="{{data.kepemilikan == 'Keluarga' ? selected : '' }}">Keluarga</ion-option>
+        <ion-option value="Lembaga" selected="{{data.kepemilikan == 'Lembaga' ? selected : '' }}">Lembaga</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Status tanah</ion-label>
-      <ion-select>
-        <ion-option value="Sewa">Sewa</ion-option>
-        <ion-option value="Hak milik">Hak milik</ion-option>
-        <ion-option value="Hak guna bangunan">Lembaga</ion-option>
-        <ion-option value="Hak guna pakai">Lembaga</ion-option>
-        <ion-option value="Wakaf">Lembaga</ion-option>
+      <ion-select [(ngModel)]="data.statusTanah">
+        <ion-option value="Sewa" selected="{{data.statusTanah == 'Sewa' ? selected : '' }}">Sewa</ion-option>
+        <ion-option value="Hak milik" selected="{{data.statusTanah == 'Hak milik' ? selected : '' }}">Hak milik</ion-option>
+        <ion-option value="Hak guna bangunan" selected="{{data.statusTanah == 'Hak guna bangunan' ? selected : '' }}">Hak guna bangunan</ion-option>
+        <ion-option value="Hak guna pakai" selected="{{data.statusTanah == 'Hak guna pakai' ? selected : '' }}">Hak guna pakai</ion-option>
+        <ion-option value="Wakaf" selected="{{data.statusTanah == 'Wakaf' ? selected : '' }}">Wakaf</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Sertifikasi</ion-label>
-      <ion-select>
-        <ion-option value="Belum">Belum</ion-option>
-        <ion-option value="Sudah">Sudah</ion-option>
+      <ion-select [(ngModel)]="data.statusSertifikasi">
+        <ion-option value="Belum" selected="{{data.statusSertifikasi == 'Belum' ? selected : '' }}">Belum</ion-option>
+        <ion-option value="Sudah" selected="{{data.statusSertifikasi == 'Sudah' ? selected : '' }}">Sudah</ion-option>
       </ion-select>
     </ion-item>
     <ion-col col-6 no-padding>
       <ion-item>
         <ion-label>Luas Tanah</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input  text-right [(ngModel)]="data.luasTanah" type="text"></ion-input>
       </ion-item>
     </ion-col>
     <ion-col col-6 no-padding>
       <ion-item>
         <ion-label>Satuan</ion-label>
-        <ion-select>
-          <ion-option value="Meter persegi">Meter persegi</ion-option>
-          <ion-option value="Hektar">Hektar</ion-option>
+        <ion-select [(ngModel)]="data.satuanLuasTanah">
+          <ion-option value="Meter persegi" selected="{{data.satuanLuasTanah == 'Meter persegi' ? selected : '' }}">Meter persegi</ion-option>
+          <ion-option value="Hektar" selected="{{data.satuanLuasTanah == 'Hektar' ? selected : '' }}">Hektar</ion-option>
         </ion-select>
       </ion-item>
     </ion-col>
     <ion-col col-6 no-padding>
       <ion-item>
         <ion-label>Luas bangunan</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input  text-right [(ngModel)]="data.luasBangunan" type="text"></ion-input>
       </ion-item>
     </ion-col>
     <ion-col col-6 no-padding>
       <ion-item>
         <ion-label>Satuan</ion-label>
-        <ion-select>
-          <ion-option value="Meter persegi">Meter persegi</ion-option>
-          <ion-option value="Hektar">Hektar</ion-option>
+        <ion-select [(ngModel)]="data.satuanLuasBangunan">
+          <ion-option value="Meter persegi" selected="{{data.satuanLuasBangunan == 'Meter persegi' ? selected : '' }}">Meter persegi</ion-option>
+          <ion-option value="Hektar" selected="{{data.satuanLuasBangunan == 'Hektar' ? selected : '' }}">Hektar</ion-option>
         </ion-select>
       </ion-item>
     </ion-col>
     <ion-item>
       <ion-label>Kondisi bangunan</ion-label>
-      <ion-select>
-        <ion-option value="Baik">Baik</ion-option>
-        <ion-option value="Rusak">Rusak</ion-option>
+      <ion-select [(ngModel)]="data.kondisiBangunan">
+        <ion-option value="Baik" selected="{{data.kondisiBangunan == 'Baik' ? selected : '' }}">Baik</ion-option>
+        <ion-option value="Rusak" selected="{{data.kondisiBangunan == 'Rusak' ? selected : '' }}">Rusak</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Jumlah bangunan</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.jumlahBangunan" type="text"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Sarana / Prasaranan</ion-label>
-      <ion-select>
-        <ion-option value="Ada">Ada</ion-option>
-        <ion-option value="Tidak Ada">Tidak Ada</ion-option>
+      <ion-label>Sarana / Prasarana</ion-label>
+      <ion-select [(ngModel)]="data.statusSarana">
+        <ion-option value="Ada" selected="{{data.statusSarana == 'Ada' ? selected : '' }}">Ada</ion-option>
+        <ion-option value="Tidak ada" selected="{{data.statusSarana == 'Tidak ada' ? selected : '' }}">Tidak Ada</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Bahasa pengantar</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.bahasaPengantar" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Sensus</ion-label>
-      <ion-select>
-        <ion-option value="Belum">Belum</ion-option>
-        <ion-option value="Sudah">Sudah</ion-option>
+      <ion-select [(ngModel)]="data.statusSensus">
+        <ion-option value="Belum" selected="{{data.statusSensus == 'Belum' ? selected : '' }}">Belum</ion-option>
+        <ion-option value="Sudah" selected="{{data.statusSensus == 'ASudahda' ? selected : '' }}">Sudah</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Bantuan pemerintah</ion-label>
-      <ion-select>
-        <ion-option value="Belum">Belum</ion-option>
-        <ion-option value="Sudah">Sudah</ion-option>
+      <ion-select [(ngModel)]="data.statusBantuanPemerintah">
+        <ion-option value="Belum" selected="{{data.statusBantuanPemerintah == 'Belum' ? selected : '' }}">Belum</ion-option>
+        <ion-option value="Sudah" selected="{{data.statusBantuanPemerintah == 'Sudah' ? selected : '' }}">Sudah</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Kondisi geografis</ion-label>
-      <ion-select>
-        <ion-option value="Pantai">Pantai</ion-option>
-        <ion-option value="Dataran rendah">Dataran rendah</ion-option>
-        <ion-option value="Dataran tinggi">Dataran tinggi</ion-option>
+      <ion-select [(ngModel)]="data.kondisiGeografis">
+        <ion-option value="Pantai" selected="{{data.kondisiGeografis == 'Pantai' ? selected : '' }}">Pantai</ion-option>
+        <ion-option value="Daratan rendah" selected="{{data.kondisiGeografis == 'Daratan rendah' ? selected : '' }}">Dataran rendah</ion-option>
+        <ion-option value="Daratan tinggi" selected="{{data.kondisiGeografis == 'Daratan tinggi' ? selected : '' }}">Dataran tinggi</ion-option>
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>Potensi wilayah</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.potensiWilayah" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Jenis wilayah</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input text-right [(ngModel)]="data.jenisWilayah" type="text"></ion-input>
     </ion-item>
     <ion-item class="no-border" margin-bottom>
       <ion-label>Catatan</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.catatanLain" type="text"></ion-textarea>
     </ion-item>
   </ion-row>
 </ion-content>
