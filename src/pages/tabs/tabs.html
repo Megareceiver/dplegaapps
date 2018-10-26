@@ -1,6 +1,7 @@
 <ion-tabs color='dark'>
-  <ion-tab [root]="home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="inbox" tabIcon="notifications" tabBadge="{{inboxCounter != '0' ? inboxCounter : ''}}" tabBadgeStyle="bright"></ion-tab>
-  <ion-tab [root]="search" tabIcon="search"></ion-tab>
-  <ion-tab [root]="form" tabIcon="add"></ion-tab>
+  <ion-tab  [root]="lembaga" tabIcon="home" *ngIf="userLevel == '1'"></ion-tab>
+  <ion-tab [root]="home" tabIcon="home" *ngIf="userLevel != '1'"></ion-tab>
+  <ion-tab [root]="inbox" tabIcon="notifications" *ngIf="userLevel != ''" tabBadge="{{inboxCounter != '0' ? inboxCounter : ''}}" tabBadgeStyle="bright"></ion-tab>
+  <ion-tab [root]="search" tabIcon="search" *ngIf="userLevel != ''"></ion-tab>
+  <ion-tab [root]="form" tabIcon="add" *ngIf="userLevel != '1' && userLevel != '2'"></ion-tab>
 </ion-tabs>

@@ -4,7 +4,7 @@
             "outputFile": "/Users/megan/Ionic App/dplegamobile/platforms/android/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/megan/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/13448e496027b0edf572d696dd874e11/res/values-v21/values-v21.xml",
+                    "source": "/Users/megan/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/9c6a40c3d8bf62f6376099ed3412557c/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "/Users/megan/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/2dcc3a1173a1949fc9eb354a14988d87/res/values-v21/values-v21.xml",
+                    "source": "/Users/megan/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/7c9c9fcae67e54f3890767e7538b2074/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
                         "startColumns": "4,4,4,4",

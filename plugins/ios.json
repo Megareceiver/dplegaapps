@@ -52,6 +52,12 @@
     },
     "cordova-plugin-request-location-accuracy": {
       "PACKAGE_NAME": "com.syncard.apps"
+    },
+    "cordova-plugin-file-opener2": {
+      "PACKAGE_NAME": "com.syncard.apps"
+    },
+    "cordova-plugin-filechooser": {
+      "PACKAGE_NAME": "com.syncard.apps"
     }
   },
   "dependent_plugins": {

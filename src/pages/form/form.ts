@@ -8,6 +8,7 @@ import { File } from '@ionic-native/file';
 import { Transfer, TransferObject } from '@ionic-native/transfer';
 import { FilePath } from '@ionic-native/file-path';
 import { Camera } from '@ionic-native/camera';
+import { FileChooser } from '@ionic-native/file-chooser';
 
 declare var cordova: any;
 
@@ -17,8 +18,10 @@ declare var cordova: any;
 })
 export class FormPage {
   formPage: Array<any>;
-
+  session_noRegistrasi: string = null;
+  userLevel = "";
   constructor(public modalCtrl: ModalController, public alertCtrl: AlertController) {
+
     this.formPage = [
       FormKelembagaanPage,
       FormLegalitasPage,
@@ -29,6 +32,8 @@ export class FormPage {
       FormPrestasiPage,
       FormKoleksiPage
     ];
+
+    this.userLevel = localStorage.getItem('userLevel');
   }
 
   openModal(index) {
@@ -75,7 +80,7 @@ export class FormKelembagaanPage {
   loading: any;
   temp: any;
   data = {
-    avatar: "",
+    avatar: null,
     nama: "",
     jabatan: "",
     alamat: "",
@@ -160,23 +165,27 @@ export class FormKelembagaanPage {
   loadInit() {
     this.showLoader();
     
-      this.authService.getOptionList('bentuk-lembaga').then((result) => {
-        this.bentukLembaga = result;
-        this.authService.getOptionList('bidang-gerak').then((result) => {
-          this.bidangGerak = result;
-          this.authService.getOptionList('wilayah').then((result) => {
-            this.wilayah = result;
+    this.authService.getOptionList('bentuk-lembaga').then((result) => {
+      this.bentukLembaga = result;
+      this.authService.getOptionList('bidang-gerak').then((result) => {
+        this.bidangGerak = result;
+        this.authService.getOptionList('wilayah').then((result) => {
+          this.wilayah = result;
 
+          if(this.noRegistrasi != null){
             this.authService.getDetailLembaga(this.noRegistrasi).then((result) => {
               this.temp = result;
               this.data = this.temp;
               this.loading.dismiss();
 
-          }, (err) => {
+            }, (err) => {
+              this.loading.dismiss();
+              this.presentToast(err);
+              return false;
+            });
+          }else{
             this.loading.dismiss();
-            this.presentToast(err);
-            return false;
-          });
+          }
         }, (err) => {
           this.loading.dismiss();
           this.presentToast(err);
@@ -192,7 +201,7 @@ export class FormKelembagaanPage {
       this.presentToast(err);
       return false;
     });
-    
+  
   }
 
   loadKecamatan(idWilayah) {
@@ -426,7 +435,9 @@ export class FormLegalitasPage {
     public viewCtrl: ViewController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
-    private toastCtrl: ToastController
+    private toastCtrl: ToastController,
+    private fileChooser: FileChooser,
+    private filePath: FilePath,
   ) {
     this.urlServer = authService.urlServer;
     this.noRegistrasi = params.get('noRegistrasi');
@@ -435,9 +446,8 @@ export class FormLegalitasPage {
   }
 
   loadInit() {
-    this.authService.getKelengkapanLembaga('legalitas', this.noRegistrasi).then((result) => {
+    this.authService.getKelengkapanLembaga('legalitas-form', this.noRegistrasi).then((result) => {
       this.data = result;
-      console.log(this.data);
     }, (err) => {
       this.presentToast(err);
       return false;
@@ -469,6 +479,15 @@ export class FormLegalitasPage {
     });
 
     toast.present();
+  }
+
+  openChooser(){
+    this.fileChooser.open().then(uri => {
+      this.filePath.resolveNativePath(uri).then(filePathResolved => {
+        console.log('resolved' + filePathResolved);
+        console.log('uri' + uri);
+      }).catch (e => console.log(e));
+    }).catch(e => console.log(e));
   }
 }
 

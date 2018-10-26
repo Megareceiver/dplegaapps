@@ -18,7 +18,8 @@
     <ion-row class="big-avatar-frame">
       <div class="big-avatar">
         <!-- <img src="lastImage" [hidden]="lastImage === null"> -->
-        <img src="{{urlServer}}/img/logo/{{data.avatar}}?random={{random_}}">
+        <img src="{{urlServer}}/img/logo/{{data.avatar}}?random={{random_}}" [hidden]="data.avatar === null && data.avatar != ''">
+        <img src="{{urlServer}}/img/logo/avatar-1.jpg" [hidden]="noRegistrasi != null">
         <ion-buttons margin-top>
           <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>
             Unggah logo
@@ -34,9 +35,8 @@
     <ion-row margin-bottom>
       <ion-item>
         <ion-label>Bentuk lembaga (*)</ion-label>
-        <ion-select [(ngModel)]="data.kodeBentukLembaga" disabled="true">
-          <ion-option value="" selected="{{data.kodeBentukLembaga == '' ? selected : '' }}">Semua</ion-option>
-          <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{data.kodeBentukLembaga == d.value ? selected : '' }}">{{ d.caption }}</ion-option>
+        <ion-select [(ngModel)]="data.kodeBentukLembaga" disabled="{{ noRegistrasi != null }}">
+          <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{ data.kodeBentukLembaga == d.value ? selected : '' }}">{{ d.caption }}</ion-option>
         </ion-select>
       </ion-item>
       <ion-item>

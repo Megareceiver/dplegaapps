@@ -13,9 +13,11 @@ export class SearchPage {
   dataClone: any;
   keyword: string = "";
   urlServer = "";
+  userLevel = "";
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController) {
     this.urlServer = authService.urlServer;
+    this.userLevel = localStorage.getItem('userLevel');
   }
 
   searchData(keyCode) {
@@ -26,7 +28,6 @@ export class SearchPage {
           this.data = result;
           this.dataClone = this.data;
           this.dataClone[-1] = { grup: 'start' };
-          console.log(this.data);
           this.loading.dismiss();
         }, (err) => {
           this.loading.dismiss();

@@ -1,7 +1,7 @@
 <ion-header class="static">
   <ion-toolbar color='main'>
     <ion-title>Profil Lembaga</ion-title>
-    <ion-buttons left>
+    <ion-buttons left *ngIf="userLevel != '1'">
       <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">
         <span ion-text color="clear" showWhen="ios">Cancel</span>
         <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
@@ -10,7 +10,7 @@
         <span ion-text color="clear">Cancel</span>
       </button>
     </ion-buttons>
-    <ion-buttons end>
+    <ion-buttons end *ngIf="userLevel != '2'">
       <button ion-button icon-only (click)="loadForm()">
         <ion-icon name="ios-create-outline"></ion-icon>
       </button>
@@ -26,7 +26,7 @@
           <img class="margin-auto" src="{{urlServer}}/img/logo/{{detail.avatar}}">
         </ion-avatar>
         <p>{{ detail.namaBentukLembaga }}</p>
-        <h1>{{ detail.nama }}</h1>
+        <h1 text-wrap>{{ detail.nama }}</h1>
         <p class="text-{{ detail.statusVerifikasi == 1 ? 'white' : 'bright' }}" (click)="openModal(6, noRegistrasi, namaLembaga, detail.namaBentukLembaga, detail.nama)">{{ detail.statusVerifikasi == 1 ? 'Sudah Verifikasi' : 'Belum Verifikasi' }}</p>
       </ion-item>
     </ion-list>
@@ -65,7 +65,7 @@
         <p><b>Media sosial.</b><br /> {{ detail.mediaSosial }}</p>
       </ion-item>
     </ion-list>
-    <ion-list>
+    <ion-list *ngIf="userLevel != '2'">
       <ion-list-header class="text-main">Informasi lainnya</ion-list-header>
       <button ion-item (click)="openModal(0, noRegistrasi, namaLembaga)">
         <ion-icon name="paper" item-start color="main"></ion-icon>
@@ -96,11 +96,19 @@
         Lihat Maps
       </button>
     </ion-list>
-    <ion-list>
+    <ion-list *ngIf="userLevel != '2'">
       <ion-list-header class="text-main">Aplikasi</ion-list-header>
-      <button ion-item (click)="openModal(6, noRegistrasi, namaLembaga, detail.namaBentukLembaga, detail.nama)">
+      <button ion-item (click)="openModal(6, noRegistrasi, namaLembaga, detail.namaBentukLembaga, detail.nama)" *ngIf="userLevel =='3' || userLevel == '7'">
         <ion-icon name="md-create" item-start color="secondary"></ion-icon>
         Verifikasi Lembaga
+      </button>
+      <button ion-item (click)="openModal(7)" *ngIf="userLevel =='1'">
+        <ion-icon name="settings" item-start></ion-icon>
+        Pengaturan
+      </button>
+      <button ion-item (click)="logout()" *ngIf="userLevel =='1'">
+        <ion-icon name="log-out" item-start color="danger"></ion-icon>
+        Keluar
       </button>
     </ion-list>
   <!-- </ion-list> -->

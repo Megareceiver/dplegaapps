@@ -77,4 +77,8 @@ export class KoleksiPage {
     toast.present();
   }
 
+  goSearch(){
+    this.navCtrl.parent.select(2);
+  }
+
 }

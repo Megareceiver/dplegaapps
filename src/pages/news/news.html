@@ -25,13 +25,13 @@
 
     <ion-row no-padding>
       <ion-col>
-        <button ion-button clear small color="vibrant" icon-start (click)="openModal(0)">
+        <button ion-button clear small color="vibrant" icon-start (click)="openModal(d.idData)">
           <ion-icon name='search'></ion-icon>
           Baca berita
         </button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button clear small color="vibrant" icon-start (click)="openForm()">
+        <button ion-button clear small color="vibrant" icon-start (click)="openForm(d.idData)">
           <ion-icon name='md-create'></ion-icon>
           Ubah
         </button>

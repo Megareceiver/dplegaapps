@@ -364,6 +364,22 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.locationAccuracy"
     ]
+  },
+  {
+    "id": "cordova-plugin-file-opener2.FileOpener2",
+    "file": "plugins/cordova-plugin-file-opener2/www/plugins.FileOpener2.js",
+    "pluginId": "cordova-plugin-file-opener2",
+    "clobbers": [
+      "cordova.plugins.fileOpener2"
+    ]
+  },
+  {
+    "id": "cordova-plugin-filechooser.FileChooser",
+    "file": "plugins/cordova-plugin-filechooser/www/fileChooser.js",
+    "pluginId": "cordova-plugin-filechooser",
+    "clobbers": [
+      "fileChooser"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -385,7 +401,9 @@ module.exports.metadata =
   "cordova-plugin-filepath": "1.4.2",
   "com-badrit-base64": "0.2.0",
   "cordova-plugin-geolocation": "4.0.1",
-  "cordova-plugin-request-location-accuracy": "2.2.3"
+  "cordova-plugin-request-location-accuracy": "2.2.3",
+  "cordova-plugin-file-opener2": "2.0.19",
+  "cordova-plugin-filechooser": "1.0.1"
 };
 // BOTTOM OF METADATA
 });

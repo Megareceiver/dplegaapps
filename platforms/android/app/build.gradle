@@ -264,6 +264,7 @@ dependencies {
     compile "com.android.support:appcompat-v7:26.+"
     compile "com.google.android.gms:play-services-location:15.+"
     compile "com.squareup.okhttp3:okhttp:3.+"
+    compile "com.android.support:support-v4:27.1.0"
     // SUB-PROJECT DEPENDENCIES END
 }
 

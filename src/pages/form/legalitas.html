@@ -39,11 +39,10 @@
         </ion-item>
         <ion-item class="border-bottom">
           <ion-buttons item-start>
-            <button color="bright" ion-button text-capitalize small round>
-              Unggah berkas
-            </button>
+            <button (click)="openChooser()" color="bright" ion-button text-capitalize small round>Unggah berkas</button>
           </ion-buttons>
-          Berkas belum diunggah... 
+          <span *ngIf="d.urlFile == ''">Berkas belum diunggah...</span>
+          <span *ngIf="d.urlFile != ''">{{d.urlFile}}</span>
         </ion-item>
       </ion-list>
       <ion-buttons text-center>

@@ -62,6 +62,7 @@
 		5A027FA320C44AEA8A331E23 /* CDVFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B84B42098743EFA5EBEF39 /* CDVFileTransfer.m */; };
 		46CE44CF5F8A4C27991F1BFD /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2763D63A5E4A31B070C4AF /* CDVLocation.m */; };
 		82E92DE9D3D046DA999B8EEA /* RequestLocationAccuracy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2E12C145664B55AAC986E7 /* RequestLocationAccuracy.m */; };
+		ECC8C6842C2041F88BA69243 /* FileOpener2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6203450B0B4543EABDEE1AF4 /* FileOpener2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +189,8 @@
 		5F0582ECEA504B34806F6C3D /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		1A2E12C145664B55AAC986E7 /* RequestLocationAccuracy.m */ = {isa = PBXFileReference; name = "RequestLocationAccuracy.m"; path = "cordova-plugin-request-location-accuracy/RequestLocationAccuracy.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		A7B9C624F82D492C967B2587 /* RequestLocationAccuracy.h */ = {isa = PBXFileReference; name = "RequestLocationAccuracy.h"; path = "cordova-plugin-request-location-accuracy/RequestLocationAccuracy.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6203450B0B4543EABDEE1AF4 /* FileOpener2.m */ = {isa = PBXFileReference; name = "FileOpener2.m"; path = "cordova-plugin-file-opener2/FileOpener2.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		4764130A2803463F80586EB5 /* FileOpener2.h */ = {isa = PBXFileReference; name = "FileOpener2.h"; path = "cordova-plugin-file-opener2/FileOpener2.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +388,8 @@
 				5F0582ECEA504B34806F6C3D /* CDVLocation.h */,
 				1A2E12C145664B55AAC986E7 /* RequestLocationAccuracy.m */,
 				A7B9C624F82D492C967B2587 /* RequestLocationAccuracy.h */,
+				6203450B0B4543EABDEE1AF4 /* FileOpener2.m */,
+				4764130A2803463F80586EB5 /* FileOpener2.h */,
 			);
 			name = Plugins;
 			path = "dplegamobile/Plugins";
@@ -535,6 +540,7 @@
 				5A027FA320C44AEA8A331E23 /* CDVFileTransfer.m in Sources */,
 				46CE44CF5F8A4C27991F1BFD /* CDVLocation.m in Sources */,
 				82E92DE9D3D046DA999B8EEA /* RequestLocationAccuracy.m in Sources */,
+				ECC8C6842C2041F88BA69243 /* FileOpener2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

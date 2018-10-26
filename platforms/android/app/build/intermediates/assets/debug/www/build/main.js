@@ -120,9 +120,9 @@ var LoginPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__inbox_inbox__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_search__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__inbox_inbox__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_search__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_form__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -478,7 +478,6 @@ var RevisionPage = /** @class */ (function () {
         var _this = this;
         this.showLoader();
         this.authService.getKelengkapanLembaga('revisi', this.noRegistrasi).then(function (result) {
-            console.log(result);
             _this.temp = result;
             _this.data = _this.temp;
             _this.dataClone = _this.data;
@@ -500,7 +499,6 @@ var RevisionPage = /** @class */ (function () {
                     catatan: this.catatanRevisi,
                     username: localStorage.getItem('username')
                 };
-                console.log(param);
                 this.authService.insertDataLembaga('revisi', param).then(function (result) {
                     _this.temp = result;
                     if (_this.temp.status == "success") {
@@ -556,7 +554,7 @@ var RevisionPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 111:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -587,7 +585,7 @@ var InboxPage = /** @class */ (function () {
         this.getData();
     }
     InboxPage.prototype.openModal = function (inboxId) {
-        var modal = this.modalCtrl.create(InboxDetailPage, inboxId);
+        var modal = this.modalCtrl.create(InboxDetailPage, { inboxId: inboxId });
         modal.present();
     };
     InboxPage.prototype.getData = function () {
@@ -597,48 +595,6 @@ var InboxPage = /** @class */ (function () {
             _this.data = result;
             _this.dataClone = _this.data;
             _this.dataClone[-1] = { tanggal: 'start' };
-            // this.data.forEach(function (o) {
-            //   if (!this[o.tanggal]) {
-            //     this[o.tanggal] = {
-            //       t_id: o.idData,
-            //       val1: 0,
-            //       title: o.judul
-            //     };
-            //     this.groupedData.push(this[o.tanggal]);
-            //   }
-            //   // this[o.t_id].val1 += Number(o.val1);
-            // }, Object.create(null));
-            // console.log("******");
-            // console.log(this.data);
-            var array = [{ t_id: "1", val1: "1", title: "cash to purchase", unit: "bag" }, { t_id: "1", val1: "1", title: "cash to purchase", unit: "bag" }, { t_id: "1", val1: "1", title: "cash to purchase", unit: "bag" }, { t_id: "2", val1: "4", title: "offload", unit: "bag" }, { t_id: "2", val1: "5", title: "onroad", unit: "bag" }, { t_id: "3", val1: "5", title: "Onroad", unit: "bag" }, { t_id: "3", val1: "6", title: "Onroad", unit: "bag" }];
-            // console.log(array);
-            // console.log("******");
-            var grouped = [];
-            var grouped2 = [];
-            array.forEach(function (o) {
-                if (!this[o.t_id]) {
-                    this[o.t_id] = {
-                        t_id: o.t_id,
-                        val1: 0,
-                        title: o.title
-                    };
-                    grouped.push(this[o.t_id]);
-                }
-                this[o.t_id].val1 += Number(o.val1);
-            }, Object.create(null));
-            _this.data.forEach(function (o) {
-                if (!this[o.tanggal]) {
-                    this[o.tanggal] = {
-                        tanggal: o.tanggal,
-                        val1: 0
-                    };
-                    grouped2.push(this[o.tanggal]);
-                }
-                this[o.tanggal].val1 += 1;
-            }, Object.create(null));
-            console.log(grouped);
-            console.log(grouped2);
-            // console.log(this.groupedData);
             _this.loading.dismiss();
         }, function (err) {
             _this.loading.dismiss();
@@ -666,7 +622,7 @@ var InboxPage = /** @class */ (function () {
     };
     InboxPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-inbox',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/inbox.html"*/'<ion-content>\n  <h3 padding-left class="text-main">KOTAK MASUK</h3>\n  <ion-list>\n    <ion-item-group>\n      <div  *ngFor="let d of data; let idx = index;">\n        <ion-list-header color="light" *ngIf="d.tanggal != dataClone[idx-1].tanggal"> {{d.tanggal | date:\'yyyy MMM dd\'}}</ion-list-header>\n        <ion-item-sliding>\n          <button ion-item (click)="openModal({charNum: 0})">\n            <ion-icon name="notifications" color="{{d.statusBaca == \'0\' ? \'bright\' : \'light\'}}" item-start></ion-icon>\n            <h2 class="{{d.statusBaca == \'0\' ? \'text-main\' : \'\'}}">{{d.judul}}</h2>\n            <!-- <h3>{{d.waktu}}</h3> -->\n            <p text-nowrap>{{d.deskripsi}}</p>\n            <ion-note item-end>{{d.jam}}</ion-note>\n          </button>\n          <ion-item-options side="right">\n            <button ion-button color="danger">Hapus</button>\n          </ion-item-options>\n        </ion-item-sliding>\n      </div>\n    </ion-item-group>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/inbox.html"*/
+            selector: 'page-inbox',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/inbox.html"*/'<ion-content>\n  <h3 padding-left class="text-main">KOTAK MASUK</h3>\n  <ion-list>\n    <ion-item-group>\n      <div  *ngFor="let d of data; let idx = index;">\n        <ion-list-header color="light" *ngIf="d.tanggal != dataClone[idx-1].tanggal"> {{d.tanggal | date:\'yyyy MMM dd\'}}</ion-list-header>\n        <ion-item-sliding>\n          <button ion-item (click)="openModal(d.idData)">\n            <ion-icon name="notifications" color="{{d.statusBaca == \'0\' ? \'bright\' : \'light\'}}" item-start></ion-icon>\n            <h2 class="{{d.statusBaca == \'0\' ? \'text-main\' : \'\'}}">{{d.judul}}</h2>\n            <!-- <h3>{{d.waktu}}</h3> -->\n            <p text-nowrap>{{d.deskripsi}}</p>\n            <ion-note item-end>{{d.jam}}</ion-note>\n          </button>\n          <ion-item-options side="right">\n            <button ion-button color="danger">Hapus</button>\n          </ion-item-options>\n        </ion-item-sliding>\n      </div>\n    </ion-item-group>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/inbox.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], InboxPage);
@@ -674,58 +630,78 @@ var InboxPage = /** @class */ (function () {
 }());
 
 var InboxDetailPage = /** @class */ (function () {
-    function InboxDetailPage(platform, params, viewCtrl) {
+    function InboxDetailPage(platform, params, viewCtrl, authService, modalCtrl, loadingCtrl, toastCtrl) {
         this.platform = platform;
         this.params = params;
         this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.modalCtrl = modalCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.idData = "";
         this.filterWilayah = "";
         this.filterKecamatan = "";
         this.filterKelurahan = "";
         this.filterStatus = "";
-        var characters = [
-            {
-                name: 'Gollum',
-                quote: 'Sneaky little hobbitses!',
-                image: 'assets/img/avatar-gollum.jpg',
-                items: [
-                    { title: 'Race', note: 'Hobbit' },
-                    { title: 'Culture', note: 'River Folk' },
-                    { title: 'Alter Ego', note: 'Smeagol' }
-                ]
-            },
-            {
-                name: 'Frodo',
-                quote: 'Go back, Sam! I\'m going to Mordor alone!',
-                image: 'assets/img/avatar-frodo.jpg',
-                items: [
-                    { title: 'Race', note: 'Hobbit' },
-                    { title: 'Culture', note: 'Shire Folk' },
-                    { title: 'Weapon', note: 'Sting' }
-                ]
-            },
-            {
-                name: 'Samwise Gamgee',
-                quote: 'What we need is a few good taters.',
-                image: 'assets/img/avatar-samwise.jpg',
-                items: [
-                    { title: 'Race', note: 'Hobbit' },
-                    { title: 'Culture', note: 'Shire Folk' },
-                    { title: 'Nickname', note: 'Sam' }
-                ]
-            }
-        ];
-        this.character = characters[this.params.get('charNum')];
+        this.data = {
+            judul: "",
+            subjek: "",
+            deskripsi: "",
+            waktu: "",
+            statusBaca: "",
+            timestamp: "",
+            tanggal: "",
+            jam: "",
+            createdBy: ""
+        };
+        this.idData = params.get('inboxId');
+        this.loadData();
     }
+    InboxDetailPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getNotifications(this.idData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
     InboxDetailPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    InboxDetailPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    InboxDetailPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
     InboxDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-detailInbox',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Baca pesan</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-item-group margin-top>\n    <ion-item-divider>Title</ion-item-divider>\n    <ion-item-divider>Subject</ion-item-divider>\n    <ion-item text-wrap>The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.</ion-item>\n  </ion-item-group>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/detail.html"*/
+            selector: 'page-detailInbox',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Baca pesan</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item-group margin-top>\n    <ion-item-divider>Judul : {{ data.judul }}</ion-item-divider>\n    <ion-item-divider>Subjek : {{ data.subjek }}</ion-item-divider>\n    <ion-item-divider>Waktu : {{ data.tanggal | date:\'yyyy MMM dd\' }} {{ data.jam }}</ion-item-divider>\n    <ion-item text-wrap>{{ data.deskripsi }}</ion-item>\n  </ion-item-group>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/detail.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
     ], InboxDetailPage);
     return InboxDetailPage;
 }());
@@ -750,8 +726,13 @@ var InboxDetailPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_location_accuracy__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_location_accuracy__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_transfer__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_file_path__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_file_chooser__ = __webpack_require__(214);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -761,6 +742,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+
+
+
 
 
 
@@ -817,7 +803,7 @@ var FormPage = /** @class */ (function () {
 
 // FORM Kelembagaan
 var FormKelembagaanPage = /** @class */ (function () {
-    function FormKelembagaanPage(params, viewCtrl, authService, loadingCtrl, toastCtrl, geolocation, locationAccuracy) {
+    function FormKelembagaanPage(params, viewCtrl, authService, loadingCtrl, toastCtrl, geolocation, locationAccuracy, camera, transfer, file, filePath, actionSheetCtrl, platform) {
         var _this = this;
         this.params = params;
         this.viewCtrl = viewCtrl;
@@ -826,7 +812,14 @@ var FormKelembagaanPage = /** @class */ (function () {
         this.toastCtrl = toastCtrl;
         this.geolocation = geolocation;
         this.locationAccuracy = locationAccuracy;
+        this.camera = camera;
+        this.transfer = transfer;
+        this.file = file;
+        this.filePath = filePath;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.platform = platform;
         this.urlServer = "";
+        this.urlApi = "";
         this.data = {
             avatar: "",
             nama: "",
@@ -862,6 +855,8 @@ var FormKelembagaanPage = /** @class */ (function () {
             kodeWilayah: ""
         };
         this.flag = "init";
+        this.lastImage = null;
+        this.random_ = Math.floor(Math.random() * 20) + 1;
         this.locationAccuracy.canRequest().then(function (canRequest) {
             if (canRequest) {
                 // the accuracy option will be ignored by iOS
@@ -990,9 +985,121 @@ var FormKelembagaanPage = /** @class */ (function () {
         });
         toast.present();
     };
+    // UPLOAD package
+    FormKelembagaanPage.prototype.presentActionSheet = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Pilih gambar',
+            buttons: [
+                {
+                    text: 'Galeri',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.PHOTOLIBRARY);
+                    }
+                },
+                {
+                    text: 'Kamera',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.CAMERA);
+                    }
+                },
+                {
+                    text: 'Batalkan',
+                    role: 'cancel'
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    FormKelembagaanPage.prototype.takePicture = function (sourceType) {
+        var _this = this;
+        // Create options for the Camera Dialog
+        var options = {
+            quality: 100,
+            sourceType: sourceType,
+            saveToPhotoAlbum: false,
+            correctOrientation: true
+        };
+        // Get the data of an image
+        this.camera.getPicture(options).then(function (imagePath) {
+            // Special handling for Android library
+            if (_this.platform.is('android') && sourceType === _this.camera.PictureSourceType.PHOTOLIBRARY) {
+                _this.filePath.resolveNativePath(imagePath)
+                    .then(function (filePath) {
+                    var correctPath = filePath.substr(0, filePath.lastIndexOf('/') + 1);
+                    var currentName = imagePath.substring(imagePath.lastIndexOf('/') + 1, imagePath.lastIndexOf('?'));
+                    _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+                });
+            }
+            else {
+                var currentName = imagePath.substr(imagePath.lastIndexOf('/') + 1);
+                var correctPath = imagePath.substr(0, imagePath.lastIndexOf('/') + 1);
+                _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+            }
+        }, function (err) {
+            _this.presentToast('Terjadi kesalahan : Error saat memilih gambar!.');
+        });
+    };
+    // Create a new name for the image
+    FormKelembagaanPage.prototype.createFileName = function () {
+        var d = new Date(), n = d.getTime(), newFileName = n + ".jpg";
+        return newFileName;
+    };
+    // Copy the image to a local folder
+    FormKelembagaanPage.prototype.copyFileToLocalDir = function (namePath, currentName, newFileName) {
+        var _this = this;
+        this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(function (success) {
+            _this.lastImage = newFileName;
+            // this.uploadImage();
+        }, function (error) {
+            _this.presentToast('Terjadi kesalahan : Error saat menyimpan gambar!.');
+        });
+    };
+    // Always get the accurate path to your apps folder
+    FormKelembagaanPage.prototype.pathForImage = function (img) {
+        if (img === null) {
+            return '';
+        }
+        else {
+            return cordova.file.dataDirectory + img;
+        }
+    };
+    FormKelembagaanPage.prototype.uploadImage = function () {
+        var _this = this;
+        // Destination URL
+        var url = this.urlApi + "/public/upload/lembaga/logo/";
+        // File for Upload
+        var targetPath = this.pathForImage(this.lastImage);
+        // File name only
+        var filename = this.lastImage;
+        var options = {
+            fileKey: "file",
+            fileName: filename,
+            chunkedMode: false,
+            mimeType: "multipart/form-data",
+            params: { 'fileName': filename, 'noRegistrasi': this.noRegistrasi }
+        };
+        var fileTransfer = this.transfer.create();
+        this.loading = this.loadingCtrl.create({
+            content: 'Uploading...',
+        });
+        this.loading.present();
+        // Use the FileTransfer to upload the image
+        fileTransfer.upload(targetPath, url, options).then(function (data) {
+            _this.loading.dismissAll();
+            _this.presentToast('Logo berhasil diubah.');
+            _this.uploadData = data;
+            _this.uploadData.response = JSON.parse(_this.uploadData.response);
+            _this.data.avatar = _this.uploadData.response.filename;
+            _this.random_ = Math.floor(Math.random() * 20) + 1;
+        }, function (err) {
+            _this.loading.dismissAll();
+            _this.presentToast('Terjadi kesalahan! gagal mengubah logo.');
+        });
+    };
     FormKelembagaanPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-formKelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar">\n        <img src="assets/imgs/sample.jpg">\n        <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah logo\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-list-header class="text-main no-border-top">Kelembagaan</ion-list-header>\n    <ion-row margin-bottom>\n      <ion-item>\n        <ion-label>Bentuk lembaga (*)</ion-label>\n        <ion-select [(ngModel)]="data.kodeBentukLembaga">\n          <ion-option value="" selected="{{data.kodeBentukLembaga == \'\' ? selected : \'\' }}">Semua</ion-option>\n          <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{data.kodeBentukLembaga == d.value ? selected : \'\' }}">{{\n            d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Nama lembaga (*)</ion-label>\n        <ion-input [(ngModel)]="data.nama" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat (*)</ion-label>\n        <ion-textarea [(ngModel)]="data.alamat_" type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT (*)</ion-label>\n          <ion-input [(ngModel)]="data.noRt" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW (*)</ion-label>\n          <ion-input [(ngModel)]="data.noRw" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Wilayah</ion-label>\n        <ion-select [(ngModel)]="data.kodeWilayah" (ionChange)="loadKecamatan(data.kodeWilayah)">\n          <ion-option value="" selected="{{data.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{data.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kecamatan</ion-label>\n        <ion-select [(ngModel)]="data.kodeKecamatan" (ionChange)="loadKelurahan(data.kodeKecamatan)">\n          <ion-option value="" selected="{{data.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{data.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kelurahan</ion-label>\n        <ion-select [(ngModel)]="data.kodeKelurahan">\n          <ion-option value="" selected="{{data.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{data.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp (*)</ion-label>\n        <ion-input [(ngModel)]="data.telp" type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email (*)</ion-label>\n        <ion-input [(ngModel)]="data.email" type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main">Informasi pendukung</ion-list-header>\n    <ion-row>\n      <ion-item>\n        <ion-label>Bidang gerak</ion-label>\n        <ion-select [(ngModel)]="data.kodeBidangGerak">\n          <ion-option value="" selected="{{data.kodeBidangGerak == \'\' ? selected : \'\' }}">Semua</ion-option>\n          <ion-option *ngFor="let d of bidangGerak" value="{{ d.value }}" selected="{{data.kodeBidangGerak == d.value ? selected : \'\' }}">{{\n            d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jumlah pengurus</ion-label>\n        <ion-input [(ngModel)]="data.jumlahPengurus" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>NPWP</ion-label>\n        <ion-input [(ngModel)]="data.noNpwp" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Afiliasi</ion-label>\n        <ion-input [(ngModel)]="data.organisasiAfiliasi" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Visi</ion-label>\n        <ion-textarea [(ngModel)]="data.visiLembaga" type="text"></ion-textarea>\n      </ion-item>\n      <ion-item>\n        <ion-label>Misi</ion-label>\n        <ion-textarea [(ngModel)]="data.misiLembaga" type="text"></ion-textarea>\n      </ion-item>\n      <ion-item class="no-border-child" margin-bottom>\n        <ion-label>Media sosial</ion-label>\n        <ion-input [(ngModel)]="data.mediaSosial" type="text"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main" margin-top>Maps</ion-list-header>\n    <ion-item>\n      <ion-label>Latitude</ion-label>\n      <ion-input [(ngModel)]="data.latitude" type="text"></ion-input>\n    </ion-item>\n    <ion-item class="no-border">\n      <ion-label>Longitude</ion-label>\n      <ion-input [(ngModel)]="data.langitude" type="text"></ion-input>\n    </ion-item>\n    <button (click)="getCurrentLocation()" text-center ion-item icon-start margin-top>\n      <ion-icon name=\'locate\'></ion-icon>\n      Ambil posisi saat ini.\n    </button>\n  </ion-list>\n  \n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button *ngIf="noRegistrasi == \'\'" class="text-white" ion-button block clear>Daftarkan</button>\n    <button *ngIf="noRegistrasi != \'\'" class="text-white" ion-button block clear>Simpan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/
+            selector: 'page-formKelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar">\n        <!-- <img src="lastImage" [hidden]="lastImage === null"> -->\n        <img src="{{urlServer}}/img/logo/{{data.avatar}}?random={{random_}}">\n        <ion-buttons margin-top>\n          <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah logo\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-list-header class="text-main no-border-top">Kelembagaan</ion-list-header>\n    <ion-row margin-bottom>\n      <ion-item>\n        <ion-label>Bentuk lembaga (*)</ion-label>\n        <ion-select [(ngModel)]="data.kodeBentukLembaga" disabled="true">\n          <ion-option value="" selected="{{data.kodeBentukLembaga == \'\' ? selected : \'\' }}">Semua</ion-option>\n          <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{data.kodeBentukLembaga == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Nama lembaga (*)</ion-label>\n        <ion-input text-right [(ngModel)]="data.nama" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat (*)</ion-label>\n        <ion-textarea [(ngModel)]="data.alamat_" type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT (*)</ion-label>\n          <ion-input [(ngModel)]="data.noRt" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW (*)</ion-label>\n          <ion-input [(ngModel)]="data.noRw" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Wilayah</ion-label>\n        <ion-select [(ngModel)]="data.kodeWilayah" (ionChange)="loadKecamatan(data.kodeWilayah)">\n          <ion-option value="" selected="{{data.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{data.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kecamatan</ion-label>\n        <ion-select [(ngModel)]="data.kodeKecamatan" (ionChange)="loadKelurahan(data.kodeKecamatan)">\n          <ion-option value="" selected="{{data.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{data.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kelurahan</ion-label>\n        <ion-select [(ngModel)]="data.kodeKelurahan">\n          <ion-option value="" selected="{{data.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{data.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp (*)</ion-label>\n        <ion-input text-right [(ngModel)]="data.telp" type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email (*)</ion-label>\n        <ion-input text-right [(ngModel)]="data.email" type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main">Informasi pendukung</ion-list-header>\n    <ion-row>\n      <ion-item>\n        <ion-label>Bidang gerak</ion-label>\n        <ion-select [(ngModel)]="data.kodeBidangGerak">\n          <ion-option value="" selected="{{data.kodeBidangGerak == \'\' ? selected : \'\' }}">Semua</ion-option>\n          <ion-option *ngFor="let d of bidangGerak" value="{{ d.value }}" selected="{{data.kodeBidangGerak == d.value ? selected : \'\' }}">{{\n            d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jumlah pengurus</ion-label>\n        <ion-input text-right [(ngModel)]="data.jumlahPengurus" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>NPWP</ion-label>\n        <ion-input [(ngModel)]="data.noNpwp" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Afiliasi</ion-label>\n        <ion-input text-right [(ngModel)]="data.organisasiAfiliasi" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Visi</ion-label>\n        <ion-textarea [(ngModel)]="data.visiLembaga" type="text"></ion-textarea>\n      </ion-item>\n      <ion-item>\n        <ion-label>Misi</ion-label>\n        <ion-textarea [(ngModel)]="data.misiLembaga" type="text"></ion-textarea>\n      </ion-item>\n      <ion-item class="no-border-child" margin-bottom>\n        <ion-label>Media sosial</ion-label>\n        <ion-input text-right [(ngModel)]="data.mediaSosial" type="text"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main" margin-top>Maps</ion-list-header>\n    <ion-item>\n      <ion-label>Latitude</ion-label>\n      <ion-input text-right [(ngModel)]="data.latitude" type="text"></ion-input>\n    </ion-item>\n    <ion-item class="no-border">\n      <ion-label>Longitude</ion-label>\n      <ion-input text-right [(ngModel)]="data.langitude" type="text"></ion-input>\n    </ion-item>\n    <button (click)="getCurrentLocation()" text-center ion-item icon-start margin-top>\n      <ion-icon name=\'locate\'></ion-icon>\n      Ambil posisi saat ini.\n    </button>\n  </ion-list>\n  \n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button *ngIf="noRegistrasi == \'\'" class="text-white" ion-button block clear>Daftarkan</button>\n    <button *ngIf="noRegistrasi != \'\'" class="text-white" ion-button block clear>Simpan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
@@ -1000,28 +1107,78 @@ var FormKelembagaanPage = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */],
-            __WEBPACK_IMPORTED_MODULE_4__ionic_native_location_accuracy__["a" /* LocationAccuracy */]])
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_location_accuracy__["a" /* LocationAccuracy */],
+            __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_7__ionic_native_file_path__["a" /* FilePath */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */]])
     ], FormKelembagaanPage);
     return FormKelembagaanPage;
 }());
 
 // FORM Legalitas
 var FormLegalitasPage = /** @class */ (function () {
-    function FormLegalitasPage(viewCtrl) {
+    function FormLegalitasPage(params, viewCtrl, authService, loadingCtrl, toastCtrl, fileChooser) {
+        this.params = params;
         this.viewCtrl = viewCtrl;
-        this.data = [
-            { nama_legalitas: 'Akta Notaris' },
-            { nama_legalitas: 'SK Kemenhukam' },
-        ];
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.fileChooser = fileChooser;
+        this.urlServer = "";
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('noRegistrasi');
+        this.namaLembaga = params.get('namaLembaga');
+        this.loadInit();
     }
+    FormLegalitasPage.prototype.loadInit = function () {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('legalitas', this.noRegistrasi).then(function (result) {
+            _this.data = result;
+            console.log(_this.data);
+        }, function (err) {
+            _this.presentToast(err);
+            return false;
+        });
+    };
     FormLegalitasPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    FormLegalitasPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    FormLegalitasPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    FormLegalitasPage.prototype.openChooser = function () {
+        this.fileChooser.open()
+            .then(function (uri) { return console.log(uri); })
+            .catch(function (e) { return console.log(e); });
+    };
     FormLegalitasPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-formLegalitas',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/legalitas.html"*/'<ion-header>\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-card margin-top>\n    <ion-list>\n      <ion-row padding>\n        <ion-item text-wrap>\n          <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n          <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n          <ion-icon name="paper" item-end color="main"></ion-icon>\n        </ion-item>\n      </ion-row>\n    </ion-list>\n  </ion-card>\n  <ion-card *ngFor="let d of data" margin-top>\n    <ion-card-header text-uppercase>{{d.nama_legalitas}}</ion-card-header>\n    <ion-card-content no-padding>\n      <ion-list>\n        <ion-item class="border-bottom">\n          <ion-label>Nomor (*)</ion-label>\n          <ion-input type="text" no-border></ion-input>\n        </ion-item>\n        <ion-item class="border-bottom">\n          <ion-label>Tanggal (*)</ion-label>\n          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>\n        </ion-item>\n        <ion-item class="border-bottom">\n          <ion-buttons item-start>\n            <button color="bright" ion-button text-capitalize small round>\n              Unggah berkas\n            </button>\n          </ion-buttons>\n          Berkas belum diunggah... \n        </ion-item>\n      </ion-list>\n      <ion-buttons text-center>\n        <button color="main" ion-button full text-capitalize>\n          Simpan\n        </button>\n      </ion-buttons>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/legalitas.html"*/
+            selector: 'page-formLegalitas',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/legalitas.html"*/'<ion-header>\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-card margin-top>\n    <ion-list>\n      <ion-row padding>\n        <ion-item text-wrap>\n          <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n          <p class="text-main"><b>{{namaLembaga}}.</b></p>\n          <ion-icon name="paper" item-end color="main"></ion-icon>\n        </ion-item>\n      </ion-row>\n    </ion-list>\n  </ion-card>\n  <ion-card *ngFor="let d of data" margin-top>\n    <ion-card-header text-uppercase>{{d.namaPersyaratan}}</ion-card-header>\n    <ion-card-content no-padding>\n      <ion-list>\n        <ion-item class="border-bottom">\n          <ion-label>Nomor (*)</ion-label>\n          <ion-input text-right [(ngModel)]="d.noLegalitas" type="text" no-border></ion-input>\n        </ion-item>\n        <ion-item class="border-bottom">\n          <ion-label>Tanggal (*)</ion-label>\n          <ion-datetime [(ngModel)]="d.tanggalLegalitas" displayFormat="DD/MM/YYYY"></ion-datetime>\n        </ion-item>\n        <ion-item class="border-bottom">\n          <ion-buttons item-start>\n            <button (click)="openChooser()" color="bright" ion-button text-capitalize small round>Unggah berkas</button>\n          </ion-buttons>\n          <span *ngIf="d.urlFile == \'\'">Berkas belum diunggah...</span>\n          <span *ngIf="d.urlFile != \'\'">{{d.urlFile}}</span>\n        </ion-item>\n      </ion-list>\n      <ion-buttons text-center>\n        <button color="main" ion-button full>Simpan</button>\n      </ion-buttons>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/legalitas.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_9__ionic_native_file_chooser__["a" /* FileChooser */]])
     ], FormLegalitasPage);
     return FormLegalitasPage;
 }());
@@ -1408,7 +1565,7 @@ var FormPrestasiPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 120:
+/***/ 124:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -1421,7 +1578,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 120;
+webpackEmptyAsyncContext.id = 124;
 
 /***/ }),
 
@@ -1431,8 +1588,8 @@ webpackEmptyAsyncContext.id = 120;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1619,6 +1776,18 @@ var AuthService = /** @class */ (function () {
             });
         });
     };
+    AuthService.prototype.getNotifications = function (idData) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/detail/notifications/' + idData, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
     AuthService.prototype.getList = function (target) {
         var _this = this;
         return new Promise(function (resolve, reject) {
@@ -1707,7 +1876,24 @@ var AuthService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 16:
+/***/ 166:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 166;
+
+/***/ }),
+
+/***/ 17:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2180,7 +2366,7 @@ var KelembagaanLegalitasPage = /** @class */ (function () {
         modal.present();
     };
     KelembagaanLegalitasPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only>\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="paper" item-end color="main"></ion-icon>\n      </ion-item>\n      <ion-item>\n        <p>Total data ({{ countData }})</p>\n      </ion-item>\n      <button *ngFor="let d of data; let first = first; let last = last" [class.no-border]="last" ion-item text-wrap>\n        <ion-icon name="document" item-start color="main"></ion-icon>\n        <p><b>{{d.namaPersyaratan}}.</b><br /><br /> <span class="text-vibrant">{{d.noLegalitas}}</span> | {{d.tanggalLegalitas}}</p>\n      </button>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="loadForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="paper" item-end color="main"></ion-icon>\n      </ion-item>\n      <ion-item>\n        <p>Total data ({{ countData }})</p>\n      </ion-item>\n      <button *ngFor="let d of data; let first = first; let last = last" [class.no-border]="last" ion-item text-wrap>\n        <ion-icon name="document" item-start color="main"></ion-icon>\n        <p><b>{{d.namaPersyaratan}}.</b> <span class="text-{{d.statusVerifikasi == \'0\' ? \'danger\' : \'secondary\'}}"><ion-icon name="compass"></ion-icon></span></p>\n        <p><span class="text-vibrant">{{d.noLegalitas}}</span> | {{d.tanggalLegalitas}}</p>\n      </button>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
@@ -2587,36 +2773,19 @@ var KelembagaanKoleksiPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 162:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 162;
-
-/***/ }),
-
-/***/ 206:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__prestasi_prestasi__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__koleksi_koleksi__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__news_news__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__setting_setting__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__login_login__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_auth_service_auth_service__ = __webpack_require__(14);
@@ -2702,7 +2871,7 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 207:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2712,7 +2881,7 @@ var HomePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prestasi_prestasi__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__koleksi_koleksi__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__kelembagaan_kelembagaan__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__kelembagaan_kelembagaan__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2844,7 +3013,7 @@ var DashboardPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 210:
+/***/ 215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2879,7 +3048,7 @@ var AboutPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 215:
+/***/ 216:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2887,7 +3056,7 @@ var AboutPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2970,13 +3139,13 @@ var SearchPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 216:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(240);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -2984,7 +3153,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 239:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2992,40 +3161,44 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prestasi_prestasi__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_koleksi_koleksi__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_news_news__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_search_search__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_search_search__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_form_form__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_about_about__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_status_bar__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_splash_screen__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_about_about__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_status_bar__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_splash_screen__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_auth_service_auth_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_storage__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_http__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_file__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_transfer__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_camera__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_base64__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_geolocation__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_location_accuracy__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_storage__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_http__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_file__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_transfer__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_camera__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_base64__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_geolocation__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_location_accuracy__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_native_file_chooser__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ionic_native_file_opener__ = __webpack_require__(297);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -3186,7 +3359,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__["a" /* FilePath */],
                 __WEBPACK_IMPORTED_MODULE_28__ionic_native_base64__["a" /* Base64 */],
                 __WEBPACK_IMPORTED_MODULE_29__ionic_native_geolocation__["a" /* Geolocation */],
-                __WEBPACK_IMPORTED_MODULE_30__ionic_native_location_accuracy__["a" /* LocationAccuracy */]
+                __WEBPACK_IMPORTED_MODULE_30__ionic_native_location_accuracy__["a" /* LocationAccuracy */],
+                __WEBPACK_IMPORTED_MODULE_31__ionic_native_file_chooser__["a" /* FileChooser */],
+                __WEBPACK_IMPORTED_MODULE_32__ionic_native_file_opener__["a" /* FileOpener */]
             ]
         })
     ], AppModule);
@@ -3197,15 +3372,15 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3265,10 +3440,10 @@ var MyApp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_path__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_camera__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_path__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_camera__ = __webpack_require__(114);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3928,5 +4103,5 @@ var NewsFormPage = /** @class */ (function () {
 
 /***/ })
 
-},[216]);
+},[217]);
 //# sourceMappingURL=main.js.map

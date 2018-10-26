@@ -8,6 +8,7 @@ import { KoleksiPage } from '../koleksi/koleksi';
 import { NewsPage } from '../news/news';
 import { AboutPage } from '../about/about';
 import { SettingPage } from '../setting/setting';
+import { FormKelembagaanPage } from '../form/form';
 
 import { LoginPage } from '../login/login';
 import { AuthService } from '../../providers/auth-service/auth-service';
@@ -20,17 +21,28 @@ export class HomePage {
   pages: Array<{ title: string, component: any, icon: string, color: string }>;
   other: Array<{ title: string, component: any, icon: string, color: string }>;
   loading: any;
+  userLevel = "";
   
   constructor(public app: App, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController, public appCtrl: App, public navCtrl: NavController) {
+    this.userLevel = localStorage.getItem('userLevel');
 
     // set our app's pages
-    this.pages = [
-      { title: 'Rekapitulasi', component: DashboardPage, icon: 'stats', color: 'main' },
-      { title: 'Kelembagaan', component: KelembagaanPage, icon: 'people', color: 'vibrant' },
-      { title: 'Prestasi', component: PrestasiPage, icon: 'trophy', color: 'bright' },
-      { title: 'Koleksi', component: KoleksiPage, icon: 'book', color: 'secondary' },
-      { title: 'Berita', component: NewsPage, icon: 'paper', color: 'primary' },
-    ];
+    if (this.userLevel != '2' && this.userLevel != '1'){
+      this.pages = [
+        { title: 'Rekapitulasi', component: DashboardPage, icon: 'stats', color: 'main' },
+        { title: 'Kelembagaan', component: KelembagaanPage, icon: 'people', color: 'vibrant' },
+        { title: 'Prestasi', component: PrestasiPage, icon: 'trophy', color: 'bright' },
+        { title: 'Koleksi', component: KoleksiPage, icon: 'book', color: 'secondary' },
+        { title: 'Berita', component: NewsPage, icon: 'paper', color: 'primary' },
+      ];
+    } else if (this.userLevel == '2'){
+      this.pages = [
+        { title: 'Lembaga baru', component: FormKelembagaanPage, icon: 'add', color: 'main' },
+        { title: 'Kelembagaan', component: KelembagaanPage, icon: 'people', color: 'vibrant' },
+        { title: 'Prestasi', component: PrestasiPage, icon: 'trophy', color: 'bright' },
+        { title: 'Koleksi', component: KoleksiPage, icon: 'book', color: 'secondary' },
+      ];
+    }
 
     this.other = [
       { title: 'Pengaturan', component: SettingPage, icon: 'settings', color: '' },

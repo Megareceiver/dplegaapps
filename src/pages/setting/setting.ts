@@ -207,7 +207,8 @@ export class SettingFormAccountPage {
     noRw: localStorage.getItem('noRw'),
     kodeKelurahan: localStorage.getItem('kodeKelurahan'),
     kodeKecamatan: localStorage.getItem('kodeKecamatan'),
-    kodeWilayah: localStorage.getItem('kodeWilayah')
+    kodeWilayah: localStorage.getItem('kodeWilayah'),
+    userLevel: localStorage.getItem('userLevel')
   }
 
   lastImage: string = null;
@@ -359,7 +360,8 @@ export class SettingFormAccountPage {
             noRw: localStorage.getItem('noRw'),
             kodeKelurahan: localStorage.getItem('kodeKelurahan'),
             kodeKecamatan: localStorage.getItem('kodeKecamatan'),
-            kodeWilayah: localStorage.getItem('kodeWilayah')
+            kodeWilayah: localStorage.getItem('kodeWilayah'),
+            userLevel: localStorage.getItem('userLevel'),
           }
 
           this.events.publish('accountPage:reload');

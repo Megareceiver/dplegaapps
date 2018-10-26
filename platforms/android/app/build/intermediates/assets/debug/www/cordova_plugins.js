@@ -354,6 +354,22 @@ module.exports = [
     "merges": [
       "launchnavigator"
     ]
+  },
+  {
+    "id": "cordova-plugin-file-opener2.FileOpener2",
+    "file": "plugins/cordova-plugin-file-opener2/www/plugins.FileOpener2.js",
+    "pluginId": "cordova-plugin-file-opener2",
+    "clobbers": [
+      "cordova.plugins.fileOpener2"
+    ]
+  },
+  {
+    "id": "cordova-plugin-filechooser.FileChooser",
+    "file": "plugins/cordova-plugin-filechooser/www/fileChooser.js",
+    "pluginId": "cordova-plugin-filechooser",
+    "clobbers": [
+      "fileChooser"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -375,7 +391,9 @@ module.exports.metadata =
   "cordova-plugin-statusbar": "2.4.2",
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-sqlite-storage": "2.4.0",
-  "uk.co.workingedge.phonegap.plugin.launchnavigator": "4.2.2"
+  "uk.co.workingedge.phonegap.plugin.launchnavigator": "4.2.2",
+  "cordova-plugin-file-opener2": "2.0.19",
+  "cordova-plugin-filechooser": "1.0.1"
 };
 // BOTTOM OF METADATA
 });

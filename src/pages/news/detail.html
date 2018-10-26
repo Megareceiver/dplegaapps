@@ -15,10 +15,12 @@
 <ion-content padding>
   <ion-list>
     <ion-item>
-      <h1>Nine Inch Nails Live</h1>
-      <p>23:02pm</p>
+      <h1>{{ data.judulBerita }}</h1>
+      <p>{{ data.createdDate }} oleh {{ data.createdBy }}</p>
     </ion-item>
-    <ion-item><img src="assets/imgs/sample.jpg" /></ion-item>
-    <ion-item text-wrap><p>The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.</p></ion-item>
+    <ion-item><img src="{{urlServer}}/img/news/{{data.urlGambar}}" /></ion-item>
+    <ion-item text-wrap>
+      {{ data.deskripsi }}
+    </ion-item>
   </ion-list>
 </ion-content>

@@ -66,6 +66,9 @@ import { Base64 } from '@ionic-native/base64';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LocationAccuracy } from '@ionic-native/location-accuracy';
 
+import { FileChooser } from '@ionic-native/file-chooser';
+import { FileOpener } from '@ionic-native/file-opener';
+
 
 @NgModule({
   declarations: [
@@ -183,7 +186,9 @@ import { LocationAccuracy } from '@ionic-native/location-accuracy';
     FilePath,
     Base64,
     Geolocation,
-    LocationAccuracy
+    LocationAccuracy,
+    FileChooser,
+    FileOpener
   ]
 })
 export class AppModule {}

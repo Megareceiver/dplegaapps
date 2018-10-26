@@ -16,20 +16,19 @@
   <ion-list>
     <ion-item><p>Catatan : Setiap poin pada form ini wajib diisi.</p></ion-item>
     <ion-item>
-      <img src="assets/imgs/sample.jpg">
+      <img src="assets/imgs/sample.jpg" *ngIf="idData == ''">
+      <img src="{{urlServer}}/img/news/{{data.urlGambar}}" *ngIf="idData != ''">
       <ion-buttons margin-top>
-        <button class="no-shadow" color="bright" ion-button text-capitalize small round>
-          Unggah gambar
-        </button>
+        <button class="no-shadow" color="bright" (click)="presentActionSheet()" ion-button text-capitalize small round>Unggah gambar</button>
       </ion-buttons>
     </ion-item>
     <ion-item>
       <ion-label>Judul berita</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-textarea [(ngModel)]="data.judulBerita" type="text"></ion-textarea>
     </ion-item>
     <ion-item class="no-border">
       <ion-label>Isi berita</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-textarea [(ngModel)]="data.deskripsi" type="text"></ion-textarea>
     </ion-item>
   </ion-list>
 </ion-content>

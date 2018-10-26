@@ -87,6 +87,10 @@
             {
               "xml": "<feature name=\"RequestLocationAccuracy\"><param name=\"ios-package\" value=\"RequestLocationAccuracy\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"FileOpener2\"><param name=\"ios-package\" value=\"FileOpener2\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -162,6 +166,12 @@
       "PACKAGE_NAME": "com.syncard.apps"
     },
     "cordova-plugin-request-location-accuracy": {
+      "PACKAGE_NAME": "com.syncard.apps"
+    },
+    "cordova-plugin-file-opener2": {
+      "PACKAGE_NAME": "com.syncard.apps"
+    },
+    "cordova-plugin-filechooser": {
       "PACKAGE_NAME": "com.syncard.apps"
     }
   },
@@ -531,6 +541,22 @@
       "clobbers": [
         "cordova.plugins.locationAccuracy"
       ]
+    },
+    {
+      "id": "cordova-plugin-file-opener2.FileOpener2",
+      "file": "plugins/cordova-plugin-file-opener2/www/plugins.FileOpener2.js",
+      "pluginId": "cordova-plugin-file-opener2",
+      "clobbers": [
+        "cordova.plugins.fileOpener2"
+      ]
+    },
+    {
+      "id": "cordova-plugin-filechooser.FileChooser",
+      "file": "plugins/cordova-plugin-filechooser/www/fileChooser.js",
+      "pluginId": "cordova-plugin-filechooser",
+      "clobbers": [
+        "fileChooser"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -550,6 +576,8 @@
     "cordova-plugin-filepath": "1.4.2",
     "com-badrit-base64": "0.2.0",
     "cordova-plugin-geolocation": "4.0.1",
-    "cordova-plugin-request-location-accuracy": "2.2.3"
+    "cordova-plugin-request-location-accuracy": "2.2.3",
+    "cordova-plugin-file-opener2": "2.0.19",
+    "cordova-plugin-filechooser": "1.0.1"
   }
 }

@@ -220,6 +220,52 @@ export class AuthService {
     });
   }
 
+  getListFilter(target, page) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+
+      let filterData = {
+        'keyword': localStorage.getItem(target + '-filter-keyword'),
+        'bentukLembaga': localStorage.getItem(target + '-filter-bentukLembaga'),
+        'wilayah': localStorage.getItem(target + '-filter-wilayah'),
+        'kecamatan': localStorage.getItem(target + '-filter-kecamatan'),
+        'kelurahan': localStorage.getItem(target + '-filter-kelurahan')
+      };
+
+      this.http.post(this.urlApi + '/public/list/' + target + '/' + page, JSON.stringify(filterData), { headers: headers })
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
+  getSummaryFilter(target) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+
+      let filterData = {
+        'keyword': localStorage.getItem(target + '-filter-keyword'),
+        'bentukLembaga': localStorage.getItem(target + '-filter-bentukLembaga'),
+        'wilayah': localStorage.getItem(target + '-filter-wilayah'),
+        'kecamatan': localStorage.getItem(target + '-filter-kecamatan'),
+        'kelurahan': localStorage.getItem(target + '-filter-kelurahan')
+      };
+
+      this.http.post(this.urlApi + '/public/summary/' + target, JSON.stringify(filterData), { headers: headers })
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
   getListPage(target, page) {
     return new Promise((resolve, reject) => {
       this.http.get(this.urlApi + '/public/list/' + target + '/' + page, {})
@@ -249,6 +295,19 @@ export class AuthService {
   searchData(keyword) {
     return new Promise((resolve, reject) => {
       this.http.get(this.urlApi + '/public/search/' + keyword, {})
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
+  getDataById(target, idData) {
+    return new Promise((resolve, reject) => {
+      target = target + '/' + idData;
+      this.http.get(this.urlApi + '/public/detail/' + target, {})
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {

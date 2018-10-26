@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, LoadingController, ModalController, Platform, NavParams, ViewController, ToastController, Events } from 'ionic-angular';
+import { App, NavController, LoadingController, ModalController, Platform, NavParams, ViewController, ToastController, Events } from 'ionic-angular';
 import { AuthService } from '../../providers/auth-service/auth-service';
 // import { LaunchNavigator } from '@ionic-native/launch-navigator';
 
@@ -9,9 +9,8 @@ import { FormLegalitasPage } from '../form/form';
 import { FormSejarahPage } from '../form/form';
 import { FormKepengurusanPage } from '../form/form';
 import { FormUsahaPage } from '../form/form';
-// import { FormHirarkiPage } from '../form/form';
-// import { FormPrestasiPage } from '../form/form';
-// import { FormKoleksiPage } from '../form/form';
+import { SettingPage } from '../setting/setting';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'page-kelembagaan',
@@ -273,7 +272,7 @@ export class KelembagaanFilterPage {
   templateUrl: 'detail.html'
 })
 export class KelembagaanDetailPage {
-  character;
+  userLevel = "";
   urlServer = "";
   detailPages: Array<{ component: any }>;
   noRegistrasi: string;
@@ -309,11 +308,20 @@ export class KelembagaanDetailPage {
     // private launchNavigator: LaunchNavigator, 
     public authService: AuthService,
     public loadingCtrl: LoadingController,
-    private toastCtrl: ToastController
+    private toastCtrl: ToastController,
+    public appCtrl: App
   ) {
     this.urlServer = authService.urlServer;
-    this.noRegistrasi = params.get('reff');
-    this.namaLembaga = params.get('reff2');
+    this.userLevel = localStorage.getItem('userLevel');
+    
+    if (this.userLevel != '1'){
+      this.noRegistrasi = params.get('reff');
+      this.namaLembaga = params.get('reff2');
+    }else{
+      this.noRegistrasi = localStorage.getItem('noRegistrasi');
+      this.namaLembaga = localStorage.getItem('namaLembaga');
+      
+    }
 
     // set our app's pages
     this.detailPages = [
@@ -324,18 +332,19 @@ export class KelembagaanDetailPage {
       { component: KelembagaanPrestasiPage },
       { component: KelembagaanKoleksiPage },
       { component: VerificationPage },
+      { component: SettingPage },
     ];
 
-    // set our form's pages
-    this.detailPages = [
-      { component: KelembagaanLegalitasPage },
-      { component: KelembagaanSejarahPage },
-      { component: KelembagaanKepengurusanPage },
-      { component: KelembagaanUsahaPage },
-      { component: KelembagaanPrestasiPage },
-      { component: KelembagaanKoleksiPage },
-      { component: VerificationPage },
-    ];
+    // // set our form's pages
+    // this.detailPages = [
+    //   { component: KelembagaanLegalitasPage },
+    //   { component: KelembagaanSejarahPage },
+    //   { component: KelembagaanKepengurusanPage },
+    //   { component: KelembagaanUsahaPage },
+    //   { component: KelembagaanPrestasiPage },
+    //   { component: KelembagaanKoleksiPage },
+    //   { component: VerificationPage },
+    // ];
 
     this.loadData();
   }
@@ -381,7 +390,13 @@ export class KelembagaanDetailPage {
     //     error => console.log('Error launching navigator', error)
     //   );
 
-    
+  }
+
+  logout() {
+    this.showLoader();
+    this.authService.logout();
+    this.appCtrl.getRootNav().push(LoginPage);
+    this.loading.dismiss();
   }
 
   dismiss() {

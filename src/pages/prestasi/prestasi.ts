@@ -77,4 +77,8 @@ export class PrestasiPage {
     toast.present();
   }
 
+  goSearch() {
+    this.navCtrl.parent.select(2);
+  }
+
 }

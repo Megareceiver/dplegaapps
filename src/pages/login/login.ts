@@ -34,6 +34,7 @@ export class LoginPage {
 
         localStorage.setItem('noRegistrasi', this.data.noRegistrasi);
         localStorage.setItem('nama', this.data.nama);
+        localStorage.setItem('namaLembaga', this.data.namaLembaga);
         localStorage.setItem('jabatan', this.data.jabatan);
         localStorage.setItem('alamat', this.data.alamat);
         localStorage.setItem('alamatLengkap', this.data.alamatLengkap);
@@ -47,6 +48,8 @@ export class LoginPage {
         localStorage.setItem('kodeKelurahan', this.data.kodeKelurahan);
         localStorage.setItem('kodeKecamatan', this.data.kodeKecamatan);
         localStorage.setItem('kodeWilayah', this.data.kodeWilayah);
+        localStorage.setItem('lingkupArea', this.data.lingkupArea);
+        localStorage.setItem('idBatasArea', this.data.idBatasArea);
 
         // empty initial 
         localStorage.setItem('kelembagaan-filter-keyword', '');

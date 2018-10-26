@@ -6,6 +6,7 @@ import { HomePage } from '../home/home';
 import { InboxPage } from '../inbox/inbox';
 import { SearchPage } from '../search/search';
 import { FormPage } from '../form/form';
+import { KelembagaanDetailPage } from '../kelembagaan/kelembagaan';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -15,10 +16,14 @@ export class TabsPage {
   inbox  = InboxPage;
   search = SearchPage;
   form   = FormPage;
+  lembaga = KelembagaanDetailPage;
   inboxCounter : any = 0;
+  userLevel = "";
 
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public authService: AuthService) {
     this.getCountInbox();
+
+    this.userLevel = localStorage.getItem('userLevel');
   }
 
   getCountInbox(){
