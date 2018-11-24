@@ -14,6 +14,7 @@ export class SearchPage {
   keyword: string = "";
   urlServer = "";
   userLevel = "";
+  countData: number = 0;
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController) {
     this.urlServer = authService.urlServer;
@@ -26,8 +27,11 @@ export class SearchPage {
         this.showLoader();
         this.authService.searchData(this.keyword).then((result) => {
           this.data = result;
-          this.dataClone = this.data;
-          this.dataClone[-1] = { grup: 'start' };
+          this.countData = Object.keys(this.data).length;
+          if (this.countData > 0) {
+            this.dataClone = this.data;
+            this.dataClone[-1] = { grup: 'start' };
+          }
           this.loading.dismiss();
         }, (err) => {
           this.loading.dismiss();
@@ -37,6 +41,7 @@ export class SearchPage {
       }else{
         this.data = [];
         this.dataClone = [];
+        this.countData = 0;
       }
     }
   }

@@ -130,7 +130,7 @@ export class SettingChangePasswordPage {
       if (this.data.status == 'success'){
         this.presentToast('Password berhasil diubah!');
       }else{
-        this.presentToast('Password gagal diubah, perika kembali Password Anda!');
+        this.presentToast('Password gagal diubah, periksa kembali Password Anda!');
       }
 
       this.accountData = {
@@ -371,7 +371,7 @@ export class SettingFormAccountPage {
           this.presentToast(err);
         });
       } else {
-        this.presentToast('Informasi Akun gagal diubah, perika kembali inputan Anda!');
+        this.presentToast('Informasi Akun gagal diubah, periksa kembali inputan Anda!');
       }
     }, (err) => {
       this.loading.dismiss();

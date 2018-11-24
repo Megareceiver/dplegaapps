@@ -145,15 +145,49 @@ export class AuthService {
     });
   }
 
+  // CRUD LEMBAGA
+  insertNewLembaga(data) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      data['username'] = localStorage.getItem('username');
+      
+      this.http.post(this.urlApi + '/public/insert/lembaga/', JSON.stringify(data), { headers: headers })
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
   insertDataLembaga(target, data) {
     return new Promise((resolve, reject) => {
       let headers = new Headers();
       headers.append('Content-Type', 'application/json');
+      data['username'] = localStorage.getItem('username');
+
       this.http.post(this.urlApi + '/public/insert/lembaga/' + target + '/' + data.noRegistrasi, JSON.stringify(data), { headers: headers })
       .subscribe(res => {
         resolve(res.json());
       }, (err) => {
         this.presentToast(err);
+          reject(err);
+        });
+    });
+  }
+
+  updateDataLembaga(target, data) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      data['username'] = localStorage.getItem('username');
+    
+      this.http.post(this.urlApi + '/public/update/lembaga/' + target , JSON.stringify(data), { headers: headers })
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
           reject(err);
         });
     });

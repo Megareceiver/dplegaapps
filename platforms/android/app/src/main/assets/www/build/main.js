@@ -1,1 +1,4841 @@
-webpackJsonp([0],{166:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=166},184:function(l,n){function u(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}u.keys=function(){return[]},u.resolve=u,l.exports=u,u.id=184},210:function(l,n,u){"use strict";function a(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-nav",[],null,null,null,lu.b,lu.a)),Al._16(6144,null,nu.a,null,[uu.a]),Al.Y(2,4374528,[["contentPage",4]],0,uu.a,[[2,au.a],[2,tu.a],eu.a,iu.a,ou.a,Al.j,Al.u,Al.z,Al.i,su.l,ru.a,[2,cu.a],_u.a,Al.k],{root:[0,"root"]},null)],function(l,n){l(n,2,0,n.component.rootPage)},null)}function t(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,15,"ion-tabs",[["color","dark"]],null,null,null,mu.b,mu.a)),Al._16(6144,null,nu.a,null,[hu.a]),Al.Y(2,4374528,null,0,hu.a,[[2,tu.a],[2,au.a],eu.a,iu.a,Al.j,ou.a,Al.z,cu.a,pu.a],{color:[0,"color"]},null),(l()(),Al._20(-1,0,["\n  "])),(l()(),Al.Z(4,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","home"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,bu.b,bu.a)),Al.Y(5,245760,null,0,fu.a,[hu.a,eu.a,iu.a,ou.a,Al.j,Al.u,Al.z,Al.i,Al.g,su.l,ru.a,[2,cu.a],_u.a,Al.k],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Al._20(-1,0,["\n  "])),(l()(),Al.Z(7,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabBadgeStyle","bright"],["tabIcon","notifications"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,bu.b,bu.a)),Al.Y(8,245760,null,0,fu.a,[hu.a,eu.a,iu.a,ou.a,Al.j,Al.u,Al.z,Al.i,Al.g,su.l,ru.a,[2,cu.a],_u.a,Al.k],{root:[0,"root"],tabIcon:[1,"tabIcon"],tabBadge:[2,"tabBadge"],tabBadgeStyle:[3,"tabBadgeStyle"]},null),(l()(),Al._20(-1,0,["\n  "])),(l()(),Al.Z(10,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","search"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,bu.b,bu.a)),Al.Y(11,245760,null,0,fu.a,[hu.a,eu.a,iu.a,ou.a,Al.j,Al.u,Al.z,Al.i,Al.g,su.l,ru.a,[2,cu.a],_u.a,Al.k],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Al._20(-1,0,["\n  "])),(l()(),Al.Z(13,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","add"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,bu.b,bu.a)),Al.Y(14,245760,null,0,fu.a,[hu.a,eu.a,iu.a,ou.a,Al.j,Al.u,Al.z,Al.i,Al.g,su.l,ru.a,[2,cu.a],_u.a,Al.k],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Al._20(-1,0,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,2,0,"dark");l(n,5,0,u.home,"home");l(n,8,0,u.inbox,"notifications",Al._2(1,"","0"!=u.inboxCounter?u.inboxCounter:"",""),"bright");l(n,11,0,u.search,"search");l(n,14,0,u.form,"add")},function(l,n){l(n,4,0,Al._11(n,5)._tabId,Al._11(n,5)._btnId);l(n,7,0,Al._11(n,8)._tabId,Al._11(n,8)._btnId);l(n,10,0,Al._11(n,11)._tabId,Al._11(n,11)._btnId);l(n,13,0,Al._11(n,14)._tabId,Al._11(n,14)._btnId)})}function e(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,63,"ion-content",[["center",""],["padding",""],["text-center",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(1,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(3,0,null,1,1,"ion-img",[["height","72"],["id","logo"],["src","assets/imgs/gedung-sate-200x200_.png"],["width","72"]],null,null,null,ju.b,ju.a)),Al.Y(4,1228800,null,0,yu.a,[Al.j,Al.z,ou.a,[2,Cu.a],_u.a],{src:[0,"src"],width:[1,"width"],height:[2,"height"]},null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(6,0,null,1,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["DPLEGA APPS"])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(10,0,null,1,46,"form",[["method","POST"],["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"submit"],[null,"reset"]],function(l,n,u){var a=!0,t=l.component;if("submit"===n){a=!1!==Al._11(l,12).onSubmit(u)&&a}if("reset"===n){a=!1!==Al._11(l,12).onReset()&&a}if("submit"===n){a=!1!==t.doLogin()&&a}return a},null,null)),Al.Y(11,16384,null,0,Pu.n,[],null,null),Al.Y(12,4210688,null,0,Pu.j,[[8,null],[8,null]],null,null),Al._16(2048,null,Pu.b,null,[Pu.j]),Al.Y(14,16384,null,0,Pu.i,[Pu.b],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(16,0,null,null,30,"ion-list",[["class","form-style"],["margin-top",""],["padding",""]],null,null,null,null,null)),Al.Y(17,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,[" \n      "])),(l()(),Al.Z(19,0,null,null,12,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(20,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,1,{contentLabel:0}),Al._18(603979776,2,{_buttons:1}),Al._18(603979776,3,{_icons:1}),Al.Y(24,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(26,0,null,3,4,"ion-input",[["name","username"],["placeholder","Username"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.loginData.username=u)&&a}return a},Bu.b,Bu.a)),Al.Y(27,671744,null,0,Pu.k,[[2,Pu.b],[8,null],[8,null],[8,null]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(29,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(30,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(33,0,null,null,12,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(34,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,4,{contentLabel:0}),Al._18(603979776,5,{_buttons:1}),Al._18(603979776,6,{_icons:1}),Al.Y(38,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(40,0,null,3,4,"ion-input",[["name","password"],["placeholder","Password"],["type","password"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.loginData.password=u)&&a}return a},Bu.b,Bu.a)),Al.Y(41,671744,null,0,Pu.k,[[2,Pu.b],[8,null],[8,null],[8,null]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(43,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(44,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(48,0,null,null,7,"ion-buttons",[["padding",""]],null,null,null,null,null)),Al.Y(49,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,7,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(52,0,null,null,2,"button",[["color","dark"],["full",""],["ion-button",""],["type","submit"]],null,null,null,Uu.b,Uu.a)),Al.Y(53,1097728,[[7,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],full:[1,"full"]},null),(l()(),Al._20(-1,0,["Masuk"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(58,0,null,1,1,"p",[["text-center",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["Copyright © 2018 Pemerintah Provinsi Jawa Barat."])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(61,0,null,1,1,"p",[["text-center",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["v.01"])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"assets/imgs/gedung-sate-200x200_.png","72","72");l(n,27,0,"username",u.loginData.username);l(n,30,0,"text","Username");l(n,41,0,"password",u.loginData.password);l(n,44,0,"password","Password");l(n,53,0,"dark","")},function(l,n){l(n,0,0,Al._11(n,1).statusbarPadding,Al._11(n,1)._hasRefresher);l(n,10,0,Al._11(n,14).ngClassUntouched,Al._11(n,14).ngClassTouched,Al._11(n,14).ngClassPristine,Al._11(n,14).ngClassDirty,Al._11(n,14).ngClassValid,Al._11(n,14).ngClassInvalid,Al._11(n,14).ngClassPending);l(n,26,0,Al._11(n,29).ngClassUntouched,Al._11(n,29).ngClassTouched,Al._11(n,29).ngClassPristine,Al._11(n,29).ngClassDirty,Al._11(n,29).ngClassValid,Al._11(n,29).ngClassInvalid,Al._11(n,29).ngClassPending);l(n,40,0,Al._11(n,43).ngClassUntouched,Al._11(n,43).ngClassTouched,Al._11(n,43).ngClassPristine,Al._11(n,43).ngClassDirty,Al._11(n,43).ngClassValid,Al._11(n,43).ngClassInvalid,Al._11(n,43).ngClassPending)})}function i(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navigateTo(l.context.$implicit)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,4,{contentLabel:0}),Al._18(603979776,5,{_buttons:1}),Al._18(603979776,6,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["item-start",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[6,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(9,2,["\n      ","\n    "]))],function(l,n){l(n,8,0,Al._2(1,"",n.context.$implicit.color,""),Al._2(1,"",n.context.$implicit.icon,""))},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,9,0,n.context.$implicit.title)})}function o(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navigateTo(l.context.$implicit)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,10,{contentLabel:0}),Al._18(603979776,11,{_buttons:1}),Al._18(603979776,12,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["item-start",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[12,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(9,2,["\n      ","\n    "]))],function(l,n){l(n,8,0,Al._2(1,"",n.context.$implicit.color,""),Al._2(1,"",n.context.$implicit.icon,""))},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,9,0,n.context.$implicit.title)})}function s(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,49,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(1,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(3,0,null,1,1,"ion-img",[["float-left",""],["height","40"],["id","logo-apps"],["margin",""],["src","assets/imgs/icon.png"],["width","40"]],null,null,null,ju.b,ju.a)),Al.Y(4,1228800,null,0,yu.a,[Al.j,Al.z,ou.a,[2,Cu.a],_u.a],{src:[0,"src"],width:[1,"width"],height:[2,"height"]},null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(6,0,null,1,1,"h3",[["class","text-main header-logo-text"],["padding-left",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["DPLEGA APPS"])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(9,0,null,1,13,"ion-list",[],null,null,null,null,null)),Al.Y(10,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(12,0,null,null,6,"ion-list-header",[["class","item"]],null,null,null,Mu.b,Mu.a)),Al.Y(13,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,1,{contentLabel:0}),Al._18(603979776,2,{_buttons:1}),Al._18(603979776,3,{_icons:1}),Al.Y(17,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Menu"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,i)),Al.Y(21,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(24,0,null,1,24,"ion-list",[],null,null,null,null,null)),Al.Y(25,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(27,0,null,null,6,"ion-list-header",[["class","item"]],null,null,null,Mu.b,Mu.a)),Al.Y(28,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,7,{contentLabel:0}),Al._18(603979776,8,{_buttons:1}),Al._18(603979776,9,{_icons:1}),Al.Y(32,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Lainnya"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,o)),Al.Y(36,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(38,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.logout()&&a}return a},Mu.b,Mu.a)),Al.Y(39,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,13,{contentLabel:0}),Al._18(603979776,14,{_buttons:1}),Al._18(603979776,15,{_icons:1}),Al.Y(43,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(45,0,null,0,1,"ion-icon",[["color","danger"],["item-start",""],["name","log-out"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(46,147456,[[15,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Keluar\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"assets/imgs/icon.png","40","40");l(n,21,0,u.pages);l(n,36,0,u.other);l(n,46,0,"danger","log-out")},function(l,n){l(n,0,0,Al._11(n,1).statusbarPadding,Al._11(n,1)._hasRefresher);l(n,45,0,Al._11(n,46)._hidden)})}function r(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,14,"ion-item",[["class","border-bottom item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,17,{contentLabel:0}),Al._18(603979776,18,{_buttons:1}),Al._18(603979776,19,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(6,2,["\n          ","\n          "])),(l()(),Al.Z(7,0,null,4,2,"ion-badge",[["color","danger"],["item-end",""]],null,null,null,null,null)),Al.Y(8,16384,null,0,Xu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(9,null,["",""])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(11,0,null,4,2,"ion-badge",[["color","secondary"],["item-end",""]],null,null,null,null,null)),Al.Y(12,16384,null,0,Xu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(13,null,["",""])),(l()(),Al._20(-1,2,["\n        "]))],function(l,n){l(n,8,0,"danger");l(n,12,0,"secondary")},function(l,n){var u=n.component;l(n,6,0,n.context.$implicit.namaBentukLembaga);l(n,9,0,u.simpleNumber(n.context.$implicit.ajuan));l(n,13,0,u.simpleNumber(n.context.$implicit.valid))})}function c(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,23,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,19,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,[" \n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Rekapitulasi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,11,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["navPop",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,16).onClick()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,16384,null,0,Qu.a,[[2,tu.a]],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(25,0,null,null,124,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(26,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(28,0,null,1,90,"ion-card",[],null,null,null,null,null)),Al.Y(29,16384,null,0,la.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(31,0,null,null,86,"ion-card-content",[],null,null,null,null,null)),Al.Y(32,16384,null,0,na.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(34,0,null,null,82,"ion-grid",[["class","grid"]],null,null,null,null,null)),Al.Y(35,16384,null,0,ua.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(37,0,null,null,78,"ion-row",[["class","row"]],null,null,null,null,null)),Al.Y(38,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(40,0,null,null,17,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(41,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n              "])),(l()(),Al.Z(43,0,null,null,13,"button",[["class","border-bottom item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navigateTo(2,"ajuan")&&a}return a},Mu.b,Mu.a)),Al.Y(44,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(48,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n                "])),(l()(),Al.Z(50,0,null,2,2,"ion-badge",[["color","danger"]],null,null,null,null,null)),Al.Y(51,16384,null,0,Xu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Data Ajuan"])),(l()(),Al._20(-1,2,["\n                "])),(l()(),Al.Z(54,0,null,2,1,"h1",[["margin-top",""]],null,null,null,null,null)),(l()(),Al._20(55,null,["",""])),(l()(),Al._20(-1,2,["\n              "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(59,0,null,null,17,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(60,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n              "])),(l()(),Al.Z(62,0,null,null,13,"button",[["class","border-bottom item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navigateTo(2,"valid")&&a}return a},Mu.b,Mu.a)),Al.Y(63,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(67,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n                "])),(l()(),Al.Z(69,0,null,2,2,"ion-badge",[["color","secondary"]],null,null,null,null,null)),Al.Y(70,16384,null,0,Xu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Data Terverifikasi"])),(l()(),Al._20(-1,2,["\n                "])),(l()(),Al.Z(73,0,null,2,1,"h1",[["margin-top",""]],null,null,null,null,null)),(l()(),Al._20(74,null,["",""])),(l()(),Al._20(-1,2,["\n              "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(78,0,null,null,17,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(79,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n            "])),(l()(),Al.Z(81,0,null,null,13,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navigateTo(0)&&a}return a},Mu.b,Mu.a)),Al.Y(82,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(86,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n              "])),(l()(),Al.Z(88,0,null,2,2,"ion-badge",[["color","bright"]],null,null,null,null,null)),Al.Y(89,16384,null,0,Xu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Total Prestasi"])),(l()(),Al._20(-1,2,["\n              "])),(l()(),Al.Z(92,0,null,2,1,"h1",[["margin-top",""]],null,null,null,null,null)),(l()(),Al._20(93,null,["",""])),(l()(),Al._20(-1,2,["\n            "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(97,0,null,null,17,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(98,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n            "])),(l()(),Al.Z(100,0,null,null,13,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navigateTo(1)&&a}return a},Mu.b,Mu.a)),Al.Y(101,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(105,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n              "])),(l()(),Al.Z(107,0,null,2,2,"ion-badge",[["color","vibrant"]],null,null,null,null,null)),Al.Y(108,16384,null,0,Xu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Total Koleksi"])),(l()(),Al._20(-1,2,["\n              "])),(l()(),Al.Z(111,0,null,2,1,"h1",[["margin-top",""]],null,null,null,null,null)),(l()(),Al._20(112,null,["",""])),(l()(),Al._20(-1,2,["\n            "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n\n        \n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n\n  "])),(l()(),Al.Z(120,0,null,1,28,"ion-card",[["margin-top",""]],null,null,null,null,null)),Al.Y(121,16384,null,0,la.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(123,0,null,null,24,"ion-card-content",[],null,null,null,null,null)),Al.Y(124,16384,null,0,na.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(126,0,null,null,13,"ion-list",[],null,null,null,null,null)),Al.Y(127,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(129,0,null,null,6,"ion-list-header",[["class","no-border item"],["no-margin",""]],null,null,null,Mu.b,Mu.a)),Al.Y(130,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,14,{contentLabel:0}),Al._18(603979776,15,{_buttons:1}),Al._18(603979776,16,{_icons:1}),Al.Y(134,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Berdasarkan bentuk Lembaga"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,r)),Al.Y(138,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(141,0,null,null,5,"button",[["color","vibrant"],["full",""],["icon-end",""],["ion-button",""],["margin-top",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.navigateTo(2)&&a}return a},Uu.b,Uu.a)),Al.Y(142,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],full:[1,"full"]},null),(l()(),Al._20(-1,0,["\n        DATA LEMBAGA\n        "])),(l()(),Al.Z(144,0,null,0,1,"ion-icon",[["name","arrow-forward"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(145,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  \n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,19,0,"ios-arrow-back","md-arrow-back");l(n,51,0,"danger");l(n,70,0,"secondary");l(n,89,0,"bright");l(n,108,0,"vibrant");l(n,138,0,u.countLembaga);l(n,142,0,"vibrant","");l(n,145,0,"arrow-forward")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,18,0,Al._11(n,19)._hidden);l(n,25,0,Al._11(n,26).statusbarPadding,Al._11(n,26)._hasRefresher);l(n,55,0,u.simpleNumber(u.ajuan));l(n,74,0,u.simpleNumber(u.valid));l(n,93,0,u.simpleNumber(u.prestasi));l(n,112,0,u.simpleNumber(u.koleksi));l(n,144,0,Al._11(n,145)._hidden)})}function _(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,46,"ion-item-sliding",[],null,null,null,oa.b,oa.a)),Al.Y(1,49152,null,2,sa.a,[[2,Du.a],ou.a,Al.z,Al.j,Al.u],null,null),Al._18(335544320,6,{item:0}),Al._18(603979776,7,{_itemOptions:1}),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(5,0,null,0,21,"button",[["class","item item-block"],["ion-item",""],["padding-right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(1,l.context.$implicit.noRegistrasi,l.context.$implicit.namaBentukLembaga+" "+l.context.$implicit.nama)&&a}return a},Mu.b,Mu.a)),Al.Y(6,1097728,[[6,4]],3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(10,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(12,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),Al.Y(13,16384,null,0,ra.a,[],null,null),(l()(),Al._20(-1,null,["\n            "])),(l()(),Al.Z(15,0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(18,0,null,2,1,"h3",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(19,null,["",""])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(21,0,null,2,4,"p",[],null,null,null,null,null)),(l()(),Al._20(22,null,["","   "])),(l()(),Al.Z(23,0,null,null,2,"span",[],[[8,"className",0]],null,null,null,null)),(l()(),Al.Z(24,0,null,null,1,"ion-icon",[["name","compass"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(25,147456,[[10,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(28,0,null,1,17,"ion-item-options",[["side","right"]],null,null,null,null,null)),Al.Y(29,16384,[[7,4]],0,ca.a,[Al.j,ou.a],{side:[0,"side"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(31,0,null,null,3,"button",[["class","text-vibrant"],["color","light"],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(32,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,0,["\n            "])),(l()(),Al._20(-1,0,["\n            Verifikasi\n          "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(36,0,null,null,3,"button",[["class","text-primary"],["color","light"],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(37,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,0,["\n            "])),(l()(),Al._20(-1,0,["\n            Edit\n          "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(41,0,null,null,3,"button",[["class","text-danger"],["color","light"],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(42,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,0,["\n            "])),(l()(),Al._20(-1,0,["\n            Hapus\n          "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n      "]))],function(l,n){l(n,25,0,"compass");l(n,29,0,"right");l(n,32,0,"light");l(n,37,0,"light");l(n,42,0,"light")},function(l,n){l(n,15,0,Al._2(2,"",n.component.urlServer,"/img/logo/",n.context.$implicit.urlGambarLogo,""));l(n,19,0,n.context.$implicit.nama);l(n,22,0,n.context.$implicit.namaBentukLembaga);l(n,23,0,Al._2(1,"text-","0"==n.context.$implicit.statusVerifikasi?"danger":"secondary",""));l(n,24,0,Al._11(n,25)._hidden)})}function d(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,35,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,31,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Kelembagaan"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,11,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["navPop",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,16).onClick()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,16384,null,0,Qu.a,[[2,tu.a]],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(23,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(24,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(0)&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(30,0,null,0,1,"ion-icon",[["name","options"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(31,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(37,0,null,null,32,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(38,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(40,0,null,1,20,"ion-list",[],null,null,null,null,null)),Al.Y(41,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(43,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(44,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(48,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(50,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(51,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(54,0,null,null,5,"ion-item-group",[],null,null,null,null,null)),Al.Y(55,16384,null,0,_a.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,_)),Al.Y(58,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n\n  "])),(l()(),Al.Z(62,0,null,1,6,"ion-infinite-scroll",[["threshold","100px"]],null,[[null,"ionInfinite"]],function(l,n,u){var a=!0;if("ionInfinite"===n){a=!1!==l.component.loadData(u)&&a}return a},null,null)),Al.Y(63,1196032,null,0,da.a,[Cu.a,Al.u,Al.j,_u.a],{threshold:[0,"threshold"]},{ionInfinite:"ionInfinite"}),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(65,0,null,null,2,"ion-infinite-scroll-content",[["loadingSpinner","crescent"],["loadingText","Memuat data..."]],[[1,"state",0]],null,null,ga.b,ga.a)),Al.Y(66,114688,null,0,ma.a,[da.a,iu.a],{loadingSpinner:[0,"loadingSpinner"],loadingText:[1,"loadingText"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,19,0,"ios-arrow-back","md-arrow-back");l(n,31,0,"options");l(n,58,0,u.data);l(n,63,0,"100px");l(n,66,0,"crescent","Memuat data...")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,18,0,Al._11(n,19)._hidden);l(n,30,0,Al._11(n,31)._hidden);l(n,37,0,Al._11(n,38).statusbarPadding,Al._11(n,38)._hasRefresher);l(n,51,0,u.summary);l(n,65,0,Al._11(n,66).inf.state)})}function g(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[11,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.filterData.bentukLembaga==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function m(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[18,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.filterData.wilayah==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function h(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[22,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.filterData.kecamatan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function p(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[26,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.filterData.kelurahan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function b(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,32,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,28,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Filter Lembaga"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,1,20,"ion-buttons",[["start",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(22,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(23,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(24,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(26,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(27,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(34,0,null,null,210,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(35,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(37,0,null,1,60,"ion-list",[],null,null,null,null,null)),Al.Y(38,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(40,0,null,null,6,"ion-list-header",[["class","text-dark item"]],null,null,null,Mu.b,Mu.a)),Al.Y(41,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(45,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Pencarian"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(48,0,null,null,20,"ion-item",[["class","item item-block"],["color","clear"]],null,null,null,Mu.b,Mu.a)),Al.Y(49,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(53,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,5,"ion-searchbar",[["placeholder","Ketik Nama / No Registrasi"],["showWhen","ios"],["value",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null],[2,"hidden-show-when",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.filterData.keyword=u)&&a}return a},Za.b,Za.a)),Al.Y(56,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(58,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(59,1294336,null,0,va.a,[iu.a,ou.a,Al.j,Al.z,[2,Pu.g]],{placeholder:[0,"placeholder"]},null),Al.Y(60,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(62,0,null,2,5,"ion-searchbar",[["no-padding",""],["placeholder","Ketik Nama / No Registrasi"],["showWhen","android,windows"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null],[2,"hidden-show-when",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.filterData.keyword=u)&&a}return a},Za.b,Za.a)),Al.Y(63,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(65,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(66,1294336,null,0,va.a,[iu.a,ou.a,Al.j,Al.z,[2,Pu.g]],{placeholder:[0,"placeholder"]},null),Al.Y(67,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(70,0,null,null,26,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(71,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(75,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(77,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(78,16384,[[8,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Bentuk Lembaga"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(81,0,null,3,14,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,82)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,82)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.filterData.bentukLembaga=u)&&a}return a},ja.b,ja.a)),Al.Y(82,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,11,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(85,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(87,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(89,0,null,null,2,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(90,16384,[[11,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Semua"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,g)),Al.Y(94,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(99,0,null,1,94,"ion-list",[],null,null,null,null,null)),Al.Y(100,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(102,0,null,null,6,"ion-list-header",[["class","text-dark item"]],null,null,null,Mu.b,Mu.a)),Al.Y(103,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(107,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Lokasi"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(110,0,null,null,26,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(111,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(115,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(117,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(118,16384,[[15,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Wilayah"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(121,0,null,3,14,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,122)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,122)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.filterData.wilayah=u)&&a}if("ionChange"===n){a=!1!==t.loadKecamatan(t.filterData.wilayah)&&a}return a},ja.b,ja.a)),Al.Y(122,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,18,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(125,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(127,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(129,0,null,null,2,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(130,16384,[[18,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Semua"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,m)),Al.Y(134,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(138,0,null,null,26,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(139,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,19,{contentLabel:0}),Al._18(603979776,20,{_buttons:1}),Al._18(603979776,21,{_icons:1}),Al.Y(143,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(145,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(146,16384,[[19,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kecamatan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(149,0,null,3,14,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,150)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,150)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.filterData.kecamatan=u)&&a}if("ionChange"===n){a=!1!==t.loadKelurahan(t.filterData.kecamatan)&&a}return a},ja.b,ja.a)),Al.Y(150,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,22,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(153,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(155,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(157,0,null,null,2,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(158,16384,[[22,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Semua"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,h)),Al.Y(162,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(166,0,null,null,26,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(167,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,23,{contentLabel:0}),Al._18(603979776,24,{_buttons:1}),Al._18(603979776,25,{_icons:1}),Al.Y(171,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(173,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(174,16384,[[23,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kelurahan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(177,0,null,3,14,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,178)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,178)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.filterData.kelurahan=u)&&a}return a},ja.b,ja.a)),Al.Y(178,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,26,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(181,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(183,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(185,0,null,null,2,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(186,16384,[[26,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Semua"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,p)),Al.Y(190,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(195,0,null,1,48,"ion-list",[],null,null,null,null,null)),Al.Y(196,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(198,0,null,null,6,"ion-list-header",[["class","text-dark item"]],null,null,null,Mu.b,Mu.a)),Al.Y(199,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,27,{contentLabel:0}),Al._18(603979776,28,{_buttons:1}),Al._18(603979776,29,{_icons:1}),Al.Y(203,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Status"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(206,0,null,null,17,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(207,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,30,{contentLabel:0}),Al._18(603979776,31,{_buttons:1}),Al._18(603979776,32,{_icons:1}),Al.Y(211,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(213,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(214,16384,[[30,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Belum Verifikasi"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(217,0,null,4,5,"ion-checkbox",[["color","main"],["item-end",""]],[[2,"checkbox-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,218)._click(u)&&a}if("ngModelChange"===n){a=!1!==(t.filterData.ajuan=u)&&a}return a},za.b,za.a)),Al.Y(218,1228800,null,0,wa.a,[iu.a,Iu.a,[2,Su.a],Al.j,Al.z],{color:[0,"color"],checked:[1,"checked"]},null),Al._16(1024,null,Pu.f,function(l){return[l]},[wa.a]),Al.Y(220,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(222,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(225,0,null,null,17,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(226,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,33,{contentLabel:0}),Al._18(603979776,34,{_buttons:1}),Al._18(603979776,35,{_icons:1}),Al.Y(230,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(232,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(233,16384,[[33,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Sudah Verifikasi"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(236,0,null,4,5,"ion-checkbox",[["color","main"],["item-end",""]],[[2,"checkbox-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,237)._click(u)&&a}if("ngModelChange"===n){a=!1!==(t.filterData.valid=u)&&a}return a},za.b,za.a)),Al.Y(237,1228800,null,0,wa.a,[iu.a,Iu.a,[2,Su.a],Al.j,Al.z],{color:[0,"color"],checked:[1,"checked"]},null),Al._16(1024,null,Pu.f,function(l){return[l]},[wa.a]),Al.Y(239,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(241,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(246,0,null,null,10,"ion-footer",[],null,null,null,null,null)),Al.Y(247,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(249,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(250,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n      "])),(l()(),Al.Z(252,0,null,3,2,"button",[["block",""],["class","text-white"],["clear",""],["ion-button",""],["type","button"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.filter()&&a}return a},Uu.b,Uu.a)),Al.Y(253,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"],block:[1,"block"]},null),(l()(),Al._20(-1,0,["Aktifkan"])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,19,0,"md-close");l(n,27,0,"clear");l(n,49,0,"clear");l(n,56,0,u.filterData.keyword);l(n,59,0,"Ketik Nama / No Registrasi");l(n,63,0,u.filterData.keyword);l(n,66,0,"Ketik Nama / No Registrasi");l(n,85,0,u.filterData.bentukLembaga);l(n,90,0,Al._2(1,"",""==u.filterData.bentukLembaga?u.selected:"",""),"");l(n,94,0,u.bentukLembaga);l(n,125,0,u.filterData.wilayah);l(n,130,0,Al._2(1,"",""==u.filterData.wilayah?u.selected:"",""),"");l(n,134,0,u.wilayah);l(n,153,0,u.filterData.kecamatan);l(n,158,0,Al._2(1,"",""==u.filterData.kecamatan?u.selected:"",""),"");l(n,162,0,u.kecamatan);l(n,181,0,u.filterData.kelurahan);l(n,186,0,Al._2(1,"",""==u.filterData.kelurahan?u.selected:"",""),"");l(n,190,0,u.kelurahan);l(n,218,0,"main",Al._2(1,"","false"!=u.filterData.ajuan?"true":"false",""));l(n,220,0,u.filterData.ajuan);l(n,237,0,"main",Al._2(1,"","false"!=u.filterData.valid?"true":"false",""));l(n,239,0,u.filterData.valid);l(n,250,0,"main");l(n,253,0,"","")},function(l,n){l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,Al._11(n,19)._hidden);l(n,22,0,!Al._11(n,24).isMatch);l(n,34,0,Al._11(n,35).statusbarPadding,Al._11(n,35)._hasRefresher);l(n,55,1,[Al._11(n,58).ngClassUntouched,Al._11(n,58).ngClassTouched,Al._11(n,58).ngClassPristine,Al._11(n,58).ngClassDirty,Al._11(n,58).ngClassValid,Al._11(n,58).ngClassInvalid,Al._11(n,58).ngClassPending,Al._11(n,59)._animated,Al._11(n,59)._value,Al._11(n,59)._isActive,Al._11(n,59)._showCancelButton,Al._11(n,59)._shouldAlignLeft,Al._11(n,59)._isFocus,!Al._11(n,60).isMatch]);l(n,62,1,[Al._11(n,65).ngClassUntouched,Al._11(n,65).ngClassTouched,Al._11(n,65).ngClassPristine,Al._11(n,65).ngClassDirty,Al._11(n,65).ngClassValid,Al._11(n,65).ngClassInvalid,Al._11(n,65).ngClassPending,Al._11(n,66)._animated,Al._11(n,66)._value,Al._11(n,66)._isActive,Al._11(n,66)._showCancelButton,Al._11(n,66)._shouldAlignLeft,Al._11(n,66)._isFocus,!Al._11(n,67).isMatch]);l(n,81,0,Al._11(n,82)._disabled,Al._11(n,87).ngClassUntouched,Al._11(n,87).ngClassTouched,Al._11(n,87).ngClassPristine,Al._11(n,87).ngClassDirty,Al._11(n,87).ngClassValid,Al._11(n,87).ngClassInvalid,Al._11(n,87).ngClassPending);l(n,121,0,Al._11(n,122)._disabled,Al._11(n,127).ngClassUntouched,Al._11(n,127).ngClassTouched,Al._11(n,127).ngClassPristine,Al._11(n,127).ngClassDirty,Al._11(n,127).ngClassValid,Al._11(n,127).ngClassInvalid,Al._11(n,127).ngClassPending);l(n,149,0,Al._11(n,150)._disabled,Al._11(n,155).ngClassUntouched,Al._11(n,155).ngClassTouched,Al._11(n,155).ngClassPristine,Al._11(n,155).ngClassDirty,Al._11(n,155).ngClassValid,Al._11(n,155).ngClassInvalid,Al._11(n,155).ngClassPending);l(n,177,0,Al._11(n,178)._disabled,Al._11(n,183).ngClassUntouched,Al._11(n,183).ngClassTouched,Al._11(n,183).ngClassPristine,Al._11(n,183).ngClassDirty,Al._11(n,183).ngClassValid,Al._11(n,183).ngClassInvalid,Al._11(n,183).ngClassPending);l(n,217,0,Al._11(n,218)._disabled,Al._11(n,222).ngClassUntouched,Al._11(n,222).ngClassTouched,Al._11(n,222).ngClassPristine,Al._11(n,222).ngClassDirty,Al._11(n,222).ngClassValid,Al._11(n,222).ngClassInvalid,Al._11(n,222).ngClassPending);l(n,236,0,Al._11(n,237)._disabled,Al._11(n,241).ngClassUntouched,Al._11(n,241).ngClassTouched,Al._11(n,241).ngClassPristine,Al._11(n,241).ngClassDirty,Al._11(n,241).ngClassValid,Al._11(n,241).ngClassInvalid,Al._11(n,241).ngClassPending);l(n,249,0,Al._11(n,250)._sbPadding)})}function f(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,49,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,45,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Profil Lembaga"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(37,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(38,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(41,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.loadForm()&&a}return a},Uu.b,Uu.a)),Al.Y(42,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(44,0,null,0,1,"ion-icon",[["name","ios-create-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(45,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(51,0,null,null,307,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(52,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al._20(-1,1,["\n    "])),(l()(),Al.Z(55,0,null,1,25,"ion-list",[],null,null,null,null,null)),Al.Y(56,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(58,0,null,null,21,"ion-item",[["class","no-border item item-block"],["color","main"],["text-center",""]],null,null,null,Mu.b,Mu.a)),Al.Y(59,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(63,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(65,0,null,2,4,"ion-avatar",[["class","medium"],["margin-bottom",""]],null,null,null,null,null)),Al.Y(66,16384,null,0,ra.a,[],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(68,0,null,null,0,"img",[["class","margin-auto"]],[[8,"src",4]],null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(71,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(72,null,["",""])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(74,0,null,2,1,"h1",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(75,null,["",""])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(77,0,null,2,1,"p",[],[[8,"className",0]],[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(6,t.noRegistrasi,t.namaLembaga,t.detail.namaBentukLembaga,t.detail.nama)&&a}return a},null,null)),(l()(),Al._20(78,null,["",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,1,["\n    "])),(l()(),Al.Z(82,0,null,1,162,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(83,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(85,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(86,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(90,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(92,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(93,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["No Registrasi."])),(l()(),Al.Z(95,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(96,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(97,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(100,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(101,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(105,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(107,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(108,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Telp."])),(l()(),Al.Z(110,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(111,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(112,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(115,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(116,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(120,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(122,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(123,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Email."])),(l()(),Al.Z(125,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(126,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(127,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(130,0,null,null,13,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(131,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(135,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(137,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(138,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Alamat."])),(l()(),Al.Z(140,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(141,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(142,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(145,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(146,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,18,{contentLabel:0}),Al._18(603979776,19,{_buttons:1}),Al._18(603979776,20,{_icons:1}),Al.Y(150,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(152,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(153,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Bergerak dalam bidang."])),(l()(),Al.Z(155,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(156,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(157,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(160,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(161,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,21,{contentLabel:0}),Al._18(603979776,22,{_buttons:1}),Al._18(603979776,23,{_icons:1}),Al.Y(165,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(167,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(168,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jumlah pengurus."])),(l()(),Al.Z(170,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(171,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(172,null,[" "," Orang"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(175,0,null,null,12,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(176,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,24,{contentLabel:0}),Al._18(603979776,25,{_buttons:1}),Al._18(603979776,26,{_icons:1}),Al.Y(180,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(182,0,null,2,4,"p",[],null,null,null,null,null)),(l()(),Al.Z(183,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["NPWP."])),(l()(),Al.Z(185,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(186,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(189,0,null,null,12,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(190,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,27,{contentLabel:0}),Al._18(603979776,28,{_buttons:1}),Al._18(603979776,29,{_icons:1}),Al.Y(194,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(196,0,null,2,4,"p",[],null,null,null,null,null)),(l()(),Al.Z(197,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Afiliasi."])),(l()(),Al.Z(199,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(200,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(203,0,null,null,12,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(204,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,30,{contentLabel:0}),Al._18(603979776,31,{_buttons:1}),Al._18(603979776,32,{_icons:1}),Al.Y(208,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(210,0,null,2,4,"p",[],null,null,null,null,null)),(l()(),Al.Z(211,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Visi."])),(l()(),Al.Z(213,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(214,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(217,0,null,null,12,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(218,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,33,{contentLabel:0}),Al._18(603979776,34,{_buttons:1}),Al._18(603979776,35,{_icons:1}),Al.Y(222,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(224,0,null,2,4,"p",[],null,null,null,null,null)),(l()(),Al.Z(225,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Misi."])),(l()(),Al.Z(227,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(228,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(231,0,null,null,12,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(232,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,36,{contentLabel:0}),Al._18(603979776,37,{_buttons:1}),Al._18(603979776,38,{_icons:1}),Al.Y(236,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(238,0,null,2,4,"p",[],null,null,null,null,null)),(l()(),Al.Z(239,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Media sosial."])),(l()(),Al.Z(241,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(242,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,1,["\n    "])),(l()(),Al.Z(246,0,null,1,87,"ion-list",[],null,null,null,null,null)),Al.Y(247,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(249,0,null,null,6,"ion-list-header",[["class","text-main item"]],null,null,null,Mu.b,Mu.a)),Al.Y(250,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,39,{contentLabel:0}),Al._18(603979776,40,{_buttons:1}),Al._18(603979776,41,{_icons:1}),Al.Y(254,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Informasi lainnya"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(257,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(0,t.noRegistrasi,t.namaLembaga)&&a}return a},Mu.b,Mu.a)),Al.Y(258,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,42,{contentLabel:0}),Al._18(603979776,43,{_buttons:1}),Al._18(603979776,44,{_icons:1}),Al.Y(262,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(264,0,null,0,1,"ion-icon",[["color","main"],["item-start",""],["name","paper"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(265,147456,[[44,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Legalitas\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(268,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(1,t.noRegistrasi,t.namaLembaga)&&a}return a},Mu.b,Mu.a)),Al.Y(269,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,45,{contentLabel:0}),Al._18(603979776,46,{_buttons:1}),Al._18(603979776,47,{_icons:1}),Al.Y(273,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(275,0,null,0,1,"ion-icon",[["color","bright"],["item-start",""],["name","time"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(276,147456,[[47,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Sejarah\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(279,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(2,t.noRegistrasi,t.namaLembaga)&&a}return a},Mu.b,Mu.a)),Al.Y(280,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,48,{contentLabel:0}),Al._18(603979776,49,{_buttons:1}),Al._18(603979776,50,{_icons:1}),Al.Y(284,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(286,0,null,0,1,"ion-icon",[["color","vibrant"],["item-start",""],["name","people"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(287,147456,[[50,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Kepengurusan\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(290,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(3,t.noRegistrasi,t.namaLembaga)&&a}return a},Mu.b,Mu.a)),Al.Y(291,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,51,{contentLabel:0}),Al._18(603979776,52,{_buttons:1}),Al._18(603979776,53,{_icons:1}),Al.Y(295,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(297,0,null,0,1,"ion-icon",[["color","primary"],["item-start",""],["name","pricetag"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(298,147456,[[53,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Usaha\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(301,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(4,t.noRegistrasi,t.namaLembaga)&&a}return a},Mu.b,Mu.a)),Al.Y(302,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,54,{contentLabel:0}),Al._18(603979776,55,{_buttons:1}),Al._18(603979776,56,{_icons:1}),Al.Y(306,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(308,0,null,0,1,"ion-icon",[["color","bright"],["item-start",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(309,147456,[[56,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Prestasi\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(312,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(5,t.noRegistrasi,t.namaLembaga)&&a}return a},Mu.b,Mu.a)),Al.Y(313,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,57,{contentLabel:0}),Al._18(603979776,58,{_buttons:1}),Al._18(603979776,59,{_icons:1}),Al.Y(317,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(319,0,null,0,1,"ion-icon",[["color","secondary"],["item-start",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(320,147456,[[59,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Koleksi\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(323,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openMaps()&&a}return a},Mu.b,Mu.a)),Al.Y(324,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,60,{contentLabel:0}),Al._18(603979776,61,{_buttons:1}),Al._18(603979776,62,{_icons:1}),Al.Y(328,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(330,0,null,0,1,"ion-icon",[["color","primary"],["item-start",""],["name","globe"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(331,147456,[[62,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Lihat Maps\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,1,["\n    "])),(l()(),Al.Z(335,0,null,1,21,"ion-list",[],null,null,null,null,null)),Al.Y(336,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(338,0,null,null,6,"ion-list-header",[["class","text-main item"]],null,null,null,Mu.b,Mu.a)),Al.Y(339,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,63,{contentLabel:0}),Al._18(603979776,64,{_buttons:1}),Al._18(603979776,65,{_icons:1}),Al.Y(343,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Aplikasi"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(346,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openModal(6,t.noRegistrasi,t.namaLembaga,t.detail.namaBentukLembaga,t.detail.nama)&&a}return a},Mu.b,Mu.a)),Al.Y(347,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,66,{contentLabel:0}),Al._18(603979776,67,{_buttons:1}),Al._18(603979776,68,{_icons:1}),Al.Y(351,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(353,0,null,0,1,"ion-icon",[["color","secondary"],["item-start",""],["name","md-create"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(354,147456,[[68,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        Verifikasi Lembaga\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){l(n,4,0,"main");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,45,0,"ios-create-outline");l(n,59,0,"main");l(n,265,0,"main","paper");l(n,276,0,"bright","time");l(n,287,0,"vibrant","people");l(n,298,0,"primary","pricetag");l(n,309,0,"bright","trophy");l(n,320,0,"secondary","book");l(n,331,0,"primary","globe");l(n,354,0,"secondary","md-create")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,44,0,Al._11(n,45)._hidden);l(n,51,0,Al._11(n,52).statusbarPadding,Al._11(n,52)._hasRefresher);l(n,68,0,Al._2(2,"",u.urlServer,"/img/logo/",u.detail.avatar,""));l(n,72,0,u.detail.namaBentukLembaga);l(n,75,0,u.detail.nama);l(n,77,0,Al._2(1,"text-",1==u.detail.statusVerifikasi?"white":"bright",""));l(n,78,0,1==u.detail.statusVerifikasi?"Sudah Verifikasi":"Belum Verifikasi");l(n,97,0,u.detail.noreg);l(n,112,0,u.detail.telp);l(n,127,0,u.detail.email);l(n,142,0,u.detail.alamat);l(n,157,0,u.detail.namaBidangGerak);l(n,172,0,u.detail.jumlahPengurus);l(n,186,0,u.detail.noNpwp);l(n,200,0,u.detail.organisasiAfiliasi);l(n,214,0,u.detail.visiLembaga);l(n,228,0,u.detail.misiLembaga);l(n,242,0,u.detail.mediaSosial);l(n,264,0,Al._11(n,265)._hidden);l(n,275,0,Al._11(n,276)._hidden);l(n,286,0,Al._11(n,287)._hidden);l(n,297,0,Al._11(n,298)._hidden);l(n,308,0,Al._11(n,309)._hidden);l(n,319,0,Al._11(n,320)._hidden);l(n,330,0,Al._11(n,331)._hidden);l(n,353,0,Al._11(n,354)._hidden)})}function k(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,22,"button",[["class","item item-block"],["ion-item",""],["text-wrap",""]],[[2,"no-border",null]],null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["color","main"],["item-start",""],["name","document"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[11,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(10,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(11,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(12,null,["","."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(14,0,null,null,2,"span",[],[[8,"className",0]],null,null,null,null)),(l()(),Al.Z(15,0,null,null,1,"ion-icon",[["name","compass"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(16,147456,[[11,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(18,0,null,2,3,"p",[],null,null,null,null,null)),(l()(),Al.Z(19,0,null,null,1,"span",[["class","text-vibrant"]],null,null,null,null,null)),(l()(),Al._20(20,null,["",""])),(l()(),Al._20(21,null,[" | ",""])),(l()(),Al._20(-1,2,["\n      "]))],function(l,n){l(n,8,0,"main","document");l(n,16,0,"compass")},function(l,n){l(n,0,0,n.context.last);l(n,7,0,Al._11(n,8)._hidden);l(n,12,0,n.context.$implicit.namaPersyaratan);l(n,14,0,Al._2(1,"text-","0"==n.context.$implicit.statusVerifikasi?"danger":"secondary",""));l(n,15,0,Al._11(n,16)._hidden);l(n,20,0,n.context.$implicit.noLegalitas);l(n,21,0,n.context.$implicit.tanggalLegalitas)})}function Y(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,49,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,45,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Legalitas"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(37,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(38,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(41,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.loadForm()&&a}return a},Uu.b,Uu.a)),Al.Y(42,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(44,0,null,0,1,"ion-icon",[["name","ios-create-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(45,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(51,0,null,null,42,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(52,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(54,0,null,1,38,"ion-list",[],null,null,null,null,null)),Al.Y(55,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(57,0,null,null,34,"ion-row",[["class","row"],["padding",""]],null,null,null,null,null)),Al.Y(58,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(60,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(61,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(65,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(67,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(70,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(71,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(72,null,["","."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(74,0,null,4,1,"ion-icon",[["color","main"],["item-end",""],["name","paper"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(75,147456,[[5,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(78,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(79,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(83,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(85,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(86,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,k)),Al.Y(90,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,45,0,"ios-create-outline");l(n,75,0,"main","paper");l(n,90,0,u.data)},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,44,0,Al._11(n,45)._hidden);l(n,51,0,Al._11(n,52).statusbarPadding,Al._11(n,52)._hasRefresher);l(n,72,0,u.namaLembaga);l(n,74,0,Al._11(n,75)._hidden);l(n,86,0,u.countData)})}function Z(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,49,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,45,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Sejarah"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(37,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(38,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(41,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.loadForm()&&a}return a},Uu.b,Uu.a)),Al.Y(42,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(44,0,null,0,1,"ion-icon",[["name","ios-create-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(45,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(51,0,null,null,316,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(52,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(54,0,null,1,312,"ion-list",[],null,null,null,null,null)),Al.Y(55,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(57,0,null,null,308,"ion-row",[["class","row"],["padding",""]],null,null,null,null,null)),Al.Y(58,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(60,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(61,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(65,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(67,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai sejarah Lembaga terkait."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(70,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(71,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(72,null,["","."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(74,0,null,4,1,"ion-icon",[["color","bright"],["item-end",""],["name","time"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(75,147456,[[5,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(78,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(79,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(83,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(85,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(86,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Sejarah singkat."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(89,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(90,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(91,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(94,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(95,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(99,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(101,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(102,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Tanggal didirikan."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(105,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(106,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(107,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(110,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(111,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(115,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(117,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(118,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Kepemilikan."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(121,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(122,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(123,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(126,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(127,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(131,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(133,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(134,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Sertifikasi."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(137,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(138,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(139,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(142,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(143,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,18,{contentLabel:0}),Al._18(603979776,19,{_buttons:1}),Al._18(603979776,20,{_icons:1}),Al.Y(147,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(149,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(150,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Status Tanah."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(153,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(154,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(155,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(158,0,null,null,14,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(159,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,21,{contentLabel:0}),Al._18(603979776,22,{_buttons:1}),Al._18(603979776,23,{_icons:1}),Al.Y(163,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(165,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(166,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Luas Tanah."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(169,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(170,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(171,null,[" "," ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(174,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(175,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,24,{contentLabel:0}),Al._18(603979776,25,{_buttons:1}),Al._18(603979776,26,{_icons:1}),Al.Y(179,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(181,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(182,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Luas Bangunan."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(185,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(186,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(187,null,[" "," ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(190,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(191,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,27,{contentLabel:0}),Al._18(603979776,28,{_buttons:1}),Al._18(603979776,29,{_icons:1}),Al.Y(195,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(197,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(198,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Kondisi Bangunan."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(201,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(202,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(203,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(206,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(207,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,30,{contentLabel:0}),Al._18(603979776,31,{_buttons:1}),Al._18(603979776,32,{_icons:1}),Al.Y(211,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(213,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(214,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jumlah Bangunan."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(217,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(218,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(219,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(222,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(223,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,33,{contentLabel:0}),Al._18(603979776,34,{_buttons:1}),Al._18(603979776,35,{_icons:1}),Al.Y(227,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(229,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(230,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Saranan / Prasarana."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(233,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(234,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(235,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(238,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(239,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,36,{contentLabel:0}),Al._18(603979776,37,{_buttons:1}),Al._18(603979776,38,{_icons:1}),Al.Y(243,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(245,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(246,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Struktur Organisasi."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(249,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(250,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(251,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(254,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(255,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,39,{contentLabel:0}),Al._18(603979776,40,{_buttons:1}),Al._18(603979776,41,{_icons:1}),Al.Y(259,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(261,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(262,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Bahasa Pengantar."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(265,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(266,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(267,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(270,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(271,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,42,{contentLabel:0}),Al._18(603979776,43,{_buttons:1}),Al._18(603979776,44,{_icons:1}),Al.Y(275,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(277,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(278,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Sensus."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(281,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(282,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(283,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(286,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(287,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,45,{contentLabel:0}),Al._18(603979776,46,{_buttons:1}),Al._18(603979776,47,{_icons:1}),Al.Y(291,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(293,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(294,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Bantuan Pemerintah."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(297,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(298,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(299,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(302,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(303,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,48,{contentLabel:0}),Al._18(603979776,49,{_buttons:1}),Al._18(603979776,50,{_icons:1}),Al.Y(307,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(309,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(310,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Kondisi Geografis."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(313,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(314,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(315,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(318,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(319,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,51,{contentLabel:0}),Al._18(603979776,52,{_buttons:1}),Al._18(603979776,53,{_icons:1}),Al.Y(323,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(325,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(326,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Potensi Wilayah."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(329,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(330,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(331,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(334,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(335,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,54,{contentLabel:0}),Al._18(603979776,55,{_buttons:1}),Al._18(603979776,56,{_icons:1}),Al.Y(339,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(341,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(342,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jenis Wilayah."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(345,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(346,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(347,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(350,0,null,null,14,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(351,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,57,{contentLabel:0}),Al._18(603979776,58,{_buttons:1}),Al._18(603979776,59,{_icons:1}),Al.Y(355,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(357,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(358,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Catatan."])),(l()(),Al._20(-1,null,["  "])),(l()(),Al.Z(361,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(362,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(363,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){l(n,4,0,"main");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,45,0,"ios-create-outline");l(n,75,0,"bright","time")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,44,0,Al._11(n,45)._hidden);l(n,51,0,Al._11(n,52).statusbarPadding,Al._11(n,52)._hasRefresher);l(n,72,0,u.namaLembaga);l(n,74,0,Al._11(n,75)._hidden);l(n,91,0,u.data.deskripsi);l(n,107,0,u.data.tanggalDidirikan);l(n,123,0,u.data.kepemilikan);l(n,139,0,u.data.statusSertifikasi);l(n,155,0,u.data.statusTanah);l(n,171,0,u.data.luasTanah,u.data.satuanLuasTanah);l(n,187,0,u.data.luasBangunan,u.data.satuanLuasBangunan);l(n,203,0,u.data.kondisiBangunan);l(n,219,0,u.data.JumlahBangunan);l(n,235,0,u.data.statusSarana);l(n,251,0,u.data.statusStrukturKepengurusan);l(n,267,0,u.data.bahasaPengantar);l(n,283,0,u.data.statusSensus);l(n,299,0,u.data.statusBantuanPemerintah);l(n,315,0,u.data.kondisiGeografis);l(n,331,0,u.data.potensiWilayah);l(n,347,0,u.data.jenisWilayah);l(n,363,0,u.data.catatanLain)})}function v(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,49,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,45,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Kepengurusan"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(37,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(38,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(41,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.loadForm()&&a}return a},Uu.b,Uu.a)),Al.Y(42,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(44,0,null,0,1,"ion-icon",[["name","ios-create-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(45,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(51,0,null,null,220,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(52,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(54,0,null,1,216,"ion-list",[],null,null,null,null,null)),Al.Y(55,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(57,0,null,null,212,"ion-row",[["class","row"],["padding",""]],null,null,null,null,null)),Al.Y(58,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(60,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(61,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(65,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(67,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai kepengurusan Lembaga terkait."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(70,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(71,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(72,null,["","."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(74,0,null,4,1,"ion-icon",[["color","vibrant"],["item-end",""],["name","people"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(75,147456,[[5,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(78,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(79,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(83,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(85,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(86,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Penanggung jawab."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(89,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(90,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(91,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(94,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(95,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(99,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(101,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(102,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jabatan."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(105,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(106,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(107,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(110,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(111,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(115,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(117,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(118,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Alamat."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(121,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(122,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(123,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(126,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(127,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(131,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(133,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(134,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Telp."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(137,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(138,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(139,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(142,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(143,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,18,{contentLabel:0}),Al._18(603979776,19,{_buttons:1}),Al._18(603979776,20,{_icons:1}),Al.Y(147,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(149,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(150,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Kewarganegaraan."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(153,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(154,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(155,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(158,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(159,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,21,{contentLabel:0}),Al._18(603979776,22,{_buttons:1}),Al._18(603979776,23,{_icons:1}),Al.Y(163,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(165,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(166,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Tempat, Tanggal Lahir."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(169,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(170,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(171,null,[" ",", ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(174,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(175,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,24,{contentLabel:0}),Al._18(603979776,25,{_buttons:1}),Al._18(603979776,26,{_icons:1}),Al.Y(179,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(181,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(182,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jenis Kelamin."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(185,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(186,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(187,null,[" ","",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(190,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(191,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,27,{contentLabel:0}),Al._18(603979776,28,{_buttons:1}),Al._18(603979776,29,{_icons:1}),Al.Y(195,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(197,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(198,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Agama."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(201,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(202,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(203,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(206,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(207,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,30,{contentLabel:0}),Al._18(603979776,31,{_buttons:1}),Al._18(603979776,32,{_icons:1}),Al.Y(211,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(213,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(214,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jabatan lain."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(217,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(218,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(219,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(222,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(223,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,33,{contentLabel:0}),Al._18(603979776,34,{_buttons:1}),Al._18(603979776,35,{_icons:1}),Al.Y(227,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(229,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(230,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Pendidikan."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(233,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(234,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(235,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(238,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(239,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,36,{contentLabel:0}),Al._18(603979776,37,{_buttons:1}),Al._18(603979776,38,{_icons:1}),Al.Y(243,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(245,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(246,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Kompetensi."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(249,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(250,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(251,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(254,0,null,null,14,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(255,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,39,{contentLabel:0}),Al._18(603979776,40,{_buttons:1}),Al._18(603979776,41,{_icons:1}),Al.Y(259,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(261,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(262,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Catatan."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(265,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(266,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(267,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){l(n,4,0,"main");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,45,0,"ios-create-outline");l(n,75,0,"vibrant","people")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,44,0,Al._11(n,45)._hidden);l(n,51,0,Al._11(n,52).statusbarPadding,Al._11(n,52)._hasRefresher);l(n,72,0,u.namaLembaga);l(n,74,0,Al._11(n,75)._hidden);l(n,91,0,u.data.penanggungJawab);l(n,107,0,u.data.jabatan);l(n,123,0,u.data.alamatLengkap);l(n,139,0,u.data.noTelp);l(n,155,0,u.data.kewarganegaraan);l(n,171,0,u.data.tempatLahir,u.data.tanggalLahir);l(n,187,0,"L"==u.data.jenisKelamin?"Laki-laki":"","P"==u.data.jenisKelamin?"Perempuan":"");l(n,203,0,u.data.agama);l(n,219,0,u.data.jabatanLain);l(n,235,0,u.data.pendidikan);l(n,251,0,u.data.kompetensi);l(n,267,0,u.data.catatan)})}function C(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,49,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,45,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Usaha"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(37,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(38,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(41,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.loadForm()&&a}return a},Uu.b,Uu.a)),Al.Y(42,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(44,0,null,0,1,"ion-icon",[["name","ios-create-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(45,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(51,0,null,null,108,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(52,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(54,0,null,1,104,"ion-list",[],null,null,null,null,null)),Al.Y(55,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(57,0,null,null,100,"ion-row",[["class","row"],["padding",""]],null,null,null,null,null)),Al.Y(58,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(60,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(61,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(65,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(67,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai usaha yang sedang dijalankan oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(70,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(71,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(72,null,["","."])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(74,0,null,4,1,"ion-icon",[["color","primary"],["item-end",""],["name","pricetag"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(75,147456,[[5,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(78,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(79,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(83,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(85,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(86,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Nama Usaha."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(89,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(90,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(91,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(94,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(95,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(99,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(101,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(102,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Detail Usaha."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(105,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(106,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(107,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(110,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(111,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(115,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(117,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(118,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jenis Usaha."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(121,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(122,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(123,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(126,0,null,null,14,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(127,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(131,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(133,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(134,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jumlah Pekerja."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(137,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(138,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(139,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(142,0,null,null,14,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(143,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,18,{contentLabel:0}),Al._18(603979776,19,{_buttons:1}),Al._18(603979776,20,{_icons:1}),Al.Y(147,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(149,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al.Z(150,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Catatan."])),(l()(),Al._20(-1,null,[" "])),(l()(),Al.Z(153,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(154,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(155,null,[" ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){l(n,4,0,"main");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,45,0,"ios-create-outline");l(n,75,0,"primary","pricetag")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,44,0,Al._11(n,45)._hidden);l(n,51,0,Al._11(n,52).statusbarPadding,Al._11(n,52)._hasRefresher);l(n,72,0,u.namaLembaga);l(n,74,0,Al._11(n,75)._hidden);l(n,91,0,u.data.namaUsaha);l(n,107,0,u.data.detailUsaha);l(n,123,0,u.data.jenisUsaha);l(n,139,0,u.data.jumlahPekerja);l(n,155,0,u.data.catatan)})}function j(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,12,"button",[["class","item item-block"],["ion-item",""]],[[2,"no-border",null]],null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-bright"],["item-start",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[10,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(10,0,null,2,1,"h2",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(11,null,["",""])),(l()(),Al._20(-1,2,["\n    "]))],function(l,n){l(n,8,0,"trophy")},function(l,n){l(n,0,0,n.context.last);l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.context.$implicit.deskripsi)})}function y(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Prestasi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,38,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  \n  "])),(l()(),Al.Z(42,0,null,1,34,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,16,"ion-item",[["class","no-border-top item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai prestasi yang dimiliki oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(56,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(57,null,["","."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(59,0,null,4,1,"ion-icon",[["color","bright"],["item-end",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(60,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(63,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(70,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(71,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,j)),Al.Y(75,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(79,0,null,null,20,"ion-footer",[],null,null,null,null,null)),Al.Y(80,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(82,0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","clear"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(83,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(85,0,null,3,12,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(86,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(90,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(92,0,null,3,1,"ion-input",[["placeholder","Tambah prestasi.."],["type","text"]],null,null,null,Bu.b,Bu.a)),Al.Y(93,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(95,0,null,4,1,"ion-icon",[["item-right",""],["name","md-create"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(96,147456,[[13,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"bright","trophy");l(n,75,0,u.data);l(n,83,0,"clear");l(n,93,0,"text","Tambah prestasi..");l(n,96,0,"md-create")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,57,0,u.namaLembaga);l(n,59,0,Al._11(n,60)._hidden);l(n,71,0,u.countData);l(n,82,0,Al._11(n,83)._sbPadding);l(n,95,0,Al._11(n,96)._hidden)})}function z(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,15,"button",[["class","item item-block"],["ion-item",""]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-secondary"],["item-start",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[10,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(10,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(11,null,["",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(13,0,null,2,1,"h2",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(14,null,["",""])),(l()(),Al._20(-1,2,["\n    "]))],function(l,n){l(n,8,0,"book")},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.context.$implicit.jenisKoleksi);l(n,14,0,n.context.$implicit.judulKoleksi)})}function w(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Koleksi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,38,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,34,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,16,"ion-item",[["class","no-border-top item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai koleksi yang dimiliki oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(56,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(57,null,["","."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(59,0,null,4,1,"ion-icon",[["color","secondary"],["item-end",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(60,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(63,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(70,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(71,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,z)),Al.Y(75,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(79,0,null,null,74,"ion-footer",[],null,null,null,null,null)),Al.Y(80,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(82,0,null,null,70,"ion-toolbar",[["class","toolbar"],["color","clear"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(83,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(85,0,null,3,19,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(86,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(90,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(92,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(93,16384,[[11,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Judul Koleksi"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(96,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.formData.judulKoleksi=u)&&a}return a},Bu.b,Bu.a)),Al.Y(97,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(99,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(100,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(102,0,null,4,1,"ion-icon",[["item-right",""],["name","md-create"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(103,147456,[[13,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(106,0,null,3,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(107,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,14,{contentLabel:0}),Al._18(603979776,15,{_buttons:1}),Al._18(603979776,16,{_icons:1}),Al.Y(111,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(113,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(114,16384,[[14,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jenis Koleksi"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(117,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,118)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,118)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.formData.jenisKoleksi=u)&&a}return a},ja.b,ja.a)),Al.Y(118,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,17,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(121,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(123,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(125,0,null,null,2,"ion-option",[["value","Buku"]],null,null,null,null,null)),Al.Y(126,16384,[[17,4]],0,ba.a,[Al.j],{value:[0,"value"]},null),(l()(),Al._20(-1,null,["Buku"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(129,0,null,null,2,"ion-option",[["value","Kitab"]],null,null,null,null,null)),Al.Y(130,16384,[[17,4]],0,ba.a,[Al.j],{value:[0,"value"]},null),(l()(),Al._20(-1,null,["Kitab"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(135,0,null,3,16,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(136,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,18,{contentLabel:0}),Al._18(603979776,19,{_buttons:1}),Al._18(603979776,20,{_icons:1}),Al.Y(140,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(142,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(143,16384,[[18,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Keterangan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(146,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.formData.deskripsi=u)&&a}return a},Bu.b,Bu.a)),Al.Y(147,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(149,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(150,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"secondary","book");l(n,75,0,u.data);l(n,83,0,"clear");l(n,97,0,u.formData.judulKoleksi);l(n,100,0,"text");l(n,103,0,"md-create");l(n,121,0,u.formData.jenisKoleksi);l(n,126,0,"Buku");l(n,130,0,"Kitab");l(n,147,0,u.formData.deskripsi);l(n,150,0,"text")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,57,0,u.namaLembaga);l(n,59,0,Al._11(n,60)._hidden);l(n,71,0,u.countData);l(n,82,0,Al._11(n,83)._sbPadding);l(n,96,0,Al._11(n,99).ngClassUntouched,Al._11(n,99).ngClassTouched,Al._11(n,99).ngClassPristine,Al._11(n,99).ngClassDirty,Al._11(n,99).ngClassValid,Al._11(n,99).ngClassInvalid,Al._11(n,99).ngClassPending);l(n,102,0,Al._11(n,103)._hidden);l(n,117,0,Al._11(n,118)._disabled,Al._11(n,123).ngClassUntouched,Al._11(n,123).ngClassTouched,Al._11(n,123).ngClassPristine,Al._11(n,123).ngClassDirty,Al._11(n,123).ngClassValid,Al._11(n,123).ngClassInvalid,Al._11(n,123).ngClassPending);l(n,146,0,Al._11(n,149).ngClassUntouched,Al._11(n,149).ngClassTouched,Al._11(n,149).ngClassPristine,Al._11(n,149).ngClassDirty,Al._11(n,149).ngClassValid,Al._11(n,149).ngClassInvalid,Al._11(n,149).ngClassPending)})}function L(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,6,"ion-list-header",[["class","item"],["color","light"]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(5,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],{color:[0,"color"]},null),(l()(),Al._20(6,2,[" ",""]))],function(l,n){l(n,1,0,"light");l(n,5,0,"light")},function(l,n){l(n,6,0,n.parent.context.$implicit.namaGrup)})}function x(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,34,"div",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,L)),Al.Y(3,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(5,0,null,null,28,"ion-item-sliding",[],null,null,null,oa.b,oa.a)),Al.Y(6,49152,null,2,sa.a,[[2,Du.a],ou.a,Al.z,Al.j,Al.u],null,null),Al._18(335544320,14,{item:0}),Al._18(603979776,15,{_itemOptions:1}),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(10,0,null,0,14,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(11,1097728,[[14,4]],3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,16,{contentLabel:0}),Al._18(603979776,17,{_buttons:1}),Al._18(603979776,18,{_icons:1}),Al.Y(15,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(17,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(18,16384,[[16,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(19,null,["",""])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(21,0,null,0,2,"ion-checkbox",[["color","main"]],[[2,"checkbox-disabled",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,23)._click(u)&&a}return a},za.b,za.a)),Al._16(5120,null,Pu.f,function(l){return[l]},[wa.a]),Al.Y(23,1228800,null,0,wa.a,[iu.a,Iu.a,[2,Su.a],Al.j,Al.z],{color:[0,"color"],checked:[1,"checked"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(26,0,null,1,6,"ion-item-options",[["side","right"]],null,null,null,null,null)),Al.Y(27,16384,[[15,4]],0,ca.a,[Al.j,ou.a],{side:[0,"side"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(29,0,null,null,2,"button",[["color","main"],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(30,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,0,["\n            Lihat Berkas\n          "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n    "]))],function(l,n){l(n,3,0,n.context.$implicit.idGrup!=n.component.dataClone[n.context.index-1].idGrup);l(n,23,0,"main",Al._2(1,"","1"==n.context.$implicit.statusVerifikasi?"true":"false",""));l(n,27,0,"right");l(n,30,0,"main")},function(l,n){l(n,19,0,n.context.$implicit.nama);l(n,21,0,Al._11(n,23)._disabled)})}function P(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Verifikasi Lembaga"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,59,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,55,"ion-list",[],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,18,"ion-item",[["class","no-border item item-block"],["color","light"]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),Al.Y(53,16384,null,0,ra.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(55,0,null,null,0,"img",[["src","assets/imgs/sample.jpg"]],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(58,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Al._20(59,null,["",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(61,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(62,null,["",""])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(65,0,null,null,17,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(66,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(70,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(72,0,null,4,2,"ion-toggle",[],[[2,"toggle-disabled",null],[2,"toggle-checked",null],[2,"toggle-activated",null]],[[null,"keyup"]],function(l,n,u){var a=!0;if("keyup"===n){a=!1!==Al._11(l,74)._keyup(u)&&a}return a},Ja.b,Ja.a)),Al._16(5120,null,Pu.f,function(l){return[l]},[Ha.a]),Al.Y(74,1228800,null,0,Ha.a,[Iu.a,iu.a,ou.a,Al.j,Al.z,Xa.a,[2,Su.a],su.l,_u.a,Al.u],{checked:[0,"checked"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(76,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(77,16384,[[5,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["\n        Konfimasi keabsahan data\n      "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(80,0,null,0,1,"ion-icon",[["color","main"],["item-start",""],["name","md-checkmark-circle-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(81,147456,[[7,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(84,0,null,null,9,"button",[["class","no-border item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==t.openRevision(t.noRegistrasi,t.lembaga)&&a}return a},Mu.b,Mu.a)),Al.Y(85,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(89,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(91,0,null,0,1,"ion-icon",[["color","secondary"],["item-start",""],["name","chatbubbles"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(92,147456,[[10,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Catatan revisi\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,x)),Al.Y(96,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,46,0,"light");l(n,74,0,Al._2(1,"","valid"==u.statusValid?"true":"false",""));l(n,81,0,"main","md-checkmark-circle-outline");l(n,92,0,"secondary","chatbubbles");l(n,96,0,u.data)},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,59,0,u.namaLembaga);l(n,62,0,u.bentukLembaga);l(n,72,0,Al._11(n,74)._disabled,Al._11(n,74)._value,Al._11(n,74)._activated);l(n,80,0,Al._11(n,81)._hidden);l(n,91,0,Al._11(n,92)._hidden)})}function D(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,7,"ion-list-header",[["class","item"],["color","light"]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(5,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],{color:[0,"color"]},null),(l()(),Al._20(6,2,[" ",""])),Al._15(7,2)],function(l,n){l(n,1,0,"light");l(n,5,0,"light")},function(l,n){l(n,6,0,Al._21(n,6,0,l(n,7,0,Al._11(n.parent.parent,0),n.parent.context.$implicit.tanggal,"yyyy MMM dd")))})}function M(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,22,"ion-item",[["class","item item-block"],["text-wrap",""]],[[2,"no-border",null]],null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-vibrant"],["item-start",""],["name","document"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[13,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(10,0,null,2,1,"h3",[["class","text-main"]],null,null,null,null,null)),(l()(),Al._20(11,null,["",""])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(13,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(14,null,["(",")"])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(16,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(17,null,["",""])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(19,0,null,4,2,"ion-note",[["item-end",""]],null,null,null,null,null)),Al.Y(20,16384,null,0,Ea.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(21,null,["",""])),(l()(),Al._20(-1,2,["\n      "]))],function(l,n){l(n,8,0,"document")},function(l,n){l(n,0,0,n.parent.context.last);l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.parent.context.$implicit.namaPersyaratan);l(n,14,0,n.parent.context.$implicit.type);l(n,17,0,n.parent.context.$implicit.catatan);l(n,21,0,n.parent.context.$implicit.jam)})}function S(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,13,"ion-item",[["class","item item-block"],["text-wrap",""]],[[2,"no-border",null]],null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,14,{contentLabel:0}),Al._18(603979776,15,{_buttons:1}),Al._18(603979776,16,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-secondary"],["item-start",""],["name","ios-chatbubbles"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[16,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(9,2,["\n          ","\n          "])),(l()(),Al.Z(10,0,null,4,2,"ion-note",[["item-end",""]],null,null,null,null,null)),Al.Y(11,16384,null,0,Ea.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(12,null,["",""])),(l()(),Al._20(-1,2,["\n      "]))],function(l,n){l(n,8,0,"ios-chatbubbles")},function(l,n){l(n,0,0,n.parent.context.last);l(n,7,0,Al._11(n,8)._hidden);l(n,9,0,n.parent.context.$implicit.catatan);l(n,12,0,n.parent.context.$implicit.jam)})}function I(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,10,"div",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,D)),Al.Y(3,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,M)),Al.Y(6,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,S)),Al.Y(9,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n    "]))],function(l,n){l(n,3,0,n.context.$implicit.tanggal!=n.component.dataClone[n.context.index-1].tanggal);l(n,6,0,"verifikasi"==n.context.$implicit.grup);l(n,9,0,"revisi"==n.context.$implicit.grup)},null)}function T(l){return Al._22(0,[Al._13(0,Gu.d,[Al.r]),(l()(),Al.Z(1,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(2,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(4,0,null,null,33,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(5,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(7,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(8,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Revisi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(11,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(12,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(15,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(16,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(17,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(19,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(20,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(21,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(24,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(25,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(28,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(29,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(30,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(32,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(33,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(40,0,null,null,38,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(41,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  \n  "])),(l()(),Al.Z(43,0,null,1,34,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(44,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(46,0,null,null,16,"ion-item",[["class","no-border-top item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(47,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(51,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(53,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Historial catatan revisi yang dikirimkan ke Lembaga, terkait verifikasi."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(56,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(57,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(58,null,["",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(60,0,null,4,1,"ion-icon",[["color","secondary"],["item-end",""],["name","chatbubbles"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(61,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(64,0,null,null,9,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(65,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(69,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(71,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(72,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,I)),Al.Y(76,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(80,0,null,null,23,"ion-footer",[],null,null,null,null,null)),Al.Y(81,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(83,0,null,null,19,"ion-toolbar",[["class","toolbar"],["color","clear"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(84,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(86,0,null,3,15,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(87,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,17,{contentLabel:0}),Al._18(603979776,18,{_buttons:1}),Al._18(603979776,19,{_icons:1}),Al.Y(91,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(93,0,null,3,4,"ion-input",[["placeholder","Ketik catatan revisi.."],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"keypress"]],function(l,n,u){var a=!0,t=l.component;if("ngModelChange"===n){a=!1!==(t.catatanRevisi=u)&&a}if("keypress"===n){a=!1!==t.insertData(u.keyCode)&&a}return a},Bu.b,Bu.a)),Al.Y(94,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(96,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(97,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(99,0,null,4,1,"ion-icon",[["item-right",""],["name","md-create"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.insertData(13)&&a}return a},null,null)),Al.Y(100,147456,[[19,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,5,0,"main","");l(n,21,0,"clear");l(n,25,0,"ios-arrow-back","md-arrow-back");l(n,33,0,"clear");l(n,61,0,"secondary","chatbubbles");l(n,76,0,u.data);l(n,84,0,"clear");l(n,94,0,u.catatanRevisi);l(n,97,0,"text","Ketik catatan revisi..");l(n,100,0,"md-create")},function(l,n){var u=n.component;l(n,4,0,Al._11(n,5)._hidden,Al._11(n,5)._sbPadding);l(n,15,0,!Al._11(n,17).isMatch);l(n,19,0,!Al._11(n,20).isMatch);l(n,24,0,Al._11(n,25)._hidden);l(n,28,0,!Al._11(n,30).isMatch);l(n,40,0,Al._11(n,41).statusbarPadding,Al._11(n,41)._hasRefresher);l(n,58,0,u.lembaga);l(n,60,0,Al._11(n,61)._hidden);l(n,72,0,u.countData);l(n,83,0,Al._11(n,84)._sbPadding);l(n,93,0,Al._11(n,96).ngClassUntouched,Al._11(n,96).ngClassTouched,Al._11(n,96).ngClassPristine,Al._11(n,96).ngClassDirty,Al._11(n,96).ngClassValid,Al._11(n,96).ngClassInvalid,Al._11(n,96).ngClassPending);l(n,99,0,Al._11(n,100)._hidden)})}function R(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,15,"button",[["class","item item-block"],["ion-item",""],["padding-right",""]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-bright"],["item-start",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[8,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(10,0,null,2,1,"h3",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(11,null,["",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(13,0,null,2,1,"p",[["text-nowrap",""]],null,null,null,null,null)),(l()(),Al._20(14,null,[""," ",""])),(l()(),Al._20(-1,2,["\n    "]))],function(l,n){l(n,8,0,"trophy")},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.context.$implicit.deskripsi);l(n,14,0,n.context.$implicit.namaBentukLembaga,n.context.$implicit.nama)})}function B(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,35,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,31,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Prestasi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,11,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["navPop",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,16).onClick()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,16384,null,0,Qu.a,[[2,tu.a]],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(23,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(24,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(28,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(30,0,null,0,1,"ion-icon",[["name","options"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(31,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(37,0,null,null,28,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(38,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  \n  "])),(l()(),Al.Z(40,0,null,1,16,"ion-list",[],null,null,null,null,null)),Al.Y(41,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(43,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(44,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(48,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(50,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(51,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,R)),Al.Y(55,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n\n  "])),(l()(),Al.Z(58,0,null,1,6,"ion-infinite-scroll",[["threshold","100px"]],null,[[null,"ionInfinite"]],function(l,n,u){var a=!0;if("ionInfinite"===n){a=!1!==l.component.loadData(u)&&a}return a},null,null)),Al.Y(59,1196032,null,0,da.a,[Cu.a,Al.u,Al.j,_u.a],{threshold:[0,"threshold"]},{ionInfinite:"ionInfinite"}),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(61,0,null,null,2,"ion-infinite-scroll-content",[["loadingSpinner","crescent"],["loadingText","Memuat data..."]],[[1,"state",0]],null,null,ga.b,ga.a)),Al.Y(62,114688,null,0,ma.a,[da.a,iu.a],{loadingSpinner:[0,"loadingSpinner"],loadingText:[1,"loadingText"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,19,0,"ios-arrow-back","md-arrow-back");l(n,31,0,"options");l(n,55,0,u.data);l(n,59,0,"100px");l(n,62,0,"crescent","Memuat data...")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,18,0,Al._11(n,19)._hidden);l(n,30,0,Al._11(n,31)._hidden);l(n,37,0,Al._11(n,38).statusbarPadding,Al._11(n,38)._hasRefresher);l(n,51,0,u.summary);l(n,61,0,Al._11(n,62).inf.state)})}function K(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,15,"button",[["class","item item-block"],["ion-item",""],["padding-right",""]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-secondary"],["item-start",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[8,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(10,0,null,2,1,"h3",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(11,null,["(",") ",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(13,0,null,2,1,"p",[["text-nowrap",""]],null,null,null,null,null)),(l()(),Al._20(14,null,[""," ",""])),(l()(),Al._20(-1,2,["\n    "]))],function(l,n){l(n,8,0,"book")},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.context.$implicit.jenisKoleksi,n.context.$implicit.judulKoleksi);l(n,14,0,n.context.$implicit.namaBentukLembaga,n.context.$implicit.nama)})}function F(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,35,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,31,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Koleksi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,11,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["navPop",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,16).onClick()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,16384,null,0,Qu.a,[[2,tu.a]],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(23,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(24,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(28,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(30,0,null,0,1,"ion-icon",[["name","options"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(31,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(37,0,null,null,28,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(38,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(40,0,null,1,16,"ion-list",[],null,null,null,null,null)),Al.Y(41,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(43,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(44,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(48,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(50,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(51,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,K)),Al.Y(55,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n\n  "])),(l()(),Al.Z(58,0,null,1,6,"ion-infinite-scroll",[["threshold","100px"]],null,[[null,"ionInfinite"]],function(l,n,u){var a=!0;if("ionInfinite"===n){a=!1!==l.component.loadData(u)&&a}return a},null,null)),Al.Y(59,1196032,null,0,da.a,[Cu.a,Al.u,Al.j,_u.a],{threshold:[0,"threshold"]},{ionInfinite:"ionInfinite"}),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(61,0,null,null,2,"ion-infinite-scroll-content",[["loadingSpinner","crescent"],["loadingText","Memuat data..."]],[[1,"state",0]],null,null,ga.b,ga.a)),Al.Y(62,114688,null,0,ma.a,[da.a,iu.a],{loadingSpinner:[0,"loadingSpinner"],loadingText:[1,"loadingText"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,19,0,"ios-arrow-back","md-arrow-back");l(n,31,0,"options");l(n,55,0,u.data);l(n,59,0,"100px");l(n,62,0,"crescent","Memuat data...")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,18,0,Al._11(n,19)._hidden);l(n,30,0,Al._11(n,31)._hidden);l(n,37,0,Al._11(n,38).statusbarPadding,Al._11(n,38)._hasRefresher);l(n,51,0,u.summary);l(n,61,0,Al._11(n,62).inf.state)})}function U(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,59,"ion-card",[["margin-bottom",""]],null,null,null,null,null)),Al.Y(1,16384,null,0,la.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(3,0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(5,0,null,null,16,"ion-card-content",[["padding-right",""]],null,null,null,null,null)),Al.Y(6,16384,null,0,na.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(8,0,null,null,2,"ion-card-title",[],null,null,null,null,null)),Al.Y(9,16384,null,0,it.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(10,null,["",""])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(12,0,null,null,5,"p",[["margin-bottom",""]],null,null,null,null,null)),(l()(),Al.Z(13,0,null,null,1,"ion-icon",[["name","time"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(14,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(15,null,[" "," oleh "])),(l()(),Al.Z(16,0,null,null,1,"b",[["class","capitalize"]],null,null,null,null,null)),(l()(),Al._20(17,null,["",""])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(19,0,null,null,1,"p",[],null,null,null,null,null)),(l()(),Al._20(20,null,[""," ..."])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n\n    "])),(l()(),Al.Z(23,0,null,null,35,"ion-row",[["class","row"],["no-padding",""]],null,null,null,null,null)),Al.Y(24,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(26,0,null,null,9,"ion-col",[["class","col"]],null,null,null,null,null)),Al.Y(27,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(29,0,null,null,5,"button",[["clear",""],["color","vibrant"],["icon-start",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(l.context.$implicit.idData)&&a}return a},Uu.b,Uu.a)),Al.Y(30,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Al._20(-1,0,["\n          "])),(l()(),Al.Z(32,0,null,0,1,"ion-icon",[["name","search"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(33,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n          Baca berita\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(37,0,null,null,9,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),Al.Y(38,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(40,0,null,null,5,"button",[["clear",""],["color","vibrant"],["icon-start",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openForm(l.context.$implicit.idData)&&a}return a},Uu.b,Uu.a)),Al.Y(41,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Al._20(-1,0,["\n          "])),(l()(),Al.Z(43,0,null,0,1,"ion-icon",[["name","md-create"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(44,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n          Ubah\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(48,0,null,null,9,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),Al.Y(49,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(51,0,null,null,5,"button",[["clear",""],["color","vibrant"],["icon-start",""],["ion-button",""],["small",""]],null,null,null,Uu.b,Uu.a)),Al.Y(52,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Al._20(-1,0,["\n          "])),(l()(),Al.Z(54,0,null,0,1,"ion-icon",[["name","trash"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(55,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n          Hapus\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "]))],function(l,n){l(n,14,0,"time");l(n,30,0,"vibrant","","");l(n,33,0,"search");l(n,41,0,"vibrant","","");l(n,44,0,"md-create");l(n,52,0,"vibrant","","");l(n,55,0,"trash")},function(l,n){l(n,3,0,Al._2(2,"",n.component.urlServer,"/img/news/",n.context.$implicit.urlGambar,""));l(n,10,0,n.context.$implicit.judulBerita);l(n,13,0,Al._11(n,14)._hidden);l(n,15,0,n.context.$implicit.createdDate);l(n,17,0,n.context.$implicit.createdBy);l(n,20,0,n.context.$implicit.deskripsi);l(n,32,0,Al._11(n,33)._hidden);l(n,43,0,Al._11(n,44)._hidden);l(n,54,0,Al._11(n,55)._hidden)})}function O(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,35,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,31,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Berita"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,11,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["navPop",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,16).onClick()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,16384,null,0,Qu.a,[[2,tu.a]],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(23,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(24,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openForm()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(30,0,null,0,1,"ion-icon",[["name","add"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(31,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(37,0,null,null,13,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(38,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.U(16777216,null,1,1,null,U)),Al.Y(41,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,1,["\n\n  "])),(l()(),Al.Z(43,0,null,1,6,"ion-infinite-scroll",[["threshold","100px"]],null,[[null,"ionInfinite"]],function(l,n,u){var a=!0;if("ionInfinite"===n){a=!1!==l.component.loadData(u)&&a}return a},null,null)),Al.Y(44,1196032,null,0,da.a,[Cu.a,Al.u,Al.j,_u.a],{threshold:[0,"threshold"]},{ionInfinite:"ionInfinite"}),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(46,0,null,null,2,"ion-infinite-scroll-content",[["loadingSpinner","crescent"],["loadingText","Memuat data..."]],[[1,"state",0]],null,null,ga.b,ga.a)),Al.Y(47,114688,null,0,ma.a,[da.a,iu.a],{loadingSpinner:[0,"loadingSpinner"],loadingText:[1,"loadingText"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,19,0,"ios-arrow-back","md-arrow-back");l(n,31,0,"add");l(n,41,0,u.data);l(n,44,0,"100px");l(n,47,0,"crescent","Memuat data...")},function(l,n){l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,18,0,Al._11(n,19)._hidden);l(n,30,0,Al._11(n,31)._hidden);l(n,37,0,Al._11(n,38).statusbarPadding,Al._11(n,38)._hasRefresher);l(n,46,0,Al._11(n,47).inf.state)})}function A(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,32,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,28,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Baca berita"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,1,20,"ion-buttons",[["start",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(22,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(23,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(24,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(26,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(27,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(34,0,null,null,36,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(35,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(37,0,null,1,32,"ion-list",[],null,null,null,null,null)),Al.Y(38,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(40,0,null,null,12,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(41,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(45,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(47,0,null,2,1,"h1",[],null,null,null,null,null)),(l()(),Al._20(48,null,["",""])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(50,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(51,null,[""," oleh ",""])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(54,0,null,null,6,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(55,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(59,16384,null,0,Ru.a,[],null,null),(l()(),Al.Z(60,0,null,2,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(62,0,null,null,6,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(63,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(67,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(68,2,["\n      ","\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"]))],function(l,n){l(n,4,0,"dark");l(n,19,0,"md-close");l(n,27,0,"clear")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,Al._11(n,19)._hidden);l(n,22,0,!Al._11(n,24).isMatch);l(n,34,0,Al._11(n,35).statusbarPadding,Al._11(n,35)._hasRefresher);l(n,48,0,u.data.judulBerita);l(n,51,0,u.data.createdDate,u.data.createdBy);l(n,60,0,Al._2(2,"",u.urlServer,"/img/news/",u.data.urlGambar,""));l(n,68,0,u.data.deskripsi)})}function V(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,0,"img",[["src","assets/imgs/sample.jpg"]],null,null,null,null,null))],null,null)}function $(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null))],null,function(l,n){var u=n.component;l(n,0,0,Al._2(2,"",u.urlServer,"/img/news/",u.data.urlGambar,""))})}function W(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-navbar",[["class","toolbar"],["color","dark"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form berita"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al.Z(39,0,null,null,74,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,70,"ion-list",[],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,7,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al.Z(51,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Catatan : Setiap poin pada form ini wajib diisi."])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(54,0,null,null,21,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(55,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(59,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.U(16777216,null,2,1,null,V)),Al.Y(62,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.U(16777216,null,2,1,null,$)),Al.Y(65,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(67,0,null,2,7,"ion-buttons",[["margin-top",""]],null,null,null,null,null)),Al.Y(68,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,8,{_buttons:1}),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(71,0,null,null,2,"button",[["class","no-shadow"],["color","bright"],["ion-button",""],["round",""],["small",""],["text-capitalize",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.presentActionSheet()&&a}return a},Uu.b,Uu.a)),Al.Y(72,1097728,[[8,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],small:[1,"small"],round:[2,"round"]},null),(l()(),Al._20(-1,0,["Unggah gambar"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(77,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(78,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(82,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(84,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(85,16384,[[9,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Judul berita"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(88,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.judulBerita=u)&&a}return a},Bu.b,Bu.a)),Al.Y(89,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(91,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(92,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(95,0,null,null,16,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(96,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(100,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(102,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(103,16384,[[12,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Isi berita"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(106,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.deskripsi=u)&&a}return a},Bu.b,Bu.a)),Al.Y(107,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(109,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(110,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(115,0,null,null,10,"ion-footer",[],null,null,null,null,null)),Al.Y(116,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(118,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","main"],["text-center",""]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(119,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(121,0,null,3,2,"button",[["class","text-white"],["clear",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(122,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"]},null),(l()(),Al._20(-1,0,["Simpan"])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark","");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,62,0,""==u.idData);l(n,65,0,""!=u.idData);l(n,72,0,"bright","","");l(n,89,0,u.data.judulBerita);l(n,92,0,"text");l(n,107,0,u.data.deskripsi);l(n,110,0,"text");l(n,119,0,"main");l(n,122,0,"")},function(l,n){l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,88,0,Al._11(n,91).ngClassUntouched,Al._11(n,91).ngClassTouched,Al._11(n,91).ngClassPristine,Al._11(n,91).ngClassDirty,Al._11(n,91).ngClassValid,Al._11(n,91).ngClassInvalid,Al._11(n,91).ngClassPending);l(n,106,0,Al._11(n,109).ngClassUntouched,Al._11(n,109).ngClassTouched,Al._11(n,109).ngClassPristine,Al._11(n,109).ngClassDirty,Al._11(n,109).ngClassValid,Al._11(n,109).ngClassInvalid,Al._11(n,109).ngClassPending);l(n,118,0,Al._11(n,119)._sbPadding)})}function N(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,7,"ion-list-header",[["class","item"],["color","light"]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,1,{contentLabel:0}),Al._18(603979776,2,{_buttons:1}),Al._18(603979776,3,{_icons:1}),Al.Y(5,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],{color:[0,"color"]},null),(l()(),Al._20(6,2,[" ",""])),Al._15(7,2)],function(l,n){l(n,1,0,"light");l(n,5,0,"light")},function(l,n){l(n,6,0,Al._21(n,6,0,l(n,7,0,Al._11(n.parent.parent,0),n.parent.context.$implicit.tanggal,"yyyy MMM dd")))})}function G(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,40,"div",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,N)),Al.Y(3,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(5,0,null,null,34,"ion-item-sliding",[],null,null,null,oa.b,oa.a)),Al.Y(6,49152,null,2,sa.a,[[2,Du.a],ou.a,Al.z,Al.j,Al.u],null,null),Al._18(335544320,4,{item:0}),Al._18(603979776,5,{_itemOptions:1}),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(10,0,null,0,20,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(l.context.$implicit.idData)&&a}return a},Mu.b,Mu.a)),Al.Y(11,1097728,[[4,4]],3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(15,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n            "])),(l()(),Al.Z(17,0,null,0,1,"ion-icon",[["item-start",""],["name","notifications"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(18,147456,[[8,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n            "])),(l()(),Al.Z(20,0,null,2,1,"h2",[],[[8,"className",0]],null,null,null,null)),(l()(),Al._20(21,null,["",""])),(l()(),Al._20(-1,2,["\n            "])),(l()(),Al._20(-1,2,["\n            "])),(l()(),Al.Z(24,0,null,2,1,"p",[["text-nowrap",""]],null,null,null,null,null)),(l()(),Al._20(25,null,["",""])),(l()(),Al._20(-1,2,["\n            "])),(l()(),Al.Z(27,0,null,4,2,"ion-note",[["item-end",""]],null,null,null,null,null)),Al.Y(28,16384,null,0,Ea.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(29,null,["",""])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(32,0,null,1,6,"ion-item-options",[["side","right"]],null,null,null,null,null)),Al.Y(33,16384,[[5,4]],0,ca.a,[Al.j,ou.a],{side:[0,"side"]},null),(l()(),Al._20(-1,null,["\n            "])),(l()(),Al.Z(35,0,null,null,2,"button",[["color","danger"],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(36,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,0,["Hapus"])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n      "]))],function(l,n){l(n,3,0,n.context.$implicit.tanggal!=n.component.dataClone[n.context.index-1].tanggal);l(n,18,0,Al._2(1,"","0"==n.context.$implicit.statusBaca?"bright":"light",""),"notifications");l(n,33,0,"right");l(n,36,0,"danger")},function(l,n){l(n,17,0,Al._11(n,18)._hidden);l(n,20,0,Al._2(1,"","0"==n.context.$implicit.statusBaca?"text-main":"",""));l(n,21,0,n.context.$implicit.judul);l(n,25,0,n.context.$implicit.deskripsi);l(n,29,0,n.context.$implicit.jam)})}function J(l){return Al._22(0,[Al._13(0,Gu.d,[Al.r]),(l()(),Al.Z(1,0,null,null,16,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(2,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(4,0,null,1,1,"h3",[["class","text-main"],["padding-left",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["KOTAK MASUK"])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(7,0,null,1,9,"ion-list",[],null,null,null,null,null)),Al.Y(8,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(10,0,null,null,5,"ion-item-group",[],null,null,null,null,null)),Al.Y(11,16384,null,0,_a.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,G)),Al.Y(14,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){l(n,14,0,n.component.data)},function(l,n){l(n,1,0,Al._11(n,2).statusbarPadding,Al._11(n,2)._hasRefresher)})}function H(l){return Al._22(0,[Al._13(0,Gu.d,[Al.r]),(l()(),Al.Z(1,0,null,null,32,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(2,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(4,0,null,null,28,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(5,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(7,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(8,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Baca pesan"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(11,0,null,1,20,"ion-buttons",[["start",""]],null,null,null,null,null)),Al.Y(12,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(15,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(16,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(17,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(19,0,null,0,1,"ion-icon",[["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(20,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(23,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(24,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(25,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(27,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(28,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(35,0,null,null,39,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(36,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(38,0,null,1,35,"ion-item-group",[["margin-top",""]],null,null,null,null,null)),Al.Y(39,16384,null,0,_a.a,[],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(41,0,null,null,6,"ion-item-divider",[["class","item item-divider"]],null,null,null,Mu.b,Mu.a)),Al.Y(42,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(46,16384,null,0,mt.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(47,2,["Judul : ",""])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(49,0,null,null,6,"ion-item-divider",[["class","item item-divider"]],null,null,null,Mu.b,Mu.a)),Al.Y(50,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(54,16384,null,0,mt.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(55,2,["Subjek : ",""])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(57,0,null,null,7,"ion-item-divider",[["class","item item-divider"]],null,null,null,Mu.b,Mu.a)),Al.Y(58,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(62,16384,null,0,mt.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(63,2,["Waktu : "," ",""])),Al._15(64,2),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(66,0,null,null,6,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(67,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(71,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(72,2,["",""])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"]))],function(l,n){l(n,5,0,"dark");l(n,20,0,"md-close");l(n,28,0,"clear")},function(l,n){var u=n.component;l(n,4,0,Al._11(n,5)._sbPadding);l(n,15,0,!Al._11(n,17).isMatch);l(n,19,0,Al._11(n,20)._hidden);l(n,23,0,!Al._11(n,25).isMatch);l(n,35,0,Al._11(n,36).statusbarPadding,Al._11(n,36)._hasRefresher);l(n,47,0,u.data.judul);l(n,55,0,u.data.subjek);l(n,63,0,Al._21(n,63,0,l(n,64,0,Al._11(n,0),u.data.tanggal,"yyyy MMM dd")),u.data.jam);l(n,72,0,u.data.deskripsi)})}function X(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,6,"ion-list-header",[["class","item"],["color","light"]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,1,{contentLabel:0}),Al._18(603979776,2,{_buttons:1}),Al._18(603979776,3,{_icons:1}),Al.Y(5,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],{color:[0,"color"]},null),(l()(),Al._20(6,2,[" "," "]))],function(l,n){l(n,1,0,"light");l(n,5,0,"light")},function(l,n){l(n,6,0,n.parent.context.$implicit.grup)})}function E(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,23,"button",[["class","item item-block"],["ion-item",""],["padding-right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openLembaga(l.parent.context.$implicit.kolom_1)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,4,{contentLabel:0}),Al._18(603979776,5,{_buttons:1}),Al._18(603979776,6,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(7,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),Al.Y(8,16384,null,0,ra.a,[],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(10,0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(13,0,null,2,1,"h3",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(14,null,["",""])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(16,0,null,2,6,"p",[],null,null,null,null,null)),(l()(),Al._20(17,null,["","   "])),(l()(),Al.Z(18,0,null,null,4,"span",[],[[8,"className",0]],null,null,null,null)),(l()(),Al._20(-1,null,["\n            "])),(l()(),Al.Z(20,0,null,null,1,"ion-icon",[["name","compass"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(21,147456,[[6,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,2,["\n      "]))],function(l,n){l(n,21,0,"compass")},function(l,n){l(n,10,0,Al._2(2,"",n.component.urlServer,"/img/logo/",n.parent.context.$implicit.kolom_4,""));l(n,14,0,n.parent.context.$implicit.kolom_2);l(n,17,0,n.parent.context.$implicit.kolom_3);l(n,18,0,Al._2(1,"text-","0"==n.parent.context.$implicit.kolom_5?"danger":"secondary",""));l(n,20,0,Al._11(n,21)._hidden)})}function q(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,15,"button",[["class","item item-block"],["ion-item",""],["padding-right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openLembaga(l.parent.context.$implicit.kolom_1)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,7,{contentLabel:0}),Al._18(603979776,8,{_buttons:1}),Al._18(603979776,9,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-bright"],["item-start",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[9,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(10,0,null,2,1,"h3",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(11,null,["",""])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(13,0,null,2,1,"p",[["text-nowrap",""]],null,null,null,null,null)),(l()(),Al._20(14,null,[""," ",""])),(l()(),Al._20(-1,2,["\n      "]))],function(l,n){l(n,8,0,"trophy")},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.parent.context.$implicit.kolom_3);l(n,14,0,n.parent.context.$implicit.kolom_4,n.parent.context.$implicit.kolom_2)})}function Q(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,15,"button",[["class","item item-block"],["ion-item",""],["padding-right",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openLembaga(l.parent.context.$implicit.kolom_1)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,10,{contentLabel:0}),Al._18(603979776,11,{_buttons:1}),Al._18(603979776,12,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-secondary"],["item-start",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[12,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(10,0,null,2,1,"h3",[["text-wrap",""]],null,null,null,null,null)),(l()(),Al._20(11,null,["(",") ",""])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(13,0,null,2,1,"p",[["text-nowrap",""]],null,null,null,null,null)),(l()(),Al._20(14,null,[""," ",""])),(l()(),Al._20(-1,2,["\n      "]))],function(l,n){l(n,8,0,"book")},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.parent.context.$implicit.kolom_3,n.parent.context.$implicit.kolom_4);l(n,14,0,n.parent.context.$implicit.kolom_5,n.parent.context.$implicit.kolom_2)})}function ll(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,13,"div",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,X)),Al.Y(3,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.U(16777216,null,null,1,null,E)),Al.Y(6,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n\n      "])),(l()(),Al.U(16777216,null,null,1,null,q)),Al.Y(9,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n\n      "])),(l()(),Al.U(16777216,null,null,1,null,Q)),Al.Y(12,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n    "]))],function(l,n){l(n,3,0,n.context.$implicit.grup!=n.component.dataClone[n.context.index-1].grup);l(n,6,0,"Lembaga"==n.context.$implicit.grup);l(n,9,0,"Prestasi"==n.context.$implicit.grup);l(n,12,0,"Koleksi"==n.context.$implicit.grup)},null)}function nl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,12,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,8,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,[" \n    "])),(l()(),Al.Z(6,0,null,3,4,"ion-searchbar",[["class","clear"],["placeholder","Pencarian"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"ngModelChange"],[null,"keypress"]],function(l,n,u){var a=!0,t=l.component;if("ngModelChange"===n){a=!1!==(t.keyword=u)&&a}if("keypress"===n){a=!1!==t.searchData(u.keyCode)&&a}return a},Za.b,Za.a)),Al.Y(7,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(9,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(10,1294336,null,0,va.a,[iu.a,ou.a,Al.j,Al.z,[2,Pu.g]],{placeholder:[0,"placeholder"]},null),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(14,0,null,null,9,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(15,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(17,0,null,1,5,"ion-list",[],null,null,null,null,null)),Al.Y(18,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,ll)),Al.Y(21,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main");l(n,7,0,u.keyword);l(n,10,0,"Pencarian");l(n,21,0,u.data)},function(l,n){l(n,3,0,Al._11(n,4)._sbPadding);l(n,6,1,[Al._11(n,9).ngClassUntouched,Al._11(n,9).ngClassTouched,Al._11(n,9).ngClassPristine,Al._11(n,9).ngClassDirty,Al._11(n,9).ngClassValid,Al._11(n,9).ngClassInvalid,Al._11(n,9).ngClassPending,Al._11(n,10)._animated,Al._11(n,10)._value,Al._11(n,10)._isActive,Al._11(n,10)._showCancelButton,Al._11(n,10)._shouldAlignLeft,Al._11(n,10)._isFocus]);l(n,14,0,Al._11(n,15).statusbarPadding,Al._11(n,15)._hasRefresher)})}function ul(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","no-border-top item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(l.context.index)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["item-start",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(9,2,["\n      ","\n    "]))],function(l,n){l(n,8,0,Al._2(1,"",n.context.$implicit.color,""),Al._2(1,"",n.context.$implicit.icon,""))},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,9,0,n.context.$implicit.title)})}function al(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,23,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,19,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Pengaturan"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,11,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["navPop",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,16).onClick()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,16384,null,0,Qu.a,[[2,tu.a]],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(25,0,null,null,9,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(26,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(28,0,null,1,5,"ion-list",[["margin-top",""]],null,null,null,null,null)),Al.Y(29,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,ul)),Al.Y(32,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"main","");l(n,19,0,"ios-arrow-back","md-arrow-back");l(n,32,0,u.other)},function(l,n){l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,18,0,Al._11(n,19)._hidden);l(n,25,0,Al._11(n,26).statusbarPadding,Al._11(n,26)._hasRefresher)})}function tl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,49,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,45,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Manajemen Akun"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(37,0,null,2,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Al.Y(38,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(41,0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openForm()&&a}return a},Uu.b,Uu.a)),Al.Y(42,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(44,0,null,0,1,"ion-icon",[["name","ios-create-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(45,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(51,0,null,null,119,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(52,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(54,0,null,1,34,"ion-list",[],null,null,null,null,null)),Al.Y(55,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(57,0,null,null,30,"ion-row",[["class","big-avatar-frame row"]],null,null,null,null,null)),Al.Y(58,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(60,0,null,null,12,"div",[["class","big-avatar"],["text-center",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(62,0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(65,0,null,null,1,"h3",[],null,null,null,null,null)),(l()(),Al._20(66,null,["",""])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(68,0,null,null,3,"p",[],null,null,null,null,null)),(l()(),Al.Z(69,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(70,null,["",""])),(l()(),Al._20(71,null,[" | ",""])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(74,0,null,null,5,"ion-item",[["class","big-avatar-frame item item-block"],["color","dark"],["padding",""],["text-center",""]],null,null,null,Mu.b,Mu.a)),Al.Y(75,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(79,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(81,0,null,null,5,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(82,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(86,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(90,0,null,1,78,"ion-list",[["margin-top",""],["padding",""]],null,null,null,null,null)),Al.Y(91,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(94,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(95,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(99,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(101,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(102,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["No Registrasi."])),(l()(),Al.Z(104,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(105,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(106,null,[" ",""])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(109,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(110,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(114,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(116,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(117,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Jabatan."])),(l()(),Al.Z(119,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(120,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(121,null,[" ",""])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(124,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(125,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(129,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(131,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(132,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Telp."])),(l()(),Al.Z(134,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(135,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(136,null,[" ",""])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(139,0,null,null,13,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(140,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,18,{contentLabel:0}),Al._18(603979776,19,{_buttons:1}),Al._18(603979776,20,{_icons:1}),Al.Y(144,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(146,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(147,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Email."])),(l()(),Al.Z(149,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(150,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(151,null,[" ",""])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(154,0,null,null,13,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(155,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,21,{contentLabel:0}),Al._18(603979776,22,{_buttons:1}),Al._18(603979776,23,{_icons:1}),Al.Y(159,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(161,0,null,2,5,"p",[],null,null,null,null,null)),(l()(),Al.Z(162,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Alamat."])),(l()(),Al.Z(164,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al.Z(165,0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Al._20(166,null,[" ",""])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al._20(-1,1,["\n"]))],function(l,n){l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,45,0,"ios-create-outline");l(n,75,0,"dark")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,44,0,Al._11(n,45)._hidden);l(n,51,0,Al._11(n,52).statusbarPadding,Al._11(n,52)._hasRefresher);l(n,62,0,Al._2(3,"",u.urlServer,"/img/avatar/",u.accountData.avatar,"?random=",u.random_,""));l(n,66,0,u.accountData.nama);l(n,70,0,u.accountData.username);l(n,71,0,u.accountData.statusAkses);l(n,106,0,""!=u.accountData.noRegistrasi?u.accountData.noRegistrasi:"-");l(n,121,0,""!=u.accountData.jabatan?u.accountData.jabatan:"-");l(n,136,0,""!=u.accountData.noTelp?u.accountData.noTelp:"-");l(n,151,0,""!=u.accountData.email?u.accountData.email:"-");l(n,166,0,""!=u.accountData.alamat?u.accountData.alamat:"-")})}function el(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Ganti Password"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,68,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,64,"ion-list",[["no-margin",""],["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,6,"ion-list-header",[["class","no-border-top item"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Penuhi semua poin pada form berikut untuk dapat mengubah Password Anda."])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(53,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(54,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(58,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(60,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(61,16384,[[5,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Password lama (*)"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(64,0,null,3,4,"ion-input",[["type","password"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.oldPassword=u)&&a}return a},Bu.b,Bu.a)),Al.Y(65,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(67,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(68,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(71,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(72,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(76,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(78,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(79,16384,[[8,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Password baru (*)"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(82,0,null,3,4,"ion-input",[["type","password"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.newPassword=u)&&a}return a},Bu.b,Bu.a)),Al.Y(83,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(85,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(86,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(89,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(90,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(94,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(96,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(97,16384,[[11,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Ulangi Password baru (*)"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(100,0,null,3,4,"ion-input",[["class","no-border"],["type","password"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.retypePassword=u)&&a}return a},Bu.b,Bu.a)),Al.Y(101,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(103,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(104,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(109,0,null,null,10,"ion-footer",[],null,null,null,null,null)),Al.Y(110,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(112,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(113,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(115,0,null,3,2,"button",[["block",""],["class","text-white"],["clear",""],["ion-button",""],["type","button"]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.changePassword()&&a}return a},Uu.b,Uu.a)),Al.Y(116,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"],block:[1,"block"]},null),(l()(),Al._20(-1,0,["Ubah Password"])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,65,0,u.accountData.oldPassword);l(n,68,0,"password");l(n,83,0,u.accountData.newPassword);l(n,86,0,"password");l(n,101,0,u.accountData.retypePassword);l(n,104,0,"password");l(n,113,0,"main");l(n,116,0,"","")},function(l,n){l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,64,0,Al._11(n,67).ngClassUntouched,Al._11(n,67).ngClassTouched,Al._11(n,67).ngClassPristine,Al._11(n,67).ngClassDirty,Al._11(n,67).ngClassValid,Al._11(n,67).ngClassInvalid,Al._11(n,67).ngClassPending);l(n,82,0,Al._11(n,85).ngClassUntouched,Al._11(n,85).ngClassTouched,Al._11(n,85).ngClassPristine,Al._11(n,85).ngClassDirty,Al._11(n,85).ngClassValid,Al._11(n,85).ngClassInvalid,Al._11(n,85).ngClassPending);l(n,100,0,Al._11(n,103).ngClassUntouched,Al._11(n,103).ngClassTouched,Al._11(n,103).ngClassPristine,Al._11(n,103).ngClassDirty,Al._11(n,103).ngClassValid,Al._11(n,103).ngClassInvalid,Al._11(n,103).ngClassPending);l(n,112,0,Al._11(n,113)._sbPadding)})}function il(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[27,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.accountData.kodeWilayah==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function ol(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[31,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.accountData.kodeKecamatan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function sl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[35,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.accountData.kodeKelurahan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function rl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Akun"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,262,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,35,"ion-list",[],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,31,"ion-row",[["class","big-avatar-frame row"]],null,null,null,null,null)),Al.Y(46,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(48,0,null,null,13,"div",[["class","big-avatar"],["text-center",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(51,0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(53,0,null,null,7,"ion-buttons",[["margin-top",""]],null,null,null,null,null)),Al.Y(54,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(57,0,null,null,2,"button",[["class","no-shadow"],["color","bright"],["ion-button",""],["round",""],["small",""],["text-capitalize",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.presentActionSheet()&&a}return a},Uu.b,Uu.a)),Al.Y(58,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],small:[1,"small"],round:[2,"round"]},null),(l()(),Al._20(-1,0,["\n            Unggah avatar\n          "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(63,0,null,null,5,"ion-item",[["class","big-avatar-frame item item-block"],["color","dark"],["padding",""],["text-center",""]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(70,0,null,null,5,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(71,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(75,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(79,0,null,1,221,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(80,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(82,0,null,null,217,"ion-row",[["class","row"]],null,null,null,null,null)),Al.Y(83,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(85,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(86,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(90,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(92,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(93,16384,[[9,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Nama"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(96,0,null,3,4,"ion-input",[["no-border",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.nama=u)&&a}return a},Bu.b,Bu.a)),Al.Y(97,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(99,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(100,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(103,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(104,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(108,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(110,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(111,16384,[[12,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jabatan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(114,0,null,3,4,"ion-input",[["no-border",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.jabatan=u)&&a}return a},Bu.b,Bu.a)),Al.Y(115,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(117,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(118,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(121,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(122,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(126,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(128,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(129,16384,[[15,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Alamat"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(132,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.alamat=u)&&a}return a},Bu.b,Bu.a)),Al.Y(133,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(135,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(136,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(139,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(140,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(142,0,null,null,16,"ion-item",[["class","no-border-1-layer item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(143,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,18,{contentLabel:0}),Al._18(603979776,19,{_buttons:1}),Al._18(603979776,20,{_icons:1}),Al.Y(147,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(149,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(150,16384,[[18,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["RT"])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(153,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.noRt=u)&&a}return a},Bu.b,Bu.a)),Al.Y(154,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(156,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(157,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(161,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(162,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(164,0,null,null,16,"ion-item",[["class","no-border-1-layer item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(165,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,21,{contentLabel:0}),Al._18(603979776,22,{_buttons:1}),Al._18(603979776,23,{_icons:1}),Al.Y(169,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(171,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(172,16384,[[21,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["RW"])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(175,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.noRw=u)&&a}return a},Bu.b,Bu.a)),Al.Y(176,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(178,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(179,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(183,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(184,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,24,{contentLabel:0}),Al._18(603979776,25,{_buttons:1}),Al._18(603979776,26,{_icons:1}),Al.Y(188,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(190,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(191,16384,[[24,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Wilayah"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(194,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,195)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,195)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.accountData.kodeWilayah=u)&&a}if("ionChange"===n){a=!1!==t.loadKecamatan(t.accountData.kodeWilayah)&&a}return a},ja.b,ja.a)),Al.Y(195,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,27,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(198,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(200,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(202,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(203,16384,[[27,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,il)),Al.Y(206,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(210,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(211,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,28,{contentLabel:0}),Al._18(603979776,29,{_buttons:1}),Al._18(603979776,30,{_icons:1}),Al.Y(215,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(217,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(218,16384,[[28,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kecamatan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(221,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,222)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,222)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.accountData.kodeKecamatan=u)&&a}if("ionChange"===n){a=!1!==t.loadKelurahan(t.accountData.kodeKecamatan)&&a}return a},ja.b,ja.a)),Al.Y(222,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,31,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(225,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(227,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(229,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(230,16384,[[31,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,ol)),Al.Y(233,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(237,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(238,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,32,{contentLabel:0}),Al._18(603979776,33,{_buttons:1}),Al._18(603979776,34,{_icons:1}),Al.Y(242,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(244,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(245,16384,[[32,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kelurahan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(248,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,249)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,249)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.accountData.kodeKelurahan=u)&&a}return a},ja.b,ja.a)),Al.Y(249,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,35,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(252,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(254,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(256,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(257,16384,[[35,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,sl)),Al.Y(260,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(264,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(265,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,36,{contentLabel:0}),Al._18(603979776,37,{_buttons:1}),Al._18(603979776,38,{_icons:1}),Al.Y(269,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(271,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(272,16384,[[36,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Telp"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(275,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.noTelp=u)&&a}return a},Bu.b,Bu.a)),Al.Y(276,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(278,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(279,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(282,0,null,null,16,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(283,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,39,{contentLabel:0}),Al._18(603979776,40,{_buttons:1}),Al._18(603979776,41,{_icons:1}),Al.Y(287,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(289,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(290,16384,[[39,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Email"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(293,0,null,3,4,"ion-input",[["type","email"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.accountData.email=u)&&a}return a},Bu.b,Bu.a)),Al.Y(294,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(296,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(297,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n\n  "])),(l()(),Al._20(-1,1,["\n\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(303,0,null,null,10,"ion-footer",[],null,null,null,null,null)),Al.Y(304,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(306,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(307,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(309,0,null,3,2,"button",[["block",""],["class","text-white"],["clear",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.changeAccount()&&a}return a},Uu.b,Uu.a)),Al.Y(310,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"],block:[1,"block"]},null),(l()(),Al._20(-1,0,["Ubah data Akun"])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,58,0,"bright","","");l(n,64,0,"dark");l(n,97,0,u.accountData.nama);l(n,100,0,"text");l(n,115,0,u.accountData.jabatan);l(n,118,0,"text");l(n,133,0,u.accountData.alamat);l(n,136,0,"text");l(n,154,0,u.accountData.noRt);l(n,157,0,"text");l(n,176,0,u.accountData.noRw);l(n,179,0,"text");l(n,198,0,u.accountData.kodeWilayah);l(n,203,0,Al._2(1,"",""==u.accountData.wilayah?u.selected:"",""),"");l(n,206,0,u.wilayah);l(n,225,0,u.accountData.kodeKecamatan);l(n,230,0,Al._2(1,"",""==u.accountData.kecamatan?u.selected:"",""),"");l(n,233,0,u.kecamatan);l(n,252,0,u.accountData.kodeKelurahan);l(n,257,0,Al._2(1,"",""==u.accountData.kelurahan?u.selected:"",""),"");l(n,260,0,u.kelurahan);l(n,276,0,u.accountData.noTelp);l(n,279,0,"text");l(n,294,0,u.accountData.email);l(n,297,0,"email");l(n,307,0,"main");l(n,310,0,"","")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,51,0,Al._2(3,"",u.urlServer,"/img/avatar/",u.accountData.avatar,"?random=",u.random_,""));l(n,96,0,Al._11(n,99).ngClassUntouched,Al._11(n,99).ngClassTouched,Al._11(n,99).ngClassPristine,Al._11(n,99).ngClassDirty,Al._11(n,99).ngClassValid,Al._11(n,99).ngClassInvalid,Al._11(n,99).ngClassPending);l(n,114,0,Al._11(n,117).ngClassUntouched,Al._11(n,117).ngClassTouched,Al._11(n,117).ngClassPristine,Al._11(n,117).ngClassDirty,Al._11(n,117).ngClassValid,Al._11(n,117).ngClassInvalid,Al._11(n,117).ngClassPending);l(n,132,0,Al._11(n,135).ngClassUntouched,Al._11(n,135).ngClassTouched,Al._11(n,135).ngClassPristine,Al._11(n,135).ngClassDirty,Al._11(n,135).ngClassValid,Al._11(n,135).ngClassInvalid,Al._11(n,135).ngClassPending);l(n,153,0,Al._11(n,156).ngClassUntouched,Al._11(n,156).ngClassTouched,Al._11(n,156).ngClassPristine,Al._11(n,156).ngClassDirty,Al._11(n,156).ngClassValid,Al._11(n,156).ngClassInvalid,Al._11(n,156).ngClassPending);l(n,175,0,Al._11(n,178).ngClassUntouched,Al._11(n,178).ngClassTouched,Al._11(n,178).ngClassPristine,Al._11(n,178).ngClassDirty,Al._11(n,178).ngClassValid,Al._11(n,178).ngClassInvalid,Al._11(n,178).ngClassPending);l(n,194,0,Al._11(n,195)._disabled,Al._11(n,200).ngClassUntouched,Al._11(n,200).ngClassTouched,Al._11(n,200).ngClassPristine,Al._11(n,200).ngClassDirty,Al._11(n,200).ngClassValid,Al._11(n,200).ngClassInvalid,Al._11(n,200).ngClassPending);l(n,221,0,Al._11(n,222)._disabled,Al._11(n,227).ngClassUntouched,Al._11(n,227).ngClassTouched,Al._11(n,227).ngClassPristine,Al._11(n,227).ngClassDirty,Al._11(n,227).ngClassValid,Al._11(n,227).ngClassInvalid,Al._11(n,227).ngClassPending);l(n,248,0,Al._11(n,249)._disabled,Al._11(n,254).ngClassUntouched,Al._11(n,254).ngClassTouched,Al._11(n,254).ngClassPristine,Al._11(n,254).ngClassDirty,Al._11(n,254).ngClassValid,Al._11(n,254).ngClassInvalid,Al._11(n,254).ngClassPending);l(n,275,0,Al._11(n,278).ngClassUntouched,Al._11(n,278).ngClassTouched,Al._11(n,278).ngClassPristine,Al._11(n,278).ngClassDirty,Al._11(n,278).ngClassValid,Al._11(n,278).ngClassInvalid,Al._11(n,278).ngClassPending);l(n,293,0,Al._11(n,296).ngClassUntouched,Al._11(n,296).ngClassTouched,Al._11(n,296).ngClassPristine,Al._11(n,296).ngClassDirty,Al._11(n,296).ngClassValid,Al._11(n,296).ngClassInvalid,Al._11(n,296).ngClassPending);l(n,306,0,Al._11(n,307)._sbPadding)})}function cl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(1)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,14,{contentLabel:0}),Al._18(603979776,15,{_buttons:1}),Al._18(603979776,16,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["color","main"],["item-start",""],["name","paper"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[16,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Legalitas\n    "]))],function(l,n){l(n,8,0,"main","paper")},function(l,n){l(n,0,0,Al._2(1,"",null==n.component.session_noRegistrasi?"true":"false",""));l(n,7,0,Al._11(n,8)._hidden)})}function _l(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(2)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,20,{contentLabel:0}),Al._18(603979776,21,{_buttons:1}),Al._18(603979776,22,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["color","bright"],["item-start",""],["name","time"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[22,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Sejarah\n    "]))],function(l,n){l(n,8,0,"bright","time")},function(l,n){l(n,0,0,Al._2(1,"",null==n.component.session_noRegistrasi?"true":"false",""));l(n,7,0,Al._11(n,8)._hidden)})}function dl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(3)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,23,{contentLabel:0}),Al._18(603979776,24,{_buttons:1}),Al._18(603979776,25,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["color","vibrant"],["item-start",""],["name","people"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[25,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Kepengurusan\n    "]))],function(l,n){l(n,8,0,"vibrant","people")},function(l,n){l(n,0,0,Al._2(1,"",null==n.component.session_noRegistrasi?"true":"false",""));l(n,7,0,Al._11(n,8)._hidden)})}function gl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(4)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,26,{contentLabel:0}),Al._18(603979776,27,{_buttons:1}),Al._18(603979776,28,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["color","primary"],["item-start",""],["name","pricetag"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[28,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Usaha\n    "]))],function(l,n){l(n,8,0,"primary","pricetag")},function(l,n){l(n,0,0,Al._2(1,"",null==n.component.session_noRegistrasi?"true":"false",""));l(n,7,0,Al._11(n,8)._hidden)})}function ml(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(6)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,29,{contentLabel:0}),Al._18(603979776,30,{_buttons:1}),Al._18(603979776,31,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["color","bright"],["item-start",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[31,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Prestasi\n    "]))],function(l,n){l(n,8,0,"bright","trophy")},function(l,n){l(n,0,0,Al._2(1,"",null==n.component.session_noRegistrasi?"true":"false",""));l(n,7,0,Al._11(n,8)._hidden)})}function hl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],[[8,"disabled",0]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(7)&&a}return a},Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,32,{contentLabel:0}),Al._18(603979776,33,{_buttons:1}),Al._18(603979776,34,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["color","secondary"],["item-start",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[34,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Koleksi\n    "]))],function(l,n){l(n,8,0,"secondary","book")},function(l,n){l(n,0,0,Al._2(1,"",null==n.component.session_noRegistrasi?"true":"false",""));l(n,7,0,Al._11(n,8)._hidden)})}function pl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,99,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(1,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(3,0,null,1,1,"h3",[["class","text-main"],["padding-left",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["FORM LEMBAGA"])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(6,0,null,1,64,"ion-list",[],null,null,null,null,null)),Al.Y(7,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(9,0,null,null,30,"ion-item",[["class","item item-block"],["color","light"]],[[8,"hidden",0]],null,null,Mu.b,Mu.a)),Al.Y(10,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,1,{contentLabel:0}),Al._18(603979776,2,{_buttons:1}),Al._18(603979776,3,{_icons:1}),Al.Y(14,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(16,0,null,0,4,"ion-avatar",[["item-start",""]],null,null,null,null,null)),Al.Y(17,16384,null,0,ra.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(19,0,null,null,0,"img",[["src","assets/imgs/sample.jpg"]],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(22,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Nama lembaganya"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(25,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Yayasan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(28,0,null,4,10,"ion-buttons",[["item-end",""]],null,null,null,null,null)),Al.Y(29,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,4,{_buttons:1}),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(32,0,null,null,5,"button",[["clear",""],["ion-button",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.showConfirm()&&a}return a},Uu.b,Uu.a)),Al.Y(33,1097728,[[4,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"]},null),(l()(),Al._20(-1,0,["\n          "])),(l()(),Al.Z(35,0,null,0,1,"ion-icon",[["color","dark"],["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(36,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(41,0,null,null,6,"ion-item",[["class","no-border item item-block"],["text-wrap",""]],[[8,"hidden",0]],null,null,Mu.b,Mu.a)),Al.Y(42,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(46,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      Data lembaga dibuat melalui menu kelembagaan, legalitas dan kelengkapan lainnya dapat diakses setelah data kelembagaan dibuat.\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(49,0,null,null,6,"ion-list-header",[["class","item"],["color","clear"]],null,null,null,Mu.b,Mu.a)),Al.Y(50,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(54,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],{color:[0,"color"]},null),(l()(),Al._20(-1,2,["Kelengkapan utama"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(57,0,null,null,9,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openModal(0)&&a}return a},Mu.b,Mu.a)),Al.Y(58,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(62,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(64,0,null,0,1,"ion-icon",[["color","primary"],["item-start",""],["name","contact"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(65,147456,[[13,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n      Kelembagaan\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,cl)),Al.Y(69,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(72,0,null,1,26,"ion-list",[],null,null,null,null,null)),Al.Y(73,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(75,0,null,null,6,"ion-list-header",[["class","item"],["color","clear"]],null,null,null,Mu.b,Mu.a)),Al.Y(76,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,17,{contentLabel:0}),Al._18(603979776,18,{_buttons:1}),Al._18(603979776,19,{_icons:1}),Al.Y(80,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],{color:[0,"color"]},null),(l()(),Al._20(-1,2,["Kelengkapan lainnya"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,_l)),Al.Y(84,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,dl)),Al.Y(87,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,gl)),Al.Y(90,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,ml)),Al.Y(94,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,hl)),Al.Y(97,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,10,0,"light");l(n,33,0,"");l(n,36,0,"dark","md-close");l(n,50,0,"clear");l(n,54,0,"clear");l(n,65,0,"primary","contact");l(n,69,0,"2"!=u.userLevel);l(n,76,0,"clear");l(n,80,0,"clear");l(n,84,0,"2"!=u.userLevel);l(n,87,0,"2"!=u.userLevel);l(n,90,0,"2"!=u.userLevel);l(n,94,0,"2"!=u.userLevel);l(n,97,0,"2"!=u.userLevel)},function(l,n){var u=n.component;l(n,0,0,Al._11(n,1).statusbarPadding,Al._11(n,1)._hasRefresher);l(n,9,0,null===u.session_noRegistrasi);l(n,35,0,Al._11(n,36)._hidden);l(n,41,0,null!=u.session_noRegistrasi);l(n,64,0,Al._11(n,65)._hidden)})}function bl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[15,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeBentukLembaga==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function fl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[31,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeWilayah==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function kl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[35,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeKecamatan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function Yl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[39,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeKelurahan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function Zl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[52,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeBidangGerak==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function vl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"button",[["block",""],["class","text-white"],["clear",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(1,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"],block:[1,"block"]},null),(l()(),Al._20(-1,0,["Daftarkan"]))],function(l,n){l(n,1,0,"","")},null)}function Cl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"button",[["block",""],["class","text-white"],["clear",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(1,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"],block:[1,"block"]},null),(l()(),Al._20(-1,0,["Simpan"]))],function(l,n){l(n,1,0,"","")},null)}function jl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Kelembagaan"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,481,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,37,"ion-list",[],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,33,"ion-row",[["class","big-avatar-frame row"]],null,null,null,null,null)),Al.Y(46,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(48,0,null,null,15,"div",[["class","big-avatar"]],null,null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(51,0,null,null,0,"img",[],[[8,"src",4],[8,"hidden",0]],null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(53,0,null,null,0,"img",[],[[8,"src",4],[8,"hidden",0]],null,null,null,null)),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(55,0,null,null,7,"ion-buttons",[["margin-top",""]],null,null,null,null,null)),Al.Y(56,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,2,{_buttons:1}),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(59,0,null,null,2,"button",[["class","no-shadow"],["color","bright"],["ion-button",""],["round",""],["small",""],["text-capitalize",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.presentActionSheet()&&a}return a},Uu.b,Uu.a)),Al.Y(60,1097728,[[2,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],small:[1,"small"],round:[2,"round"]},null),(l()(),Al._20(-1,0,["\n            Unggah logo\n          "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(65,0,null,null,5,"ion-item",[["class","big-avatar-frame item item-block"],["color","dark"],["padding",""],["text-center",""]],null,null,null,Mu.b,Mu.a)),Al.Y(66,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],{color:[0,"color"]},null),Al._18(335544320,3,{contentLabel:0}),Al._18(603979776,4,{_buttons:1}),Al._18(603979776,5,{_icons:1}),Al.Y(70,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(72,0,null,null,5,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(73,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,6,{contentLabel:0}),Al._18(603979776,7,{_buttons:1}),Al._18(603979776,8,{_icons:1}),Al.Y(77,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(81,0,null,1,438,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(82,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(84,0,null,null,6,"ion-list-header",[["class","text-main no-border-top item"]],null,null,null,Mu.b,Mu.a)),Al.Y(85,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,9,{contentLabel:0}),Al._18(603979776,10,{_buttons:1}),Al._18(603979776,11,{_icons:1}),Al.Y(89,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Kelembagaan"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(92,0,null,null,223,"ion-row",[["class","row"],["margin-bottom",""]],null,null,null,null,null)),Al.Y(93,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(95,0,null,null,22,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(96,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,12,{contentLabel:0}),Al._18(603979776,13,{_buttons:1}),Al._18(603979776,14,{_icons:1}),Al.Y(100,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(102,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(103,16384,[[12,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Bentuk lembaga (*)"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(106,0,null,3,10,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,107)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,107)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeBentukLembaga=u)&&a}return a},ja.b,ja.a)),Al.Y(107,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],{disabled:[0,"disabled"]},null),Al._18(603979776,15,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(110,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{isDisabled:[0,"isDisabled"],model:[1,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(112,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,bl)),Al.Y(115,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(119,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(120,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,16,{contentLabel:0}),Al._18(603979776,17,{_buttons:1}),Al._18(603979776,18,{_icons:1}),Al.Y(124,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(126,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(127,16384,[[16,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Nama lembaga (*)"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(130,0,null,3,4,"ion-input",[["no-border",""],["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.nama=u)&&a}return a},Bu.b,Bu.a)),Al.Y(131,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(133,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(134,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(137,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(138,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,19,{contentLabel:0}),Al._18(603979776,20,{_buttons:1}),Al._18(603979776,21,{_icons:1}),Al.Y(142,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(144,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(145,16384,[[19,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Alamat (*)"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(148,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.alamat_=u)&&a}return a},Bu.b,Bu.a)),Al.Y(149,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(151,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(152,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(155,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(156,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(158,0,null,null,16,"ion-item",[["class","no-border-1-layer item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(159,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,22,{contentLabel:0}),Al._18(603979776,23,{_buttons:1}),Al._18(603979776,24,{_icons:1}),Al.Y(163,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(165,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(166,16384,[[22,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["RT (*)"])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(169,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.noRt=u)&&a}return a},Bu.b,Bu.a)),Al.Y(170,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(172,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(173,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(177,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(178,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(180,0,null,null,16,"ion-item",[["class","no-border-1-layer item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(181,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,25,{contentLabel:0}),Al._18(603979776,26,{_buttons:1}),Al._18(603979776,27,{_icons:1}),Al.Y(185,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(187,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(188,16384,[[25,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["RW (*)"])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(191,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.noRw=u)&&a}return a},Bu.b,Bu.a)),Al.Y(192,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(194,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(195,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(199,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(200,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,28,{contentLabel:0}),Al._18(603979776,29,{_buttons:1}),Al._18(603979776,30,{_icons:1}),Al.Y(204,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(206,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(207,16384,[[28,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Wilayah"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(210,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,211)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,211)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeWilayah=u)&&a}if("ionChange"===n){a=!1!==t.loadKecamatan(t.data.kodeWilayah)&&a}return a},ja.b,ja.a)),Al.Y(211,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,31,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(214,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(216,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(218,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(219,16384,[[31,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,fl)),Al.Y(222,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(226,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(227,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,32,{contentLabel:0}),Al._18(603979776,33,{_buttons:1}),Al._18(603979776,34,{_icons:1}),Al.Y(231,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(233,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(234,16384,[[32,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kecamatan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(237,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,238)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,238)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeKecamatan=u)&&a}if("ionChange"===n){a=!1!==t.loadKelurahan(t.data.kodeKecamatan)&&a}return a},ja.b,ja.a)),Al.Y(238,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,35,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(241,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(243,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(245,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(246,16384,[[35,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,kl)),Al.Y(249,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(253,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(254,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,36,{contentLabel:0}),Al._18(603979776,37,{_buttons:1}),Al._18(603979776,38,{_icons:1}),Al.Y(258,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(260,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(261,16384,[[36,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kelurahan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(264,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,265)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,265)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeKelurahan=u)&&a}return a},ja.b,ja.a)),Al.Y(265,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,39,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(268,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(270,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(272,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(273,16384,[[39,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,Yl)),Al.Y(276,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(280,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(281,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,40,{contentLabel:0}),Al._18(603979776,41,{_buttons:1}),Al._18(603979776,42,{_icons:1}),Al.Y(285,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(287,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(288,16384,[[40,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Telp (*)"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(291,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.telp=u)&&a}return a},Bu.b,Bu.a)),Al.Y(292,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(294,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(295,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(298,0,null,null,16,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(299,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,43,{contentLabel:0}),Al._18(603979776,44,{_buttons:1}),Al._18(603979776,45,{_icons:1}),Al.Y(303,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(305,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(306,16384,[[43,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Email (*)"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(309,0,null,3,4,"ion-input",[["text-right",""],["type","email"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.email=u)&&a}return a},Bu.b,Bu.a)),Al.Y(310,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(312,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(313,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(317,0,null,null,6,"ion-list-header",[["class","text-main item"]],null,null,null,Mu.b,Mu.a)),Al.Y(318,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,46,{contentLabel:0}),Al._18(603979776,47,{_buttons:1}),Al._18(603979776,48,{_icons:1}),Al.Y(322,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Informasi pendukung"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(325,0,null,null,138,"ion-row",[["class","row"]],null,null,null,null,null)),Al.Y(326,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(328,0,null,null,26,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(329,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,49,{contentLabel:0}),Al._18(603979776,50,{_buttons:1}),Al._18(603979776,51,{_icons:1}),Al.Y(333,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(335,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(336,16384,[[49,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Bidang gerak"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(339,0,null,3,14,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,340)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,340)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeBidangGerak=u)&&a}return a},ja.b,ja.a)),Al.Y(340,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,52,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(343,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(345,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(347,0,null,null,2,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(348,16384,[[52,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Semua"])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.U(16777216,null,null,1,null,Zl)),Al.Y(352,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(356,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(357,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,53,{contentLabel:0}),Al._18(603979776,54,{_buttons:1}),Al._18(603979776,55,{_icons:1}),Al.Y(361,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(363,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(364,16384,[[53,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jumlah pengurus"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(367,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.jumlahPengurus=u)&&a}return a},Bu.b,Bu.a)),Al.Y(368,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(370,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(371,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(374,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(375,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,56,{contentLabel:0}),Al._18(603979776,57,{_buttons:1}),Al._18(603979776,58,{_icons:1}),Al.Y(379,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(381,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(382,16384,[[56,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["NPWP"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(385,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.noNpwp=u)&&a}return a},Bu.b,Bu.a)),Al.Y(386,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(388,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(389,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(392,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(393,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,59,{contentLabel:0}),Al._18(603979776,60,{_buttons:1}),Al._18(603979776,61,{_icons:1}),Al.Y(397,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(399,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(400,16384,[[59,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Afiliasi"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(403,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.organisasiAfiliasi=u)&&a}return a},Bu.b,Bu.a)),Al.Y(404,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(406,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(407,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(410,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(411,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,62,{contentLabel:0}),Al._18(603979776,63,{_buttons:1}),Al._18(603979776,64,{_icons:1}),Al.Y(415,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(417,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(418,16384,[[62,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Visi"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(421,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.visiLembaga=u)&&a}return a},Bu.b,Bu.a)),Al.Y(422,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(424,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(425,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(428,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(429,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,65,{contentLabel:0}),Al._18(603979776,66,{_buttons:1}),Al._18(603979776,67,{_icons:1}),Al.Y(433,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(435,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(436,16384,[[65,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Misi"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(439,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.misiLembaga=u)&&a}return a},Bu.b,Bu.a)),Al.Y(440,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(442,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(443,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(446,0,null,null,16,"ion-item",[["class","no-border-child item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(447,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,68,{contentLabel:0}),Al._18(603979776,69,{_buttons:1}),Al._18(603979776,70,{_icons:1}),Al.Y(451,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(453,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(454,16384,[[68,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Media sosial"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(457,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.mediaSosial=u)&&a}return a},Bu.b,Bu.a)),Al.Y(458,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(460,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(461,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(465,0,null,null,6,"ion-list-header",[["class","text-main item"],["margin-top",""]],null,null,null,Mu.b,Mu.a)),Al.Y(466,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,71,{contentLabel:0}),Al._18(603979776,72,{_buttons:1}),Al._18(603979776,73,{_icons:1}),Al.Y(470,16384,null,0,Nu.a,[iu.a,Al.z,Al.j,[8,null]],null,null),(l()(),Al._20(-1,2,["Maps"])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(473,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(474,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,74,{contentLabel:0}),Al._18(603979776,75,{_buttons:1}),Al._18(603979776,76,{_icons:1}),Al.Y(478,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(480,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(481,16384,[[74,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Latitude"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(484,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.latitude=u)&&a}return a},Bu.b,Bu.a)),Al.Y(485,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(487,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(488,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(491,0,null,null,16,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(492,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,77,{contentLabel:0}),Al._18(603979776,78,{_buttons:1}),Al._18(603979776,79,{_icons:1}),Al.Y(496,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(498,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(499,16384,[[77,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Longitude"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(502,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.langitude=u)&&a}return a},Bu.b,Bu.a)),Al.Y(503,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(505,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(506,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(509,0,null,null,9,"button",[["class","item item-block"],["icon-start",""],["ion-item",""],["margin-top",""],["text-center",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.getCurrentLocation()&&a}return a},Mu.b,Mu.a)),Al.Y(510,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,80,{contentLabel:0}),Al._18(603979776,81,{_buttons:1}),Al._18(603979776,82,{_icons:1}),Al.Y(514,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(516,0,null,2,1,"ion-icon",[["name","locate"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(517,147456,[[82,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n      Ambil posisi saat ini.\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  \n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(522,0,null,null,12,"ion-footer",[],null,null,null,null,null)),Al.Y(523,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(525,0,null,null,8,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(526,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.U(16777216,null,3,1,null,vl)),Al.Y(529,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.U(16777216,null,3,1,null,Cl)),Al.Y(532,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"bright","","");l(n,66,0,"dark");l(n,107,0,Al._2(1,"",null!=u.noRegistrasi,""));l(n,110,0,Al._2(1,"",null!=u.noRegistrasi,""),u.data.kodeBentukLembaga);l(n,115,0,u.bentukLembaga);l(n,131,0,u.data.nama);l(n,134,0,"text");l(n,149,0,u.data.alamat_);l(n,152,0,"text");l(n,170,0,u.data.noRt);l(n,173,0,"text");l(n,192,0,u.data.noRw);l(n,195,0,"text");l(n,214,0,u.data.kodeWilayah);l(n,219,0,Al._2(1,"",""==u.data.wilayah?u.selected:"",""),"");l(n,222,0,u.wilayah);l(n,241,0,u.data.kodeKecamatan);l(n,246,0,Al._2(1,"",""==u.data.kecamatan?u.selected:"",""),"");l(n,249,0,u.kecamatan);l(n,268,0,u.data.kodeKelurahan);l(n,273,0,Al._2(1,"",""==u.data.kelurahan?u.selected:"",""),"");l(n,276,0,u.kelurahan);l(n,292,0,u.data.telp);l(n,295,0,"text");l(n,310,0,u.data.email);l(n,313,0,"email");l(n,343,0,u.data.kodeBidangGerak);l(n,348,0,Al._2(1,"",""==u.data.kodeBidangGerak?u.selected:"",""),"");l(n,352,0,u.bidangGerak);l(n,368,0,u.data.jumlahPengurus);l(n,371,0,"text");l(n,386,0,u.data.noNpwp);l(n,389,0,"text");l(n,404,0,u.data.organisasiAfiliasi);l(n,407,0,"text");l(n,422,0,u.data.visiLembaga);l(n,425,0,"text");l(n,440,0,u.data.misiLembaga);l(n,443,0,"text");l(n,458,0,u.data.mediaSosial);l(n,461,0,"text");l(n,485,0,u.data.latitude);l(n,488,0,"text");l(n,503,0,u.data.langitude);l(n,506,0,"text");l(n,517,0,"locate");l(n,526,0,"main");l(n,529,0,""==u.noRegistrasi);l(n,532,0,""!=u.noRegistrasi)},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,51,0,Al._2(3,"",u.urlServer,"/img/logo/",u.data.avatar,"?random=",u.random_,""),null===u.data.avatar&&""!=u.data.avatar);l(n,53,0,Al._2(1,"",u.urlServer,"/img/logo/avatar-1.jpg"),null!=u.noRegistrasi);l(n,106,0,Al._11(n,107)._disabled,Al._11(n,112).ngClassUntouched,Al._11(n,112).ngClassTouched,Al._11(n,112).ngClassPristine,Al._11(n,112).ngClassDirty,Al._11(n,112).ngClassValid,Al._11(n,112).ngClassInvalid,Al._11(n,112).ngClassPending);l(n,130,0,Al._11(n,133).ngClassUntouched,Al._11(n,133).ngClassTouched,Al._11(n,133).ngClassPristine,Al._11(n,133).ngClassDirty,Al._11(n,133).ngClassValid,Al._11(n,133).ngClassInvalid,Al._11(n,133).ngClassPending);l(n,148,0,Al._11(n,151).ngClassUntouched,Al._11(n,151).ngClassTouched,Al._11(n,151).ngClassPristine,Al._11(n,151).ngClassDirty,Al._11(n,151).ngClassValid,Al._11(n,151).ngClassInvalid,Al._11(n,151).ngClassPending);l(n,169,0,Al._11(n,172).ngClassUntouched,Al._11(n,172).ngClassTouched,Al._11(n,172).ngClassPristine,Al._11(n,172).ngClassDirty,Al._11(n,172).ngClassValid,Al._11(n,172).ngClassInvalid,Al._11(n,172).ngClassPending);l(n,191,0,Al._11(n,194).ngClassUntouched,Al._11(n,194).ngClassTouched,Al._11(n,194).ngClassPristine,Al._11(n,194).ngClassDirty,Al._11(n,194).ngClassValid,Al._11(n,194).ngClassInvalid,Al._11(n,194).ngClassPending);l(n,210,0,Al._11(n,211)._disabled,Al._11(n,216).ngClassUntouched,Al._11(n,216).ngClassTouched,Al._11(n,216).ngClassPristine,Al._11(n,216).ngClassDirty,Al._11(n,216).ngClassValid,Al._11(n,216).ngClassInvalid,Al._11(n,216).ngClassPending);l(n,237,0,Al._11(n,238)._disabled,Al._11(n,243).ngClassUntouched,Al._11(n,243).ngClassTouched,Al._11(n,243).ngClassPristine,Al._11(n,243).ngClassDirty,Al._11(n,243).ngClassValid,Al._11(n,243).ngClassInvalid,Al._11(n,243).ngClassPending);l(n,264,0,Al._11(n,265)._disabled,Al._11(n,270).ngClassUntouched,Al._11(n,270).ngClassTouched,Al._11(n,270).ngClassPristine,Al._11(n,270).ngClassDirty,Al._11(n,270).ngClassValid,Al._11(n,270).ngClassInvalid,Al._11(n,270).ngClassPending);l(n,291,0,Al._11(n,294).ngClassUntouched,Al._11(n,294).ngClassTouched,Al._11(n,294).ngClassPristine,Al._11(n,294).ngClassDirty,Al._11(n,294).ngClassValid,Al._11(n,294).ngClassInvalid,Al._11(n,294).ngClassPending);l(n,309,0,Al._11(n,312).ngClassUntouched,Al._11(n,312).ngClassTouched,Al._11(n,312).ngClassPristine,Al._11(n,312).ngClassDirty,Al._11(n,312).ngClassValid,Al._11(n,312).ngClassInvalid,Al._11(n,312).ngClassPending);l(n,339,0,Al._11(n,340)._disabled,Al._11(n,345).ngClassUntouched,Al._11(n,345).ngClassTouched,Al._11(n,345).ngClassPristine,Al._11(n,345).ngClassDirty,Al._11(n,345).ngClassValid,Al._11(n,345).ngClassInvalid,Al._11(n,345).ngClassPending);l(n,367,0,Al._11(n,370).ngClassUntouched,Al._11(n,370).ngClassTouched,Al._11(n,370).ngClassPristine,Al._11(n,370).ngClassDirty,Al._11(n,370).ngClassValid,Al._11(n,370).ngClassInvalid,Al._11(n,370).ngClassPending);l(n,385,0,Al._11(n,388).ngClassUntouched,Al._11(n,388).ngClassTouched,Al._11(n,388).ngClassPristine,Al._11(n,388).ngClassDirty,Al._11(n,388).ngClassValid,Al._11(n,388).ngClassInvalid,Al._11(n,388).ngClassPending);l(n,403,0,Al._11(n,406).ngClassUntouched,Al._11(n,406).ngClassTouched,Al._11(n,406).ngClassPristine,Al._11(n,406).ngClassDirty,Al._11(n,406).ngClassValid,Al._11(n,406).ngClassInvalid,Al._11(n,406).ngClassPending);l(n,421,0,Al._11(n,424).ngClassUntouched,Al._11(n,424).ngClassTouched,Al._11(n,424).ngClassPristine,Al._11(n,424).ngClassDirty,Al._11(n,424).ngClassValid,Al._11(n,424).ngClassInvalid,Al._11(n,424).ngClassPending);l(n,439,0,Al._11(n,442).ngClassUntouched,Al._11(n,442).ngClassTouched,Al._11(n,442).ngClassPristine,Al._11(n,442).ngClassDirty,Al._11(n,442).ngClassValid,Al._11(n,442).ngClassInvalid,Al._11(n,442).ngClassPending);l(n,457,0,Al._11(n,460).ngClassUntouched,Al._11(n,460).ngClassTouched,Al._11(n,460).ngClassPristine,Al._11(n,460).ngClassDirty,Al._11(n,460).ngClassValid,Al._11(n,460).ngClassInvalid,Al._11(n,460).ngClassPending);l(n,484,0,Al._11(n,487).ngClassUntouched,Al._11(n,487).ngClassTouched,Al._11(n,487).ngClassPristine,Al._11(n,487).ngClassDirty,Al._11(n,487).ngClassValid,Al._11(n,487).ngClassInvalid,Al._11(n,487).ngClassPending);l(n,502,0,Al._11(n,505).ngClassUntouched,Al._11(n,505).ngClassTouched,Al._11(n,505).ngClassPristine,Al._11(n,505).ngClassDirty,Al._11(n,505).ngClassValid,Al._11(n,505).ngClassInvalid,Al._11(n,505).ngClassPending);l(n,516,0,Al._11(n,517)._hidden);l(n,525,0,Al._11(n,526)._sbPadding)})}function yl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"span",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Berkas belum diunggah..."]))],null,null)}function zl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"span",[],null,null,null,null,null)),(l()(),Al._20(1,null,["",""]))],null,function(l,n){l(n,1,0,n.parent.context.$implicit.urlFile)})}function wl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,83,"ion-card",[["margin-top",""]],null,null,null,null,null)),Al.Y(1,16384,null,0,la.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(3,0,null,null,2,"ion-card-header",[["text-uppercase",""]],null,null,null,null,null)),Al.Y(4,16384,null,0,Pt.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(5,null,["",""])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(7,0,null,null,75,"ion-card-content",[["no-padding",""]],null,null,null,null,null)),Al.Y(8,16384,null,0,na.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(10,0,null,null,62,"ion-list",[],null,null,null,null,null)),Al.Y(11,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(13,0,null,null,16,"ion-item",[["class","border-bottom item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(14,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(18,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(20,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(21,16384,[[5,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Nomor (*)"])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(24,0,null,3,4,"ion-input",[["no-border",""],["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.context.$implicit.noLegalitas=u)&&a}return a},Bu.b,Bu.a)),Al.Y(25,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(27,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(28,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(31,0,null,null,17,"ion-item",[["class","border-bottom item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(32,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(36,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(38,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(39,16384,[[8,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Tanggal (*)"])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(42,0,null,3,5,"ion-datetime",[["displayFormat","DD/MM/YYYY"]],[[2,"datetime-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,43)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,43)._keyup()&&a}if("ngModelChange"===n){a=!1!==(l.context.$implicit.tanggalLegalitas=u)&&a}return a},Dt.b,Dt.a)),Al.Y(43,1228800,null,0,Mt.a,[Iu.a,iu.a,Al.j,Al.z,[2,Su.a],[2,St.a]],{displayFormat:[0,"displayFormat"]},null),Al._16(1024,null,Pu.f,function(l){return[l]},[Mt.a]),Al.Y(45,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(47,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(50,0,null,null,21,"ion-item",[["class","border-bottom item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(51,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(55,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(57,0,null,0,7,"ion-buttons",[["item-start",""]],null,null,null,null,null)),Al.Y(58,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,14,{_buttons:1}),(l()(),Al._20(-1,null,["\n            "])),(l()(),Al.Z(61,0,null,null,2,"button",[["color","bright"],["ion-button",""],["round",""],["small",""],["text-capitalize",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.openChooser()&&a}return a},Uu.b,Uu.a)),Al.Y(62,1097728,[[14,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],small:[1,"small"],round:[2,"round"]},null),(l()(),Al._20(-1,0,["Unggah berkas"])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.U(16777216,null,2,1,null,yl)),Al.Y(67,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.U(16777216,null,2,1,null,zl)),Al.Y(70,16384,null,0,Gu.j,[Al.I,Al.F],{ngIf:[0,"ngIf"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(74,0,null,null,7,"ion-buttons",[["text-center",""]],null,null,null,null,null)),Al.Y(75,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,15,{_buttons:1}),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(78,0,null,null,2,"button",[["color","main"],["full",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(79,1097728,[[15,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{color:[0,"color"],full:[1,"full"]},null),(l()(),Al._20(-1,0,["Simpan"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "]))],function(l,n){l(n,25,0,n.context.$implicit.noLegalitas);l(n,28,0,"text");l(n,43,0,"DD/MM/YYYY");l(n,45,0,n.context.$implicit.tanggalLegalitas);l(n,62,0,"bright","","");l(n,67,0,""==n.context.$implicit.urlFile);l(n,70,0,""!=n.context.$implicit.urlFile);l(n,79,0,"main","")},function(l,n){l(n,5,0,n.context.$implicit.namaPersyaratan);l(n,24,0,Al._11(n,27).ngClassUntouched,Al._11(n,27).ngClassTouched,Al._11(n,27).ngClassPristine,Al._11(n,27).ngClassDirty,Al._11(n,27).ngClassValid,Al._11(n,27).ngClassInvalid,Al._11(n,27).ngClassPending);l(n,42,0,Al._11(n,43)._disabled,Al._11(n,47).ngClassUntouched,Al._11(n,47).ngClassTouched,Al._11(n,47).ngClassPristine,Al._11(n,47).ngClassDirty,Al._11(n,47).ngClassValid,Al._11(n,47).ngClassInvalid,Al._11(n,47).ngClassPending)})}function Ll(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Legalitas"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,35,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,28,"ion-card",[["margin-top",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,la.a,[iu.a,Al.j,Al.z],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,24,"ion-list",[],null,null,null,null,null)),Al.Y(46,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(48,0,null,null,20,"ion-row",[["class","row"],["padding",""]],null,null,null,null,null)),Al.Y(49,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(51,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(52,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(56,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(58,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(61,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(62,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(63,null,["","."])),(l()(),Al._20(-1,2,["\n          "])),(l()(),Al.Z(65,0,null,4,1,"ion-icon",[["color","main"],["item-end",""],["name","paper"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(66,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.U(16777216,null,1,1,null,wl)),Al.Y(73,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,66,0,"main","paper");l(n,73,0,u.data)},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,63,0,u.namaLembaga);l(n,65,0,Al._11(n,66)._hidden)})}function xl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Sejarah"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,513,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,509,"ion-row",[["class","row"],["margin-top",""],["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai sejarah Lembaga terkait."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(56,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(57,null,["","."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(59,0,null,4,1,"ion-icon",[["color","bright"],["item-end",""],["name","time"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(60,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(63,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(70,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(71,16384,[[5,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Sejarah singkat"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(74,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.deskripsi=u)&&a}return a},Bu.b,Bu.a)),Al.Y(75,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(77,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(78,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(81,0,null,null,17,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(82,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(86,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(88,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(89,16384,[[8,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Tanggal didirikan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(92,0,null,3,5,"ion-datetime",[["displayFormat","DD/MM/YYYY"]],[[2,"datetime-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,93)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,93)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.tanggalDidirikan=u)&&a}return a},Dt.b,Dt.a)),Al.Y(93,1228800,null,0,Mt.a,[Iu.a,iu.a,Al.j,Al.z,[2,Su.a],[2,St.a]],{displayFormat:[0,"displayFormat"]},null),Al._16(1024,null,Pu.f,function(l){return[l]},[Mt.a]),Al.Y(95,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(97,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(100,0,null,null,31,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(101,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(105,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(107,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(108,16384,[[11,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kepemelikan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(111,0,null,3,19,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,112)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,112)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kepemilikan=u)&&a}return a},ja.b,ja.a)),Al.Y(112,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,14,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(115,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(117,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(119,0,null,null,2,"ion-option",[["value","Pribadi"]],null,null,null,null,null)),Al.Y(120,16384,[[14,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Pribadi"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(123,0,null,null,2,"ion-option",[["value","Keluarga"]],null,null,null,null,null)),Al.Y(124,16384,[[14,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Keluarga"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(127,0,null,null,2,"ion-option",[["value","Lembaga"]],null,null,null,null,null)),Al.Y(128,16384,[[14,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Lembaga"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(133,0,null,null,39,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(134,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,15,{contentLabel:0}),Al._18(603979776,16,{_buttons:1}),Al._18(603979776,17,{_icons:1}),Al.Y(138,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(140,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(141,16384,[[15,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Status tanah"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(144,0,null,3,27,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,145)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,145)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.statusTanah=u)&&a}return a},ja.b,ja.a)),Al.Y(145,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,18,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(148,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(150,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(152,0,null,null,2,"ion-option",[["value","Sewa"]],null,null,null,null,null)),Al.Y(153,16384,[[18,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Sewa"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(156,0,null,null,2,"ion-option",[["value","Hak milik"]],null,null,null,null,null)),Al.Y(157,16384,[[18,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Hak milik"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(160,0,null,null,2,"ion-option",[["value","Hak guna bangunan"]],null,null,null,null,null)),Al.Y(161,16384,[[18,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Hak guna bangunan"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(164,0,null,null,2,"ion-option",[["value","Hak guna pakai"]],null,null,null,null,null)),Al.Y(165,16384,[[18,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Hak guna pakai"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(168,0,null,null,2,"ion-option",[["value","Wakaf"]],null,null,null,null,null)),Al.Y(169,16384,[[18,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Wakaf"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(174,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(175,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,19,{contentLabel:0}),Al._18(603979776,20,{_buttons:1}),Al._18(603979776,21,{_icons:1}),Al.Y(179,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(181,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(182,16384,[[19,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Sertifikasi"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(185,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,186)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,186)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.statusSertifikasi=u)&&a}return a},ja.b,ja.a)),Al.Y(186,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,22,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(189,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(191,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(193,0,null,null,2,"ion-option",[["value","Belum"]],null,null,null,null,null)),Al.Y(194,16384,[[22,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Belum"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(197,0,null,null,2,"ion-option",[["value","Sudah"]],null,null,null,null,null)),Al.Y(198,16384,[[22,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Sudah"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(203,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(204,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(206,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(207,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,23,{contentLabel:0}),Al._18(603979776,24,{_buttons:1}),Al._18(603979776,25,{_icons:1}),Al.Y(211,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(213,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(214,16384,[[23,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Luas Tanah"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(217,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.luasTanah=u)&&a}return a},Bu.b,Bu.a)),Al.Y(218,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(220,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(221,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(225,0,null,null,31,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(226,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(228,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(229,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,26,{contentLabel:0}),Al._18(603979776,27,{_buttons:1}),Al._18(603979776,28,{_icons:1}),Al.Y(233,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(235,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(236,16384,[[26,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Satuan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(239,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,240)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,240)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.satuanLuasTanah=u)&&a}return a},ja.b,ja.a)),Al.Y(240,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,29,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(243,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(245,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(247,0,null,null,2,"ion-option",[["value","Meter persegi"]],null,null,null,null,null)),Al.Y(248,16384,[[29,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Meter persegi"])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(251,0,null,null,2,"ion-option",[["value","Hektar"]],null,null,null,null,null)),Al.Y(252,16384,[[29,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Hektar"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(258,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(259,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(261,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(262,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,30,{contentLabel:0}),Al._18(603979776,31,{_buttons:1}),Al._18(603979776,32,{_icons:1}),Al.Y(266,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(268,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(269,16384,[[30,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Luas bangunan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(272,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.luasBangunan=u)&&a}return a},Bu.b,Bu.a)),Al.Y(273,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(275,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(276,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(280,0,null,null,31,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(281,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(283,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(284,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,33,{contentLabel:0}),Al._18(603979776,34,{_buttons:1}),Al._18(603979776,35,{_icons:1}),Al.Y(288,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(290,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(291,16384,[[33,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Satuan"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(294,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,295)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,295)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.satuanLuasBangunan=u)&&a}return a},ja.b,ja.a)),Al.Y(295,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,36,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(298,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(300,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(302,0,null,null,2,"ion-option",[["value","Meter persegi"]],null,null,null,null,null)),Al.Y(303,16384,[[36,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Meter persegi"])),(l()(),Al._20(-1,null,["\n          "])),(l()(),Al.Z(306,0,null,null,2,"ion-option",[["value","Hektar"]],null,null,null,null,null)),Al.Y(307,16384,[[36,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Hektar"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(313,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(314,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,37,{contentLabel:0}),Al._18(603979776,38,{_buttons:1}),Al._18(603979776,39,{_icons:1}),Al.Y(318,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(320,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(321,16384,[[37,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kondisi bangunan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(324,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,325)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,325)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kondisiBangunan=u)&&a}return a},ja.b,ja.a)),Al.Y(325,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,40,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(328,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(330,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(332,0,null,null,2,"ion-option",[["value","Baik"]],null,null,null,null,null)),Al.Y(333,16384,[[40,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Baik"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(336,0,null,null,2,"ion-option",[["value","Rusak"]],null,null,null,null,null)),Al.Y(337,16384,[[40,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Rusak"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(342,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(343,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,41,{contentLabel:0}),Al._18(603979776,42,{_buttons:1}),Al._18(603979776,43,{_icons:1}),Al.Y(347,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(349,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(350,16384,[[41,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jumlah bangunan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(353,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.jumlahBangunan=u)&&a}return a},Bu.b,Bu.a)),Al.Y(354,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(356,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(357,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(360,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(361,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,44,{contentLabel:0}),Al._18(603979776,45,{_buttons:1}),Al._18(603979776,46,{_icons:1}),Al.Y(365,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(367,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(368,16384,[[44,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Sarana / Prasarana"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(371,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,372)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,372)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.statusSarana=u)&&a}return a},ja.b,ja.a)),Al.Y(372,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,47,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(375,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(377,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(379,0,null,null,2,"ion-option",[["value","Ada"]],null,null,null,null,null)),Al.Y(380,16384,[[47,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Ada"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(383,0,null,null,2,"ion-option",[["value","Tidak ada"]],null,null,null,null,null)),Al.Y(384,16384,[[47,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Tidak Ada"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(389,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(390,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,48,{contentLabel:0}),Al._18(603979776,49,{_buttons:1}),Al._18(603979776,50,{_icons:1}),Al.Y(394,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(396,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(397,16384,[[48,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Bahasa pengantar"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(400,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.bahasaPengantar=u)&&a}return a},Bu.b,Bu.a)),Al.Y(401,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(403,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(404,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(407,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(408,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,51,{contentLabel:0}),Al._18(603979776,52,{_buttons:1}),Al._18(603979776,53,{_icons:1}),Al.Y(412,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(414,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(415,16384,[[51,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Sensus"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(418,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,419)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,419)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.statusSensus=u)&&a}return a},ja.b,ja.a)),Al.Y(419,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,54,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(422,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(424,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(426,0,null,null,2,"ion-option",[["value","Belum"]],null,null,null,null,null)),Al.Y(427,16384,[[54,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Belum"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(430,0,null,null,2,"ion-option",[["value","Sudah"]],null,null,null,null,null)),Al.Y(431,16384,[[54,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Sudah"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(436,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(437,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,55,{contentLabel:0}),Al._18(603979776,56,{_buttons:1}),Al._18(603979776,57,{_icons:1}),Al.Y(441,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(443,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(444,16384,[[55,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Bantuan pemerintah"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(447,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,448)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,448)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.statusBantuanPemerintah=u)&&a}return a},ja.b,ja.a)),Al.Y(448,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,58,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(451,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(453,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(455,0,null,null,2,"ion-option",[["value","Belum"]],null,null,null,null,null)),Al.Y(456,16384,[[58,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Belum"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(459,0,null,null,2,"ion-option",[["value","Sudah"]],null,null,null,null,null)),Al.Y(460,16384,[[58,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Sudah"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(465,0,null,null,31,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(466,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,59,{contentLabel:0}),Al._18(603979776,60,{_buttons:1}),Al._18(603979776,61,{_icons:1}),Al.Y(470,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(472,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(473,16384,[[59,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kondisi geografis"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(476,0,null,3,19,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,477)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,477)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kondisiGeografis=u)&&a}return a},ja.b,ja.a)),Al.Y(477,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,62,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(480,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(482,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(484,0,null,null,2,"ion-option",[["value","Pantai"]],null,null,null,null,null)),Al.Y(485,16384,[[62,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Pantai"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(488,0,null,null,2,"ion-option",[["value","Daratan rendah"]],null,null,null,null,null)),Al.Y(489,16384,[[62,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Dataran rendah"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(492,0,null,null,2,"ion-option",[["value","Daratan tinggi"]],null,null,null,null,null)),Al.Y(493,16384,[[62,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Dataran tinggi"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(498,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(499,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,63,{contentLabel:0}),Al._18(603979776,64,{_buttons:1}),Al._18(603979776,65,{_icons:1}),Al.Y(503,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(505,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(506,16384,[[63,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Potensi wilayah"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(509,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.potensiWilayah=u)&&a}return a},Bu.b,Bu.a)),Al.Y(510,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(512,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(513,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(516,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(517,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,66,{contentLabel:0}),Al._18(603979776,67,{_buttons:1}),Al._18(603979776,68,{_icons:1}),Al.Y(521,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(523,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(524,16384,[[66,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jenis wilayah"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(527,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.jenisWilayah=u)&&a}return a},Bu.b,Bu.a)),Al.Y(528,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(530,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(531,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(534,0,null,null,16,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(535,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,69,{contentLabel:0}),Al._18(603979776,70,{_buttons:1}),Al._18(603979776,71,{_icons:1}),Al.Y(539,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(541,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(542,16384,[[69,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Catatan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(545,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.catatanLain=u)&&a}return a},Bu.b,Bu.a)),Al.Y(546,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(548,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(549,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(554,0,null,null,10,"ion-footer",[],null,null,null,null,null)),Al.Y(555,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(557,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(558,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(560,0,null,3,2,"button",[["block",""],["class","text-white"],["clear",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(561,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"],block:[1,"block"]},null),(l()(),Al._20(-1,0,["Simpan"])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"bright","time");l(n,75,0,u.data.deskripsi);l(n,78,0,"text");l(n,93,0,"DD/MM/YYYY");l(n,95,0,u.data.tanggalDidirikan);l(n,115,0,u.data.kepemilikan);l(n,120,0,Al._2(1,"","Pribadi"==u.data.kepemilikan?u.selected:"",""),"Pribadi");l(n,124,0,Al._2(1,"","Keluarga"==u.data.kepemilikan?u.selected:"",""),"Keluarga");l(n,128,0,Al._2(1,"","Lembaga"==u.data.kepemilikan?u.selected:"",""),"Lembaga");l(n,148,0,u.data.statusTanah);l(n,153,0,Al._2(1,"","Sewa"==u.data.statusTanah?u.selected:"",""),"Sewa");l(n,157,0,Al._2(1,"","Hak milik"==u.data.statusTanah?u.selected:"",""),"Hak milik");l(n,161,0,Al._2(1,"","Hak guna bangunan"==u.data.statusTanah?u.selected:"",""),"Hak guna bangunan");l(n,165,0,Al._2(1,"","Hak guna pakai"==u.data.statusTanah?u.selected:"",""),"Hak guna pakai");l(n,169,0,Al._2(1,"","Wakaf"==u.data.statusTanah?u.selected:"",""),"Wakaf");l(n,189,0,u.data.statusSertifikasi);l(n,194,0,Al._2(1,"","Belum"==u.data.statusSertifikasi?u.selected:"",""),"Belum");l(n,198,0,Al._2(1,"","Sudah"==u.data.statusSertifikasi?u.selected:"",""),"Sudah");l(n,218,0,u.data.luasTanah);l(n,221,0,"text");l(n,243,0,u.data.satuanLuasTanah);l(n,248,0,Al._2(1,"","Meter persegi"==u.data.satuanLuasTanah?u.selected:"",""),"Meter persegi");l(n,252,0,Al._2(1,"","Hektar"==u.data.satuanLuasTanah?u.selected:"",""),"Hektar");l(n,273,0,u.data.luasBangunan);l(n,276,0,"text");l(n,298,0,u.data.satuanLuasBangunan);l(n,303,0,Al._2(1,"","Meter persegi"==u.data.satuanLuasBangunan?u.selected:"",""),"Meter persegi");l(n,307,0,Al._2(1,"","Hektar"==u.data.satuanLuasBangunan?u.selected:"",""),"Hektar");l(n,328,0,u.data.kondisiBangunan);l(n,333,0,Al._2(1,"","Baik"==u.data.kondisiBangunan?u.selected:"",""),"Baik");l(n,337,0,Al._2(1,"","Rusak"==u.data.kondisiBangunan?u.selected:"",""),"Rusak");l(n,354,0,u.data.jumlahBangunan);l(n,357,0,"text");l(n,375,0,u.data.statusSarana);l(n,380,0,Al._2(1,"","Ada"==u.data.statusSarana?u.selected:"",""),"Ada");l(n,384,0,Al._2(1,"","Tidak ada"==u.data.statusSarana?u.selected:"",""),"Tidak ada");l(n,401,0,u.data.bahasaPengantar);l(n,404,0,"text");l(n,422,0,u.data.statusSensus);l(n,427,0,Al._2(1,"","Belum"==u.data.statusSensus?u.selected:"",""),"Belum");l(n,431,0,Al._2(1,"","ASudahda"==u.data.statusSensus?u.selected:"",""),"Sudah");l(n,451,0,u.data.statusBantuanPemerintah);l(n,456,0,Al._2(1,"","Belum"==u.data.statusBantuanPemerintah?u.selected:"",""),"Belum");l(n,460,0,Al._2(1,"","Sudah"==u.data.statusBantuanPemerintah?u.selected:"",""),"Sudah");l(n,480,0,u.data.kondisiGeografis);l(n,485,0,Al._2(1,"","Pantai"==u.data.kondisiGeografis?u.selected:"",""),"Pantai");l(n,489,0,Al._2(1,"","Daratan rendah"==u.data.kondisiGeografis?u.selected:"",""),"Daratan rendah");l(n,493,0,Al._2(1,"","Daratan tinggi"==u.data.kondisiGeografis?u.selected:"",""),"Daratan tinggi");l(n,510,0,u.data.potensiWilayah);l(n,513,0,"text");l(n,528,0,u.data.jenisWilayah);l(n,531,0,"text");l(n,546,0,u.data.catatanLain);l(n,549,0,"text");l(n,558,0,"main");l(n,561,0,"","")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,57,0,u.namaLembaga);l(n,59,0,Al._11(n,60)._hidden);l(n,74,0,Al._11(n,77).ngClassUntouched,Al._11(n,77).ngClassTouched,Al._11(n,77).ngClassPristine,Al._11(n,77).ngClassDirty,Al._11(n,77).ngClassValid,Al._11(n,77).ngClassInvalid,Al._11(n,77).ngClassPending);l(n,92,0,Al._11(n,93)._disabled,Al._11(n,97).ngClassUntouched,Al._11(n,97).ngClassTouched,Al._11(n,97).ngClassPristine,Al._11(n,97).ngClassDirty,Al._11(n,97).ngClassValid,Al._11(n,97).ngClassInvalid,Al._11(n,97).ngClassPending);l(n,111,0,Al._11(n,112)._disabled,Al._11(n,117).ngClassUntouched,Al._11(n,117).ngClassTouched,Al._11(n,117).ngClassPristine,Al._11(n,117).ngClassDirty,Al._11(n,117).ngClassValid,Al._11(n,117).ngClassInvalid,Al._11(n,117).ngClassPending);l(n,144,0,Al._11(n,145)._disabled,Al._11(n,150).ngClassUntouched,Al._11(n,150).ngClassTouched,Al._11(n,150).ngClassPristine,Al._11(n,150).ngClassDirty,Al._11(n,150).ngClassValid,Al._11(n,150).ngClassInvalid,Al._11(n,150).ngClassPending);l(n,185,0,Al._11(n,186)._disabled,Al._11(n,191).ngClassUntouched,Al._11(n,191).ngClassTouched,Al._11(n,191).ngClassPristine,Al._11(n,191).ngClassDirty,Al._11(n,191).ngClassValid,Al._11(n,191).ngClassInvalid,Al._11(n,191).ngClassPending);l(n,217,0,Al._11(n,220).ngClassUntouched,Al._11(n,220).ngClassTouched,Al._11(n,220).ngClassPristine,Al._11(n,220).ngClassDirty,Al._11(n,220).ngClassValid,Al._11(n,220).ngClassInvalid,Al._11(n,220).ngClassPending);l(n,239,0,Al._11(n,240)._disabled,Al._11(n,245).ngClassUntouched,Al._11(n,245).ngClassTouched,Al._11(n,245).ngClassPristine,Al._11(n,245).ngClassDirty,Al._11(n,245).ngClassValid,Al._11(n,245).ngClassInvalid,Al._11(n,245).ngClassPending);l(n,272,0,Al._11(n,275).ngClassUntouched,Al._11(n,275).ngClassTouched,Al._11(n,275).ngClassPristine,Al._11(n,275).ngClassDirty,Al._11(n,275).ngClassValid,Al._11(n,275).ngClassInvalid,Al._11(n,275).ngClassPending);l(n,294,0,Al._11(n,295)._disabled,Al._11(n,300).ngClassUntouched,Al._11(n,300).ngClassTouched,Al._11(n,300).ngClassPristine,Al._11(n,300).ngClassDirty,Al._11(n,300).ngClassValid,Al._11(n,300).ngClassInvalid,Al._11(n,300).ngClassPending);l(n,324,0,Al._11(n,325)._disabled,Al._11(n,330).ngClassUntouched,Al._11(n,330).ngClassTouched,Al._11(n,330).ngClassPristine,Al._11(n,330).ngClassDirty,Al._11(n,330).ngClassValid,Al._11(n,330).ngClassInvalid,Al._11(n,330).ngClassPending);l(n,353,0,Al._11(n,356).ngClassUntouched,Al._11(n,356).ngClassTouched,Al._11(n,356).ngClassPristine,Al._11(n,356).ngClassDirty,Al._11(n,356).ngClassValid,Al._11(n,356).ngClassInvalid,Al._11(n,356).ngClassPending);l(n,371,0,Al._11(n,372)._disabled,Al._11(n,377).ngClassUntouched,Al._11(n,377).ngClassTouched,Al._11(n,377).ngClassPristine,Al._11(n,377).ngClassDirty,Al._11(n,377).ngClassValid,Al._11(n,377).ngClassInvalid,Al._11(n,377).ngClassPending);l(n,400,0,Al._11(n,403).ngClassUntouched,Al._11(n,403).ngClassTouched,Al._11(n,403).ngClassPristine,Al._11(n,403).ngClassDirty,Al._11(n,403).ngClassValid,Al._11(n,403).ngClassInvalid,Al._11(n,403).ngClassPending);l(n,418,0,Al._11(n,419)._disabled,Al._11(n,424).ngClassUntouched,Al._11(n,424).ngClassTouched,Al._11(n,424).ngClassPristine,Al._11(n,424).ngClassDirty,Al._11(n,424).ngClassValid,Al._11(n,424).ngClassInvalid,Al._11(n,424).ngClassPending);l(n,447,0,Al._11(n,448)._disabled,Al._11(n,453).ngClassUntouched,Al._11(n,453).ngClassTouched,Al._11(n,453).ngClassPristine,Al._11(n,453).ngClassDirty,Al._11(n,453).ngClassValid,Al._11(n,453).ngClassInvalid,Al._11(n,453).ngClassPending);l(n,476,0,Al._11(n,477)._disabled,Al._11(n,482).ngClassUntouched,Al._11(n,482).ngClassTouched,Al._11(n,482).ngClassPristine,Al._11(n,482).ngClassDirty,Al._11(n,482).ngClassValid,Al._11(n,482).ngClassInvalid,Al._11(n,482).ngClassPending);l(n,509,0,Al._11(n,512).ngClassUntouched,Al._11(n,512).ngClassTouched,Al._11(n,512).ngClassPristine,Al._11(n,512).ngClassDirty,Al._11(n,512).ngClassValid,Al._11(n,512).ngClassInvalid,Al._11(n,512).ngClassPending);l(n,527,0,Al._11(n,530).ngClassUntouched,Al._11(n,530).ngClassTouched,Al._11(n,530).ngClassPristine,Al._11(n,530).ngClassDirty,Al._11(n,530).ngClassValid,Al._11(n,530).ngClassInvalid,Al._11(n,530).ngClassPending);l(n,545,0,Al._11(n,548).ngClassUntouched,Al._11(n,548).ngClassTouched,Al._11(n,548).ngClassPristine,Al._11(n,548).ngClassDirty,Al._11(n,548).ngClassValid,Al._11(n,548).ngClassInvalid,Al._11(n,548).ngClassPending);l(n,557,0,Al._11(n,558)._sbPadding)})}function Pl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[20,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeWilayah==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function Dl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[24,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeKecamatan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function Ml(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,2,"ion-option",[],null,null,null,null,null)),Al.Y(1,16384,[[28,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(2,null,["",""]))],function(l,n){var u=n.component;l(n,1,0,Al._2(1,"",u.data.kodeKelurahan==n.context.$implicit.value?u.selected:"",""),Al._2(1,"",n.context.$implicit.value,""))},function(l,n){l(n,2,0,n.context.$implicit.caption)})}function Sl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Kepengurusan"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,435,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,431,"ion-row",[["class","row"],["margin-top",""],["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai kepengurusan Lembaga terkait."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(56,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Yayasan Lorem ipsum dolor sit."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(59,0,null,4,1,"ion-icon",[["color","vibrant"],["item-end",""],["name","people"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(60,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(63,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(70,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(71,16384,[[5,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Penanggung Jawab"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(74,0,null,3,4,"ion-input",[["no-border",""],["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.penanggungJawab=u)&&a}return a},Bu.b,Bu.a)),Al.Y(75,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(77,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(78,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(82,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(83,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(87,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(89,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(90,16384,[[8,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Alamat"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(93,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.alamat=u)&&a}return a},Bu.b,Bu.a)),Al.Y(94,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(96,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(97,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(100,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(101,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(103,0,null,null,16,"ion-item",[["class","no-border-1-layer item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(104,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(108,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(110,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(111,16384,[[11,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["RT (*)"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(114,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.noRt=u)&&a}return a},Bu.b,Bu.a)),Al.Y(115,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(117,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(118,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(122,0,null,null,20,"ion-col",[["class","col"],["col-6",""],["no-padding",""]],null,null,null,null,null)),Al.Y(123,16384,null,0,ta.a,[],null,null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(125,0,null,null,16,"ion-item",[["class","no-border-1-layer item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(126,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,14,{contentLabel:0}),Al._18(603979776,15,{_buttons:1}),Al._18(603979776,16,{_icons:1}),Al.Y(130,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(132,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(133,16384,[[14,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["RW (*)"])),(l()(),Al._20(-1,2,["\n        "])),(l()(),Al.Z(136,0,null,3,4,"ion-input",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.noRw=u)&&a}return a},Bu.b,Bu.a)),Al.Y(137,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(139,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(140,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(144,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(145,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,17,{contentLabel:0}),Al._18(603979776,18,{_buttons:1}),Al._18(603979776,19,{_icons:1}),Al.Y(149,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(151,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(152,16384,[[17,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Wilayah"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(155,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,156)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,156)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeWilayah=u)&&a}if("ionChange"===n){a=!1!==t.loadKecamatan(t.data.kodeWilayah)&&a}return a},ja.b,ja.a)),Al.Y(156,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,20,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(159,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(161,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(163,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(164,16384,[[20,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,Pl)),Al.Y(167,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(171,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(172,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,21,{contentLabel:0}),Al._18(603979776,22,{_buttons:1}),Al._18(603979776,23,{_icons:1}),Al.Y(176,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(178,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(179,16384,[[21,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kecamatan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(182,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,183)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,183)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeKecamatan=u)&&a}if("ionChange"===n){a=!1!==t.loadKelurahan(t.data.kodeKecamatan)&&a}return a},ja.b,ja.a)),Al.Y(183,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,{ionChange:"ionChange"}),Al._18(603979776,24,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(186,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(188,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(190,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(191,16384,[[24,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,Dl)),Al.Y(194,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(198,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(199,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,25,{contentLabel:0}),Al._18(603979776,26,{_buttons:1}),Al._18(603979776,27,{_icons:1}),Al.Y(203,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(205,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(206,16384,[[25,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kelurahan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(209,0,null,3,13,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,210)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,210)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kodeKelurahan=u)&&a}return a},ja.b,ja.a)),Al.Y(210,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,28,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(213,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(215,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(217,0,null,null,1,"ion-option",[["value",""]],null,null,null,null,null)),Al.Y(218,16384,[[28,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.U(16777216,null,null,1,null,Ml)),Al.Y(221,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(225,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(226,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,29,{contentLabel:0}),Al._18(603979776,30,{_buttons:1}),Al._18(603979776,31,{_icons:1}),Al.Y(230,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(232,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(233,16384,[[29,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Telp (*)"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(236,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.noTelp=u)&&a}return a},Bu.b,Bu.a)),Al.Y(237,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(239,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(240,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(243,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(244,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,32,{contentLabel:0}),Al._18(603979776,33,{_buttons:1}),Al._18(603979776,34,{_icons:1}),Al.Y(248,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(250,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(251,16384,[[32,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Warga Negara"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(254,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,255)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,255)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.kewarganegaraan=u)&&a}return a},ja.b,ja.a)),Al.Y(255,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,35,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(258,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(260,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(262,0,null,null,2,"ion-option",[["value","WNI"]],null,null,null,null,null)),Al.Y(263,16384,[[35,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["WNI"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(266,0,null,null,2,"ion-option",[["value","WNA"]],null,null,null,null,null)),Al.Y(267,16384,[[35,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["WNA"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(272,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(273,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,36,{contentLabel:0}),Al._18(603979776,37,{_buttons:1}),Al._18(603979776,38,{_icons:1}),Al.Y(277,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(279,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(280,16384,[[36,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Tempat Lahir"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(283,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.tempatLahir=u)&&a}return a},Bu.b,Bu.a)),Al.Y(284,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(286,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(287,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(290,0,null,null,17,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(291,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,39,{contentLabel:0}),Al._18(603979776,40,{_buttons:1}),Al._18(603979776,41,{_icons:1}),Al.Y(295,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(297,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(298,16384,[[39,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Tanggal Lahir"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(301,0,null,3,5,"ion-datetime",[["displayFormat","DD/MM/YYYY"]],[[2,"datetime-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,302)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,302)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.tanggalLahir=u)&&a}if("ngModelChange"===n){a=!1!==(t.myDate=u)&&a}return a},Dt.b,Dt.a)),Al.Y(302,1228800,null,0,Mt.a,[Iu.a,iu.a,Al.j,Al.z,[2,Su.a],[2,St.a]],{displayFormat:[0,"displayFormat"]},null),Al._16(1024,null,Pu.f,function(l){return[l]},[Mt.a]),Al.Y(304,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(306,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(309,0,null,null,27,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(310,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,42,{contentLabel:0}),Al._18(603979776,43,{_buttons:1}),Al._18(603979776,44,{_icons:1}),Al.Y(314,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(316,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(317,16384,[[42,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jenis Kelamin"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(320,0,null,3,15,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,321)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,321)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.jenisKelamin=u)&&a}return a},ja.b,ja.a)),Al.Y(321,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,45,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(324,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(326,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(328,0,null,null,2,"ion-option",[["value","L"]],null,null,null,null,null)),Al.Y(329,16384,[[45,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Laki-laki"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(332,0,null,null,2,"ion-option",[["value","P"]],null,null,null,null,null)),Al.Y(333,16384,[[45,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Perempuan"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(338,0,null,null,39,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(339,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,46,{contentLabel:0}),Al._18(603979776,47,{_buttons:1}),Al._18(603979776,48,{_icons:1}),Al.Y(343,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(345,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(346,16384,[[46,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Agama"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(349,0,null,3,27,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,350)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,350)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.agama=u)&&a}return a},ja.b,ja.a)),Al.Y(350,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,49,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(353,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(355,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(357,0,null,null,2,"ion-option",[["value","Islam"]],null,null,null,null,null)),Al.Y(358,16384,[[49,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Islam"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(361,0,null,null,2,"ion-option",[["value","Kristen"]],null,null,null,null,null)),Al.Y(362,16384,[[49,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Kristen"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(365,0,null,null,2,"ion-option",[["value","Hindu"]],null,null,null,null,null)),Al.Y(366,16384,[[49,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Hindu"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(369,0,null,null,2,"ion-option",[["value","Budha"]],null,null,null,null,null)),Al.Y(370,16384,[[49,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Budha"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(373,0,null,null,2,"ion-option",[["value","Lainnya"]],null,null,null,null,null)),Al.Y(374,16384,[[49,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Agama lainnya"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(379,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(380,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,50,{contentLabel:0}),Al._18(603979776,51,{_buttons:1}),Al._18(603979776,52,{_icons:1}),Al.Y(384,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(386,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(387,16384,[[50,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jabatan lainnya"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(390,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.jabatanLain=u)&&a}return a},Bu.b,Bu.a)),Al.Y(391,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(393,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(394,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(397,0,null,null,39,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(398,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,53,{contentLabel:0}),Al._18(603979776,54,{_buttons:1}),Al._18(603979776,55,{_icons:1}),Al.Y(402,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(404,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(405,16384,[[53,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Pendidikan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(408,0,null,3,27,"ion-select",[],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,u){var a=!0,t=l.component;if("click"===n){a=!1!==Al._11(l,409)._click(u)&&a}if("keyup.space"===n){a=!1!==Al._11(l,409)._keyup()&&a}if("ngModelChange"===n){a=!1!==(t.data.pendidikan=u)&&a}return a},ja.b,ja.a)),Al.Y(409,1228800,null,1,ya.a,[eu.a,Iu.a,iu.a,Al.j,Al.z,[2,Su.a],cu.a],null,null),Al._18(603979776,56,{options:1}),Al._16(1024,null,Pu.f,function(l){return[l]},[ya.a]),Al.Y(412,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[2,Pu.f]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(414,16384,null,0,Pu.h,[Pu.g],null,null),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(416,0,null,null,2,"ion-option",[["value","SMA / SMK"]],null,null,null,null,null)),Al.Y(417,16384,[[56,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["SMA / SMK"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(420,0,null,null,2,"ion-option",[["value","D3"]],null,null,null,null,null)),Al.Y(421,16384,[[56,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["D3"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(424,0,null,null,2,"ion-option",[["value","S1"]],null,null,null,null,null)),Al.Y(425,16384,[[56,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["S1"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(428,0,null,null,2,"ion-option",[["value","s2"]],null,null,null,null,null)),Al.Y(429,16384,[[56,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["S2"])),(l()(),Al._20(-1,null,["\n        "])),(l()(),Al.Z(432,0,null,null,2,"ion-option",[["value","Lainnya"]],null,null,null,null,null)),Al.Y(433,16384,[[56,4]],0,ba.a,[Al.j],{selected:[0,"selected"],value:[1,"value"]},null),(l()(),Al._20(-1,null,["Pendidikan lainnya"])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(438,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(439,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,57,{contentLabel:0}),Al._18(603979776,58,{_buttons:1}),Al._18(603979776,59,{_icons:1}),Al.Y(443,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(445,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(446,16384,[[57,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Kompetensi"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(449,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.kompetensi=u)&&a}return a},Bu.b,Bu.a)),Al.Y(450,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(452,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(453,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(456,0,null,null,16,"ion-item",[["class","no-border item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(457,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,60,{contentLabel:0}),Al._18(603979776,61,{_buttons:1}),Al._18(603979776,62,{_icons:1}),Al.Y(461,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(463,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(464,16384,[[60,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Catatan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(467,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.catatan=u)&&a}return a},Bu.b,Bu.a)),Al.Y(468,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(470,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(471,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(476,0,null,null,10,"ion-footer",[],null,null,null,null,null)),Al.Y(477,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(479,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","main"],["text-center",""]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(480,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(482,0,null,3,2,"button",[["class","text-white"],["clear",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(483,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"]},null),(l()(),Al._20(-1,0,["Simpan"])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"vibrant","people");l(n,75,0,u.data.penanggungJawab);l(n,78,0,"text");l(n,94,0,u.data.alamat);l(n,97,0,"text");l(n,115,0,u.data.noRt);l(n,118,0,"text");l(n,137,0,u.data.noRw);l(n,140,0,"text");l(n,159,0,u.data.kodeWilayah);l(n,164,0,Al._2(1,"",""==u.data.wilayah?u.selected:"",""),"");l(n,167,0,u.wilayah);l(n,186,0,u.data.kodeKecamatan);l(n,191,0,Al._2(1,"",""==u.data.kecamatan?u.selected:"",""),"");l(n,194,0,u.kecamatan);l(n,213,0,u.data.kodeKelurahan);l(n,218,0,Al._2(1,"",""==u.data.kelurahan?u.selected:"",""),"");l(n,221,0,u.kelurahan);l(n,237,0,u.data.noTelp);l(n,240,0,"text");l(n,258,0,u.data.kewarganegaraan);l(n,263,0,Al._2(1,"","WNI"==u.data.kewarganegaraan?u.selected:"",""),"WNI");l(n,267,0,Al._2(1,"","WNA"==u.data.kewarganegaraan?u.selected:"",""),"WNA");l(n,284,0,u.data.tempatLahir);l(n,287,0,"text");l(n,302,0,"DD/MM/YYYY");l(n,304,0,u.data.tanggalLahir);l(n,324,0,u.data.jenisKelamin);l(n,329,0,Al._2(1,"","L"==u.data.jenisKelamin?u.selected:"",""),"L");l(n,333,0,Al._2(1,"","P"==u.data.jenisKelamin?u.selected:"",""),"P");l(n,353,0,u.data.agama);l(n,358,0,Al._2(1,"","Islam"==u.data.agama?u.selected:"",""),"Islam");l(n,362,0,Al._2(1,"","Kristen"==u.data.agama?u.selected:"",""),"Kristen");l(n,366,0,Al._2(1,"","Hindu"==u.data.agama?u.selected:"",""),"Hindu");l(n,370,0,Al._2(1,"","Budha"==u.data.agama?u.selected:"",""),"Budha");l(n,374,0,Al._2(1,"","Lainnya"==u.data.agama?u.selected:"",""),"Lainnya");l(n,391,0,u.data.jabatanLain);l(n,394,0,"text");l(n,412,0,u.data.pendidikan);l(n,417,0,Al._2(1,"","Islam"==u.data.pendidikan?u.selected:"",""),"SMA / SMK");l(n,421,0,Al._2(1,"","Islam"==u.data.pendidikan?u.selected:"",""),"D3");l(n,425,0,Al._2(1,"","Islam"==u.data.pendidikan?u.selected:"",""),"S1");l(n,429,0,Al._2(1,"","Islam"==u.data.pendidikan?u.selected:"",""),"s2");l(n,433,0,Al._2(1,"","Islam"==u.data.pendidikan?u.selected:"",""),"Lainnya");l(n,450,0,u.data.kompetensi);l(n,453,0,"text");l(n,468,0,u.data.catatan);l(n,471,0,"text");l(n,480,0,"main");l(n,483,0,"")},function(l,n){l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,59,0,Al._11(n,60)._hidden);l(n,74,0,Al._11(n,77).ngClassUntouched,Al._11(n,77).ngClassTouched,Al._11(n,77).ngClassPristine,Al._11(n,77).ngClassDirty,Al._11(n,77).ngClassValid,Al._11(n,77).ngClassInvalid,Al._11(n,77).ngClassPending);l(n,93,0,Al._11(n,96).ngClassUntouched,Al._11(n,96).ngClassTouched,Al._11(n,96).ngClassPristine,Al._11(n,96).ngClassDirty,Al._11(n,96).ngClassValid,Al._11(n,96).ngClassInvalid,Al._11(n,96).ngClassPending);l(n,114,0,Al._11(n,117).ngClassUntouched,Al._11(n,117).ngClassTouched,Al._11(n,117).ngClassPristine,Al._11(n,117).ngClassDirty,Al._11(n,117).ngClassValid,Al._11(n,117).ngClassInvalid,Al._11(n,117).ngClassPending);l(n,136,0,Al._11(n,139).ngClassUntouched,Al._11(n,139).ngClassTouched,Al._11(n,139).ngClassPristine,Al._11(n,139).ngClassDirty,Al._11(n,139).ngClassValid,Al._11(n,139).ngClassInvalid,Al._11(n,139).ngClassPending);l(n,155,0,Al._11(n,156)._disabled,Al._11(n,161).ngClassUntouched,Al._11(n,161).ngClassTouched,Al._11(n,161).ngClassPristine,Al._11(n,161).ngClassDirty,Al._11(n,161).ngClassValid,Al._11(n,161).ngClassInvalid,Al._11(n,161).ngClassPending);l(n,182,0,Al._11(n,183)._disabled,Al._11(n,188).ngClassUntouched,Al._11(n,188).ngClassTouched,Al._11(n,188).ngClassPristine,Al._11(n,188).ngClassDirty,Al._11(n,188).ngClassValid,Al._11(n,188).ngClassInvalid,Al._11(n,188).ngClassPending);l(n,209,0,Al._11(n,210)._disabled,Al._11(n,215).ngClassUntouched,Al._11(n,215).ngClassTouched,Al._11(n,215).ngClassPristine,Al._11(n,215).ngClassDirty,Al._11(n,215).ngClassValid,Al._11(n,215).ngClassInvalid,Al._11(n,215).ngClassPending);l(n,236,0,Al._11(n,239).ngClassUntouched,Al._11(n,239).ngClassTouched,Al._11(n,239).ngClassPristine,Al._11(n,239).ngClassDirty,Al._11(n,239).ngClassValid,Al._11(n,239).ngClassInvalid,Al._11(n,239).ngClassPending);l(n,254,0,Al._11(n,255)._disabled,Al._11(n,260).ngClassUntouched,Al._11(n,260).ngClassTouched,Al._11(n,260).ngClassPristine,Al._11(n,260).ngClassDirty,Al._11(n,260).ngClassValid,Al._11(n,260).ngClassInvalid,Al._11(n,260).ngClassPending);l(n,283,0,Al._11(n,286).ngClassUntouched,Al._11(n,286).ngClassTouched,Al._11(n,286).ngClassPristine,Al._11(n,286).ngClassDirty,Al._11(n,286).ngClassValid,Al._11(n,286).ngClassInvalid,Al._11(n,286).ngClassPending);l(n,301,0,Al._11(n,302)._disabled,Al._11(n,306).ngClassUntouched,Al._11(n,306).ngClassTouched,Al._11(n,306).ngClassPristine,Al._11(n,306).ngClassDirty,Al._11(n,306).ngClassValid,Al._11(n,306).ngClassInvalid,Al._11(n,306).ngClassPending);l(n,320,0,Al._11(n,321)._disabled,Al._11(n,326).ngClassUntouched,Al._11(n,326).ngClassTouched,Al._11(n,326).ngClassPristine,Al._11(n,326).ngClassDirty,Al._11(n,326).ngClassValid,Al._11(n,326).ngClassInvalid,Al._11(n,326).ngClassPending);l(n,349,0,Al._11(n,350)._disabled,Al._11(n,355).ngClassUntouched,Al._11(n,355).ngClassTouched,Al._11(n,355).ngClassPristine,Al._11(n,355).ngClassDirty,Al._11(n,355).ngClassValid,Al._11(n,355).ngClassInvalid,Al._11(n,355).ngClassPending);l(n,390,0,Al._11(n,393).ngClassUntouched,Al._11(n,393).ngClassTouched,Al._11(n,393).ngClassPristine,Al._11(n,393).ngClassDirty,Al._11(n,393).ngClassValid,Al._11(n,393).ngClassInvalid,Al._11(n,393).ngClassPending);l(n,408,0,Al._11(n,409)._disabled,Al._11(n,414).ngClassUntouched,Al._11(n,414).ngClassTouched,Al._11(n,414).ngClassPristine,Al._11(n,414).ngClassDirty,Al._11(n,414).ngClassValid,Al._11(n,414).ngClassInvalid,Al._11(n,414).ngClassPending);l(n,449,0,Al._11(n,452).ngClassUntouched,Al._11(n,452).ngClassTouched,Al._11(n,452).ngClassPristine,Al._11(n,452).ngClassDirty,Al._11(n,452).ngClassValid,Al._11(n,452).ngClassInvalid,Al._11(n,452).ngClassPending);l(n,467,0,Al._11(n,470).ngClassUntouched,Al._11(n,470).ngClassTouched,Al._11(n,470).ngClassPristine,Al._11(n,470).ngClassDirty,Al._11(n,470).ngClassValid,Al._11(n,470).ngClassInvalid,Al._11(n,470).ngClassPending);l(n,479,0,Al._11(n,480)._sbPadding)})}function Il(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Usaha"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,114,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(42,0,null,1,110,"ion-row",[["class","row"],["margin-top",""],["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,aa.a,[],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,16,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai usaha yang sedang dijalankan oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(56,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(57,null,["","."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(59,0,null,4,1,"ion-icon",[["color","primary"],["item-end",""],["name","pricetag"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(60,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(63,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(70,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(71,16384,[[5,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Nama usaha"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(74,0,null,3,4,"ion-input",[["no-border",""],["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.namaUsaha=u)&&a}return a},Bu.b,Bu.a)),Al.Y(75,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(77,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(78,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(81,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(82,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(86,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(88,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(89,16384,[[8,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jenis usaha"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(92,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.jenisUsaha=u)&&a}return a},Bu.b,Bu.a)),Al.Y(93,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(95,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(96,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(99,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(100,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(104,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(106,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(107,16384,[[11,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Detail usaha"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(110,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.detailUsaha=u)&&a}return a},Bu.b,Bu.a)),Al.Y(111,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(113,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(114,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(117,0,null,null,16,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(118,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,14,{contentLabel:0}),Al._18(603979776,15,{_buttons:1}),Al._18(603979776,16,{_icons:1}),Al.Y(122,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(124,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(125,16384,[[14,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Jumlah pekerja"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(128,0,null,3,4,"ion-input",[["text-right",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.jumlahPekerja=u)&&a}return a},Bu.b,Bu.a)),Al.Y(129,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(131,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(132,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(135,0,null,null,16,"ion-item",[["class","item item-block"],["margin-bottom",""]],null,null,null,Mu.b,Mu.a)),Al.Y(136,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,17,{contentLabel:0}),Al._18(603979776,18,{_buttons:1}),Al._18(603979776,19,{_icons:1}),Al.Y(140,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(142,0,null,1,2,"ion-label",[],null,null,null,null,null)),Al.Y(143,16384,[[17,4]],0,Ca.a,[iu.a,Al.j,Al.z,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Al._20(-1,null,["Catatan"])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(146,0,null,3,4,"ion-textarea",[["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,u){var a=!0;if("ngModelChange"===n){a=!1!==(l.component.data.catatan=u)&&a}return a},Bu.b,Bu.a)),Al.Y(147,671744,null,0,Pu.k,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Al._16(2048,null,Pu.g,null,[Pu.k]),Al.Y(149,16384,null,0,Pu.h,[Pu.g],null,null),Al.Y(150,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(155,0,null,null,10,"ion-footer",[],null,null,null,null,null)),Al.Y(156,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(158,0,null,null,6,"ion-toolbar",[["class","toolbar"],["color","main"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(159,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(161,0,null,3,2,"button",[["block",""],["class","text-white"],["clear",""],["ion-button",""]],null,null,null,Uu.b,Uu.a)),Al.Y(162,1097728,null,0,Ou.a,[[8,""],iu.a,Al.j,Al.z],{clear:[0,"clear"],block:[1,"block"]},null),(l()(),Al._20(-1,0,["Simpan"])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"primary","pricetag");l(n,75,0,u.data.namaUsaha);l(n,78,0,"text");l(n,93,0,u.data.jenisUsaha);l(n,96,0,"text");l(n,111,0,u.data.detailUsaha);l(n,114,0,"text");l(n,129,0,u.data.jumlahPekerja);l(n,132,0,"text");l(n,147,0,u.data.catatan);l(n,150,0,"text");l(n,159,0,"main");l(n,162,0,"","")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,57,0,u.namaLembaga);l(n,59,0,Al._11(n,60)._hidden);l(n,74,0,Al._11(n,77).ngClassUntouched,Al._11(n,77).ngClassTouched,Al._11(n,77).ngClassPristine,Al._11(n,77).ngClassDirty,Al._11(n,77).ngClassValid,Al._11(n,77).ngClassInvalid,Al._11(n,77).ngClassPending);l(n,92,0,Al._11(n,95).ngClassUntouched,Al._11(n,95).ngClassTouched,Al._11(n,95).ngClassPristine,Al._11(n,95).ngClassDirty,Al._11(n,95).ngClassValid,Al._11(n,95).ngClassInvalid,Al._11(n,95).ngClassPending);l(n,110,0,Al._11(n,113).ngClassUntouched,Al._11(n,113).ngClassTouched,Al._11(n,113).ngClassPristine,Al._11(n,113).ngClassDirty,Al._11(n,113).ngClassValid,Al._11(n,113).ngClassInvalid,Al._11(n,113).ngClassPending);l(n,128,0,Al._11(n,131).ngClassUntouched,Al._11(n,131).ngClassTouched,Al._11(n,131).ngClassPristine,Al._11(n,131).ngClassDirty,Al._11(n,131).ngClassValid,Al._11(n,131).ngClassInvalid,Al._11(n,131).ngClassPending);l(n,146,0,Al._11(n,149).ngClassUntouched,Al._11(n,149).ngClassTouched,Al._11(n,149).ngClassPristine,Al._11(n,149).ngClassDirty,Al._11(n,149).ngClassValid,Al._11(n,149).ngClassInvalid,Al._11(n,149).ngClassPending);l(n,158,0,Al._11(n,159)._sbPadding)})}function Tl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[["class","static"]],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(4,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Hirarki"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,2,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  \n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){l(n,4,0,"dark");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear")},function(l,n){l(n,3,0,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher)})}function Rl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,12,"button",[["class","item item-block"],["ion-item",""]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-secondary"],["item-start",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[10,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(10,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Al._20(11,null,["",""])),(l()(),Al._20(-1,2,["\n    "]))],function(l,n){l(n,8,0,"book")},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.context.$implicit.nama_koleksi)})}function Bl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-navbar",[["class","toolbar"],["color","dark"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Koleksi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,38,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n\n  "])),(l()(),Al.Z(42,0,null,1,34,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,16,"ion-item",[["class","no-border-top item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai koleksi yang dimiliki oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(56,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Yayasan Lorem ipsum dolor sit."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(59,0,null,4,1,"ion-icon",[["color","secondary"],["item-end",""],["name","book"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(60,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(63,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(70,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(71,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,Rl)),Al.Y(75,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(79,0,null,null,20,"ion-footer",[],null,null,null,null,null)),Al.Y(80,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(82,0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","clear"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(83,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(85,0,null,3,12,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(86,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(90,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(92,0,null,3,1,"ion-input",[["placeholder","Tambah koleksi.."],["type","text"]],null,null,null,Bu.b,Bu.a)),Al.Y(93,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(95,0,null,4,1,"ion-icon",[["item-right",""],["name","md-create"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(96,147456,[[13,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark","");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"secondary","book");l(n,75,0,u.data);l(n,83,0,"clear");l(n,93,0,"text","Tambah koleksi..");l(n,96,0,"md-create")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,59,0,Al._11(n,60)._hidden);l(n,71,0,u.data.length);l(n,82,0,Al._11(n,83)._sbPadding);l(n,95,0,Al._11(n,96)._hidden)})}function Kl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,12,"button",[["class","item item-block"],["ion-item",""]],null,null,null,Mu.b,Mu.a)),Al.Y(1,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,8,{contentLabel:0}),Al._18(603979776,9,{_buttons:1}),Al._18(603979776,10,{_icons:1}),Al.Y(5,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(7,0,null,0,1,"ion-icon",[["class","text-bright"],["item-start",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(8,147456,[[10,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(10,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Al._20(11,null,["",""])),(l()(),Al._20(-1,2,["\n    "]))],function(l,n){l(n,8,0,"trophy")},function(l,n){l(n,7,0,Al._11(n,8)._hidden);l(n,11,0,n.context.$implicit.nama_prestasi)})}function Fl(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,37,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,33,"ion-navbar",[["class","toolbar"],["color","dark"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Form Prestasi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,25,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,11,"button",[["icon-only",""],["ion-button",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,147456,null,0,ka.a,[[8,"android,windows"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,3,"span",[["color","clear"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),Al.Y(19,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),Al.Y(20,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(23,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(24,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(27,0,null,null,7,"button",[["ion-button",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==l.component.dismiss()&&a}return a},Uu.b,Uu.a)),Al.Y(28,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(29,147456,null,0,ka.a,[[8,"ios"],ou.a,Al.u],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(31,0,null,0,2,"span",[["color","clear"],["ion-text",""]],null,null,null,null,null)),Al.Y(32,16384,null,0,Ya.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,null,["Cancel"])),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(39,0,null,null,38,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(40,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n\n  "])),(l()(),Al.Z(42,0,null,1,34,"ion-list",[["padding",""]],null,null,null,null,null)),Al.Y(43,16384,null,0,Du.a,[iu.a,Al.j,Al.z,ou.a,su.l,_u.a],null,null),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(45,0,null,null,16,"ion-item",[["class","no-border-top item item-block"],["text-wrap",""]],null,null,null,Mu.b,Mu.a)),Al.Y(46,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,2,{contentLabel:0}),Al._18(603979776,3,{_buttons:1}),Al._18(603979776,4,{_icons:1}),Al.Y(50,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(52,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Informasi mengenai prestasi yang dimiliki oleh Lembaga terkait."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(55,0,null,2,2,"p",[["class","text-main"]],null,null,null,null,null)),(l()(),Al.Z(56,0,null,null,1,"b",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Yayasan Lorem ipsum dolor sit."])),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(59,0,null,4,1,"ion-icon",[["color","bright"],["item-end",""],["name","trophy"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(60,147456,[[4,4]],0,Wu.a,[iu.a,Al.j,Al.z],{color:[0,"color"],name:[1,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.Z(63,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(64,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,5,{contentLabel:0}),Al._18(603979776,6,{_buttons:1}),Al._18(603979776,7,{_icons:1}),Al.Y(68,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(70,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Al._20(71,null,["Total data (",")"])),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al.U(16777216,null,null,1,null,Kl)),Al.Y(75,802816,null,0,Gu.i,[Al.I,Al.F,Al.p],{ngForOf:[0,"ngForOf"]},null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(79,0,null,null,20,"ion-footer",[],null,null,null,null,null)),Al.Y(80,16384,null,0,La.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(82,0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","clear"]],[[2,"statusbar-padding",null]],null,null,fa.b,fa.a)),Al.Y(83,49152,null,0,Lu.a,[iu.a,Al.j,Al.z],{color:[0,"color"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(85,0,null,3,12,"ion-item",[["class","no-border item item-block"]],null,null,null,Mu.b,Mu.a)),Al.Y(86,1097728,null,3,Su.a,[Iu.a,iu.a,Al.j,Al.z,[2,Tu.a]],null,null),Al._18(335544320,11,{contentLabel:0}),Al._18(603979776,12,{_buttons:1}),Al._18(603979776,13,{_icons:1}),Al.Y(90,16384,null,0,Ru.a,[],null,null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(92,0,null,3,1,"ion-input",[["placeholder","Tambah prestasi.."],["type","text"]],null,null,null,Bu.b,Bu.a)),Al.Y(93,5423104,null,0,Ku.a,[iu.a,ou.a,Iu.a,eu.a,Al.j,Al.z,[2,Cu.a],[2,Su.a],[2,Pu.g],_u.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),Al._20(-1,2,["\n      "])),(l()(),Al.Z(95,0,null,4,1,"ion-icon",[["item-right",""],["name","md-create"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(96,147456,[[13,4]],0,Wu.a,[iu.a,Al.j,Al.z],{name:[0,"name"]},null),(l()(),Al._20(-1,2,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){var u=n.component;l(n,4,0,"dark","");l(n,20,0,"clear");l(n,24,0,"ios-arrow-back","md-arrow-back");l(n,32,0,"clear");l(n,60,0,"bright","trophy");l(n,75,0,u.data);l(n,83,0,"clear");l(n,93,0,"text","Tambah prestasi..");l(n,96,0,"md-create")},function(l,n){var u=n.component;l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,14,0,!Al._11(n,16).isMatch);l(n,18,0,!Al._11(n,19).isMatch);l(n,23,0,Al._11(n,24)._hidden);l(n,27,0,!Al._11(n,29).isMatch);l(n,39,0,Al._11(n,40).statusbarPadding,Al._11(n,40)._hasRefresher);l(n,59,0,Al._11(n,60)._hidden);l(n,71,0,u.data.length);l(n,82,0,Al._11(n,83)._sbPadding);l(n,95,0,Al._11(n,96)._hidden)})}function Ul(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,23,"ion-header",[],null,null,null,null,null)),Al.Y(1,16384,null,0,Eu.a,[iu.a,Al.j,Al.z,[2,au.a]],null,null),(l()(),Al._20(-1,null,["\n  "])),(l()(),Al.Z(3,0,null,null,19,"ion-navbar",[["class","toolbar"],["color","main"],["hideBackButton",""]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,qu.b,qu.a)),Al.Y(4,49152,null,0,xu.a,[eu.a,[2,au.a],[2,tu.a],iu.a,Al.j,Al.z],{color:[0,"color"],hideBackButton:[1,"hideBackButton"]},null),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(6,0,null,3,2,"ion-title",[],null,null,null,zu.b,zu.a)),Al.Y(7,49152,null,0,wu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),(l()(),Al._20(-1,0,["Tentang Aplikasi"])),(l()(),Al._20(-1,3,["\n    "])),(l()(),Al.Z(10,0,null,0,11,"ion-buttons",[["left",""]],null,null,null,null,null)),Al.Y(11,16384,null,1,Fu.a,[iu.a,Al.j,Al.z,[2,Lu.a],[2,xu.a]],null,null),Al._18(603979776,1,{_buttons:1}),(l()(),Al._20(-1,null,["\n      "])),(l()(),Al.Z(14,0,null,null,6,"button",[["icon-only",""],["ion-button",""],["navPop",""]],null,[[null,"click"]],function(l,n,u){var a=!0;if("click"===n){a=!1!==Al._11(l,16).onClick()&&a}return a},Uu.b,Uu.a)),Al.Y(15,1097728,[[1,4]],0,Ou.a,[[8,""],iu.a,Al.j,Al.z],null,null),Al.Y(16,16384,null,0,Qu.a,[[2,tu.a]],null,null),(l()(),Al._20(-1,0,["\n        "])),(l()(),Al.Z(18,0,null,0,1,"ion-icon",[["ios","ios-arrow-back"],["md","md-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Al.Y(19,147456,null,0,Wu.a,[iu.a,Al.j,Al.z],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Al._20(-1,0,["\n      "])),(l()(),Al._20(-1,null,["\n    "])),(l()(),Al._20(-1,3,["\n  "])),(l()(),Al._20(-1,null,["\n"])),(l()(),Al._20(-1,null,["\n\n"])),(l()(),Al.Z(25,0,null,null,14,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,vu.b,vu.a)),Al.Y(26,4374528,null,0,Cu.a,[iu.a,ou.a,_u.a,Al.j,Al.z,eu.a,pu.a,Al.u,[2,au.a],[2,tu.a]],null,null),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(28,0,null,1,0,"img",[["src","assets/imgs/logo_apps_small.png"]],null,null,null,null,null)),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(30,0,null,1,1,"p",[["text-center",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["Aplikasi ini dibangun untuk mempermudah Lembaga dan Instansi terkait mengelola Data Potensi Lembaga Keagamaan di Jawa Barat."])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(33,0,null,1,1,"p",[["text-center",""]],null,null,null,null,null)),(l()(),Al._20(-1,null,["Copyright © 2018 Pemerintah Provinsi Jawa Barat."])),(l()(),Al._20(-1,1,["\n  "])),(l()(),Al.Z(36,0,null,1,2,"p",[["text-center",""]],null,null,null,null,null)),(l()(),Al.Z(37,0,null,null,1,"small",[],null,null,null,null,null)),(l()(),Al._20(-1,null,["Support by Syncard Tech."])),(l()(),Al._20(-1,1,["\n"])),(l()(),Al._20(-1,null,["\n"]))],function(l,n){l(n,4,0,"main","");l(n,19,0,"ios-arrow-back","md-arrow-back")},function(l,n){l(n,3,0,Al._11(n,4)._hidden,Al._11(n,4)._sbPadding);l(n,18,0,Al._11(n,19)._hidden);l(n,25,0,Al._11(n,26).statusbarPadding,Al._11(n,26)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var Ol=u(51),Al=u(0),Vl=(u(2),u(25),u(201)),$l=u(119),Wl=u(120),Nl=u(155),Gl=(u(242),function(){function l(l,n){this.http=l,this.toastCtrl=n,this.urlServer="http://dplega.syncardtech.com",this.urlApi=this.urlServer+"/slim-api"}return l.prototype.login=function(l){var n=this;return new Promise(function(u,a){var t=new Nl.d;t.append("Content-Type","application/json"),n.http.post(n.urlApi+"/public/auth/",JSON.stringify(l),{headers:t}).subscribe(function(l){u(l.json())},function(l){a(l)})})},l.prototype.relogin=function(l){var n=this;return new Promise(function(u,a){var t=new Nl.d;t.append("Content-Type","application/json"),n.http.post(n.urlApi+"/public/fetch/auth/",JSON.stringify(l),{headers:t}).subscribe(function(l){u(l.json())},function(l){a(l)})})},l.prototype.logout=function(){return localStorage.clear(),!0},l.prototype.changePassword=function(l){var n=this;return new Promise(function(u,a){var t=new Nl.d;t.append("Content-Type","application/json"),n.http.post(n.urlApi+"/public/update/password/",JSON.stringify(l),{headers:t}).subscribe(function(l){u(l.json())},function(l){a(l)})})},l.prototype.changeAccount=function(l){var n=this;return new Promise(function(u,a){var t=new Nl.d;t.append("Content-Type","application/json"),n.http.post(n.urlApi+"/public/update/account/",JSON.stringify(l),{headers:t}).subscribe(function(l){u(l.json())},function(l){a(l)})})},l.prototype.getListLembaga=function(l){var n=this;return new Promise(function(u,a){var t=new Nl.d;t.append("Content-Type","application/json");var e={keyword:localStorage.getItem("kelembagaan-filter-keyword"),bentukLembaga:localStorage.getItem("kelembagaan-filter-bentukLembaga"),wilayah:localStorage.getItem("kelembagaan-filter-wilayah"),kecamatan:localStorage.getItem("kelembagaan-filter-kecamatan"),kelurahan:localStorage.getItem("kelembagaan-filter-kelurahan"),ajuan:localStorage.getItem("kelembagaan-filter-ajuan"),valid:localStorage.getItem("kelembagaan-filter-valid")};n.http.post(n.urlApi+"/public/list/lembaga/"+l,JSON.stringify(e),{headers:t}).subscribe(function(l){u(l.json())},function(l){n.presentToast(l),a(l)})})},l.prototype.getDetailLembaga=function(l){var n=this;return new Promise(function(u,a){n.http.get(n.urlApi+"/public/detail/lembaga/"+l,{}).subscribe(function(l){u(l.json())},function(l){n.presentToast(l),a(l)})})},l.prototype.getKelengkapanLembaga=function(l,n){var u=this;return new Promise(function(a,t){u.http.get(u.urlApi+"/public/detail/lembaga/"+l+"/"+n,{}).subscribe(function(l){a(l.json())},function(l){u.presentToast(l),t(l)})})},l.prototype.getSummaryLembaga=function(){var l=this;return new Promise(function(n,u){var a=new Nl.d;a.append("Content-Type","application/json");var t={keyword:localStorage.getItem("kelembagaan-filter-keyword"),bentukLembaga:localStorage.getItem("kelembagaan-filter-bentukLembaga"),wilayah:localStorage.getItem("kelembagaan-filter-wilayah"),kecamatan:localStorage.getItem("kelembagaan-filter-kecamatan"),kelurahan:localStorage.getItem("kelembagaan-filter-kelurahan"),ajuan:localStorage.getItem("kelembagaan-filter-ajuan"),valid:localStorage.getItem("kelembagaan-filter-valid")};l.http.post(l.urlApi+"/public/summary/lembaga/",JSON.stringify(t),{headers:a}).subscribe(function(l){n(l.json())},function(n){l.presentToast(n),u(n)})})},l.prototype.insertDataLembaga=function(l,n){var u=this;return new Promise(function(a,t){var e=new Nl.d;e.append("Content-Type","application/json"),u.http.post(u.urlApi+"/public/insert/lembaga/"+l+"/"+n.noRegistrasi,JSON.stringify(n),{headers:e}).subscribe(function(l){a(l.json())},function(l){u.presentToast(l),t(l)})})},l.prototype.getCountNotifications=function(){var l=this;return new Promise(function(n,u){l.http.get(l.urlApi+"/public/count/notifications/"+localStorage.getItem("userNotif"),{}).subscribe(function(l){n(l.json())},function(n){l.presentToast(n),u(n)})})},l.prototype.getListNotifications=function(){var l=this;return new Promise(function(n,u){l.http.get(l.urlApi+"/public/list/notifications/"+localStorage.getItem("userNotif"),{}).subscribe(function(l){n(l.json())},function(n){l.presentToast(n),u(n)})})},l.prototype.getNotifications=function(l){var n=this;return new Promise(function(u,a){n.http.get(n.urlApi+"/public/detail/notifications/"+l,{}).subscribe(function(l){u(l.json())},function(l){n.presentToast(l),a(l)})})},l.prototype.getList=function(l){var n=this;return new Promise(function(u,a){n.http.get(n.urlApi+"/public/"+l,{}).subscribe(function(l){u(l.json())},function(l){n.presentToast(l),a(l)})})},l.prototype.getSummary=function(l){var n=this;return new Promise(function(u,a){n.http.get(n.urlApi+"/public/summary/"+l+"/",{}).subscribe(function(l){u(l.json())},function(l){n.presentToast(l),a(l)})})},l.prototype.getListPage=function(l,n){var u=this;return new Promise(function(a,t){u.http.get(u.urlApi+"/public/list/"+l+"/"+n,{}).subscribe(function(l){a(l.json())},function(l){u.presentToast(l),t(l)})})},l.prototype.getOptionList=function(l,n){var u=this;return void 0===n&&(n=null),new Promise(function(a,t){l+="/",null!=n&&(l+=n),u.http.get(u.urlApi+"/public/option/"+l,{}).subscribe(function(l){a(l.json())},function(l){u.presentToast(l),t(l)})})},l.prototype.searchData=function(l){var n=this;return new Promise(function(u,a){n.http.get(n.urlApi+"/public/search/"+l,{}).subscribe(function(l){u(l.json())},function(l){n.presentToast(l),a(l)})})},l.prototype.getDataById=function(l,n){var u=this;return new Promise(function(a,t){u.http.get(u.urlApi+"/public/detail/"+(l=l+"/"+n),{}).subscribe(function(l){a(l.json())},function(l){u.presentToast(l),t(l)})})},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!1});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}()),Jl=function(){function l(l,n,u,a){this.navCtrl=l,this.authService=n,this.loadingCtrl=u,this.toastCtrl=a,this.page=1,this.getData()}return l.prototype.getData=function(){var l=this;this.showLoader(),this.authService.getListPage("prestasi",this.page).then(function(n){l.data=n,l.page=l.page+1,l.authService.getSummary("prestasi").then(function(n){l.summary=n,l.summary=l.summary.summary,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadData=function(l){var n=this;this.authService.getListPage("prestasi",this.page).then(function(u){var a;a=u,console.log("row : "+a.length);for(var t=0;t<a.length;t++)n.data.push(u[t]);l.complete(),n.page=n.page+1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),Hl=function(){function l(l,n,u,a){this.navCtrl=l,this.authService=n,this.loadingCtrl=u,this.toastCtrl=a,this.page=1,this.getData()}return l.prototype.getData=function(){var l=this;this.showLoader(),this.authService.getListPage("koleksi",this.page).then(function(n){l.data=n,l.page=l.page+1,l.authService.getSummary("koleksi").then(function(n){l.summary=n,l.summary=l.summary.summary,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadData=function(l){var n=this;this.authService.getListPage("koleksi",this.page).then(function(u){var a;a=u,console.log("row : "+a.length);for(var t=0;t<a.length;t++)n.data.push(u[t]);l.complete(),n.page=n.page+1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),Xl=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.authService=a,this.modalCtrl=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.statusValid="",this.urlServer=a.urlServer,this.noRegistrasi=n.get("reff"),this.lembaga=n.get("reff2"),this.bentukLembaga=n.get("reff3"),this.namaLembaga=n.get("reff4"),this.loadData()}return l.prototype.openRevision=function(l,n){this.modalCtrl.create(El,{reff:l,reff2:n}).present()},l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("verifikasi",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.statusValid=l.temp[0].statusValid,l.dataClone=l.data,l.dataClone[-1]={idGrup:"start"},l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),El=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.authService=a,this.modalCtrl=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.countData=0,this.catatanRevisi="",this.urlServer=a.urlServer,this.noRegistrasi=n.get("reff"),this.lembaga=n.get("reff2"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("revisi",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.dataClone=l.data,l.dataClone[-1]={tanggal:"start"},l.countData=Object.keys(l.data).length,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.insertData=function(l){var n=this;if(13==l&&""!=this.catatanRevisi){var u={noRegistrasi:this.noRegistrasi,catatan:this.catatanRevisi,username:localStorage.getItem("username")};this.authService.insertDataLembaga("revisi",u).then(function(l){n.temp=l,"success"==n.temp.status?(n.loadData(),n.catatanRevisi=""):n.presentToast("Terjadi kesalahan! revisi gagal ditambahkan.")},function(l){return n.loading.dismiss(),n.presentToast(l),!1})}},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),ql=u(121),Ql=u(122),ln=u(59),nn=u(60),un=u(61),an=u(62),tn=u(123),en=function(){function l(l,n){this.modalCtrl=l,this.alertCtrl=n,this.session_noRegistrasi=null,this.userLevel="",this.formPage=[on,sn,rn,cn,_n,dn,mn,gn],this.userLevel=localStorage.getItem("userLevel")}return l.prototype.openModal=function(l){this.modalCtrl.create(this.formPage[l]).present()},l.prototype.showConfirm=function(){this.alertCtrl.create({title:"Konfirmasi",message:"Apakah Anda ingin menghentikan sesi Lembaga ini?",buttons:[{text:"Tidak",handler:function(){console.log("Disagree clicked")}},{text:"Ya",handler:function(){console.log("Agree clicked")}}]}).present()},l}(),on=function(){function l(l,n,u,a,t,e,i,o,s,r,c,_,d){var g=this;this.params=l,this.viewCtrl=n,this.authService=u,this.loadingCtrl=a,this.toastCtrl=t,this.geolocation=e,this.locationAccuracy=i,this.camera=o,this.transfer=s,this.file=r,this.filePath=c,this.actionSheetCtrl=_,this.platform=d,this.urlServer="",this.urlApi="",this.data={avatar:null,nama:"",jabatan:"",alamat:"",telp:"",email:"",username:"",noRt:"",noRw:"",kodeKelurahan:"",kodeKecamatan:"",kodeWilayah:"",statusVerifikasi:"",kodeBentukLembaga:"",namaBentukLembaga:"",mediaSosial:"",langitude:"",latitude:"",noNpwp:"",jumlahPengurus:"",visiLembaga:"",misiLembaga:"",organisasiAfiliasi:"",namaBidangGerak:"",alamat_:"",kodeBidangGerak:"",catatanLain:""},this.optionChange={kodeKelurahan:"",kodeKecamatan:"",kodeWilayah:""},this.flag="init",this.lastImage=null,this.random_=Math.floor(20*Math.random())+1,this.locationAccuracy.canRequest().then(function(l){l&&g.locationAccuracy.request(g.locationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY).then(function(){return console.log("Accuration Request successful")},function(l){return console.log("Error requesting location permissions",l)})},function(l){console.log(l)}),this.urlServer=u.urlServer,this.noRegistrasi=l.get("noRegistrasi"),this.loadInit()}return l.prototype.loadInit=function(){var l=this;this.showLoader(),this.authService.getOptionList("bentuk-lembaga").then(function(n){l.bentukLembaga=n,l.authService.getOptionList("bidang-gerak").then(function(n){l.bidangGerak=n,l.authService.getOptionList("wilayah").then(function(n){l.wilayah=n,null!=l.noRegistrasi?l.authService.getDetailLembaga(l.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1}):l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadKecamatan=function(l){var n=this;""!=l?this.authService.getOptionList("kecamatan",l).then(function(l){n.kecamatan=l,"init"!=n.flag&&(n.data.kodeKelurahan="")},function(l){return n.presentToast(l),!1}):(this.kecamatan=[],this.kelurahan=[],this.data.kodeKecamatan="",this.data.kodeKelurahan="")},l.prototype.loadKelurahan=function(l){var n=this;""!=l?this.authService.getOptionList("kelurahan",l).then(function(l){n.kelurahan=l,n.flag="end"},function(l){return n.presentToast(l),!1}):(this.kelurahan=[],this.data.kodeKelurahan="")},l.prototype.getCurrentLocation=function(){var l=this;console.log("trying to get location");this.geolocation.getCurrentPosition({enableHighAccuracy:!0,timeout:3e4,maximumAge:0}).then(function(n){console.log(n),l.data.latitude=n.coords.latitude.toString(),l.data.langitude=n.coords.longitude.toString()}).catch(function(l){console.log("Error getting location",l)});this.geolocation.watchPosition().subscribe(function(l){console.log("trying to get location :: from watchposition"),console.log(l)})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.presentActionSheet=function(){var l=this;this.actionSheetCtrl.create({title:"Pilih gambar",buttons:[{text:"Galeri",handler:function(){l.takePicture(l.camera.PictureSourceType.PHOTOLIBRARY)}},{text:"Kamera",handler:function(){l.takePicture(l.camera.PictureSourceType.CAMERA)}},{text:"Batalkan",role:"cancel"}]}).present()},l.prototype.takePicture=function(l){var n=this;this.camera.getPicture({quality:100,sourceType:l,saveToPhotoAlbum:!1,correctOrientation:!0}).then(function(u){if(n.platform.is("android")&&l===n.camera.PictureSourceType.PHOTOLIBRARY)n.filePath.resolveNativePath(u).then(function(l){var a=l.substr(0,l.lastIndexOf("/")+1),t=u.substring(u.lastIndexOf("/")+1,u.lastIndexOf("?"));n.copyFileToLocalDir(a,t,n.createFileName())});else{var a=u.substr(u.lastIndexOf("/")+1),t=u.substr(0,u.lastIndexOf("/")+1);n.copyFileToLocalDir(t,a,n.createFileName())}},function(l){n.presentToast("Terjadi kesalahan : Error saat memilih gambar!.")})},l.prototype.createFileName=function(){return(new Date).getTime()+".jpg"},l.prototype.copyFileToLocalDir=function(l,n,u){var a=this;this.file.copyFile(l,n,cordova.file.dataDirectory,u).then(function(l){a.lastImage=u},function(l){a.presentToast("Terjadi kesalahan : Error saat menyimpan gambar!.")})},l.prototype.pathForImage=function(l){return null===l?"":cordova.file.dataDirectory+l},l.prototype.uploadImage=function(){var l=this,n=this.urlApi+"/public/upload/lembaga/logo/",u=this.pathForImage(this.lastImage),a=this.lastImage,t={fileKey:"file",fileName:a,chunkedMode:!1,mimeType:"multipart/form-data",params:{fileName:a,noRegistrasi:this.noRegistrasi}},e=this.transfer.create();this.loading=this.loadingCtrl.create({content:"Uploading..."}),this.loading.present(),e.upload(u,n,t).then(function(n){l.loading.dismissAll(),l.presentToast("Logo berhasil diubah."),l.uploadData=n,l.uploadData.response=JSON.parse(l.uploadData.response),l.data.avatar=l.uploadData.response.filename,l.random_=Math.floor(20*Math.random())+1},function(n){l.loading.dismissAll(),l.presentToast("Terjadi kesalahan! gagal mengubah logo.")})},l}(),sn=function(){function l(l,n,u,a,t,e,i){this.params=l,this.viewCtrl=n,this.authService=u,this.loadingCtrl=a,this.toastCtrl=t,this.fileChooser=e,this.filePath=i,this.urlServer="",this.urlServer=u.urlServer,this.noRegistrasi=l.get("noRegistrasi"),this.namaLembaga=l.get("namaLembaga"),this.loadInit()}return l.prototype.loadInit=function(){var l=this;this.authService.getKelengkapanLembaga("legalitas-form",this.noRegistrasi).then(function(n){l.data=n},function(n){return l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.openChooser=function(){var l=this;this.fileChooser.open().then(function(n){l.filePath.resolveNativePath(n).then(function(l){console.log("resolved"+l),console.log("uri"+n)}).catch(function(l){return console.log(l)})}).catch(function(l){return console.log(l)})},l}(),rn=function(){function l(l,n,u,a,t){this.params=l,this.viewCtrl=n,this.authService=u,this.loadingCtrl=a,this.toastCtrl=t,this.urlServer="",this.data={noRegistrasi:"",deskripsi:"",tanggalDidirikan:"",kepemilikan:"",statusTanah:"",statusSertifikasi:"",luasTanah:"",satuanLuasTanah:"",luasBangunan:"",satuanLuasBangunan:"",kondisiBangunan:"",JumlahBangunan:"",statusSarana:"",statusStrukturKepengurusan:"",urlGambarStrukturKepengurusan:"",bahasaPengantar:"",statusSensus:"",statusBantuanPemerintah:"",kondisiGeografis:"",potensiWilayah:"",jenisWilayah:"",catatanLain:""},this.urlServer=u.urlServer,this.noRegistrasi=l.get("noRegistrasi"),this.namaLembaga=l.get("namaLembaga"),this.loadInit()}return l.prototype.loadInit=function(){var l=this;this.authService.getKelengkapanLembaga("sejarah",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp},function(n){return l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),cn=function(){function l(l,n,u,a,t){this.params=l,this.viewCtrl=n,this.authService=u,this.loadingCtrl=a,this.toastCtrl=t,this.urlServer="",this.data={noRegistrasi:"",penanggungJawab:"",jabatan:"",alamat:"",noRt:"",noRw:"",kodeKelurahan:"",kodeKecamatan:"",kodeWilayah:"",kodeProvinsi:"",noTelp:"",kewarganegaraan:"",tempatLahir:"",tanggalLahir:"",jenisKelamin:"",agama:"",jabatanLain:"",pendidikan:"",kompetensi:"",catatan:""},this.flag="init",this.urlServer=u.urlServer,this.noRegistrasi=l.get("noRegistrasi"),this.namaLembaga=l.get("namaLembaga"),this.loadInit()}return l.prototype.loadInit=function(){var l=this;this.showLoader(),this.authService.getOptionList("wilayah").then(function(n){l.wilayah=n,l.authService.getKelengkapanLembaga("kepengurusan",l.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadKecamatan=function(l){var n=this;""!=l?this.authService.getOptionList("kecamatan",l).then(function(l){n.kecamatan=l,"init"!=n.flag&&(n.data.kodeKelurahan="")},function(l){return n.presentToast(l),!1}):(this.kecamatan=[],this.kelurahan=[],this.data.kodeKecamatan="",this.data.kodeKelurahan="")},l.prototype.loadKelurahan=function(l){var n=this;""!=l?this.authService.getOptionList("kelurahan",l).then(function(l){n.kelurahan=l,n.flag="end"},function(l){return n.presentToast(l),!1}):(this.kelurahan=[],this.data.kodeKelurahan="")},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),_n=function(){function l(l,n,u,a,t){this.params=l,this.viewCtrl=n,this.authService=u,this.loadingCtrl=a,this.toastCtrl=t,this.urlServer="",this.data={noRegistrasi:"",namaUsaha:"",jenisUsaha:"",detailUsaha:"",jumlahPekerja:"",catatan:""},this.urlServer=u.urlServer,this.noRegistrasi=l.get("noRegistrasi"),this.namaLembaga=l.get("namaLembaga"),this.loadInit()}return l.prototype.loadInit=function(){var l=this;this.authService.getKelengkapanLembaga("usaha",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp},function(n){return l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),dn=function(){function l(l){this.viewCtrl=l}return l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}(),gn=function(){function l(l,n,u,a,t){this.params=l,this.viewCtrl=n,this.authService=u,this.loadingCtrl=a,this.toastCtrl=t,this.urlServer="",this.data={noRegistrasi:"",judulKoleksi:"",jenisKoleksi:"",deskripsi:""},this.urlServer=u.urlServer,this.noRegistrasi=l.get("noRegistrasi"),this.namaLembaga=l.get("namaLembaga"),this.loadInit()}return l.prototype.loadInit=function(){var l=this;this.authService.getKelengkapanLembaga("koleksi",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp},function(n){return l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),mn=function(){function l(l){this.viewCtrl=l,this.data=[{noreg:"1",nama_prestasi:"Prestasi 1",nama_lembaga:"Lembaga 1",bentuk_lembaga:"Yayasan"},{noreg:"2",nama_prestasi:"Prestasi 2",nama_lembaga:"Lembaga 2",bentuk_lembaga:"Pondok pesantren"},{noreg:"3",nama_prestasi:"Prestasi 3",nama_lembaga:"Lembaga 3",bentuk_lembaga:"Madrasah Aliyah"},{noreg:"3",nama_prestasi:"Prestasi 4",nama_lembaga:"Lembaga 3",bentuk_lembaga:"Madrasah Aliyah"}]}return l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}(),hn=function(){function l(l,n,u,a,t,e){var i=this;this.events=l,this.navCtrl=n,this.authService=u,this.loadingCtrl=a,this.modalCtrl=t,this.toastCtrl=e,this.page=1,this.urlServer="",this.urlServer=u.urlServer,this.getData(),this.pages=[{component:pn},{component:bn}],l.subscribe("kelembagaan:reload",function(){i.page=1,i.getData()})}return l.prototype.openModal=function(l,n,u){void 0===n&&(n=null),void 0===u&&(u=null);this.modalCtrl.create(this.pages[l].component,{reff:n,reff2:u}).present()},l.prototype.getData=function(){var l=this;this.showLoader(),this.authService.getListLembaga(this.page).then(function(n){l.data=n,l.page=l.page+1,l.authService.getSummaryLembaga().then(function(n){l.summary=n,l.summary=l.summary.summary,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadData=function(l){var n=this;this.authService.getListLembaga(this.page).then(function(u){var a;a=u,console.log("row : "+a.length);for(var t=0;t<a.length;t++)n.data.push(u[t]);l.complete(),n.page=n.page+1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),pn=function(){function l(l,n,u,a,t,e,i){this.events=l,this.platform=n,this.params=u,this.viewCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.filterData={keyword:localStorage.getItem("kelembagaan-filter-keyword"),bentukLembaga:localStorage.getItem("kelembagaan-filter-bentukLembaga"),wilayah:localStorage.getItem("kelembagaan-filter-wilayah"),kecamatan:localStorage.getItem("kelembagaan-filter-kecamatan"),kelurahan:localStorage.getItem("kelembagaan-filter-kelurahan"),ajuan:localStorage.getItem("kelembagaan-filter-ajuan"),valid:localStorage.getItem("kelembagaan-filter-valid")},this.loadInit()}return l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.loadInit=function(){var l=this;this.showLoader(),this.authService.getOptionList("bentuk-lembaga").then(function(n){l.bentukLembaga=n,l.authService.getOptionList("wilayah").then(function(n){l.wilayah=n,""!=l.filterData.kecamatan?l.authService.getOptionList("kecamatan",l.filterData.wilayah).then(function(n){l.kecamatan=n,""!=l.filterData.kelurahan?l.authService.getOptionList("kelurahan",l.filterData.kecamatan).then(function(n){l.kelurahan=n,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1}):l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1}):l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadKecamatan=function(l){var n=this;""!=l?(this.showLoader(),this.authService.getOptionList("kecamatan",l).then(function(l){n.kecamatan=l,n.loading.dismiss()},function(l){return n.loading.dismiss(),n.presentToast(l),!1})):(this.kecamatan=[],this.kelurahan=[],this.filterData.kecamatan="",this.filterData.kelurahan="")},l.prototype.loadKelurahan=function(l){var n=this;""!=l?(this.showLoader(),this.authService.getOptionList("kelurahan",l).then(function(l){n.kelurahan=l,n.loading.dismiss()},function(l){return n.loading.dismiss(),n.presentToast(l),!1})):(this.kelurahan=[],this.filterData.kelurahan="")},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.filter=function(){localStorage.setItem("kelembagaan-filter-keyword",this.filterData.keyword),localStorage.setItem("kelembagaan-filter-bentukLembaga",this.filterData.bentukLembaga),localStorage.setItem("kelembagaan-filter-wilayah",this.filterData.wilayah),localStorage.setItem("kelembagaan-filter-kecamatan",this.filterData.kecamatan),localStorage.setItem("kelembagaan-filter-kelurahan",this.filterData.kelurahan),localStorage.setItem("kelembagaan-filter-ajuan",this.filterData.ajuan),localStorage.setItem("kelembagaan-filter-valid",this.filterData.valid),this.dismiss(),this.events.publish("kelembagaan:reload")},l}(),bn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.modalCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.detail={avatar:"",noreg:"",nama:"",kodeBentukLembaga:"",namaBentukLembaga:"",catatanLain:"",telp:"",email:"",mediaSosial:"",langitude:0,latitude:0,alamat:"",namaBidangGerak:"",jumlahPengurus:"",noNpwp:"",organisasiAfiliasi:"",visiLembaga:"",misiLembaga:""},this.urlServer=t.urlServer,this.noRegistrasi=n.get("reff"),this.namaLembaga=n.get("reff2"),this.detailPages=[{component:fn},{component:kn},{component:Yn},{component:Zn},{component:vn},{component:Cn},{component:Xl}],this.detailPages=[{component:fn},{component:kn},{component:Yn},{component:Zn},{component:vn},{component:Cn},{component:Xl}],this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getDetailLembaga(this.noRegistrasi).then(function(n){l.temp=n,l.detail=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.openModal=function(l,n,u,a,t){void 0===n&&(n=null),void 0===u&&(u=null),void 0===a&&(a=null),void 0===t&&(t=null);this.modalCtrl.create(this.detailPages[l].component,{reff:n,reff2:u,reff3:a,reff4:t}).present()},l.prototype.loadForm=function(){this.modalCtrl.create(on,{noRegistrasi:this.noRegistrasi}).present()},l.prototype.openMaps=function(){var l=this.detail.latitude+","+this.detail.langitude;if(this.platform.is("ios"))window.open("maps://?q="+l,"_system");else{var n=encodeURI("");window.open("geo:0,0?q="+l+"("+n+")","_system")}},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),fn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.modalCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.countData=0,this.urlServer=t.urlServer,this.noRegistrasi=n.get("reff"),this.namaLembaga=n.get("reff2"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("legalitas",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.countData=Object.keys(l.data).length,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.loadForm=function(){this.modalCtrl.create(sn,{noRegistrasi:this.noRegistrasi,namaLembaga:this.namaLembaga}).present()},l}(),kn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.modalCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.data={noRegistrasi:"-",deskripsi:"-",tanggalDidirikan:"-",kepemilikan:"-",statusTanah:"-",statusSertifikasi:"-",luasTanah:"-",satuanLuasTanah:"-",luasBangunan:"-",satuanLuasBangunan:"-",kondisiBangunan:"-",JumlahBangunan:"-",statusSarana:"-",statusStrukturKepengurusan:"-",urlGambarStrukturKepengurusan:"-",bahasaPengantar:"-",statusSensus:"-",statusBantuanPemerintah:"-",kondisiGeografis:"-",potensiWilayah:"-",jenisWilayah:"-",catatanLain:"-"},this.urlServer=t.urlServer,this.noRegistrasi=n.get("reff"),this.namaLembaga=n.get("reff2"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("sejarah",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.loadForm=function(){this.modalCtrl.create(rn,{noRegistrasi:this.noRegistrasi,namaLembaga:this.namaLembaga}).present()},l}(),Yn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.modalCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.data={noRegistrasi:"-",penanggungJawab:"-",jabatan:"-",alamat:"-",alamatLengkap:"-",noTelp:"-",kewarganegaraan:"-",tempatLahir:"-",tanggalLahir:"-",jenisKelamin:"-",agama:"-",jabatanLain:"-",pendidikan:"-",kompetensi:"-",catatan:"-"},this.urlServer=t.urlServer,this.noRegistrasi=n.get("reff"),this.namaLembaga=n.get("reff2"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("kepengurusan",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.loadForm=function(){this.modalCtrl.create(cn,{noRegistrasi:this.noRegistrasi,namaLembaga:this.namaLembaga}).present()},l}(),Zn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.modalCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.data={noRegistrasi:"-",namaUsaha:"-",jenisUsaha:"-",detailUsaha:"-",jumlahPekerja:"-",catatan:"-"},this.urlServer=t.urlServer,this.noRegistrasi=n.get("reff"),this.namaLembaga=n.get("reff2"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("usaha",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.loadForm=function(){this.modalCtrl.create(_n,{noRegistrasi:this.noRegistrasi,namaLembaga:this.namaLembaga}).present()},l}(),vn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.modalCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.countData=0,this.urlServer=t.urlServer,this.noRegistrasi=n.get("reff"),this.namaLembaga=n.get("reff2"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("prestasi",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.countData=Object.keys(l.data).length,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),Cn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.modalCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.urlServer="",this.countData=0,this.formData={judulKoleksi:"",jenisKoleksi:"",deskripsi:""},this.urlServer=t.urlServer,this.noRegistrasi=n.get("reff"),this.namaLembaga=n.get("reff2"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getKelengkapanLembaga("koleksi",this.noRegistrasi).then(function(n){l.temp=n,l.data=l.temp,l.countData=Object.keys(l.data).length,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),jn=function(){function l(l,n,u,a){this.navCtrl=l,this.authService=n,this.loadingCtrl=u,this.toastCtrl=a,this.que=0,this.pages=[{title:"Prestasi",component:Jl,icon:"trophy",color:"bright"},{title:"Koleksi",component:Hl,icon:"book",color:"secondary"},{title:"Kelembagaan",component:hn,icon:"people",color:"vibrant"}],this.loadSummary()}return l.prototype.navigateTo=function(l,n){void 0===n&&(n=null),2==l&&(localStorage.setItem("kelembagaan-filter-ajuan","false"),localStorage.setItem("kelembagaan-filter-valid","false"),"ajuan"==n?localStorage.setItem("kelembagaan-filter-ajuan",""):"valid"==n?localStorage.setItem("kelembagaan-filter-valid",""):(localStorage.setItem("kelembagaan-filter-ajuan",""),localStorage.setItem("kelembagaan-filter-valid",""))),this.navCtrl.push(this.pages[l].component)},l.prototype.loadSummary=function(){var l=this;this.showLoader(),this.authService.getList("count/summary/").then(function(n){l.countSummary=n,l.koleksi=l.countSummary.koleksi,l.prestasi=l.countSummary.prestasi,l.ajuan=l.countSummary.ajuan,l.valid=l.countSummary.valid,l.authService.getList("count/lembaga/").then(function(n){l.countLembaga=n,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.advanceNumber=function(l){var n;if(void 0!==l)return console.log(l),(n=Math.abs(l))>=Math.pow(10,12)?l=(l/Math.pow(10,12)).toFixed(1)+"t":n<Math.pow(10,12)&&n>=Math.pow(10,9)?l=(l/Math.pow(10,9)).toFixed(1)+"b":n<Math.pow(10,9)&&n>=Math.pow(10,6)?l=(l/Math.pow(10,6)).toFixed(1)+"m":n<Math.pow(10,6)&&n>=Math.pow(10,3)&&(l=(l/Math.pow(10,3)).toFixed(1)+"k"),l},l.prototype.simpleNumber=function(l){return l>=1e3&&(l=(l/=1e3).toFixed(1)+"k"),l},l}(),yn=function(){function l(l,n,u,a){this.modalCtrl=l,this.authService=n,this.loadingCtrl=u,this.toastCtrl=a,this.page=1,this.urlServer="",this.urlServer=n.urlServer,this.getData()}return l.prototype.getData=function(){var l=this;this.showLoader(),this.authService.getListPage("berita",this.page).then(function(n){l.data=n,l.page=l.page+1,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadData=function(l){var n=this;this.authService.getListPage("berita",this.page).then(function(u){var a;a=u,console.log("row : "+a.length);for(var t=0;t<a.length;t++)n.data.push(u[t]);l.complete(),n.page=n.page+1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.openModal=function(l){this.modalCtrl.create(zn,{newsId:l}).present()},l.prototype.openForm=function(l){this.modalCtrl.create(wn,{newsId:l}).present()},l}(),zn=function(){function l(l,n,u,a,t,e){this.viewCtrl=l,this.params=n,this.modalCtrl=u,this.authService=a,this.loadingCtrl=t,this.toastCtrl=e,this.urlServer="",this.idData="",this.data={idData:"",judulBerita:"",deskripsi:"",urlGambar:"",createdBy:"",createdDate:""},this.urlServer=a.urlServer,this.idData=n.get("newsId"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getDataById("berita",this.idData).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),wn=function(){function l(l,n,u,a,t,e,i,o,s,r,c,_){this.viewCtrl=l,this.params=n,this.modalCtrl=u,this.authService=a,this.loadingCtrl=t,this.toastCtrl=e,this.camera=i,this.transfer=o,this.file=s,this.filePath=r,this.actionSheetCtrl=c,this.platform=_,this.urlServer="",this.urlApi="",this.idData="",this.data={idData:"",judulBerita:"",deskripsi:"",urlGambar:"",createdBy:"",createdDate:""},this.lastImage=null,this.random_=Math.floor(20*Math.random())+1,this.urlServer=a.urlServer,this.idData=n.get("newsId"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getDataById("berita",this.idData).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.presentActionSheet=function(){var l=this;this.actionSheetCtrl.create({title:"Pilih gambar",buttons:[{text:"Galeri",handler:function(){l.takePicture(l.camera.PictureSourceType.PHOTOLIBRARY)}},{text:"Kamera",handler:function(){l.takePicture(l.camera.PictureSourceType.CAMERA)}},{text:"Batalkan",role:"cancel"}]}).present()},l.prototype.takePicture=function(l){var n=this;this.camera.getPicture({quality:100,sourceType:l,saveToPhotoAlbum:!1,correctOrientation:!0}).then(function(u){if(n.platform.is("android")&&l===n.camera.PictureSourceType.PHOTOLIBRARY)n.filePath.resolveNativePath(u).then(function(l){var a=l.substr(0,l.lastIndexOf("/")+1),t=u.substring(u.lastIndexOf("/")+1,u.lastIndexOf("?"));n.copyFileToLocalDir(a,t,n.createFileName())});else{var a=u.substr(u.lastIndexOf("/")+1),t=u.substr(0,u.lastIndexOf("/")+1);n.copyFileToLocalDir(t,a,n.createFileName())}},function(l){n.presentToast("Terjadi kesalahan : Error saat memilih gambar!.")})},l.prototype.createFileName=function(){return(new Date).getTime()+".jpg"},l.prototype.copyFileToLocalDir=function(l,n,u){var a=this;this.file.copyFile(l,n,cordova.file.dataDirectory,u).then(function(l){a.lastImage=u},function(l){a.presentToast("Terjadi kesalahan : Error saat menyimpan gambar!.")})},l.prototype.pathForImage=function(l){return null===l?"":cordova.file.dataDirectory+l},l.prototype.uploadImage=function(){var l=this,n=this.urlApi+"/public/upload/berita/gambar/",u=this.pathForImage(this.lastImage),a=this.lastImage,t={fileKey:"file",fileName:a,chunkedMode:!1,mimeType:"multipart/form-data",params:{fileName:a,idData:this.idData}},e=this.transfer.create();this.loading=this.loadingCtrl.create({content:"Uploading..."}),this.loading.present(),e.upload(u,n,t).then(function(n){l.loading.dismissAll(),l.presentToast("Logo berhasil diubah.")},function(n){l.loading.dismissAll(),l.presentToast("Terjadi kesalahan! gagal mengubah logo.")})},l}(),Ln=function(){return function(l){this.navCtrl=l}}(),xn=function(){function l(l,n){this.navCtrl=l,this.modalCtrl=n,this.other=[{title:"Informasi Akun",component:Pn,icon:"information-circle",color:"primary"},{title:"Ganti Password",component:Dn,icon:"lock",color:"bright"}]}return l.prototype.openModal=function(l){this.modalCtrl.create(this.other[l].component).present()},l}(),Pn=function(){function l(l,n,u,a,t){var e=this;this.events=l,this.navCtrl=n,this.modalCtrl=u,this.viewCtrl=a,this.authService=t,this.urlServer="",this.accountData={avatar:localStorage.getItem("urlGambar"),noRegistrasi:localStorage.getItem("noRegistrasi"),nama:localStorage.getItem("nama"),jabatan:localStorage.getItem("jabatan"),alamat:localStorage.getItem("alamatLengkap"),noTelp:localStorage.getItem("noTelp"),email:localStorage.getItem("email"),username:localStorage.getItem("username"),userLevel:localStorage.getItem("userLevel"),statusAkses:""},this.random_=Math.floor(20*Math.random())+1,this.urlServer=t.urlServer,"7"==this.accountData.userLevel?this.accountData.statusAkses="Super Admin":"3"==this.accountData.userLevel?this.accountData.statusAkses="Operator":"2"==this.accountData.userLevel?this.accountData.statusAkses="Penyuluh":"1"==this.accountData.userLevel&&(this.accountData.statusAkses="Lembaga"),l.subscribe("accountPage:reload",function(){e.refreshData()})}return l.prototype.refreshData=function(){this.accountData={avatar:localStorage.getItem("urlGambar"),noRegistrasi:localStorage.getItem("noRegistrasi"),nama:localStorage.getItem("nama"),jabatan:localStorage.getItem("jabatan"),alamat:localStorage.getItem("alamatLengkap"),noTelp:localStorage.getItem("noTelp"),email:localStorage.getItem("email"),username:localStorage.getItem("username"),userLevel:localStorage.getItem("userLevel"),statusAkses:this.accountData.statusAkses}},l.prototype.openForm=function(){this.modalCtrl.create(Mn).present()},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}(),Dn=function(){function l(l,n,u,a,t,e){this.navCtrl=l,this.modalCtrl=n,this.viewCtrl=u,this.authService=a,this.loadingCtrl=t,this.toastCtrl=e,this.data={status:"failed",data:"0"},this.accountData={username:localStorage.getItem("username"),oldPassword:"",newPassword:"",retypePassword:""}}return l.prototype.changePassword=function(){var l=this;this.showLoader(),this.authService.changePassword(this.accountData).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss(),l.presentToast("success"==l.data.status?"Password berhasil diubah!":"Password gagal diubah, perika kembali Password Anda!"),l.accountData={username:localStorage.getItem("username"),oldPassword:"",newPassword:"",retypePassword:""}},function(n){return l.accountData={username:localStorage.getItem("username"),oldPassword:"",newPassword:"",retypePassword:""},l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Harap tunggu..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}(),Mn=function(){function l(l,n,u,a,t,e,i,o,s,r,c,_,d){this.events=l,this.navCtrl=n,this.modalCtrl=u,this.viewCtrl=a,this.authService=t,this.loadingCtrl=e,this.toastCtrl=i,this.camera=o,this.transfer=s,this.file=r,this.filePath=c,this.actionSheetCtrl=_,this.platform=d,this.urlServer="",this.urlApi="",this.data={status:"failed",data:"0"},this.accountData={avatar:localStorage.getItem("urlGambar"),nama:localStorage.getItem("nama"),jabatan:localStorage.getItem("jabatan"),alamat:localStorage.getItem("alamat"),noTelp:localStorage.getItem("noTelp"),email:localStorage.getItem("email"),username:localStorage.getItem("username"),noRt:localStorage.getItem("noRt"),noRw:localStorage.getItem("noRw"),kodeKelurahan:localStorage.getItem("kodeKelurahan"),kodeKecamatan:localStorage.getItem("kodeKecamatan"),kodeWilayah:localStorage.getItem("kodeWilayah")},this.lastImage=null,this.random_=Math.floor(20*Math.random())+1,this.loadInit(),this.urlServer=t.urlServer,this.urlApi=t.urlApi}return l.prototype.loadInit=function(){var l=this;this.showLoader(),this.authService.getOptionList("wilayah").then(function(n){l.wilayah=n,""!=l.accountData.kodeKecamatan?l.authService.getOptionList("kecamatan",l.accountData.kodeWilayah).then(function(n){l.kecamatan=n,""!=l.accountData.kodeKelurahan?l.authService.getOptionList("kelurahan",l.accountData.kodeKecamatan).then(function(n){l.kelurahan=n,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1}):l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1}):l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.loadKecamatan=function(l){var n=this;""!=l?(this.showLoader(),this.authService.getOptionList("kecamatan",l).then(function(l){n.kecamatan=l,n.loading.dismiss()},function(l){return n.loading.dismiss(),n.presentToast(l),!1})):(this.kecamatan=[],this.kelurahan=[],this.accountData.kodeKecamatan="",this.accountData.kodeKelurahan="")},l.prototype.loadKelurahan=function(l){var n=this;""!=l?(this.showLoader(),this.authService.getOptionList("kelurahan",l).then(function(l){n.kelurahan=l,n.loading.dismiss()},function(l){return n.loading.dismiss(),n.presentToast(l),!1})):(this.kelurahan=[],this.accountData.kodeKelurahan="")},l.prototype.changeAccount=function(){var l=this;this.showLoader(),this.authService.changeAccount(this.accountData).then(function(n){l.temp=n,l.data=l.temp,"success"==l.data.status?(localStorage.setItem("nama",l.accountData.nama),localStorage.setItem("jabatan",l.accountData.jabatan),localStorage.setItem("alamat",l.accountData.alamat),localStorage.setItem("noTelp",l.accountData.noTelp),localStorage.setItem("email",l.accountData.email),localStorage.setItem("noRt",l.accountData.noRt),localStorage.setItem("noRw",l.accountData.noRw),localStorage.setItem("kodeKelurahan",l.accountData.kodeKelurahan),localStorage.setItem("kodeKecamatan",l.accountData.kodeKecamatan),localStorage.setItem("kodeWilayah",l.accountData.kodeWilayah),l.authService.relogin(l.accountData).then(function(n){l.loading.dismiss(),l.presentToast("Informasi Akun berhasil diubah!"),l.reloginData=n,localStorage.setItem("nama",l.reloginData.nama),localStorage.setItem("jabatan",l.reloginData.jabatan),localStorage.setItem("alamat",l.reloginData.alamat),localStorage.setItem("alamatLengkap",l.reloginData.alamatLengkap),localStorage.setItem("noTelp",l.reloginData.noTelp),localStorage.setItem("email",l.reloginData.email),localStorage.setItem("noRt",l.reloginData.noRt),localStorage.setItem("noRw",l.reloginData.noRw),localStorage.setItem("kodeKelurahan",l.reloginData.kodeKelurahan),localStorage.setItem("kodeKecamatan",l.reloginData.kodeKecamatan),localStorage.setItem("kodeWilayah",l.reloginData.kodeWilayah),l.accountData={avatar:localStorage.getItem("urlGambar"),nama:localStorage.getItem("nama"),jabatan:localStorage.getItem("jabatan"),alamat:localStorage.getItem("alamat"),noTelp:localStorage.getItem("noTelp"),email:localStorage.getItem("email"),username:localStorage.getItem("username"),noRt:localStorage.getItem("noRt"),noRw:localStorage.getItem("noRw"),kodeKelurahan:localStorage.getItem("kodeKelurahan"),kodeKecamatan:localStorage.getItem("kodeKecamatan"),kodeWilayah:localStorage.getItem("kodeWilayah")},l.events.publish("accountPage:reload")},function(n){l.loading.dismiss(),l.presentToast(n)})):l.presentToast("Informasi Akun gagal diubah, perika kembali inputan Anda!")},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Harap tunggu..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.presentActionSheet=function(){var l=this;this.actionSheetCtrl.create({title:"Pilih gambar",buttons:[{text:"Galeri",handler:function(){l.takePicture(l.camera.PictureSourceType.PHOTOLIBRARY)}},{text:"Kamera",handler:function(){l.takePicture(l.camera.PictureSourceType.CAMERA)}},{text:"Batalkan",role:"cancel"}]}).present()},l.prototype.takePicture=function(l){var n=this;this.camera.getPicture({quality:100,sourceType:l,saveToPhotoAlbum:!1,correctOrientation:!0}).then(function(u){if(n.platform.is("android")&&l===n.camera.PictureSourceType.PHOTOLIBRARY)n.filePath.resolveNativePath(u).then(function(l){var a=l.substr(0,l.lastIndexOf("/")+1),t=u.substring(u.lastIndexOf("/")+1,u.lastIndexOf("?"));n.copyFileToLocalDir(a,t,n.createFileName())});else{var a=u.substr(u.lastIndexOf("/")+1),t=u.substr(0,u.lastIndexOf("/")+1);n.copyFileToLocalDir(t,a,n.createFileName())}},function(l){n.presentToast("Terjadi kesalahan : Error saat memilih gambar!.")})},l.prototype.createFileName=function(){return(new Date).getTime()+".jpg"},l.prototype.copyFileToLocalDir=function(l,n,u){var a=this;this.file.copyFile(l,n,cordova.file.dataDirectory,u).then(function(l){a.lastImage=u,a.uploadImage()},function(l){a.presentToast("Terjadi kesalahan : Error saat menyimpan gambar!.")})},l.prototype.pathForImage=function(l){return null===l?"":cordova.file.dataDirectory+l},l.prototype.uploadImage=function(){var l=this,n=this.urlApi+"/public/upload/account/avatar/",u=this.pathForImage(this.lastImage),a=this.lastImage,t={fileKey:"file",fileName:a,chunkedMode:!1,mimeType:"multipart/form-data",params:{fileName:a,username:localStorage.getItem("username")}},e=this.transfer.create();this.loading=this.loadingCtrl.create({content:"Uploading..."}),this.loading.present(),e.upload(u,n,t).then(function(n){l.loading.dismissAll(),l.presentToast("Avatar berhasil diubah."),l.uploadData=n,l.uploadData.response=JSON.parse(l.uploadData.response),l.accountData.avatar=l.uploadData.response.filename,l.random_=Math.floor(20*Math.random())+1,l.authService.relogin(l.accountData).then(function(n){l.reloginData=n,localStorage.setItem("urlGambar",l.reloginData.urlGambar),l.events.publish("accountPage:reload")},function(n){l.loading.dismiss(),l.presentToast(n)})},function(n){l.loading.dismissAll(),l.presentToast("Terjadi kesalahan! gagal mengubah Avatar.")})},l}(),Sn=function(){function l(l,n,u,a,t,e){this.app=l,this.authService=n,this.loadingCtrl=u,this.toastCtrl=a,this.appCtrl=t,this.navCtrl=e,this.pages=[{title:"Rekapitulasi",component:jn,icon:"stats",color:"main"},{title:"Kelembagaan",component:hn,icon:"people",color:"vibrant"},{title:"Prestasi",component:Jl,icon:"trophy",color:"bright"},{title:"Koleksi",component:Hl,icon:"book",color:"secondary"},{title:"Berita",component:yn,icon:"paper",color:"primary"}],this.other=[{title:"Pengaturan",component:xn,icon:"settings",color:""},{title:"Tentang Aplikasi",component:Ln,icon:"ios-information-circle-outline",color:"primary"}]}return l.prototype.logout=function(){this.showLoader(),this.authService.logout(),this.appCtrl.getRootNav().push(Kn),this.loading.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Logout..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.navigateTo=function(l){this.navCtrl.push(l.component)},l}(),In=function(){function l(l,n,u,a){this.modalCtrl=l,this.authService=n,this.loadingCtrl=u,this.toastCtrl=a,this.getData()}return l.prototype.openModal=function(l){this.modalCtrl.create(Tn,{inboxId:l}).present()},l.prototype.getData=function(){var l=this;this.showLoader(),this.authService.getListNotifications().then(function(n){l.data=n,l.dataClone=l.data,l.dataClone[-1]={tanggal:"start"},l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),Tn=function(){function l(l,n,u,a,t,e,i){this.platform=l,this.params=n,this.viewCtrl=u,this.authService=a,this.modalCtrl=t,this.loadingCtrl=e,this.toastCtrl=i,this.idData="",this.filterWilayah="",this.filterKecamatan="",this.filterKelurahan="",this.filterStatus="",this.data={judul:"",subjek:"",deskripsi:"",waktu:"",statusBaca:"",timestamp:"",tanggal:"",jam:"",createdBy:""},this.idData=n.get("inboxId"),this.loadData()}return l.prototype.loadData=function(){var l=this;this.showLoader(),this.authService.getNotifications(this.idData).then(function(n){l.temp=n,l.data=l.temp,l.loading.dismiss()},function(n){return l.loading.dismiss(),l.presentToast(n),!1})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l}(),Rn=function(){function l(l,n,u,a,t){this.navCtrl=l,this.modalCtrl=n,this.authService=u,this.loadingCtrl=a,this.toastCtrl=t,this.keyword="",this.urlServer="",this.urlServer=u.urlServer}return l.prototype.searchData=function(l){var n=this;13==l&&(""!=this.keyword?(this.showLoader(),this.authService.searchData(this.keyword).then(function(l){n.data=l,n.dataClone=n.data,n.dataClone[-1]={grup:"start"},console.log(n.data),n.loading.dismiss()},function(l){return n.loading.dismiss(),n.presentToast(l),!1})):(this.data=[],this.dataClone=[]))},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memuat data..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.openLembaga=function(l){this.modalCtrl.create(bn,{reff:l}).present()},l}(),Bn=function(){function l(l,n,u){this.navCtrl=l,this.loadingCtrl=n,this.authService=u,this.home=Sn,this.inbox=In,this.search=Rn,this.form=en,this.inboxCounter=0,this.userLevel="",this.getCountInbox(),this.userLevel=localStorage.getItem("userLevel")}return l.prototype.getCountInbox=function(){var l=this;this.authService.getCountNotifications().then(function(n){l.inboxCounter=n},function(l){console.log(l)})},l}(),Kn=function(){function l(l,n,u,a){this.navCtrl=l,this.authService=n,this.loadingCtrl=u,this.toastCtrl=a,this.loginData={username:"",password:""}}return l.prototype.doLogin=function(){var l=this;this.showLoader(),this.authService.login(this.loginData).then(function(n){l.loading.dismiss(),l.data=n,0!=l.data?(localStorage.setItem("token",l.data.userLevel),localStorage.setItem("idData",l.data.idData),""==l.data.noRegistrasi||null==l.data.noRegistrasi?localStorage.setItem("userNotif",l.data.username):localStorage.setItem("userNotif",l.data.noRegistrasi),localStorage.setItem("noRegistrasi",l.data.noRegistrasi),localStorage.setItem("nama",l.data.nama),localStorage.setItem("jabatan",l.data.jabatan),localStorage.setItem("alamat",l.data.alamat),localStorage.setItem("alamatLengkap",l.data.alamatLengkap),localStorage.setItem("noTelp",l.data.noTelp),localStorage.setItem("email",l.data.email),localStorage.setItem("username",l.data.username),localStorage.setItem("urlGambar",l.data.urlGambar),localStorage.setItem("userLevel",l.data.userLevel),localStorage.setItem("noRt",l.data.noRt),localStorage.setItem("noRw",l.data.noRw),localStorage.setItem("kodeKelurahan",l.data.kodeKelurahan),localStorage.setItem("kodeKecamatan",l.data.kodeKecamatan),localStorage.setItem("kodeWilayah",l.data.kodeWilayah),localStorage.setItem("lingkupArea",l.data.lingkupArea),localStorage.setItem("idBatasArea",l.data.idBatasArea),localStorage.setItem("kelembagaan-filter-keyword",""),localStorage.setItem("kelembagaan-filter-bentukLembaga",""),localStorage.setItem("kelembagaan-filter-wilayah",""),localStorage.setItem("kelembagaan-filter-kecamatan",""),localStorage.setItem("kelembagaan-filter-kelurahan",""),localStorage.setItem("kelembagaan-filter-ajuan",""),localStorage.setItem("kelembagaan-filter-valid",""),l.navCtrl.setRoot(Bn)):l.presentToast("Gagal login, mohon check kembali Username dan Password Anda!")},function(n){l.loading.dismiss(),l.presentToast(n)})},l.prototype.showLoader=function(){this.loading=this.loadingCtrl.create({content:"Memeriksa..."}),this.loading.present()},l.prototype.presentToast=function(l){var n=this.toastCtrl.create({message:l,duration:3e3,position:"bottom",dismissOnPageChange:!0});n.onDidDismiss(function(){console.log("Dismissed toast")}),n.present()},l.prototype.loginSuccess=function(){this.navCtrl.setRoot(Bn,{})},l}(),Fn=function(){return function(l,n,u){var a=this;l.ready().then(function(){n.styleDefault(),u.hide(),localStorage.getItem("token")?"1"!=localStorage.getItem("userLevel")&&(a.rootPage=Bn):a.rootPage=Kn})}}(),Un=u(202),On=u(204),An=u(205),Vn=function(){return function(){}}(),$n=u(84),Wn=u(245),Nn=u(246),Gn=u(247),Jn=u(248),Hn=u(249),Xn=u(250),En=u(251),qn=u(252),Qn=u(253),lu=u(254),nu=u(49),uu=u(92),au=u(5),tu=u(14),eu=u(6),iu=u(1),ou=u(4),su=u(8),ru=u(41),cu=u(19),_u=u(7),du=Al.X({encapsulation:2,styles:[],data:{}}),gu=Al.V("ng-component",Fn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,a,du)),Al.Y(1,49152,null,0,Fn,[ou.a,$l.a,Wl.a],null,null)],null,null)},{},{},[]),mu=u(255),hu=u(81),pu=u(20),bu=u(256),fu=u(114),ku=u(29),Yu=Al.X({encapsulation:2,styles:[],data:{}}),Zu=Al.V("ng-component",Bn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,t,Yu)),Al.Y(1,49152,null,0,Bn,[tu.a,ku.a,Gl],null,null)],null,null)},{},{},[]),vu=u(37),Cu=u(16),ju=u(207),yu=u(91),zu=u(40),wu=u(33),Lu=u(24),xu=u(23),Pu=u(15),Du=u(27),Mu=u(36),Su=u(12),Iu=u(11),Tu=u(26),Ru=u(30),Bu=u(82),Ku=u(48),Fu=u(35),Uu=u(18),Ou=u(13),Au=u(31),Vu=Al.X({encapsulation:2,styles:[],data:{}}),$u=Al.V("page-login",Kn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-login",[],null,null,null,e,Vu)),Al.Y(1,49152,null,0,Kn,[tu.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Wu=u(21),Nu=u(39),Gu=u(9),Ju=Al.X({encapsulation:2,styles:[],data:{}}),Hu=Al.V("page-home",Sn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-home",[],null,null,null,s,Ju)),Al.Y(1,49152,null,0,Sn,[eu.a,Gl,ku.a,Au.a,eu.a,tu.a],null,null)],null,null)},{},{},[]),Xu=u(102),Eu=u(34),qu=u(50),Qu=u(45),la=u(87),na=u(88),ua=u(138),aa=u(65),ta=u(75),ea=Al.X({encapsulation:2,styles:[],data:{}}),ia=Al.V("page-dashboard",jn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-dashboard",[],null,null,null,c,ea)),Al.Y(1,49152,null,0,jn,[tu.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),oa=u(156),sa=u(77),ra=u(73),ca=u(76),_a=u(106),da=u(56),ga=u(124),ma=u(66),ha=u(96),pa=u(44),ba=u(79),fa=u(68),ka=u(57),Ya=u(58),Za=u(208),va=u(94),Ca=u(42),ja=u(157),ya=u(80),za=u(209),wa=u(89),La=u(67),xa=u(17),Pa=Al.X({encapsulation:2,styles:[],data:{}}),Da=Al.V("page-kelembagaan",hn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-kelembagaan",[],null,null,null,d,Pa)),Al.Y(1,49152,null,0,hn,[ha.a,tu.a,Gl,ku.a,pa.a,Au.a],null,null)],null,null)},{},{},[]),Ma=Al.X({encapsulation:2,styles:[],data:{}}),Sa=Al.V("ng-component",pn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,b,Ma)),Al.Y(1,49152,null,0,pn,[ha.a,ou.a,xa.a,au.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Ia=Al.X({encapsulation:2,styles:[],data:{}}),Ta=Al.V("ng-component",bn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,f,Ia)),Al.Y(1,49152,null,0,bn,[ou.a,xa.a,au.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Ra=Al.X({encapsulation:2,styles:[],data:{}}),Ba=Al.V("ng-component",fn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,Y,Ra)),Al.Y(1,49152,null,0,fn,[ou.a,xa.a,au.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Ka=Al.X({encapsulation:2,styles:[],data:{}}),Fa=Al.V("ng-component",kn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,Z,Ka)),Al.Y(1,49152,null,0,kn,[ou.a,xa.a,au.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Ua=Al.X({encapsulation:2,styles:[],data:{}}),Oa=Al.V("ng-component",Yn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,v,Ua)),Al.Y(1,49152,null,0,Yn,[ou.a,xa.a,au.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Aa=Al.X({encapsulation:2,styles:[],data:{}}),Va=Al.V("ng-component",Zn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,C,Aa)),Al.Y(1,49152,null,0,Zn,[ou.a,xa.a,au.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),$a=Al.X({encapsulation:2,styles:[],data:{}}),Wa=Al.V("ng-component",vn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,y,$a)),Al.Y(1,49152,null,0,vn,[ou.a,xa.a,au.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Na=Al.X({encapsulation:2,styles:[],data:{}}),Ga=Al.V("ng-component",Cn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,w,Na)),Al.Y(1,49152,null,0,Cn,[ou.a,xa.a,au.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Ja=u(257),Ha=u(118),Xa=u(43),Ea=u(110),qa=Al.X({encapsulation:2,styles:[],data:{}}),Qa=Al.V("page-verification",Xl,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-verification",[],null,null,null,P,qa)),Al.Y(1,49152,null,0,Xl,[ou.a,xa.a,au.a,Gl,pa.a,ku.a,Au.a],null,null)],null,null)},{},{},[]),lt=Al.X({encapsulation:2,styles:[],data:{}}),nt=Al.V("ng-component",El,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"ng-component",[],null,null,null,T,lt)),Al.Y(1,49152,null,0,El,[ou.a,xa.a,au.a,Gl,pa.a,ku.a,Au.a],null,null)],null,null)},{},{},[]),ut=Al.X({encapsulation:2,styles:[],data:{}}),at=Al.V("page-prestasi",Jl,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-prestasi",[],null,null,null,B,ut)),Al.Y(1,49152,null,0,Jl,[tu.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),tt=Al.X({encapsulation:2,styles:[],data:{}}),et=Al.V("page-koleksi",Hl,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-koleksi",[],null,null,null,F,tt)),Al.Y(1,49152,null,0,Hl,[tu.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),it=u(136),ot=u(72),st=Al.X({encapsulation:2,styles:[],data:{}}),rt=Al.V("page-news",yn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-news",[],null,null,null,O,st)),Al.Y(1,49152,null,0,yn,[pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),ct=Al.X({encapsulation:2,styles:[],data:{}}),_t=Al.V("page-detail",zn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-detail",[],null,null,null,A,ct)),Al.Y(1,49152,null,0,zn,[au.a,xa.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),dt=Al.X({encapsulation:2,styles:[],data:{}}),gt=Al.V("page-form",wn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-form",[],null,null,null,W,dt)),Al.Y(1,49152,null,0,wn,[au.a,xa.a,pa.a,Gl,ku.a,Au.a,an.a,nn.a,ln.a,un.a,ot.a,ou.a],null,null)],null,null)},{},{},[]),mt=u(139),ht=Al.X({encapsulation:2,styles:[],data:{}}),pt=Al.V("page-inbox",In,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-inbox",[],null,null,null,J,ht)),Al.Y(1,49152,null,0,In,[pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),bt=Al.X({encapsulation:2,styles:[],data:{}}),ft=Al.V("page-detailInbox",Tn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-detailInbox",[],null,null,null,H,bt)),Al.Y(1,49152,null,0,Tn,[ou.a,xa.a,au.a,Gl,pa.a,ku.a,Au.a],null,null)],null,null)},{},{},[]),kt=Al.X({encapsulation:2,styles:[],data:{}}),Yt=Al.V("page-search",Rn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-search",[],null,null,null,nl,kt)),Al.Y(1,49152,null,0,Rn,[tu.a,pa.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Zt=Al.X({encapsulation:2,styles:[],data:{}}),vt=Al.V("page-setting",xn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-setting",[],null,null,null,al,Zt)),Al.Y(1,49152,null,0,xn,[tu.a,pa.a],null,null)],null,null)},{},{},[]),Ct=Al.X({encapsulation:2,styles:[],data:{}}),jt=Al.V("page-account",Pn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-account",[],null,null,null,tl,Ct)),Al.Y(1,49152,null,0,Pn,[ha.a,tu.a,pa.a,au.a,Gl],null,null)],null,null)},{},{},[]),yt=Al.X({encapsulation:2,styles:[],data:{}}),zt=Al.V("page-changePassword",Dn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-changePassword",[],null,null,null,el,yt)),Al.Y(1,49152,null,0,Dn,[tu.a,pa.a,au.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),wt=Al.X({encapsulation:2,styles:[],data:{}}),Lt=Al.V("page-formAccount",Mn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formAccount",[],null,null,null,rl,wt)),Al.Y(1,49152,null,0,Mn,[ha.a,tu.a,pa.a,au.a,Gl,ku.a,Au.a,an.a,nn.a,ln.a,un.a,ot.a,ou.a],null,null)],null,null)},{},{},[]),xt=u(101),Pt=u(135),Dt=u(258),Mt=u(103),St=u(74),It=Al.X({encapsulation:2,styles:[],data:{}}),Tt=Al.V("page-form",en,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-form",[],null,null,null,pl,It)),Al.Y(1,49152,null,0,en,[pa.a,xt.a],null,null)],null,null)},{},{},[]),Rt=Al.X({encapsulation:2,styles:[],data:{}}),Bt=Al.V("page-formKelembagaan",on,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formKelembagaan",[],null,null,null,jl,Rt)),Al.Y(1,49152,null,0,on,[xa.a,au.a,Gl,ku.a,Au.a,ql.a,Ql.a,an.a,nn.a,ln.a,un.a,ot.a,ou.a],null,null)],null,null)},{},{},[]),Kt=Al.X({encapsulation:2,styles:[],data:{}}),Ft=Al.V("page-formLegalitas",sn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formLegalitas",[],null,null,null,Ll,Kt)),Al.Y(1,49152,null,0,sn,[xa.a,au.a,Gl,ku.a,Au.a,tn.a,un.a],null,null)],null,null)},{},{},[]),Ut=Al.X({encapsulation:2,styles:[],data:{}}),Ot=Al.V("page-formSejarah",rn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formSejarah",[],null,null,null,xl,Ut)),Al.Y(1,49152,null,0,rn,[xa.a,au.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),At=Al.X({encapsulation:2,styles:[],data:{}}),Vt=Al.V("page-formKepengurusan",cn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formKepengurusan",[],null,null,null,Sl,At)),Al.Y(1,49152,null,0,cn,[xa.a,au.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),$t=Al.X({encapsulation:2,styles:[],data:{}}),Wt=Al.V("page-formUsaha",_n,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formUsaha",[],null,null,null,Il,$t)),Al.Y(1,49152,null,0,_n,[xa.a,au.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Nt=Al.X({encapsulation:2,styles:[],data:{}}),Gt=Al.V("page-formHirarki",dn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formHirarki",[],null,null,null,Tl,Nt)),Al.Y(1,49152,null,0,dn,[au.a],null,null)],null,null)},{},{},[]),Jt=Al.X({encapsulation:2,styles:[],data:{}}),Ht=Al.V("page-formKoleksi",gn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formKoleksi",[],null,null,null,Bl,Jt)),Al.Y(1,49152,null,0,gn,[xa.a,au.a,Gl,ku.a,Au.a],null,null)],null,null)},{},{},[]),Xt=Al.X({encapsulation:2,styles:[],data:{}}),Et=Al.V("page-formPrestasi",mn,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-formPrestasi",[],null,null,null,Fl,Xt)),Al.Y(1,49152,null,0,mn,[au.a],null,null)],null,null)},{},{},[]),qt=Al.X({encapsulation:2,styles:[],data:{}}),Qt=Al.V("page-about",Ln,function(l){return Al._22(0,[(l()(),Al.Z(0,0,null,null,1,"page-about",[],null,null,null,Ul,qt)),Al.Y(1,49152,null,0,Ln,[tu.a],null,null)],null,null)},{},{},[]),le=u(154),ne=u(199),ue=u(86),ae=u(78),te=u(143),ee=u(151),ie=u(203),oe=u(198),se=u(152),re=u(53),ce=u(140),_e=u(153),de=Al.W(Vn,[$n.b],function(l){return Al._7([Al._8(512,Al.i,Al.S,[[8,[Wn.a,Nn.a,Gn.a,Jn.a,Hn.a,Xn.a,En.a,qn.a,Qn.a,gu,Zu,$u,Hu,ia,Da,Sa,Ta,Wa,Ga,Ba,Fa,Oa,Va,Qa,nt,at,et,rt,_t,gt,pt,ft,Yt,vt,jt,zt,Lt,Tt,Bt,Ft,Ot,Vt,Wt,Gt,Et,Ht,Qt]],[3,Al.i],Al.s]),Al._8(5120,Al.r,Al._17,[[3,Al.r]]),Al._8(4608,Gu.l,Gu.k,[Al.r,[2,Gu.t]]),Al._8(5120,Al.b,Al._1,[]),Al._8(5120,Al.p,Al._9,[]),Al._8(5120,Al.q,Al._12,[]),Al._8(4608,Ol.c,Ol.q,[Gu.c]),Al._8(6144,Al.D,null,[Ol.c]),Al._8(4608,Ol.f,le.a,[]),Al._8(5120,Ol.d,function(l,n,u,a,t){return[new Ol.k(l,n),new Ol.o(u),new Ol.n(a,t)]},[Gu.c,Al.u,Gu.c,Gu.c,Ol.f]),Al._8(4608,Ol.e,Ol.e,[Ol.d,Al.u]),Al._8(135680,Ol.m,Ol.m,[Gu.c]),Al._8(4608,Ol.l,Ol.l,[Ol.e,Ol.m]),Al._8(6144,Al.B,null,[Ol.l]),Al._8(6144,Ol.p,null,[Ol.m]),Al._8(4608,Al.G,Al.G,[Al.u]),Al._8(4608,Ol.h,Ol.h,[Gu.c]),Al._8(4608,Ol.i,Ol.i,[Gu.c]),Al._8(4608,Nl.c,Nl.c,[]),Al._8(4608,Nl.h,Nl.b,[]),Al._8(5120,Nl.j,Nl.k,[]),Al._8(4608,Nl.i,Nl.i,[Nl.c,Nl.h,Nl.j]),Al._8(4608,Nl.g,Nl.a,[]),Al._8(5120,Nl.e,Nl.l,[Nl.i,Nl.g]),Al._8(4608,Pu.o,Pu.o,[]),Al._8(4608,Pu.d,Pu.d,[]),Al._8(4608,ot.a,ot.a,[eu.a,iu.a]),Al._8(4608,xt.a,xt.a,[eu.a,iu.a]),Al._8(4608,ha.a,ha.a,[]),Al._8(4608,Iu.a,Iu.a,[]),Al._8(4608,Xa.a,Xa.a,[ou.a]),Al._8(4608,pu.a,pu.a,[iu.a,ou.a,Al.u,_u.a]),Al._8(4608,ku.a,ku.a,[eu.a,iu.a]),Al._8(5120,Gu.g,ne.b,[Gu.r,[2,Gu.a],iu.a]),Al._8(4608,Gu.f,Gu.f,[Gu.g]),Al._8(5120,ue.b,ue.d,[eu.a,ue.a]),Al._8(5120,cu.a,cu.b,[eu.a,ue.b,Gu.f,ae.b,Al.i]),Al._8(4608,pa.a,pa.a,[eu.a,iu.a,cu.a]),Al._8(4608,St.a,St.a,[eu.a,iu.a]),Al._8(4608,te.a,te.a,[eu.a,iu.a,cu.a]),Al._8(4608,ee.a,ee.a,[iu.a,ou.a,_u.a,eu.a,su.l]),Al._8(4608,Au.a,Au.a,[eu.a,iu.a]),Al._8(4608,ru.a,ru.a,[ou.a,iu.a]),Al._8(5120,ie.a,ie.c,[ie.b]),Al._8(4608,$l.a,$l.a,[]),Al._8(4608,Wl.a,Wl.a,[]),Al._8(4608,Vl.a,Vl.a,[]),Al._8(4608,Gl,Gl,[Nl.e,Au.a]),Al._8(4608,ln.a,ln.a,[]),Al._8(4608,nn.a,nn.a,[]),Al._8(4608,an.a,an.a,[]),Al._8(4608,un.a,un.a,[]),Al._8(4608,On.a,On.a,[]),Al._8(4608,ql.a,ql.a,[]),Al._8(4608,Ql.a,Ql.a,[]),Al._8(4608,tn.a,tn.a,[]),Al._8(4608,An.a,An.a,[]),Al._8(512,Gu.b,Gu.b,[]),Al._8(512,Al.k,oe.a,[]),Al._8(256,iu.b,{},[]),Al._8(1024,se.a,se.b,[]),Al._8(1024,ou.a,ou.b,[Ol.b,se.a,Al.u]),Al._8(1024,iu.a,iu.c,[iu.b,ou.a]),Al._8(512,_u.a,_u.a,[ou.a]),Al._8(512,re.a,re.a,[]),Al._8(512,eu.a,eu.a,[iu.a,ou.a,[2,re.a]]),Al._8(512,su.l,su.l,[eu.a]),Al._8(256,ue.a,{links:[]},[]),Al._8(512,Al.h,Al.h,[]),Al._8(512,ce.a,ce.a,[Al.h]),Al._8(1024,ae.b,ae.c,[ce.a,Al.o]),Al._8(1024,Al.c,function(l,n,u,a,t,e,i,o,s,r,c,_,d){return[Ol.s(l),_e.a(n),ha.b(u,a),ee.b(t,e,i,o,s),ae.d(r,c,_,d)]},[[2,Al.t],iu.a,ou.a,_u.a,iu.a,ou.a,_u.a,eu.a,su.l,iu.a,ue.a,ae.b,Al.u]),Al._8(512,Al.d,Al.d,[[2,Al.c]]),Al._8(131584,Al.f,Al.f,[Al.u,Al.T,Al.o,Al.k,Al.i,Al.d]),Al._8(512,Al.e,Al.e,[Al.f]),Al._8(512,Ol.a,Ol.a,[[3,Ol.a]]),Al._8(512,Nl.f,Nl.f,[]),Al._8(512,Pu.m,Pu.m,[]),Al._8(512,Pu.e,Pu.e,[]),Al._8(512,Pu.l,Pu.l,[]),Al._8(512,ne.a,ne.a,[]),Al._8(512,Un.a,Un.a,[]),Al._8(512,Vn,Vn,[]),Al._8(256,$n.a,Fn,[]),Al._8(256,Gu.a,"/",[]),Al._8(256,ie.b,null,[])])});Object(Al.M)(),Object(Ol.j)().bootstrapModuleFactory(de)}},[210]);
+webpackJsonp([0],{
+
+/***/ 112:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__inbox_inbox__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_search__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_form__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__kelembagaan_kelembagaan__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var TabsPage = /** @class */ (function () {
+    function TabsPage(navCtrl, loadingCtrl, authService) {
+        this.navCtrl = navCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.authService = authService;
+        this.home = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
+        this.inbox = __WEBPACK_IMPORTED_MODULE_4__inbox_inbox__["b" /* InboxPage */];
+        this.search = __WEBPACK_IMPORTED_MODULE_5__search_search__["a" /* SearchPage */];
+        this.form = __WEBPACK_IMPORTED_MODULE_6__form_form__["f" /* FormPage */];
+        this.lembaga = __WEBPACK_IMPORTED_MODULE_7__kelembagaan_kelembagaan__["a" /* KelembagaanDetailPage */];
+        this.inboxCounter = 0;
+        this.userLevel = "";
+        this.getCountInbox();
+        this.userLevel = localStorage.getItem('userLevel');
+    }
+    TabsPage.prototype.getCountInbox = function () {
+        var _this = this;
+        this.authService.getCountNotifications().then(function (result) {
+            _this.inboxCounter = result;
+        }, function (err) {
+            console.log(err);
+        });
+    };
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/tabs/tabs.html"*/'<ion-tabs color=\'dark\'>\n  <ion-tab  [root]="lembaga" tabIcon="home" *ngIf="userLevel == \'1\'"></ion-tab>\n  <ion-tab [root]="home" tabIcon="home" *ngIf="userLevel != \'1\'"></ion-tab>\n  <ion-tab [root]="inbox" tabIcon="notifications" *ngIf="userLevel != \'\'" tabBadge="{{inboxCounter != \'0\' ? inboxCounter : \'\'}}" tabBadgeStyle="bright"></ion-tab>\n  <ion-tab [root]="search" tabIcon="search" *ngIf="userLevel != \'\'"></ion-tab>\n  <ion-tab [root]="form" tabIcon="add" *ngIf="userLevel != \'1\' && userLevel != \'2\'"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/tabs/tabs.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */]])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 113:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrestasiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PrestasiPage = /** @class */ (function () {
+    function PrestasiPage(navCtrl, authService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.page = 1;
+        // get initial data
+        this.getData();
+    }
+    PrestasiPage.prototype.getData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getListPage('prestasi', this.page).then(function (result) {
+            _this.data = result;
+            _this.page = _this.page + 1;
+            _this.authService.getSummary('prestasi').then(function (result) {
+                _this.summary = result;
+                _this.summary = _this.summary.summary;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    PrestasiPage.prototype.loadData = function (infiniteScroll) {
+        var _this = this;
+        this.authService.getListPage('prestasi', this.page).then(function (result) {
+            var temp;
+            temp = result;
+            console.log("row : " + temp.length);
+            for (var i = 0; i < temp.length; i++) {
+                _this.data.push(result[i]);
+            }
+            infiniteScroll.complete();
+            _this.page = _this.page + 1;
+        });
+    };
+    PrestasiPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    PrestasiPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    PrestasiPage.prototype.goSearch = function () {
+        this.navCtrl.parent.select(2);
+    };
+    PrestasiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-prestasi',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/prestasi/prestasi.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Prestasi</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="goSearch()">\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-list>\n    <ion-item>\n      <p>Total data ({{ summary }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data" padding-right>\n      <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n      <h3 text-wrap>{{d.deskripsi}}</h3>\n      <p text-nowrap>{{d.namaBentukLembaga}} {{d.nama}}</p>\n    </button>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/prestasi/prestasi.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], PrestasiPage);
+    return PrestasiPage;
+}());
+
+//# sourceMappingURL=prestasi.js.map
+
+/***/ }),
+
+/***/ 114:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KoleksiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var KoleksiPage = /** @class */ (function () {
+    function KoleksiPage(navCtrl, authService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.page = 1;
+        // get initial data
+        this.getData();
+    }
+    KoleksiPage.prototype.getData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getListPage('koleksi', this.page).then(function (result) {
+            _this.data = result;
+            _this.page = _this.page + 1;
+            _this.authService.getSummary('koleksi').then(function (result) {
+                _this.summary = result;
+                _this.summary = _this.summary.summary;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KoleksiPage.prototype.loadData = function (infiniteScroll) {
+        var _this = this;
+        this.authService.getListPage('koleksi', this.page).then(function (result) {
+            var temp;
+            temp = result;
+            console.log("row : " + temp.length);
+            for (var i = 0; i < temp.length; i++) {
+                _this.data.push(result[i]);
+            }
+            infiniteScroll.complete();
+            _this.page = _this.page + 1;
+        });
+    };
+    KoleksiPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KoleksiPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KoleksiPage.prototype.goSearch = function () {
+        this.navCtrl.parent.select(2);
+    };
+    KoleksiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-koleksi',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/koleksi/koleksi.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Koleksi</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="goSearch()">\n        <ion-icon name="search"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item>\n      <p>Total data ({{ summary }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data" padding-right>\n      <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n      <h3 text-wrap>({{d.jenisKoleksi}}) {{d.judulKoleksi}}</h3>\n      <p text-nowrap>{{d.namaBentukLembaga}} {{d.nama}}</p>\n    </button>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/koleksi/koleksi.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KoleksiPage);
+    return KoleksiPage;
+}());
+
+//# sourceMappingURL=koleksi.js.map
+
+/***/ }),
+
+/***/ 115:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return InboxPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InboxDetailPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var InboxPage = /** @class */ (function () {
+    // groupedData: [];
+    function InboxPage(modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.countData = 0;
+        this.getData();
+    }
+    InboxPage.prototype.openModal = function (inboxId) {
+        var modal = this.modalCtrl.create(InboxDetailPage, { inboxId: inboxId });
+        modal.present();
+    };
+    InboxPage.prototype.getData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getListNotifications().then(function (result) {
+            _this.data = result;
+            _this.countData = Object.keys(_this.data).length;
+            if (_this.countData > 0) {
+                _this.dataClone = _this.data;
+                _this.dataClone[-1] = { tanggal: 'start' };
+            }
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    InboxPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    InboxPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    InboxPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-inbox',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/inbox.html"*/'<ion-content>\n  <h3 padding-left class="text-main">KOTAK MASUK</h3>\n  <ion-list>\n    <ion-item-group>\n      <div  *ngFor="let d of data; let idx = index;">\n        <ion-list-header color="light" *ngIf="d.tanggal != dataClone[idx-1].tanggal"> {{d.tanggal | date:\'yyyy MMM dd\'}}</ion-list-header>\n        <ion-item-sliding>\n          <button ion-item (click)="openModal(d.idData)">\n            <ion-icon name="notifications" color="{{d.statusBaca == \'0\' ? \'bright\' : \'light\'}}" item-start></ion-icon>\n            <h2 class="{{d.statusBaca == \'0\' ? \'text-main\' : \'\'}}">{{d.judul}}</h2>\n            <!-- <h3>{{d.waktu}}</h3> -->\n            <p text-nowrap>{{d.deskripsi}}</p>\n            <ion-note item-end>{{d.jam}}</ion-note>\n          </button>\n          <ion-item-options side="right">\n            <button ion-button color="danger">Hapus</button>\n          </ion-item-options>\n        </ion-item-sliding>\n      </div>\n    </ion-item-group>\n  </ion-list>\n\n  <div *ngIf="countData == 0 || countData == null" class="empty-frame">\n    <ion-icon color="light" name="notifications" class="icon-big"></ion-icon>\n    <p>Belum ada pesan.</p>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/inbox.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], InboxPage);
+    return InboxPage;
+}());
+
+var InboxDetailPage = /** @class */ (function () {
+    function InboxDetailPage(platform, params, viewCtrl, authService, modalCtrl, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.modalCtrl = modalCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.idData = "";
+        this.filterWilayah = "";
+        this.filterKecamatan = "";
+        this.filterKelurahan = "";
+        this.filterStatus = "";
+        this.data = {
+            judul: "",
+            subjek: "",
+            deskripsi: "",
+            waktu: "",
+            statusBaca: "",
+            timestamp: "",
+            tanggal: "",
+            jam: "",
+            createdBy: ""
+        };
+        this.idData = params.get('inboxId');
+        this.loadData();
+    }
+    InboxDetailPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getNotifications(this.idData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    InboxDetailPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    InboxDetailPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    InboxDetailPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    InboxDetailPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-detailInbox',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Baca pesan</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item-group margin-top>\n    <ion-item-divider>Judul : {{ data.judul }}</ion-item-divider>\n    <ion-item-divider>Subjek : {{ data.subjek }}</ion-item-divider>\n    <ion-item-divider>Waktu : {{ data.tanggal | date:\'yyyy MMM dd\' }} {{ data.jam }}</ion-item-divider>\n    <ion-item text-wrap>{{ data.deskripsi }}</ion-item>\n  </ion-item-group>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/inbox/detail.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], InboxDetailPage);
+    return InboxDetailPage;
+}());
+
+//# sourceMappingURL=inbox.js.map
+
+/***/ }),
+
+/***/ 12:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return FormPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FormKelembagaanPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return FormLegalitasPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return FormSejarahPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return FormKepengurusanPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return FormUsahaPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormHirarkiPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return FormKoleksiPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return FormPrestasiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_location_accuracy__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_transfer__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_file_path__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_file_chooser__ = __webpack_require__(214);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+var FormPage = /** @class */ (function () {
+    function FormPage(modalCtrl, alertCtrl) {
+        this.modalCtrl = modalCtrl;
+        this.alertCtrl = alertCtrl;
+        this.session_noRegistrasi = null;
+        this.userLevel = "";
+        this.formPage = [
+            FormKelembagaanPage,
+            FormLegalitasPage,
+            FormSejarahPage,
+            FormKepengurusanPage,
+            FormUsahaPage,
+            FormHirarkiPage,
+            FormPrestasiPage,
+            FormKoleksiPage
+        ];
+        this.userLevel = localStorage.getItem('userLevel');
+    }
+    FormPage.prototype.openModal = function (index) {
+        var modal = this.modalCtrl.create(this.formPage[index]);
+        modal.present();
+    };
+    FormPage.prototype.showConfirm = function () {
+        var confirm = this.alertCtrl.create({
+            title: 'Konfirmasi',
+            message: 'Apakah Anda ingin menghentikan sesi Lembaga ini?',
+            buttons: [
+                {
+                    text: 'Tidak',
+                    handler: function () {
+                        console.log('Disagree clicked');
+                    }
+                },
+                {
+                    text: 'Ya',
+                    handler: function () {
+                        console.log('Agree clicked');
+                    }
+                }
+            ]
+        });
+        confirm.present();
+    };
+    FormPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-form',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/form.html"*/'<ion-content>\n  <h3 padding-left class="text-main">FORM LEMBAGA</h3>\n  <ion-list>\n    <ion-item color=\'light\' [hidden]="session_noRegistrasi === null">\n      <ion-avatar item-start>\n        <img src="assets/imgs/sample.jpg">\n      </ion-avatar>\n      <h2>Nama lembaganya</h2>\n      <p>Yayasan</p>\n      <ion-buttons item-end>\n        <button ion-button clear (click)="showConfirm()">\n          <ion-icon color="dark" name="md-close"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-item>\n    <ion-item [hidden]="session_noRegistrasi != null" text-wrap class="no-border">\n      Data lembaga dibuat melalui menu kelembagaan, legalitas dan kelengkapan lainnya dapat diakses setelah data kelembagaan dibuat.\n    </ion-item>\n    <ion-list-header color="clear">Kelengkapan utama</ion-list-header>\n    <button ion-item (click)="openModal(0)">\n      <ion-icon name="contact" item-start color="primary"></ion-icon>\n      Kelembagaan\n    </button>\n    <button ion-item (click)="openModal(1)" disabled="{{ session_noRegistrasi == null ? \'true\' : \'false\' }}">\n      <ion-icon name="paper" item-start color="main"></ion-icon>\n      Legalitas\n    </button>\n  </ion-list>\n  <ion-list>\n    <ion-list-header color="clear">Kelengkapan lainnya</ion-list-header>\n    <button ion-item (click)="openModal(2)" disabled="{{ session_noRegistrasi == null ? \'true\' : \'false\' }}">\n      <ion-icon name="time" item-start color="bright"></ion-icon>\n      Sejarah\n    </button>\n    <button ion-item (click)="openModal(3)" disabled="{{ session_noRegistrasi == null ? \'true\' : \'false\' }}">\n      <ion-icon name="people" item-start color="vibrant"></ion-icon>\n      Kepengurusan\n    </button>\n    <button ion-item (click)="openModal(4)" disabled="{{ session_noRegistrasi == null ? \'true\' : \'false\' }}">\n      <ion-icon name="pricetag" item-start color="primary"></ion-icon>\n      Usaha\n    </button>\n    <!-- <button ion-item (click)="openModal(5)">\n      <ion-icon name="list-box" item-start color="dark"></ion-icon>\n      Hirarki\n    </button> -->\n    <button ion-item (click)="openModal(6)" disabled="{{ session_noRegistrasi == null ? \'true\' : \'false\' }}">\n      <ion-icon name="trophy" item-start color="bright"></ion-icon>\n      Prestasi\n    </button>\n    <button ion-item (click)="openModal(7)" disabled="{{ session_noRegistrasi == null ? \'true\' : \'false\' }}">\n      <ion-icon name="book" item-start color="secondary"></ion-icon>\n      Koleksi\n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/form.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+    ], FormPage);
+    return FormPage;
+}());
+
+// FORM Kelembagaan
+var FormKelembagaanPage = /** @class */ (function () {
+    function FormKelembagaanPage(params, viewCtrl, authService, loadingCtrl, toastCtrl, geolocation, locationAccuracy, camera, transfer, file, filePath, actionSheetCtrl, platform) {
+        var _this = this;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.geolocation = geolocation;
+        this.locationAccuracy = locationAccuracy;
+        this.camera = camera;
+        this.transfer = transfer;
+        this.file = file;
+        this.filePath = filePath;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.platform = platform;
+        this.urlServer = "";
+        this.urlApi = "";
+        this.data = {
+            noRegistrasi: "",
+            avatar: null,
+            nama: "",
+            alamat: "",
+            telp: "",
+            email: "",
+            username: "",
+            noRt: "",
+            noRw: "",
+            kodeKelurahan: "",
+            kodeKecamatan: "",
+            kodeWilayah: "",
+            statusVerifikasi: "",
+            kodeBentukLembaga: "",
+            namaBentukLembaga: "",
+            mediaSosial: "",
+            langitude: "",
+            latitude: "",
+            noNpwp: "",
+            jumlahPengurus: "",
+            visiLembaga: "",
+            misiLembaga: "",
+            organisasiAfiliasi: "",
+            namaBidangGerak: "",
+            alamat_: "",
+            kodeBidangGerak: "",
+            catatanLain: ""
+        };
+        this.optionChange = {
+            kodeKelurahan: "",
+            kodeKecamatan: "",
+            kodeWilayah: ""
+        };
+        this.flag = "init";
+        this.lastImage = null;
+        this.random_ = Math.floor(Math.random() * 20) + 1;
+        this.locationAccuracy.canRequest().then(function (canRequest) {
+            if (canRequest) {
+                // the accuracy option will be ignored by iOS
+                _this.locationAccuracy.request(_this.locationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY).then(function () { return console.log('Accuration Request successful'); }, function (error) { return console.log('Error requesting location permissions', error); });
+            }
+        }, function (err) {
+            console.log(err);
+        });
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('noRegistrasi');
+        this.loadInit();
+    }
+    FormKelembagaanPage.prototype.loadInit = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getOptionList('bentuk-lembaga').then(function (result) {
+            _this.bentukLembaga = result;
+            _this.authService.getOptionList('bidang-gerak').then(function (result) {
+                _this.bidangGerak = result;
+                _this.authService.getOptionList('wilayah').then(function (result) {
+                    _this.wilayah = result;
+                    if (_this.noRegistrasi != null) {
+                        _this.authService.getDetailLembaga(_this.noRegistrasi).then(function (result) {
+                            _this.temp = result;
+                            _this.data = _this.temp;
+                            _this.loading.dismiss();
+                        }, function (err) {
+                            _this.loading.dismiss();
+                            _this.presentToast(err);
+                            return false;
+                        });
+                    }
+                    else {
+                        _this.loading.dismiss();
+                    }
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                    return false;
+                });
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormKelembagaanPage.prototype.loadKecamatan = function (idWilayah) {
+        var _this = this;
+        if (idWilayah != "") {
+            this.authService.getOptionList('kecamatan', idWilayah).then(function (result) {
+                _this.kecamatan = result;
+                if (_this.flag != "init")
+                    _this.data.kodeKelurahan = "";
+            }, function (err) {
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kecamatan = [];
+            this.kelurahan = [];
+            this.data.kodeKecamatan = "";
+            this.data.kodeKelurahan = "";
+        }
+    };
+    FormKelembagaanPage.prototype.loadKelurahan = function (idKecamatan) {
+        var _this = this;
+        if (idKecamatan != "") {
+            this.authService.getOptionList('kelurahan', idKecamatan).then(function (result) {
+                _this.kelurahan = result;
+                _this.flag = "end";
+            }, function (err) {
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kelurahan = [];
+            this.data.kodeKelurahan = "";
+        }
+    };
+    FormKelembagaanPage.prototype.getCurrentLocation = function () {
+        var _this = this;
+        console.log('trying to get location');
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 30000,
+            maximumAge: 0
+        };
+        this.geolocation.getCurrentPosition(options).then(function (resp) {
+            console.log(resp);
+            _this.data.latitude = resp.coords.latitude.toString();
+            _this.data.langitude = resp.coords.longitude.toString();
+        }).catch(function (error) {
+            console.log('Error getting location', error);
+        });
+        var watch = this.geolocation.watchPosition();
+        watch.subscribe(function (data) {
+            console.log('trying to get location :: from watchposition');
+            console.log(data);
+            // this.data.latitude = data.coords.latitude.toString();
+            // this.data.langitude = data.coords.longitude.toString();
+            // data can be a set of coordinates, or an error (if an error occurred).
+            // data.coords.latitude
+            // data.coords.longitude
+        });
+    };
+    FormKelembagaanPage.prototype.updateLembaga = function () {
+        var _this = this;
+        this.data.noRegistrasi = this.noRegistrasi;
+        this.showLoader();
+        this.authService.updateDataLembaga('', this.data).then(function (result) {
+            _this.temp = result;
+            if (_this.temp.status == 'success') {
+                _this.dismiss();
+                _this.presentToast('Data kelembagaan berhasil diperbarui.');
+            }
+            else {
+                _this.presentToast('Data kelembagaan gagal diperbarui, perika kembali inputan Anda!');
+            }
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormKelembagaanPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormKelembagaanPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    FormKelembagaanPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    // UPLOAD package
+    FormKelembagaanPage.prototype.presentActionSheet = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Pilih gambar',
+            buttons: [
+                {
+                    text: 'Galeri',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.PHOTOLIBRARY);
+                    }
+                },
+                {
+                    text: 'Kamera',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.CAMERA);
+                    }
+                },
+                {
+                    text: 'Batalkan',
+                    role: 'cancel'
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    FormKelembagaanPage.prototype.takePicture = function (sourceType) {
+        var _this = this;
+        // Create options for the Camera Dialog
+        var options = {
+            quality: 100,
+            sourceType: sourceType,
+            saveToPhotoAlbum: false,
+            correctOrientation: true
+        };
+        // Get the data of an image
+        this.camera.getPicture(options).then(function (imagePath) {
+            // Special handling for Android library
+            if (_this.platform.is('android') && sourceType === _this.camera.PictureSourceType.PHOTOLIBRARY) {
+                _this.filePath.resolveNativePath(imagePath)
+                    .then(function (filePath) {
+                    var correctPath = filePath.substr(0, filePath.lastIndexOf('/') + 1);
+                    var currentName = imagePath.substring(imagePath.lastIndexOf('/') + 1, imagePath.lastIndexOf('?'));
+                    _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+                });
+            }
+            else {
+                var currentName = imagePath.substr(imagePath.lastIndexOf('/') + 1);
+                var correctPath = imagePath.substr(0, imagePath.lastIndexOf('/') + 1);
+                _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+            }
+        }, function (err) {
+            _this.presentToast('Terjadi kesalahan : Error saat memilih gambar!.');
+        });
+    };
+    // Create a new name for the image
+    FormKelembagaanPage.prototype.createFileName = function () {
+        var d = new Date(), n = d.getTime(), newFileName = n + ".jpg";
+        return newFileName;
+    };
+    // Copy the image to a local folder
+    FormKelembagaanPage.prototype.copyFileToLocalDir = function (namePath, currentName, newFileName) {
+        var _this = this;
+        this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(function (success) {
+            _this.lastImage = newFileName;
+            _this.uploadImage();
+        }, function (error) {
+            _this.presentToast('Terjadi kesalahan : Error saat menyimpan gambar!.');
+        });
+    };
+    // Always get the accurate path to your apps folder
+    FormKelembagaanPage.prototype.pathForImage = function (img) {
+        if (img === null) {
+            return '';
+        }
+        else {
+            return cordova.file.dataDirectory + img;
+        }
+    };
+    FormKelembagaanPage.prototype.uploadImage = function () {
+        var _this = this;
+        // Destination URL
+        var url = this.urlApi + "/public/upload/lembaga/logo/";
+        // File for Upload
+        var targetPath = this.pathForImage(this.lastImage);
+        // File name only
+        var filename = this.lastImage;
+        var options = {
+            fileKey: "file",
+            fileName: filename,
+            chunkedMode: false,
+            mimeType: "multipart/form-data",
+            params: { 'filename': filename, 'noRegistrasi': this.noRegistrasi }
+        };
+        console.log(targetPath);
+        console.log(options);
+        var fileTransfer = this.transfer.create();
+        this.loading = this.loadingCtrl.create({
+            content: 'Uploading...',
+        });
+        this.loading.present();
+        // Use the FileTransfer to upload the image
+        fileTransfer.upload(targetPath, url, options).then(function (data) {
+            console.log(data);
+            _this.loading.dismissAll();
+            _this.presentToast('Logo berhasil diubah.');
+            // this.uploadData = data;
+            // this.uploadData.response = JSON.parse(this.uploadData.response);
+            // this.data.avatar = this.uploadData.response.filename;
+            // this.random_ = Math.floor(Math.random() * 20) + 1;
+        }, function (err) {
+            console.log(err);
+            _this.loading.dismissAll();
+            _this.presentToast('Terjadi kesalahan! gagal mengubah logo.');
+        });
+    };
+    FormKelembagaanPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formKelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar">\n        <!-- <img src="lastImage" [hidden]="lastImage === null"> -->\n        <img src="{{urlServer}}/img/logo/{{data.avatar}}?random={{random_}}" [hidden]="data.avatar === null && data.avatar != \'\'">\n        <img src="{{urlServer}}/img/logo/avatar-1.jpg" [hidden]="noRegistrasi != null">\n        <ion-buttons margin-top>\n          <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah logo\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-list-header class="text-main no-border-top">Kelembagaan</ion-list-header>\n    <ion-row margin-bottom>\n      <ion-item>\n        <ion-label>Bentuk lembaga (*)</ion-label>\n        <ion-select [(ngModel)]="data.kodeBentukLembaga" disabled="{{ noRegistrasi != null }}">\n          <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{ data.kodeBentukLembaga == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Nama lembaga (*)</ion-label>\n        <ion-input text-right [(ngModel)]="data.nama" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat (*)</ion-label>\n        <ion-textarea [(ngModel)]="data.alamat_" type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT (*)</ion-label>\n          <ion-input [(ngModel)]="data.noRt" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW (*)</ion-label>\n          <ion-input [(ngModel)]="data.noRw" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Wilayah</ion-label>\n        <ion-select [(ngModel)]="data.kodeWilayah" (ionChange)="loadKecamatan(data.kodeWilayah)">\n          <ion-option value="" selected="{{data.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{data.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kecamatan</ion-label>\n        <ion-select [(ngModel)]="data.kodeKecamatan" (ionChange)="loadKelurahan(data.kodeKecamatan)">\n          <ion-option value="" selected="{{data.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{data.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kelurahan</ion-label>\n        <ion-select [(ngModel)]="data.kodeKelurahan">\n          <ion-option value="" selected="{{data.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{data.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption\n            }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp (*)</ion-label>\n        <ion-input text-right [(ngModel)]="data.telp" type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email (*)</ion-label>\n        <ion-input text-right [(ngModel)]="data.email" type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main">Informasi pendukung</ion-list-header>\n    <ion-row>\n      <ion-item>\n        <ion-label>Bidang gerak</ion-label>\n        <ion-select [(ngModel)]="data.kodeBidangGerak">\n          <ion-option value="" selected="{{data.kodeBidangGerak == \'\' ? selected : \'\' }}">Semua</ion-option>\n          <ion-option *ngFor="let d of bidangGerak" value="{{ d.value }}" selected="{{data.kodeBidangGerak == d.value ? selected : \'\' }}">{{\n            d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jumlah pengurus</ion-label>\n        <ion-input text-right [(ngModel)]="data.jumlahPengurus" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>NPWP</ion-label>\n        <ion-input [(ngModel)]="data.noNpwp" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Afiliasi</ion-label>\n        <ion-input text-right [(ngModel)]="data.organisasiAfiliasi" type="text"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Visi</ion-label>\n        <ion-textarea [(ngModel)]="data.visiLembaga" type="text"></ion-textarea>\n      </ion-item>\n      <ion-item>\n        <ion-label>Misi</ion-label>\n        <ion-textarea [(ngModel)]="data.misiLembaga" type="text"></ion-textarea>\n      </ion-item>\n      <ion-item class="no-border-child" margin-bottom>\n        <ion-label>Media sosial</ion-label>\n        <ion-input text-right [(ngModel)]="data.mediaSosial" type="text"></ion-input>\n      </ion-item>\n    </ion-row>\n    <ion-list-header class="text-main" margin-top>Maps</ion-list-header>\n    <ion-item>\n      <ion-label>Latitude</ion-label>\n      <ion-input text-right [(ngModel)]="data.latitude" type="text"></ion-input>\n    </ion-item>\n    <ion-item class="no-border">\n      <ion-label>Longitude</ion-label>\n      <ion-input text-right [(ngModel)]="data.langitude" type="text"></ion-input>\n    </ion-item>\n    <button (click)="getCurrentLocation()" text-center ion-item icon-start margin-top>\n      <ion-icon name=\'locate\'></ion-icon>\n      Ambil posisi saat ini.\n    </button>\n  </ion-list>\n  \n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button *ngIf="noRegistrasi == \'\'" (click)="insertLembaga()" class="text-white" ion-button block clear>Daftarkan</button>\n    <button *ngIf="noRegistrasi != \'\'" (click)="updateLembaga()" class="text-white" ion-button block clear>Simpan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kelembagaan.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__["a" /* Geolocation */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_location_accuracy__["a" /* LocationAccuracy */],
+            __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_7__ionic_native_file_path__["a" /* FilePath */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */]])
+    ], FormKelembagaanPage);
+    return FormKelembagaanPage;
+}());
+
+// FORM Legalitas
+var FormLegalitasPage = /** @class */ (function () {
+    function FormLegalitasPage(params, viewCtrl, authService, loadingCtrl, toastCtrl, fileChooser, filePath, transfer, alertCtrl) {
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.fileChooser = fileChooser;
+        this.filePath = filePath;
+        this.transfer = transfer;
+        this.alertCtrl = alertCtrl;
+        this.urlServer = "";
+        this.urlApi = "";
+        this.chooserDumb = [];
+        this.urlApi = authService.urlApi;
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('noRegistrasi');
+        this.namaLembaga = params.get('namaLembaga');
+        this.loadInit();
+    }
+    FormLegalitasPage.prototype.loadInit = function () {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('legalitas-form', this.noRegistrasi).then(function (result) {
+            _this.data = result;
+            _this.formData = result;
+        }, function (err) {
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormLegalitasPage.prototype.openChooser = function (index) {
+        var _this = this;
+        this.fileChooser.open().then(function (uri) {
+            _this.filePath.resolveNativePath(uri).then(function (filePathResolved) {
+                console.log('resolved' + filePathResolved);
+                console.log('uri' + uri);
+                _this.chooserDumb[index] = {
+                    uri: uri,
+                    resolved: filePathResolved,
+                    filename: filePathResolved.substring(filePathResolved.lastIndexOf('/') + 1)
+                };
+            }).catch(function (e) { return console.log(e); });
+        }).catch(function (e) { return console.log(e); });
+    };
+    FormLegalitasPage.prototype.updateLembaga = function (index) {
+        var _this = this;
+        console.log(this.formData[index]);
+        if (this.formData[index].statusVerifikasi == '1') {
+            var confirm_1 = this.alertCtrl.create({
+                title: 'Konfirmasi',
+                message: 'Mengubah legalitas akan mengubah status legalitas menjadi "Belum verifikasi", Apa Anda yakin mengubah legalitas?',
+                buttons: [
+                    {
+                        text: 'Tidak',
+                        handler: function () {
+                        }
+                    },
+                    {
+                        text: 'Ya',
+                        handler: function () {
+                            _this.updateLembaga_(index);
+                        }
+                    }
+                ]
+            });
+            confirm_1.present();
+        }
+        else {
+            this.updateLembaga_(index);
+        }
+    };
+    FormLegalitasPage.prototype.updateLembaga_ = function (index) {
+        var _this = this;
+        this.formData[index].noRegistrasi = this.noRegistrasi;
+        this.formData[index].filename = "";
+        if (this.chooserDumb[index] == undefined) {
+            this.chooserDumb[index] = {
+                uri: '',
+                resolved: '',
+                filename: ''
+            };
+        }
+        if (this.chooserDumb[index].filename != "") {
+            console.log('upload file');
+            // Destination URL
+            var url = this.urlApi + "/public/update/lembaga/legalitas";
+            // File for Upload
+            var targetPath = this.chooserDumb[index].uri;
+            // File name only
+            var filename = this.chooserDumb[index].filename;
+            this.formData[index].filename = filename;
+            var options = {
+                fileKey: "file",
+                fileName: filename,
+                chunkedMode: false,
+                mimeType: "multipart/form-data",
+                params: this.formData[index]
+            };
+            var fileTransfer = this.transfer.create();
+            this.loading = this.loadingCtrl.create({
+                content: 'Uploading...',
+            });
+            this.loading.present();
+            // Use the FileTransfer to upload the image
+            fileTransfer.upload(targetPath, url, options).then(function (data) {
+                console.log('--- hasil upload');
+                console.log(data);
+                _this.loading.dismissAll();
+                _this.presentToast('Data legalitas berhasil diperbarui.');
+                _this.dismiss();
+            }, function (err) {
+                console.log(err);
+                _this.loading.dismissAll();
+                _this.presentToast('Data legalitas gagal diperbarui, perika kembali inputan Anda!');
+            });
+        }
+        else {
+            console.log('gk upload file');
+            this.showLoader();
+            this.authService.updateDataLembaga('legalitas', this.formData[index]).then(function (result) {
+                _this.temp = result;
+                console.log(result);
+                if (_this.temp.status == 'success') {
+                    _this.presentToast('Data legalitas berhasil diperbarui.');
+                    _this.dismiss();
+                }
+                else {
+                    _this.presentToast('Data legalitas gagal diperbarui, perika kembali inputan Anda!');
+                }
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        this.chooserDumb[index] = {
+            uri: '',
+            resolved: '',
+            filename: ''
+        };
+    };
+    FormLegalitasPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormLegalitasPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    FormLegalitasPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    FormLegalitasPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formLegalitas',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/legalitas.html"*/'<ion-header>\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-card margin-top>\n    <ion-list>\n      <ion-row padding>\n        <ion-item text-wrap>\n          <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n          <p class="text-main"><b>{{namaLembaga}}.</b></p>\n          <ion-icon name="paper" item-end color="main"></ion-icon>\n        </ion-item>\n      </ion-row>\n    </ion-list>\n  </ion-card>\n  <ion-card *ngFor="let d of data;let i=index" margin-top>\n    <ion-card-header>\n      <span text-uppercase>{{d.namaPersyaratan}}</span> &nbsp;\n      <span class="text-{{d.statusVerifikasi == \'0\' ? \'danger\' : \'secondary\'}}">({{d.statusVerifikasi == \'0\' ? \'Belum verifikasi\' : \'Sudah Verifikasi\'}})</span>\n    </ion-card-header>\n    <ion-card-content no-padding>\n      <ion-list>\n        <ion-item class="border-bottom">\n          <ion-label>Nomor (*)</ion-label>\n          <ion-input text-right [(ngModel)]="formData[i].noLegalitas" type="text" no-border></ion-input>\n        </ion-item>\n        <ion-item class="border-bottom">\n          <ion-label>Tanggal (*)</ion-label>\n          <ion-datetime [(ngModel)]="formData[i].tanggalLegalitas" displayFormat="DD/MM/YYYY"></ion-datetime>\n        </ion-item>\n        <ion-item class="border-bottom">\n          <ion-buttons item-start>\n            <button (click)="openChooser(i)" color="bright" ion-button text-capitalize small round>Unggah berkas</button>\n          </ion-buttons>\n          <span *ngIf="d.urlFile == \'\'">Berkas belum diunggah...</span>\n          <span *ngIf="d.urlFile != \'\'">{{d.urlFile}}</span>\n        </ion-item>\n      </ion-list>\n      <ion-buttons text-center>\n        <button color="main" (click)="updateLembaga(i)" ion-button full>Simpan</button>\n      </ion-buttons>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/legalitas.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_9__ionic_native_file_chooser__["a" /* FileChooser */],
+            __WEBPACK_IMPORTED_MODULE_7__ionic_native_file_path__["a" /* FilePath */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
+    ], FormLegalitasPage);
+    return FormLegalitasPage;
+}());
+
+// FORM Sejarah
+var FormSejarahPage = /** @class */ (function () {
+    function FormSejarahPage(params, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "",
+            deskripsi: "",
+            tanggalDidirikan: "",
+            kepemilikan: "",
+            statusTanah: "",
+            statusSertifikasi: "",
+            luasTanah: "",
+            satuanLuasTanah: "",
+            luasBangunan: "",
+            satuanLuasBangunan: "",
+            kondisiBangunan: "",
+            JumlahBangunan: "",
+            statusSarana: "",
+            statusStrukturKepengurusan: "",
+            urlGambarStrukturKepengurusan: "",
+            bahasaPengantar: "",
+            statusSensus: "",
+            statusBantuanPemerintah: "",
+            kondisiGeografis: "",
+            potensiWilayah: "",
+            jenisWilayah: "",
+            catatanLain: "",
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('noRegistrasi');
+        this.namaLembaga = params.get('namaLembaga');
+        this.loadInit();
+    }
+    FormSejarahPage.prototype.loadInit = function () {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('sejarah', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+        }, function (err) {
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormSejarahPage.prototype.updateLembaga = function () {
+        var _this = this;
+        this.data.noRegistrasi = this.noRegistrasi;
+        this.showLoader();
+        this.authService.updateDataLembaga('sejarah', this.data).then(function (result) {
+            _this.temp = result;
+            if (_this.temp.status == 'success') {
+                _this.dismiss();
+                _this.presentToast('Data sejarah berhasil diperbarui.');
+            }
+            else {
+                _this.presentToast('Data sejarah gagal diperbarui, perika kembali inputan Anda!');
+            }
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormSejarahPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormSejarahPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    FormSejarahPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    FormSejarahPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formSejarah',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/sejarah.html"*/'<ion-header>\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Sejarah</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-row margin-top padding>\n    <ion-item text-wrap>\n      <p>Informasi mengenai sejarah Lembaga terkait.</p>\n      <p class="text-main"><b>{{namaLembaga}}.</b></p>\n      <ion-icon name="time" item-end color="bright"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <ion-label>Sejarah singkat</ion-label>\n      <ion-textarea [(ngModel)]="data.deskripsi" type="text"></ion-textarea>\n    </ion-item>\n    <ion-item>\n      <ion-label>Tanggal didirikan</ion-label>\n      <ion-datetime [(ngModel)]="data.tanggalDidirikan" displayFormat="DD/MM/YYYY"></ion-datetime>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kepemelikan</ion-label>\n      <ion-select [(ngModel)]="data.kepemilikan">\n        <ion-option value="Pribadi" selected="{{data.kepemilikan == \'Pribadi\' ? selected : \'\' }}">Pribadi</ion-option>\n        <ion-option value="Keluarga" selected="{{data.kepemilikan == \'Keluarga\' ? selected : \'\' }}">Keluarga</ion-option>\n        <ion-option value="Lembaga" selected="{{data.kepemilikan == \'Lembaga\' ? selected : \'\' }}">Lembaga</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Status tanah</ion-label>\n      <ion-select [(ngModel)]="data.statusTanah">\n        <ion-option value="Sewa" selected="{{data.statusTanah == \'Sewa\' ? selected : \'\' }}">Sewa</ion-option>\n        <ion-option value="Hak milik" selected="{{data.statusTanah == \'Hak milik\' ? selected : \'\' }}">Hak milik</ion-option>\n        <ion-option value="Hak guna bangunan" selected="{{data.statusTanah == \'Hak guna bangunan\' ? selected : \'\' }}">Hak guna bangunan</ion-option>\n        <ion-option value="Hak guna pakai" selected="{{data.statusTanah == \'Hak guna pakai\' ? selected : \'\' }}">Hak guna pakai</ion-option>\n        <ion-option value="Wakaf" selected="{{data.statusTanah == \'Wakaf\' ? selected : \'\' }}">Wakaf</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Sertifikasi</ion-label>\n      <ion-select [(ngModel)]="data.statusSertifikasi">\n        <ion-option value="Belum" selected="{{data.statusSertifikasi == \'Belum\' ? selected : \'\' }}">Belum</ion-option>\n        <ion-option value="Sudah" selected="{{data.statusSertifikasi == \'Sudah\' ? selected : \'\' }}">Sudah</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-col col-6 no-padding>\n      <ion-item>\n        <ion-label>Luas Tanah</ion-label>\n        <ion-input  text-right [(ngModel)]="data.luasTanah" type="text"></ion-input>\n      </ion-item>\n    </ion-col>\n    <ion-col col-6 no-padding>\n      <ion-item>\n        <ion-label>Satuan</ion-label>\n        <ion-select [(ngModel)]="data.satuanLuasTanah">\n          <ion-option value="Meter persegi" selected="{{data.satuanLuasTanah == \'Meter persegi\' ? selected : \'\' }}">Meter persegi</ion-option>\n          <ion-option value="Hektar" selected="{{data.satuanLuasTanah == \'Hektar\' ? selected : \'\' }}">Hektar</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-col>\n    <ion-col col-6 no-padding>\n      <ion-item>\n        <ion-label>Luas bangunan</ion-label>\n        <ion-input  text-right [(ngModel)]="data.luasBangunan" type="text"></ion-input>\n      </ion-item>\n    </ion-col>\n    <ion-col col-6 no-padding>\n      <ion-item>\n        <ion-label>Satuan</ion-label>\n        <ion-select [(ngModel)]="data.satuanLuasBangunan">\n          <ion-option value="Meter persegi" selected="{{data.satuanLuasBangunan == \'Meter persegi\' ? selected : \'\' }}">Meter persegi</ion-option>\n          <ion-option value="Hektar" selected="{{data.satuanLuasBangunan == \'Hektar\' ? selected : \'\' }}">Hektar</ion-option>\n        </ion-select>\n      </ion-item>\n    </ion-col>\n    <ion-item>\n      <ion-label>Kondisi bangunan</ion-label>\n      <ion-select [(ngModel)]="data.kondisiBangunan">\n        <ion-option value="Baik" selected="{{data.kondisiBangunan == \'Baik\' ? selected : \'\' }}">Baik</ion-option>\n        <ion-option value="Rusak" selected="{{data.kondisiBangunan == \'Rusak\' ? selected : \'\' }}">Rusak</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jumlah bangunan</ion-label>\n      <ion-input text-right [(ngModel)]="data.jumlahBangunan" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Sarana / Prasarana</ion-label>\n      <ion-select [(ngModel)]="data.statusSarana">\n        <ion-option value="Ada" selected="{{data.statusSarana == \'Ada\' ? selected : \'\' }}">Ada</ion-option>\n        <ion-option value="Tidak ada" selected="{{data.statusSarana == \'Tidak ada\' ? selected : \'\' }}">Tidak Ada</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Bahasa pengantar</ion-label>\n      <ion-input text-right [(ngModel)]="data.bahasaPengantar" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Sensus</ion-label>\n      <ion-select [(ngModel)]="data.statusSensus">\n        <ion-option value="Belum" selected="{{data.statusSensus == \'Belum\' ? selected : \'\' }}">Belum</ion-option>\n        <ion-option value="Sudah" selected="{{data.statusSensus == \'ASudahda\' ? selected : \'\' }}">Sudah</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Bantuan pemerintah</ion-label>\n      <ion-select [(ngModel)]="data.statusBantuanPemerintah">\n        <ion-option value="Belum" selected="{{data.statusBantuanPemerintah == \'Belum\' ? selected : \'\' }}">Belum</ion-option>\n        <ion-option value="Sudah" selected="{{data.statusBantuanPemerintah == \'Sudah\' ? selected : \'\' }}">Sudah</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kondisi geografis</ion-label>\n      <ion-select [(ngModel)]="data.kondisiGeografis">\n        <ion-option value="Pantai" selected="{{data.kondisiGeografis == \'Pantai\' ? selected : \'\' }}">Pantai</ion-option>\n        <ion-option value="Daratan rendah" selected="{{data.kondisiGeografis == \'Daratan rendah\' ? selected : \'\' }}">Dataran rendah</ion-option>\n        <ion-option value="Daratan tinggi" selected="{{data.kondisiGeografis == \'Daratan tinggi\' ? selected : \'\' }}">Dataran tinggi</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Potensi wilayah</ion-label>\n      <ion-input text-right [(ngModel)]="data.potensiWilayah" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jenis wilayah</ion-label>\n      <ion-input text-right [(ngModel)]="data.jenisWilayah" type="text"></ion-input>\n    </ion-item>\n    <ion-item class="no-border" margin-bottom>\n      <ion-label>Catatan</ion-label>\n      <ion-textarea [(ngModel)]="data.catatanLain" type="text"></ion-textarea>\n    </ion-item>\n  </ion-row>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" (click)="updateLembaga()" ion-button block clear>Simpan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/sejarah.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], FormSejarahPage);
+    return FormSejarahPage;
+}());
+
+// FORM Kepengurusan
+var FormKepengurusanPage = /** @class */ (function () {
+    function FormKepengurusanPage(params, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "",
+            penanggungJawab: "",
+            jabatan: "",
+            alamat: "",
+            noRt: "",
+            noRw: "",
+            kodeKelurahan: "",
+            kodeKecamatan: "",
+            kodeWilayah: "",
+            kodeProvinsi: "",
+            noTelp: "",
+            kewarganegaraan: "",
+            tempatLahir: "",
+            tanggalLahir: "",
+            jenisKelamin: "",
+            agama: "",
+            jabatanLain: "",
+            pendidikan: "",
+            kompetensi: "",
+            catatan: "",
+        };
+        this.flag = "init";
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('noRegistrasi');
+        this.namaLembaga = params.get('namaLembaga');
+        this.loadInit();
+    }
+    FormKepengurusanPage.prototype.loadInit = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getOptionList('wilayah').then(function (result) {
+            _this.wilayah = result;
+            _this.authService.getKelengkapanLembaga('kepengurusan', _this.noRegistrasi).then(function (result) {
+                _this.temp = result;
+                _this.data = _this.temp;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormKepengurusanPage.prototype.loadKecamatan = function (idWilayah) {
+        var _this = this;
+        if (idWilayah != "") {
+            this.authService.getOptionList('kecamatan', idWilayah).then(function (result) {
+                _this.kecamatan = result;
+                if (_this.flag != "init")
+                    _this.data.kodeKelurahan = "";
+            }, function (err) {
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kecamatan = [];
+            this.kelurahan = [];
+            this.data.kodeKecamatan = "";
+            this.data.kodeKelurahan = "";
+        }
+    };
+    FormKepengurusanPage.prototype.loadKelurahan = function (idKecamatan) {
+        var _this = this;
+        if (idKecamatan != "") {
+            this.authService.getOptionList('kelurahan', idKecamatan).then(function (result) {
+                _this.kelurahan = result;
+                _this.flag = "end";
+            }, function (err) {
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kelurahan = [];
+            this.data.kodeKelurahan = "";
+        }
+    };
+    FormKepengurusanPage.prototype.updateLembaga = function () {
+        var _this = this;
+        this.data.noRegistrasi = this.noRegistrasi;
+        this.showLoader();
+        this.authService.updateDataLembaga('kepengurusan', this.data).then(function (result) {
+            _this.temp = result;
+            if (_this.temp.status == 'success') {
+                _this.dismiss();
+                _this.presentToast('Data kepengurusan berhasil diperbarui.');
+            }
+            else {
+                _this.presentToast('Data kepengurusan gagal diperbarui, perika kembali inputan Anda!');
+            }
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormKepengurusanPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormKepengurusanPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    FormKepengurusanPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    FormKepengurusanPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formKepengurusan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kepengurusan.html"*/'<ion-header>\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Kepengurusan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-row margin-top padding>\n    <ion-item text-wrap>\n      <p>Informasi mengenai kepengurusan Lembaga terkait.</p>\n      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n      <ion-icon name="people" item-end color="vibrant"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <ion-label>Penanggung Jawab</ion-label>\n      <ion-input text-right [(ngModel)]="data.penanggungJawab" type="text" no-border></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jabatan</ion-label>\n      <ion-input text-right [(ngModel)]="data.jabatan" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Alamat</ion-label>\n      <ion-textarea [(ngModel)]="data.alamat" type="text"></ion-textarea>\n    </ion-item>\n    <ion-col col-6 no-padding>\n      <ion-item class="no-border-1-layer">\n        <ion-label>RT (*)</ion-label>\n        <ion-input [(ngModel)]="data.noRt" type="text"></ion-input>\n      </ion-item>\n    </ion-col>\n    <ion-col col-6 no-padding>\n      <ion-item class="no-border-1-layer">\n        <ion-label>RW (*)</ion-label>\n        <ion-input [(ngModel)]="data.noRw" type="text"></ion-input>\n      </ion-item>\n    </ion-col>\n    <ion-item>\n      <ion-label>Wilayah</ion-label>\n      <ion-select [(ngModel)]="data.kodeWilayah" (ionChange)="loadKecamatan(data.kodeWilayah)">\n        <ion-option value="" selected="{{data.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n        <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{data.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption\n          }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kecamatan</ion-label>\n      <ion-select [(ngModel)]="data.kodeKecamatan" (ionChange)="loadKelurahan(data.kodeKecamatan)">\n        <ion-option value="" selected="{{data.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n        <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{data.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption\n          }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kelurahan</ion-label>\n      <ion-select [(ngModel)]="data.kodeKelurahan">\n        <ion-option value="" selected="{{data.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n        <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{data.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption\n          }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Telp (*)</ion-label>\n      <ion-input text-right [(ngModel)]="data.noTelp" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Warga Negara</ion-label>\n      <ion-select [(ngModel)]="data.kewarganegaraan">\n        <ion-option value="WNI" selected="{{data.kewarganegaraan == \'WNI\' ? selected : \'\' }}">WNI</ion-option>\n        <ion-option value="WNA" selected="{{data.kewarganegaraan == \'WNA\' ? selected : \'\' }}">WNA</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Tempat Lahir</ion-label>\n      <ion-input text-right [(ngModel)]="data.tempatLahir" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Tanggal Lahir</ion-label>\n      <ion-datetime [(ngModel)]="data.tanggalLahir" displayFormat="DD/MM/YYYY" [(ngModel)]="myDate"></ion-datetime>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jenis Kelamin</ion-label>\n      <ion-select [(ngModel)]="data.jenisKelamin">\n        <ion-option value="L" selected="{{data.jenisKelamin == \'L\' ? selected : \'\' }}">Laki-laki</ion-option>\n        <ion-option value="P" selected="{{data.jenisKelamin == \'P\' ? selected : \'\' }}">Perempuan</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Agama</ion-label>\n      <ion-select [(ngModel)]="data.agama">\n        <ion-option value="Islam" selected="{{data.agama == \'Islam\' ? selected : \'\' }}">Islam</ion-option>\n        <ion-option value="Kristen" selected="{{data.agama == \'Kristen\' ? selected : \'\' }}">Kristen</ion-option>\n        <ion-option value="Hindu" selected="{{data.agama == \'Hindu\' ? selected : \'\' }}">Hindu</ion-option>\n        <ion-option value="Budha" selected="{{data.agama == \'Budha\' ? selected : \'\' }}">Budha</ion-option>\n        <ion-option value="Lainnya" selected="{{data.agama == \'Lainnya\' ? selected : \'\' }}">Agama lainnya</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jabatan lainnya</ion-label>\n      <ion-input text-right [(ngModel)]="data.jabatanLain" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Pendidikan</ion-label>\n      <ion-select [(ngModel)]="data.pendidikan">\n        <ion-option value="SMA / SMK" selected="{{data.pendidikan == \'Islam\' ? selected : \'\' }}">SMA / SMK</ion-option>\n        <ion-option value="D3" selected="{{data.pendidikan == \'Islam\' ? selected : \'\' }}">D3</ion-option>\n        <ion-option value="S1" selected="{{data.pendidikan == \'Islam\' ? selected : \'\' }}">S1</ion-option>\n        <ion-option value="s2" selected="{{data.pendidikan == \'Islam\' ? selected : \'\' }}">S2</ion-option>\n        <ion-option value="Lainnya" selected="{{data.pendidikan == \'Islam\' ? selected : \'\' }}">Pendidikan lainnya</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kompetensi</ion-label>\n      <ion-textarea [(ngModel)]="data.kompetensi" type="text"></ion-textarea>\n    </ion-item>\n    <ion-item class="no-border" margin-bottom>\n      <ion-label>Catatan</ion-label>\n      <ion-textarea [(ngModel)]="data.catatan" type="text"></ion-textarea>\n    </ion-item>\n  </ion-row>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main" text-center>\n    <button class="text-white" (click)="updateLembaga()" ion-button clear>Simpan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/kepengurusan.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], FormKepengurusanPage);
+    return FormKepengurusanPage;
+}());
+
+// FORM Usaha
+var FormUsahaPage = /** @class */ (function () {
+    function FormUsahaPage(params, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "",
+            namaUsaha: "",
+            jenisUsaha: "",
+            detailUsaha: "",
+            jumlahPekerja: "",
+            catatan: "",
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('noRegistrasi');
+        this.namaLembaga = params.get('namaLembaga');
+        this.loadInit();
+    }
+    FormUsahaPage.prototype.loadInit = function () {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('usaha', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+        }, function (err) {
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormUsahaPage.prototype.updateLembaga = function () {
+        var _this = this;
+        this.data.noRegistrasi = this.noRegistrasi;
+        this.showLoader();
+        this.authService.updateDataLembaga('usaha', this.data).then(function (result) {
+            _this.temp = result;
+            if (_this.temp.status == 'success') {
+                _this.dismiss();
+                _this.presentToast('Data usaha berhasil diperbarui.');
+            }
+            else {
+                _this.presentToast('Data usaha gagal diperbarui, perika kembali inputan Anda!');
+            }
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormUsahaPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormUsahaPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    FormUsahaPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    FormUsahaPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formUsaha',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/usaha.html"*/'<ion-header>\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Usaha</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-row margin-top padding>\n    <ion-item text-wrap>\n      <p>Informasi mengenai usaha yang sedang dijalankan oleh Lembaga terkait.</p>\n      <p class="text-main"><b>{{namaLembaga}}.</b></p>\n      <ion-icon name="pricetag" item-end color="primary"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <ion-label>Nama usaha</ion-label>\n      <ion-input text-right [(ngModel)]="data.namaUsaha" type="text" no-border></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jenis usaha</ion-label>\n      <ion-input text-right [(ngModel)]="data.jenisUsaha" type="text"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Detail usaha</ion-label>\n      <ion-textarea [(ngModel)]="data.detailUsaha" type="text"></ion-textarea>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jumlah pekerja</ion-label>\n      <ion-input text-right [(ngModel)]="data.jumlahPekerja" type="text"></ion-input>\n    </ion-item>\n    <ion-item margin-bottom>\n      <ion-label>Catatan</ion-label>\n      <ion-textarea [(ngModel)]="data.catatan" type="text"></ion-textarea>\n    </ion-item>\n  </ion-row>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" (click)="updateLembaga()" ion-button block clear>Simpan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/usaha.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], FormUsahaPage);
+    return FormUsahaPage;
+}());
+
+// FORM Hirarki
+var FormHirarkiPage = /** @class */ (function () {
+    function FormHirarkiPage(viewCtrl) {
+        this.viewCtrl = viewCtrl;
+    }
+    FormHirarkiPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormHirarkiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formHirarki',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/hirarki.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Hirarki</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  \n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/hirarki.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+    ], FormHirarkiPage);
+    return FormHirarkiPage;
+}());
+
+// FORM Koleksi
+var FormKoleksiPage = /** @class */ (function () {
+    function FormKoleksiPage(params, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "",
+            judulKoleksi: "",
+            jenisKoleksi: "",
+            deskripsi: "",
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('noRegistrasi');
+        this.namaLembaga = params.get('namaLembaga');
+        this.loadInit();
+    }
+    FormKoleksiPage.prototype.loadInit = function () {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('koleksi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+        }, function (err) {
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    FormKoleksiPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormKoleksiPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    FormKoleksiPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    FormKoleksiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formKoleksi',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/koleksi.html"*/'<ion-header>\n  <ion-navbar color=\'dark\' hideBackButton>\n    <ion-title>Form Koleksi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai koleksi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n      <ion-icon name="book" item-end color="secondary"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ data.length }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data">\n      <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n      <h2>{{d.nama_koleksi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input type="text" placeholder="Tambah koleksi.."></ion-input>\n      <ion-icon item-right name="md-create"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/koleksi.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], FormKoleksiPage);
+    return FormKoleksiPage;
+}());
+
+// FORM Prestasi
+var FormPrestasiPage = /** @class */ (function () {
+    function FormPrestasiPage(viewCtrl) {
+        this.viewCtrl = viewCtrl;
+        this.data = [
+            { noreg: '1', nama_prestasi: 'Prestasi 1', nama_lembaga: 'Lembaga 1', bentuk_lembaga: 'Yayasan' },
+            { noreg: '2', nama_prestasi: 'Prestasi 2', nama_lembaga: 'Lembaga 2', bentuk_lembaga: 'Pondok pesantren' },
+            { noreg: '3', nama_prestasi: 'Prestasi 3', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
+            { noreg: '3', nama_prestasi: 'Prestasi 4', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
+        ];
+    }
+    FormPrestasiPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    FormPrestasiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formPrestasi',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/form/prestasi.html"*/'<ion-header>\n  <ion-navbar color=\'dark\' hideBackButton>\n    <ion-title>Form Prestasi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai prestasi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>Yayasan Lorem ipsum dolor sit.</b></p>\n      <ion-icon name="trophy" item-end color="bright"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ data.length }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data">\n      <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n      <h2>{{d.nama_prestasi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input type="text" placeholder="Tambah prestasi.."></ion-input>\n      <ion-icon item-right name="md-create" (click)="updateLembaga()"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/form/prestasi.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */]])
+    ], FormPrestasiPage);
+    return FormPrestasiPage;
+}());
+
+//# sourceMappingURL=form.js.map
+
+/***/ }),
+
+/***/ 124:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 124;
+
+/***/ }),
+
+/***/ 14:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var AuthService = /** @class */ (function () {
+    function AuthService(http, toastCtrl) {
+        this.http = http;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "http://dplega.syncardtech.com";
+        this.urlApi = this.urlServer + "/slim-api";
+    }
+    AuthService.prototype.login = function (credentials) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post(_this.urlApi + '/public/auth/', JSON.stringify(credentials), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.relogin = function (credentials) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post(_this.urlApi + '/public/fetch/auth/', JSON.stringify(credentials), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.logout = function () {
+        localStorage.clear();
+        return true;
+    };
+    AuthService.prototype.changePassword = function (credentials) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post(_this.urlApi + '/public/update/password/', JSON.stringify(credentials), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.changeAccount = function (credentials) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post(_this.urlApi + '/public/update/account/', JSON.stringify(credentials), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getListLembaga = function (page) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            var filterData = {
+                'keyword': localStorage.getItem('kelembagaan-filter-keyword'),
+                'bentukLembaga': localStorage.getItem('kelembagaan-filter-bentukLembaga'),
+                'wilayah': localStorage.getItem('kelembagaan-filter-wilayah'),
+                'kecamatan': localStorage.getItem('kelembagaan-filter-kecamatan'),
+                'kelurahan': localStorage.getItem('kelembagaan-filter-kelurahan'),
+                'ajuan': localStorage.getItem('kelembagaan-filter-ajuan'),
+                'valid': localStorage.getItem('kelembagaan-filter-valid'),
+            };
+            _this.http.post(_this.urlApi + '/public/list/lembaga/' + page, JSON.stringify(filterData), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getDetailLembaga = function (noRegistrasi) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/detail/lembaga/' + noRegistrasi, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getKelengkapanLembaga = function (target, noRegistrasi) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/detail/lembaga/' + target + '/' + noRegistrasi, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getSummaryLembaga = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            var filterData = {
+                'keyword': localStorage.getItem('kelembagaan-filter-keyword'),
+                'bentukLembaga': localStorage.getItem('kelembagaan-filter-bentukLembaga'),
+                'wilayah': localStorage.getItem('kelembagaan-filter-wilayah'),
+                'kecamatan': localStorage.getItem('kelembagaan-filter-kecamatan'),
+                'kelurahan': localStorage.getItem('kelembagaan-filter-kelurahan'),
+                'ajuan': localStorage.getItem('kelembagaan-filter-ajuan'),
+                'valid': localStorage.getItem('kelembagaan-filter-valid'),
+            };
+            _this.http.post(_this.urlApi + '/public/summary/lembaga/', JSON.stringify(filterData), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    // CRUD LEMBAGA
+    AuthService.prototype.insertDataLembaga = function (target, data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            _this.http.post(_this.urlApi + '/public/insert/lembaga/' + target + '/' + data.noRegistrasi, JSON.stringify(data), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.updateDataLembaga = function (target, data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            data['username'] = localStorage.getItem('username');
+            _this.http.post(_this.urlApi + '/public/update/lembaga/' + target, JSON.stringify(data), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getCountNotifications = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/count/notifications/' + localStorage.getItem('userNotif'), {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getListNotifications = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/list/notifications/' + localStorage.getItem('userNotif'), {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getNotifications = function (idData) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/detail/notifications/' + idData, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getList = function (target) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/' + target, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getSummary = function (target) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/summary/' + target + '/', {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getListFilter = function (target, page) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            var filterData = {
+                'keyword': localStorage.getItem(target + '-filter-keyword'),
+                'bentukLembaga': localStorage.getItem(target + '-filter-bentukLembaga'),
+                'wilayah': localStorage.getItem(target + '-filter-wilayah'),
+                'kecamatan': localStorage.getItem(target + '-filter-kecamatan'),
+                'kelurahan': localStorage.getItem(target + '-filter-kelurahan')
+            };
+            _this.http.post(_this.urlApi + '/public/list/' + target + '/' + page, JSON.stringify(filterData), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getSummaryFilter = function (target) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            headers.append('Content-Type', 'application/json');
+            var filterData = {
+                'keyword': localStorage.getItem(target + '-filter-keyword'),
+                'bentukLembaga': localStorage.getItem(target + '-filter-bentukLembaga'),
+                'wilayah': localStorage.getItem(target + '-filter-wilayah'),
+                'kecamatan': localStorage.getItem(target + '-filter-kecamatan'),
+                'kelurahan': localStorage.getItem(target + '-filter-kelurahan')
+            };
+            _this.http.post(_this.urlApi + '/public/summary/' + target, JSON.stringify(filterData), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getListPage = function (target, page) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/list/' + target + '/' + page, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getOptionList = function (target, idRef) {
+        var _this = this;
+        if (idRef === void 0) { idRef = null; }
+        return new Promise(function (resolve, reject) {
+            target = target + '/';
+            if (idRef != null) {
+                target = target + idRef;
+            }
+            _this.http.get(_this.urlApi + '/public/option/' + target, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.searchData = function (keyword) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(_this.urlApi + '/public/search/' + keyword, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.getDataById = function (target, idData) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            target = target + '/' + idData;
+            _this.http.get(_this.urlApi + '/public/detail/' + target, {})
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                _this.presentToast(err);
+                reject(err);
+            });
+        });
+    };
+    AuthService.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: false
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    AuthService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* ToastController */]])
+    ], AuthService);
+    return AuthService;
+}());
+
+//# sourceMappingURL=auth-service.js.map
+
+/***/ }),
+
+/***/ 15:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return KelembagaanPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return KelembagaanFilterPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KelembagaanDetailPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return KelembagaanLegalitasPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return KelembagaanSejarahPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return KelembagaanKepengurusanPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return KelembagaanUsahaPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return KelembagaanPrestasiPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return KelembagaanKoleksiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__verification_verification__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__form_form__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__setting_setting__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login__ = __webpack_require__(55);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+// import { LaunchNavigator } from '@ionic-native/launch-navigator';
+
+
+
+
+
+
+
+
+
+var KelembagaanPage = /** @class */ (function () {
+    function KelembagaanPage(events, navCtrl, authService, loadingCtrl, modalCtrl, toastCtrl) {
+        var _this = this;
+        this.events = events;
+        this.navCtrl = navCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.modalCtrl = modalCtrl;
+        this.toastCtrl = toastCtrl;
+        this.page = 1;
+        this.urlServer = "";
+        this.urlServer = authService.urlServer;
+        // get initial data
+        this.getData();
+        // set our app's pages
+        this.pages = [
+            { component: KelembagaanFilterPage },
+            { component: KelembagaanDetailPage },
+        ];
+        events.subscribe('kelembagaan:reload', function () {
+            _this.page = 1;
+            _this.getData();
+        });
+    }
+    KelembagaanPage.prototype.openModal = function (index, reff, reff2) {
+        if (reff === void 0) { reff = null; }
+        if (reff2 === void 0) { reff2 = null; }
+        var modal = this.modalCtrl.create(this.pages[index].component, { reff: reff, reff2: reff2 });
+        modal.present();
+    };
+    KelembagaanPage.prototype.getData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getListLembaga(this.page).then(function (result) {
+            _this.data = result;
+            _this.page = _this.page + 1;
+            _this.authService.getSummaryLembaga().then(function (result) {
+                _this.summary = result;
+                _this.summary = _this.summary.summary;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getListLembaga(this.page - 1).then(function (result) {
+            _this.data = result;
+            _this.authService.getSummaryLembaga().then(function (result) {
+                _this.summary = result;
+                _this.summary = _this.summary.summary;
+                refresher.complete();
+            }, function (err) {
+                refresher.complete();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanPage.prototype.loadData = function (infiniteScroll) {
+        var _this = this;
+        this.authService.getListLembaga(this.page).then(function (result) {
+            var temp;
+            temp = result;
+            console.log("row : " + temp.length);
+            for (var i = 0; i < temp.length; i++) {
+                _this.data.push(result[i]);
+            }
+            infiniteScroll.complete();
+            _this.page = _this.page + 1;
+        });
+    };
+    KelembagaanPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-kelembagaan',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kelembagaan.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Kelembagaan</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openModal(0)" >\n        <ion-icon name="options"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="reloadData($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n  \n  <ion-list>\n    <ion-item>\n      <p>Total data ({{ summary }})</p>\n    </ion-item>\n    <ion-item-group>\n      <ion-item-sliding *ngFor="let d of data">\n        <button ion-item (click)="openModal(1, d.noRegistrasi, d.namaBentukLembaga + \' \' + d.nama)" padding-right>\n          <ion-avatar item-start>\n            <img src="{{urlServer}}/img/logo/{{d.urlGambarLogo}}">\n          </ion-avatar>\n          <h3 text-wrap>{{d.nama}}</h3>\n          <p>{{d.namaBentukLembaga}} &nbsp; <span class="text-{{d.statusVerifikasi == \'0\' ? \'danger\' : \'secondary\'}}"><ion-icon name="compass"></ion-icon></span></p>\n        </button>\n        <ion-item-options side="right">\n          <button ion-button color="light" class="text-vibrant">\n            <!-- <ion-icon name="checkmark-circle"></ion-icon> -->\n            Verifikasi\n          </button>\n          <button ion-button color="light" class="text-primary">\n            <!-- <ion-icon name="create"></ion-icon> -->\n            Edit\n          </button>\n          <button ion-button color="light" class="text-danger">\n            <!-- <ion-icon name="trash"></ion-icon> -->\n            Hapus\n          </button>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-item-group>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kelembagaan.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanPage);
+    return KelembagaanPage;
+}());
+
+var KelembagaanFilterPage = /** @class */ (function () {
+    function KelembagaanFilterPage(events, platform, params, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.events = events;
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.filterData = {
+            keyword: localStorage.getItem('kelembagaan-filter-keyword'),
+            bentukLembaga: localStorage.getItem('kelembagaan-filter-bentukLembaga'),
+            wilayah: localStorage.getItem('kelembagaan-filter-wilayah'),
+            kecamatan: localStorage.getItem('kelembagaan-filter-kecamatan'),
+            kelurahan: localStorage.getItem('kelembagaan-filter-kelurahan'),
+            ajuan: localStorage.getItem('kelembagaan-filter-ajuan'),
+            valid: localStorage.getItem('kelembagaan-filter-valid')
+        };
+        this.loadInit();
+    }
+    KelembagaanFilterPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanFilterPage.prototype.loadInit = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getOptionList('bentuk-lembaga').then(function (result) {
+            _this.bentukLembaga = result;
+            _this.authService.getOptionList('wilayah').then(function (result) {
+                _this.wilayah = result;
+                if (_this.filterData.kecamatan != "") {
+                    _this.authService.getOptionList('kecamatan', _this.filterData.wilayah).then(function (result) {
+                        _this.kecamatan = result;
+                        if (_this.filterData.kelurahan != "") {
+                            _this.authService.getOptionList('kelurahan', _this.filterData.kecamatan).then(function (result) {
+                                _this.kelurahan = result;
+                                _this.loading.dismiss();
+                            }, function (err) {
+                                _this.loading.dismiss();
+                                _this.presentToast(err);
+                                return false;
+                            });
+                        }
+                        else {
+                            _this.loading.dismiss();
+                        }
+                    }, function (err) {
+                        _this.loading.dismiss();
+                        _this.presentToast(err);
+                        return false;
+                    });
+                }
+                else {
+                    _this.loading.dismiss();
+                }
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanFilterPage.prototype.loadKecamatan = function (idWilayah) {
+        var _this = this;
+        if (idWilayah != "") {
+            this.showLoader();
+            this.authService.getOptionList('kecamatan', idWilayah).then(function (result) {
+                _this.kecamatan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kecamatan = [];
+            this.kelurahan = [];
+            this.filterData.kecamatan = "";
+            this.filterData.kelurahan = "";
+        }
+    };
+    KelembagaanFilterPage.prototype.loadKelurahan = function (idKecamatan) {
+        var _this = this;
+        if (idKecamatan != "") {
+            this.showLoader();
+            this.authService.getOptionList('kelurahan', idKecamatan).then(function (result) {
+                _this.kelurahan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kelurahan = [];
+            this.filterData.kelurahan = "";
+        }
+    };
+    KelembagaanFilterPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanFilterPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanFilterPage.prototype.filter = function () {
+        localStorage.setItem('kelembagaan-filter-keyword', this.filterData.keyword);
+        localStorage.setItem('kelembagaan-filter-bentukLembaga', this.filterData.bentukLembaga);
+        localStorage.setItem('kelembagaan-filter-wilayah', this.filterData.wilayah);
+        localStorage.setItem('kelembagaan-filter-kecamatan', this.filterData.kecamatan);
+        localStorage.setItem('kelembagaan-filter-kelurahan', this.filterData.kelurahan);
+        localStorage.setItem('kelembagaan-filter-ajuan', this.filterData.ajuan);
+        localStorage.setItem('kelembagaan-filter-valid', this.filterData.valid);
+        this.dismiss();
+        this.events.publish('kelembagaan:reload');
+    };
+    KelembagaanFilterPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/filter.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Filter Lembaga</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear" >Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header class="text-dark">Pencarian</ion-list-header>\n    <ion-item color="clear">\n      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Ketik Nama / No Registrasi" showWhen="ios" value=""></ion-searchbar>\n      <ion-searchbar [(ngModel)]="filterData.keyword" placeholder="Ketik Nama / No Registrasi"showWhen="android,windows" no-padding></ion-searchbar>\n    </ion-item>\n    <ion-item>\n      <ion-label>Bentuk Lembaga</ion-label>\n      <ion-select [(ngModel)]="filterData.bentukLembaga">\n        <ion-option value="" selected="{{filterData.bentukLembaga == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{filterData.bentukLembaga == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header class="text-dark">Lokasi</ion-list-header>\n    <ion-item>\n      <ion-label>Wilayah</ion-label>\n      <ion-select [(ngModel)]="filterData.wilayah" (ionChange)="loadKecamatan(filterData.wilayah)">\n        <ion-option value="" selected="{{filterData.wilayah == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{filterData.wilayah == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kecamatan</ion-label>\n      <ion-select [(ngModel)]="filterData.kecamatan" (ionChange)="loadKelurahan(filterData.kecamatan)">\n        <ion-option value="" selected="{{filterData.kecamatan == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{filterData.kecamatan == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label>Kelurahan</ion-label>\n      <ion-select [(ngModel)]="filterData.kelurahan">\n        <ion-option value="" selected="{{filterData.kelurahan == \'\' ? selected : \'\' }}">Semua</ion-option>\n        <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{filterData.kelurahan == d.value ? selected : \'\' }}">{{ d.caption }}</ion-option>\n      </ion-select>\n    </ion-item>\n  </ion-list>\n  <ion-list>\n    <ion-list-header class="text-dark">Status</ion-list-header>\n    <ion-item>\n      <ion-label>Belum Verifikasi</ion-label>\n      <ion-checkbox [(ngModel)]="filterData.ajuan" color="main" checked="{{filterData.ajuan != \'false\' ? \'true\' : \'false\' }}" item-end></ion-checkbox>\n    </ion-item>\n    <ion-item>\n      <ion-label>Sudah Verifikasi</ion-label>\n      <ion-checkbox [(ngModel)]="filterData.valid" color="main" checked="{{filterData.valid != \'false\' ? \'true\' : \'false\' }}" item-end></ion-checkbox>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n      <button type="button" (click)="filter()" class="text-white" ion-button block clear>Aktifkan</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/filter.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanFilterPage);
+    return KelembagaanFilterPage;
+}());
+
+// DETAIL
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+var KelembagaanDetailPage = /** @class */ (function () {
+    function KelembagaanDetailPage(platform, params, viewCtrl, modalCtrl, 
+        // private launchNavigator: LaunchNavigator, 
+        authService, loadingCtrl, toastCtrl, appCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.appCtrl = appCtrl;
+        this.userLevel = "";
+        this.urlServer = "";
+        this.detail = {
+            avatar: "",
+            noreg: "",
+            nama: "",
+            kodeBentukLembaga: "",
+            namaBentukLembaga: "",
+            catatanLain: "",
+            telp: "",
+            email: "",
+            mediaSosial: "",
+            langitude: 0,
+            latitude: 0,
+            alamat: "",
+            namaBidangGerak: "",
+            jumlahPengurus: "",
+            noNpwp: "",
+            organisasiAfiliasi: "",
+            visiLembaga: "",
+            misiLembaga: ""
+        };
+        this.urlServer = authService.urlServer;
+        this.userLevel = localStorage.getItem('userLevel');
+        if (this.userLevel != '1') {
+            this.noRegistrasi = params.get('reff');
+            this.namaLembaga = params.get('reff2');
+        }
+        else {
+            this.noRegistrasi = localStorage.getItem('noRegistrasi');
+            this.namaLembaga = localStorage.getItem('namaLembaga');
+        }
+        // set our app's pages
+        this.detailPages = [
+            { component: KelembagaanLegalitasPage },
+            { component: KelembagaanSejarahPage },
+            { component: KelembagaanKepengurusanPage },
+            { component: KelembagaanUsahaPage },
+            { component: KelembagaanPrestasiPage },
+            { component: KelembagaanKoleksiPage },
+            { component: __WEBPACK_IMPORTED_MODULE_3__verification_verification__["b" /* VerificationPage */] },
+            { component: __WEBPACK_IMPORTED_MODULE_5__setting_setting__["d" /* SettingPage */] },
+            { component: __WEBPACK_IMPORTED_MODULE_3__verification_verification__["a" /* RevisionPage */] },
+        ];
+        // // set our form's pages
+        // this.detailPages = [
+        //   { component: KelembagaanLegalitasPage },
+        //   { component: KelembagaanSejarahPage },
+        //   { component: KelembagaanKepengurusanPage },
+        //   { component: KelembagaanUsahaPage },
+        //   { component: KelembagaanPrestasiPage },
+        //   { component: KelembagaanKoleksiPage },
+        //   { component: VerificationPage },
+        // ];
+        this.loadData();
+    }
+    KelembagaanDetailPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getDetailLembaga(this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.detail = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanDetailPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getDetailLembaga(this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.detail = _this.temp;
+            refresher.complete();
+        }, function (err) {
+            refresher.complete();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanDetailPage.prototype.openModal = function (index, reff, reff2, reff3, reff4) {
+        if (reff === void 0) { reff = null; }
+        if (reff2 === void 0) { reff2 = null; }
+        if (reff3 === void 0) { reff3 = null; }
+        if (reff4 === void 0) { reff4 = null; }
+        var modal = this.modalCtrl.create(this.detailPages[index].component, { reff: reff, reff2: reff2, reff3: reff3, reff4: reff4 });
+        modal.present();
+    };
+    KelembagaanDetailPage.prototype.loadForm = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__form_form__["b" /* FormKelembagaanPage */], { noRegistrasi: this.noRegistrasi });
+        modal.present();
+    };
+    KelembagaanDetailPage.prototype.openMaps = function () {
+        var destination = this.detail.latitude + ',' + this.detail.langitude;
+        if (this.platform.is('ios')) {
+            window.open('maps://?q=' + destination, '_system');
+        }
+        else {
+            var label = encodeURI('');
+            window.open('geo:0,0?q=' + destination + '(' + label + ')', '_system');
+        }
+        // console.log(":" + this.detail.langitude + " : " + this.detail.latitude);
+        // this.launchNavigator.navigate([this.detail.langitude, this.detail.latitude], {
+        //   start: this.detail.langitude + ", " + this.detail.latitude
+        // }).then(
+        //     success => console.log('Launched navigator'),
+        //     error => console.log('Error launching navigator', error)
+        //   );
+    };
+    KelembagaanDetailPage.prototype.logout = function () {
+        this.showLoader();
+        this.authService.logout();
+        this.appCtrl.getRootNav().push(__WEBPACK_IMPORTED_MODULE_6__login_login__["a" /* LoginPage */]);
+        this.loading.dismiss();
+    };
+    KelembagaanDetailPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanDetailPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanDetailPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanDetailPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Profil Lembaga</ion-title>\n    <ion-buttons left *ngIf="userLevel != \'1\'">\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end *ngIf="userLevel != \'2\'">\n      <button ion-button icon-only (click)="loadForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="reloadData($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <!-- <ion-list no-margin> -->\n    <ion-list>\n      <ion-item color="main" text-center class="no-border">\n        <ion-avatar margin-bottom class="medium">\n          <img class="margin-auto" src="{{urlServer}}/img/logo/{{detail.avatar}}">\n        </ion-avatar>\n        <p>{{ detail.namaBentukLembaga }}</p>\n        <h1 text-wrap>{{ detail.nama }}</h1>\n        <p class="text-{{ detail.statusVerifikasi == 1 ? \'white\' : \'bright\' }}" (click)="openModal(6, noRegistrasi, namaLembaga, detail.namaBentukLembaga, detail.nama)">{{ detail.statusVerifikasi == 1 ? \'Sudah Verifikasi\' : \'Belum Verifikasi\' }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list padding>\n      <ion-item>\n        <p><b>No Registrasi.</b><br/><br /> {{ detail.noreg }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Telp.</b><br/><br/> {{ detail.telp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Email.</b><br/><br/> {{ detail.email }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b><br/><br/> {{ detail.alamat }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Bergerak dalam bidang.</b><br/><br/> {{ detail.namaBidangGerak }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Jumlah pengurus.</b><br/><br/> {{ detail.jumlahPengurus }} Orang</p>\n      </ion-item>\n      <ion-item>\n        <p><b>NPWP.</b><br/> {{ detail.noNpwp }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Afiliasi.</b><br /> {{ detail.organisasiAfiliasi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Visi.</b><br /> {{ detail.visiLembaga }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Misi.</b><br /> {{ detail.misiLembaga }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Media sosial.</b><br /> {{ detail.mediaSosial }}</p>\n      </ion-item>\n    </ion-list>\n    <ion-list *ngIf="userLevel != \'2\'">\n      <ion-list-header class="text-main">Informasi lainnya</ion-list-header>\n      <button ion-item (click)="openModal(0, noRegistrasi, namaLembaga)">\n        <ion-icon name="paper" item-start color="main"></ion-icon>\n        Legalitas\n      </button>\n      <button ion-item (click)="openModal(1, noRegistrasi, namaLembaga)">\n        <ion-icon name="time" item-start color="bright"></ion-icon>\n        Sejarah\n      </button>\n      <button ion-item (click)="openModal(2, noRegistrasi, namaLembaga)">\n        <ion-icon name="people" item-start color="vibrant"></ion-icon>\n        Kepengurusan\n      </button>\n      <button ion-item (click)="openModal(3, noRegistrasi, namaLembaga)">\n        <ion-icon name="pricetag" item-start color="primary"></ion-icon>\n        Usaha\n      </button>\n      <button ion-item (click)="openModal(4, noRegistrasi, namaLembaga)">\n        <ion-icon name="trophy" item-start color="bright"></ion-icon>\n        Prestasi\n      </button>\n      <button ion-item (click)="openModal(5, noRegistrasi, namaLembaga)">\n        <ion-icon name="book" item-start color="secondary"></ion-icon>\n        Koleksi\n      </button>\n      <button ion-item (click)="openMaps()">\n        <ion-icon name="globe" item-start color="primary"></ion-icon>\n        Lihat Maps\n      </button>\n    </ion-list>\n    <ion-list *ngIf="userLevel != \'2\'">\n      <ion-list-header class="text-main">Aplikasi</ion-list-header>\n      <button ion-item (click)="openModal(6, noRegistrasi, namaLembaga, detail.namaBentukLembaga, detail.nama)" *ngIf="userLevel ==\'3\' || userLevel == \'7\'">\n        <ion-icon name="md-create" item-start color="secondary"></ion-icon>\n        Verifikasi Lembaga\n      </button>\n      <button ion-item (click)="openModal(8, noRegistrasi, namaLembaga)" *ngIf="userLevel ==\'1\'">\n        <ion-icon name="chatbubbles" item-start color="secondary"></ion-icon>\n        Catatan Revisi\n      </button>\n      <button ion-item (click)="openModal(7)" *ngIf="userLevel ==\'1\'">\n        <ion-icon name="settings" item-start></ion-icon>\n        Pengaturan\n      </button>\n      <button ion-item (click)="logout()" *ngIf="userLevel ==\'1\'">\n        <ion-icon name="log-out" item-start color="danger"></ion-icon>\n        Keluar\n      </button>\n    </ion-list>\n  <!-- </ion-list> -->\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/detail.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */]])
+    ], KelembagaanDetailPage);
+    return KelembagaanDetailPage;
+}());
+
+// ---------------------------------------------------------------------------
+var KelembagaanLegalitasPage = /** @class */ (function () {
+    function KelembagaanLegalitasPage(platform, params, viewCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.countData = 0;
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
+    }
+    KelembagaanLegalitasPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('legalitas', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.countData = Object.keys(_this.data).length;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanLegalitasPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('legalitas', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            refresher.complete();
+        }, function (err) {
+            refresher.complete();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanLegalitasPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanLegalitasPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanLegalitasPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanLegalitasPage.prototype.loadForm = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__form_form__["e" /* FormLegalitasPage */], { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+        modal.present();
+    };
+    KelembagaanLegalitasPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Legalitas</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="loadForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="reloadData($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n  \n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai legalitas yang dimiliki oleh Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="paper" item-end color="main"></ion-icon>\n      </ion-item>\n      <ion-item>\n        <p>Total data ({{ countData }})</p>\n      </ion-item>\n      <button *ngFor="let d of data; let first = first; let last = last" [class.no-border]="last" ion-item text-wrap>\n        <ion-icon name="document" item-start color="main"></ion-icon>\n        <p><b>{{d.namaPersyaratan}}.</b> <span class="text-{{d.statusVerifikasi == \'0\' ? \'danger\' : \'secondary\'}}"><ion-icon name="compass"></ion-icon></span></p>\n        <p><span class="text-vibrant">{{d.noLegalitas}}</span> | {{d.tanggalLegalitas}}</p>\n      </button>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/legalitas.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanLegalitasPage);
+    return KelembagaanLegalitasPage;
+}());
+
+// ---------------------------------------------------------------------------
+var KelembagaanSejarahPage = /** @class */ (function () {
+    function KelembagaanSejarahPage(platform, params, viewCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "-",
+            deskripsi: "-",
+            tanggalDidirikan: "-",
+            kepemilikan: "-",
+            statusTanah: "-",
+            statusSertifikasi: "-",
+            luasTanah: "-",
+            satuanLuasTanah: "-",
+            luasBangunan: "-",
+            satuanLuasBangunan: "-",
+            kondisiBangunan: "-",
+            JumlahBangunan: "-",
+            statusSarana: "-",
+            statusStrukturKepengurusan: "-",
+            urlGambarStrukturKepengurusan: "-",
+            bahasaPengantar: "-",
+            statusSensus: "-",
+            statusBantuanPemerintah: "-",
+            kondisiGeografis: "-",
+            potensiWilayah: "-",
+            jenisWilayah: "-",
+            catatanLain: "-"
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
+    }
+    KelembagaanSejarahPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('sejarah', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanSejarahPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('sejarah', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            refresher.complete();
+        }, function (err) {
+            refresher.complete();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanSejarahPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanSejarahPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanSejarahPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanSejarahPage.prototype.loadForm = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__form_form__["h" /* FormSejarahPage */], { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+        modal.present();
+    };
+    KelembagaanSejarahPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/sejarah.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Sejarah</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="loadForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="reloadData($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n  \n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai sejarah Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="time" item-end color="bright"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Sejarah singkat.</b> <br/><br/> {{ data.deskripsi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Tanggal didirikan.</b> <br /><br /> {{ data.tanggalDidirikan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kepemilikan.</b> <br /><br /> {{ data.kepemilikan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Sertifikasi.</b>  <br/><br/> {{ data.statusSertifikasi }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Status Tanah.</b>  <br/><br/> {{ data.statusTanah }}</p>\n      </ion-item>\n      <ion-item>\n        <p><b>Luas Tanah.</b>  <br/><br/> {{ data.luasTanah }} {{ data.satuanLuasTanah }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Luas Bangunan.</b>  <br/><br/> {{ data.luasBangunan }} {{ data.satuanLuasBangunan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kondisi Bangunan.</b>  <br/><br/> {{ data.kondisiBangunan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jumlah Bangunan.</b>  <br/><br/> {{ data.JumlahBangunan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Saranan / Prasarana.</b>  <br/><br/> {{ data.statusSarana }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Struktur Organisasi.</b>  <br/><br/> {{ data.statusStrukturKepengurusan }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Bahasa Pengantar.</b>  <br/><br/> {{ data.bahasaPengantar }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Sensus.</b>  <br/><br/> {{ data.statusSensus }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Bantuan Pemerintah.</b>  <br/><br/> {{ data.statusBantuanPemerintah }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Kondisi Geografis.</b>  <br/><br/> {{ data.kondisiGeografis }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Potensi Wilayah.</b>  <br/><br/> {{ data.potensiWilayah }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Jenis Wilayah.</b>  <br/><br/> {{ data.jenisWilayah }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b>  <br/><br/> {{ data.catatanLain }}</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/sejarah.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanSejarahPage);
+    return KelembagaanSejarahPage;
+}());
+
+// ---------------------------------------------------------------------------
+var KelembagaanKepengurusanPage = /** @class */ (function () {
+    function KelembagaanKepengurusanPage(platform, params, viewCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "-",
+            penanggungJawab: "-",
+            jabatan: "-",
+            alamat: "-",
+            alamatLengkap: "-",
+            noTelp: "-",
+            kewarganegaraan: "-",
+            tempatLahir: "-",
+            tanggalLahir: "-",
+            jenisKelamin: "-",
+            agama: "-",
+            jabatanLain: "-",
+            pendidikan: "-",
+            kompetensi: "-",
+            catatan: "-"
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
+    }
+    KelembagaanKepengurusanPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('kepengurusan', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanKepengurusanPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('kepengurusan', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            refresher.complete();
+        }, function (err) {
+            refresher.complete();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanKepengurusanPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanKepengurusanPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanKepengurusanPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanKepengurusanPage.prototype.loadForm = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__form_form__["c" /* FormKepengurusanPage */], { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+        modal.present();
+    };
+    KelembagaanKepengurusanPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kepengurusan.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Kepengurusan</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="loadForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="reloadData($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n  \n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai kepengurusan Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="people" item-end color="vibrant"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Penanggung jawab.</b> <br/><br/> {{ data.penanggungJawab }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jabatan.</b> <br/><br/> {{ data.jabatan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Alamat.</b> <br/><br/> {{ data.alamatLengkap }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Telp.</b> <br/><br/> {{ data.noTelp }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Kewarganegaraan.</b> <br/><br/> {{ data.kewarganegaraan }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Tempat, Tanggal Lahir.</b> <br/><br/> {{ data.tempatLahir }}, {{ data.tanggalLahir }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jenis Kelamin.</b> <br/><br/> {{ data.jenisKelamin == "L" ? \'Laki-laki\' : \'\' }}{{ data.jenisKelamin == "P" ? \'Perempuan\' : \'\' }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Agama.</b> <br/><br/> {{ data.agama }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jabatan lain.</b> <br/><br/> {{ data.jabatanLain }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Pendidikan.</b> <br/><br/> {{ data.pendidikan }}</p>\n      </ion-item>\n      <ion-item text-wrap >\n        <p><b>Kompetensi.</b> <br/><br/> {{ data.kompetensi }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b> <br/><br/> {{ data.catatan }}</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/kepengurusan.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanKepengurusanPage);
+    return KelembagaanKepengurusanPage;
+}());
+
+// ---------------------------------------------------------------------------
+var KelembagaanUsahaPage = /** @class */ (function () {
+    function KelembagaanUsahaPage(platform, params, viewCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.data = {
+            noRegistrasi: "-",
+            namaUsaha: "-",
+            jenisUsaha: "-",
+            detailUsaha: "-",
+            jumlahPekerja: "-",
+            catatan: "-"
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
+    }
+    KelembagaanUsahaPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('usaha', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanUsahaPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('usaha', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            refresher.complete();
+        }, function (err) {
+            refresher.complete();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanUsahaPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanUsahaPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanUsahaPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanUsahaPage.prototype.loadForm = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__form_form__["i" /* FormUsahaPage */], { noRegistrasi: this.noRegistrasi, namaLembaga: this.namaLembaga });
+        modal.present();
+    };
+    KelembagaanUsahaPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/usaha.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Usaha</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="loadForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="reloadData($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n  \n  <ion-list>\n    <ion-row padding>\n      <ion-item text-wrap>\n        <p>Informasi mengenai usaha yang sedang dijalankan oleh Lembaga terkait.</p>\n        <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n        <ion-icon name="pricetag" item-end color="primary"></ion-icon>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Nama Usaha.</b> <br/><br/> {{ data.namaUsaha }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Detail Usaha.</b> <br/><br/> {{ data.detailUsaha }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jenis Usaha.</b> <br/><br/> {{ data.jenisUsaha }}</p>\n      </ion-item>\n      <ion-item text-wrap>\n        <p><b>Jumlah Pekerja.</b> <br/><br/> {{ data.jumlahPekerja }}</p>\n      </ion-item>\n      <ion-item margin-bottom class="no-border">\n        <p><b>Catatan.</b> <br/><br/> {{ data.catatan }}</p>\n      </ion-item>\n    </ion-row>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/usaha.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanUsahaPage);
+    return KelembagaanUsahaPage;
+}());
+
+// ---------------------------------------------------------------------------
+var KelembagaanPrestasiPage = /** @class */ (function () {
+    function KelembagaanPrestasiPage(platform, params, viewCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.form = {
+            noRegistrasi: "",
+            deskripsi: ""
+        };
+        this.countData = 0;
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
+    }
+    KelembagaanPrestasiPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('prestasi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.countData = Object.keys(_this.data).length;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanPrestasiPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('prestasi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            refresher.complete();
+        }, function (err) {
+            refresher.complete();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanPrestasiPage.prototype.updateLembaga = function () {
+        var _this = this;
+        this.form.noRegistrasi = this.noRegistrasi;
+        this.showLoader();
+        this.authService.updateDataLembaga('prestasi', this.form).then(function (result) {
+            _this.temp = result;
+            if (_this.temp.status == 'success') {
+                _this.presentToast('Data prestasi berhasil diperbarui.');
+            }
+            else {
+                _this.presentToast('Data prestasi gagal diperbarui, perika kembali inputan Anda!');
+            }
+            _this.form.deskripsi = "";
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanPrestasiPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanPrestasiPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanPrestasiPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanPrestasiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/prestasi.html"*/'<ion-header class="static">\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Prestasi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-list padding>\n    <ion-refresher (ionRefresh)="reloadData($event)">\n      <ion-refresher-content></ion-refresher-content>\n    </ion-refresher>\n\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai prestasi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n      <ion-icon name="trophy" item-end color="bright"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ countData }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data; let first = first; let last = last" [class.no-border]="last">\n      <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n      <h2 text-wrap>{{d.deskripsi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input [(ngModel)]="form.deskripsi" type="text" placeholder="Tambah prestasi.."></ion-input>\n      <ion-icon item-right name="md-create" (click)="updateLembaga()"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/prestasi.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanPrestasiPage);
+    return KelembagaanPrestasiPage;
+}());
+
+// ---------------------------------------------------------------------------
+var KelembagaanKoleksiPage = /** @class */ (function () {
+    function KelembagaanKoleksiPage(platform, params, viewCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.countData = 0;
+        this.formData = {
+            noRegistrasi: "",
+            judulKoleksi: "",
+            jenisKoleksi: "",
+            deskripsi: ""
+        };
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.namaLembaga = params.get('reff2');
+        this.loadData();
+    }
+    KelembagaanKoleksiPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('koleksi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.countData = Object.keys(_this.data).length;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanKoleksiPage.prototype.reloadData = function (refresher) {
+        var _this = this;
+        this.authService.getKelengkapanLembaga('koleksi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            refresher.complete();
+        }, function (err) {
+            refresher.complete();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanKoleksiPage.prototype.updateLembaga = function () {
+        var _this = this;
+        this.formData.noRegistrasi = this.noRegistrasi;
+        console.log(this.formData);
+        this.showLoader();
+        this.authService.updateDataLembaga('koleksi', this.formData).then(function (result) {
+            _this.temp = result;
+            if (_this.temp.status == 'success') {
+                _this.presentToast('Data koleksi berhasil diperbarui.');
+            }
+            else {
+                _this.presentToast('Data koleksi gagal diperbarui, perika kembali inputan Anda!');
+            }
+            _this.formData.judulKoleksi = "";
+            _this.formData.jenisKoleksi = "";
+            _this.formData.deskripsi = "";
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    KelembagaanKoleksiPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    KelembagaanKoleksiPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    KelembagaanKoleksiPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    KelembagaanKoleksiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/koleksi.html"*/'<ion-header class="static">\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Koleksi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-refresher (ionRefresh)="reloadData($event)">\n    <ion-refresher-content></ion-refresher-content>\n  </ion-refresher>\n\n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Informasi mengenai koleksi yang dimiliki oleh Lembaga terkait.</p>\n      <p class="text-main"><b>{{ namaLembaga }}.</b></p>\n      <ion-icon name="book" item-end color="secondary"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <p>Total data ({{ countData }})</p>\n    </ion-item>\n    <button ion-item *ngFor="let d of data">\n      <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n      <p>{{d.jenisKoleksi}}</p>\n      <h2 text-wrap>{{d.judulKoleksi}}</h2>\n    </button>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="clear">\n    <ion-item>\n      <ion-label>Judul Koleksi</ion-label>\n      <ion-input [(ngModel)]="formData.judulKoleksi" type="text"></ion-input>\n      <ion-icon item-right (click)="updateLembaga()" name="md-create"></ion-icon>\n    </ion-item>\n    <ion-item>\n      <ion-label>Jenis Koleksi</ion-label>\n      <ion-select [(ngModel)]="formData.jenisKoleksi">\n        <ion-option value="Buku">Buku</ion-option>\n        <ion-option value="Kitab">Kitab</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item class="no-border" margin-bottom>\n      <ion-label>Keterangan</ion-label>\n      <ion-textarea [(ngModel)]="formData.deskripsi" type="text"></ion-textarea>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/kelembagaan/koleksi.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], KelembagaanKoleksiPage);
+    return KelembagaanKoleksiPage;
+}());
+
+//# sourceMappingURL=kelembagaan.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 166;
+
+/***/ }),
+
+/***/ 210:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__prestasi_prestasi__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__koleksi_koleksi__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__news_news__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__about_about__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__setting_setting__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__form_form__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__login_login__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_auth_service_auth_service__ = __webpack_require__(14);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+var HomePage = /** @class */ (function () {
+    function HomePage(app, authService, loadingCtrl, toastCtrl, appCtrl, navCtrl) {
+        this.app = app;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.appCtrl = appCtrl;
+        this.navCtrl = navCtrl;
+        this.userLevel = "";
+        this.userLevel = localStorage.getItem('userLevel');
+        // set our app's pages
+        if (this.userLevel != '2' && this.userLevel != '1') {
+            this.pages = [
+                { title: 'Rekapitulasi', component: __WEBPACK_IMPORTED_MODULE_2__dashboard_dashboard__["a" /* DashboardPage */], icon: 'stats', color: 'main' },
+                { title: 'Kelembagaan', component: __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__["f" /* KelembagaanPage */], icon: 'people', color: 'vibrant' },
+                { title: 'Prestasi', component: __WEBPACK_IMPORTED_MODULE_4__prestasi_prestasi__["a" /* PrestasiPage */], icon: 'trophy', color: 'bright' },
+                { title: 'Koleksi', component: __WEBPACK_IMPORTED_MODULE_5__koleksi_koleksi__["a" /* KoleksiPage */], icon: 'book', color: 'secondary' },
+                { title: 'Berita', component: __WEBPACK_IMPORTED_MODULE_6__news_news__["c" /* NewsPage */], icon: 'paper', color: 'primary' },
+            ];
+        }
+        else if (this.userLevel == '2') {
+            this.pages = [
+                { title: 'Lembaga baru', component: __WEBPACK_IMPORTED_MODULE_9__form_form__["b" /* FormKelembagaanPage */], icon: 'add', color: 'main' },
+                { title: 'Kelembagaan', component: __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__["f" /* KelembagaanPage */], icon: 'people', color: 'vibrant' },
+                { title: 'Prestasi', component: __WEBPACK_IMPORTED_MODULE_4__prestasi_prestasi__["a" /* PrestasiPage */], icon: 'trophy', color: 'bright' },
+                { title: 'Koleksi', component: __WEBPACK_IMPORTED_MODULE_5__koleksi_koleksi__["a" /* KoleksiPage */], icon: 'book', color: 'secondary' },
+            ];
+        }
+        this.other = [
+            { title: 'Pengaturan', component: __WEBPACK_IMPORTED_MODULE_8__setting_setting__["d" /* SettingPage */], icon: 'settings', color: '' },
+            { title: 'Tentang Aplikasi', component: __WEBPACK_IMPORTED_MODULE_7__about_about__["a" /* AboutPage */], icon: 'ios-information-circle-outline', color: 'primary' },
+        ];
+    }
+    HomePage.prototype.logout = function () {
+        this.showLoader();
+        this.authService.logout();
+        this.appCtrl.getRootNav().push(__WEBPACK_IMPORTED_MODULE_10__login_login__["a" /* LoginPage */]);
+        this.loading.dismiss();
+    };
+    HomePage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Logout...'
+        });
+        this.loading.present();
+    };
+    HomePage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    HomePage.prototype.navigateTo = function (pages) {
+        // Let's navigate from TabsPage to Page1
+        this.navCtrl.push(pages.component);
+    };
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/home/home.html"*/'<ion-content>\n  <ion-img id="logo-apps" width=\'40\' height=\'40\' src="assets/imgs/icon.png" margin float-left></ion-img>\n  <h3 padding-left class="text-main header-logo-text">DPLEGA APPS</h3>\n  <ion-list>\n    <ion-list-header>Menu</ion-list-header>\n    <button ion-item *ngFor="let p of pages" (click)="navigateTo(p)">\n      <ion-icon name="{{p.icon}}" item-start color="{{p.color}}"></ion-icon>\n      {{p.title}}\n    </button>\n  </ion-list>\n  <ion-list>\n    <ion-list-header>Lainnya</ion-list-header>\n    <button ion-item *ngFor="let o of other" (click)="navigateTo(o)">\n      <ion-icon name="{{o.icon}}" item-start color="{{o.color}}"></ion-icon>\n      {{o.title}}\n    </button>\n    <button ion-item (click)="logout()">\n      <ion-icon name="log-out" item-start color="danger"></ion-icon>\n      Keluar\n    </button>\n  </ion-list>\n</ion-content>\n<!-- \n<ion-tabs color=\'dark\'>\n  <ion-tab [root]="home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="inbox" tabIcon="notifications" tabBadge="1" tabBadgeStyle="bright"></ion-tab>\n  <ion-tab [root]="search" tabIcon="search"></ion-tab>\n  <ion-tab [root]="form" tabIcon="add"></ion-tab>\n</ion-tabs> -->\n\n<!-- <ion-footer>\n  <ion-toolbar>\n    <p text-center>Copyright © 2018 Pemerintah Provinsi Jawa Barat.</p>\n  </ion-toolbar>\n</ion-footer> -->\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/home/home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */], __WEBPACK_IMPORTED_MODULE_11__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 211:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prestasi_prestasi__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__koleksi_koleksi__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__kelembagaan_kelembagaan__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var DashboardPage = /** @class */ (function () {
+    function DashboardPage(navCtrl, authService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.que = 0;
+        // set our app's pages
+        this.pages = [
+            { title: 'Prestasi', component: __WEBPACK_IMPORTED_MODULE_3__prestasi_prestasi__["a" /* PrestasiPage */], icon: 'trophy', color: 'bright' },
+            { title: 'Koleksi', component: __WEBPACK_IMPORTED_MODULE_4__koleksi_koleksi__["a" /* KoleksiPage */], icon: 'book', color: 'secondary' },
+            { title: 'Kelembagaan', component: __WEBPACK_IMPORTED_MODULE_5__kelembagaan_kelembagaan__["f" /* KelembagaanPage */], icon: 'people', color: 'vibrant' },
+        ];
+        this.loadSummary();
+    }
+    DashboardPage.prototype.navigateTo = function (index, reff) {
+        if (reff === void 0) { reff = null; }
+        if (index == 2) {
+            localStorage.setItem('kelembagaan-filter-ajuan', 'false');
+            localStorage.setItem('kelembagaan-filter-valid', 'false');
+            if (reff == 'ajuan') {
+                localStorage.setItem('kelembagaan-filter-ajuan', '');
+            }
+            else if (reff == 'valid') {
+                localStorage.setItem('kelembagaan-filter-valid', '');
+            }
+            else {
+                localStorage.setItem('kelembagaan-filter-ajuan', '');
+                localStorage.setItem('kelembagaan-filter-valid', '');
+            }
+        }
+        this.navCtrl.push(this.pages[index].component);
+    };
+    DashboardPage.prototype.loadSummary = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getList('count/summary/').then(function (result) {
+            _this.countSummary = result;
+            _this.koleksi = _this.countSummary.koleksi;
+            _this.prestasi = _this.countSummary.prestasi;
+            _this.ajuan = _this.countSummary.ajuan;
+            _this.valid = _this.countSummary.valid;
+            // next count
+            _this.authService.getList('count/lembaga/').then(function (result) {
+                _this.countLembaga = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    DashboardPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    DashboardPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    DashboardPage.prototype.advanceNumber = function (number) {
+        var abs;
+        if (number !== void 0) {
+            console.log(number);
+            abs = Math.abs(number);
+            if (abs >= Math.pow(10, 12)) {
+                number = (number / Math.pow(10, 12)).toFixed(1) + "t";
+            }
+            else if (abs < Math.pow(10, 12) && abs >= Math.pow(10, 9)) {
+                number = (number / Math.pow(10, 9)).toFixed(1) + "b";
+            }
+            else if (abs < Math.pow(10, 9) && abs >= Math.pow(10, 6)) {
+                number = (number / Math.pow(10, 6)).toFixed(1) + "m";
+            }
+            else if (abs < Math.pow(10, 6) && abs >= Math.pow(10, 3)) {
+                number = (number / Math.pow(10, 3)).toFixed(1) + "k";
+            }
+            return number;
+        }
+    };
+    ;
+    DashboardPage.prototype.simpleNumber = function (number) {
+        if (number >= 1000) {
+            number = number / 1000;
+            number = number.toFixed(1) + 'k';
+        }
+        return number;
+    };
+    DashboardPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-dashboard',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/dashboard/dashboard.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton> \n    <ion-title>Rekapitulasi</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-content>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-6 no-padding>\n              <button ion-item (click)="navigateTo(2, \'ajuan\')" class="border-bottom">\n                <ion-badge color=\'danger\'>Data Ajuan</ion-badge>\n                <h1 margin-top>{{ simpleNumber(ajuan) }}</h1>\n              </button>\n          </ion-col>\n          <ion-col col-6 no-padding>\n              <button ion-item (click)="navigateTo(2, \'valid\')" class="border-bottom">\n                <ion-badge color=\'secondary\'>Data Terverifikasi</ion-badge>\n                <h1 margin-top>{{ simpleNumber(valid) }}</h1>\n              </button>\n          </ion-col>\n          <ion-col col-6 no-padding>\n            <button ion-item (click)="navigateTo(0)" >\n              <ion-badge color=\'bright\'>Total Prestasi</ion-badge>\n              <h1 margin-top>{{ simpleNumber(prestasi) }}</h1>\n            </button>\n          </ion-col>\n          <ion-col col-6 no-padding>\n            <button ion-item (click)="navigateTo(1)">\n              <ion-badge color=\'vibrant\'>Total Koleksi</ion-badge>\n              <h1 margin-top>{{ simpleNumber(koleksi) }}</h1>\n            </button>\n          </ion-col>\n        </ion-row>\n\n        \n      </ion-grid>\n    </ion-card-content>\n  </ion-card>\n\n  <ion-card margin-top>\n    <ion-card-content>\n      <ion-list>\n        <ion-list-header class="no-border" no-margin>Berdasarkan bentuk Lembaga</ion-list-header>\n        <ion-item *ngFor="let c of countLembaga" class="border-bottom">\n          {{ c.namaBentukLembaga }}\n          <ion-badge item-end color=\'danger\'>{{ simpleNumber(c.ajuan) }}</ion-badge>\n          <ion-badge item-end color=\'secondary\'>{{ simpleNumber(c.valid) }}</ion-badge>\n        </ion-item>\n      </ion-list>\n      <button (click)="navigateTo(2)" ion-button color="vibrant" icon-end full margin-top>\n        DATA LEMBAGA\n        <ion-icon name=\'arrow-forward\'></ion-icon>\n      </button>\n    </ion-card-content>\n  </ion-card>\n  \n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/dashboard/dashboard.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], DashboardPage);
+    return DashboardPage;
+}());
+
+//# sourceMappingURL=dashboard.js.map
+
+/***/ }),
+
+/***/ 215:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutPage = /** @class */ (function () {
+    function AboutPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    AboutPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-about',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Tentang Aplikasi</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <img src="assets/imgs/logo_apps_small.png">\n  <p text-center>Aplikasi ini dibangun untuk mempermudah Lembaga dan Instansi terkait mengelola Data Potensi Lembaga Keagamaan di Jawa Barat.</p>\n  <p text-center>Copyright © 2018 Pemerintah Provinsi Jawa Barat.</p>\n  <p text-center><small>Support by Syncard Tech.</small></p>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/about/about.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]])
+    ], AboutPage);
+    return AboutPage;
+}());
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 216:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var SearchPage = /** @class */ (function () {
+    function SearchPage(navCtrl, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.keyword = "";
+        this.urlServer = "";
+        this.userLevel = "";
+        this.countData = 0;
+        this.urlServer = authService.urlServer;
+        this.userLevel = localStorage.getItem('userLevel');
+    }
+    SearchPage.prototype.searchData = function (keyCode) {
+        var _this = this;
+        if (keyCode == 13) {
+            if (this.keyword != "") {
+                this.showLoader();
+                this.authService.searchData(this.keyword).then(function (result) {
+                    _this.data = result;
+                    _this.countData = Object.keys(_this.data).length;
+                    if (_this.countData > 0) {
+                        _this.dataClone = _this.data;
+                        _this.dataClone[-1] = { grup: 'start' };
+                    }
+                    _this.loading.dismiss();
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                    return false;
+                });
+            }
+            else {
+                this.data = [];
+                this.dataClone = [];
+                this.countData = 0;
+            }
+        }
+    };
+    SearchPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    SearchPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    SearchPage.prototype.openLembaga = function (reff) {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__kelembagaan_kelembagaan__["a" /* KelembagaanDetailPage */], { reff: reff });
+        modal.present();
+    };
+    SearchPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-search',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/'<ion-header>\n  <ion-toolbar color=\'main\'> \n    <ion-searchbar [(ngModel)]="keyword" (keypress)="searchData($event.keyCode)" placeholder="Pencarian" class="clear"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <div *ngFor="let d of data; let idx = index;">\n      <ion-list-header color="light" *ngIf="d.grup != dataClone[idx-1].grup && userLevel != \'1\'"> {{ d.grup }} </ion-list-header>\n      <ion-list-header color="light" *ngIf="d.grup != dataClone[idx-1].grup && userLevel == \'1\' && d.grup !=\'Lembaga\'"> {{ d.grup }} </ion-list-header>\n      \n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Lembaga\' && userLevel != \'1\'" ion-item padding-right>\n        <ion-avatar item-start>\n          <img src="{{urlServer}}/img/logo/{{d.kolom_4}}">\n        </ion-avatar>\n        <h3 text-wrap>{{d.kolom_2}}</h3>\n        <p>{{d.kolom_3}} &nbsp; <span class="text-{{d.kolom_5 == \'0\' ? \'danger\' : \'secondary\'}}">\n            <ion-icon name="compass"></ion-icon>\n          </span></p>\n      </button>\n\n      <!--  -->\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Prestasi\' && userLevel !=\'1\'" ion-item padding-right>\n        <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n        <h3 text-wrap>{{d.kolom_3}}</h3>\n        <p text-nowrap>{{d.kolom_4}} {{d.kolom_2}}</p>\n      </button>\n\n      <button *ngIf="d.grup == \'Prestasi\' && userLevel == \'1\'" ion-item padding-right>\n        <ion-icon name="trophy" class="text-bright" item-start></ion-icon>\n        <h3 text-wrap>{{d.kolom_3}}</h3>\n        <p text-nowrap>{{d.kolom_4}} {{d.kolom_2}}</p>\n      </button>\n\n      <!--  -->\n      <button (click)="openLembaga(d.kolom_1)" *ngIf="d.grup == \'Koleksi\' && userLevel !=\'1\'" ion-item padding-right>\n        <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n        <h3 text-wrap>({{d.kolom_3}}) {{d.kolom_4}}</h3>\n        <p text-nowrap>{{d.kolom_5}} {{d.kolom_2}}</p>\n      </button>\n\n      <button *ngIf="d.grup == \'Koleksi\' && userLevel == \'1\'" ion-item padding-right>\n        <ion-icon name="book" class="text-secondary" item-start></ion-icon>\n        <h3 text-wrap>({{d.kolom_3}}) {{d.kolom_4}}</h3>\n        <p text-nowrap>{{d.kolom_5}} {{d.kolom_2}}</p>\n      </button>\n    </div>\n  </ion-list>\n\n  <div *ngIf="countData == 0 || countData == null" class="empty-frame">\n    <ion-icon color="light" name="search" class="icon-big"></ion-icon>\n    <p>Belum ada hasil pencarian.</p>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/search/search.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], SearchPage);
+    return SearchPage;
+}());
+
+//# sourceMappingURL=search.js.map
+
+/***/ }),
+
+/***/ 217:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(240);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 240:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_login_login__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prestasi_prestasi__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_koleksi_koleksi__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_news_news__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_search_search__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_form_form__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_about_about__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_status_bar__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_splash_screen__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_storage__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__angular_http__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_file__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_transfer__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_camera__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_base64__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_geolocation__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_location_accuracy__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_native_file_chooser__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ionic_native_file_opener__ = __webpack_require__(297);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__["a" /* DashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["f" /* KelembagaanPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["b" /* KelembagaanFilterPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["a" /* KelembagaanDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["g" /* KelembagaanPrestasiPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["d" /* KelembagaanKoleksiPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["e" /* KelembagaanLegalitasPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["h" /* KelembagaanSejarahPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["c" /* KelembagaanKepengurusanPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["i" /* KelembagaanUsahaPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__["b" /* VerificationPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__["a" /* RevisionPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_prestasi_prestasi__["a" /* PrestasiPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_koleksi_koleksi__["a" /* KoleksiPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_news_news__["c" /* NewsPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_news_news__["a" /* NewsDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_news_news__["b" /* NewsFormPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["b" /* InboxPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["a" /* InboxDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_search_search__["a" /* SearchPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["d" /* SettingPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["a" /* SettingAccountPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["b" /* SettingChangePasswordPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["c" /* SettingFormAccountPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["f" /* FormPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["b" /* FormKelembagaanPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["e" /* FormLegalitasPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["h" /* FormSejarahPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["c" /* FormKepengurusanPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["i" /* FormUsahaPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["a" /* FormHirarkiPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["g" /* FormPrestasiPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["d" /* FormKoleksiPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_about_about__["a" /* AboutPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_23__angular_http__["c" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
+                    links: []
+                }),
+                __WEBPACK_IMPORTED_MODULE_22__ionic_storage__["a" /* IonicStorageModule */].forRoot()
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */],
+                __WEBPACK_IMPORTED_MODULE_6__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__["a" /* DashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["f" /* KelembagaanPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["b" /* KelembagaanFilterPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["a" /* KelembagaanDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["g" /* KelembagaanPrestasiPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["d" /* KelembagaanKoleksiPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["e" /* KelembagaanLegalitasPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["h" /* KelembagaanSejarahPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["c" /* KelembagaanKepengurusanPage */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_kelembagaan_kelembagaan__["i" /* KelembagaanUsahaPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__["b" /* VerificationPage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_verification_verification__["a" /* RevisionPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_prestasi_prestasi__["a" /* PrestasiPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_koleksi_koleksi__["a" /* KoleksiPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_news_news__["c" /* NewsPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_news_news__["a" /* NewsDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_news_news__["b" /* NewsFormPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["b" /* InboxPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_inbox_inbox__["a" /* InboxDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_search_search__["a" /* SearchPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["d" /* SettingPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["a" /* SettingAccountPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["b" /* SettingChangePasswordPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_setting_setting__["c" /* SettingFormAccountPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["f" /* FormPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["b" /* FormKelembagaanPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["e" /* FormLegalitasPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["h" /* FormSejarahPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["c" /* FormKepengurusanPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["i" /* FormUsahaPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["a" /* FormHirarkiPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["g" /* FormPrestasiPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_form_form__["d" /* FormKoleksiPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_about_about__["a" /* AboutPage */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_19__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_20__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_3__ionic_native_launch_navigator__["a" /* LaunchNavigator */],
+                { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicErrorHandler */] },
+                __WEBPACK_IMPORTED_MODULE_21__providers_auth_service_auth_service__["a" /* AuthService */],
+                __WEBPACK_IMPORTED_MODULE_24__ionic_native_file__["a" /* File */],
+                __WEBPACK_IMPORTED_MODULE_25__ionic_native_transfer__["a" /* Transfer */],
+                __WEBPACK_IMPORTED_MODULE_27__ionic_native_camera__["a" /* Camera */],
+                __WEBPACK_IMPORTED_MODULE_26__ionic_native_file_path__["a" /* FilePath */],
+                __WEBPACK_IMPORTED_MODULE_28__ionic_native_base64__["a" /* Base64 */],
+                __WEBPACK_IMPORTED_MODULE_29__ionic_native_geolocation__["a" /* Geolocation */],
+                __WEBPACK_IMPORTED_MODULE_30__ionic_native_location_accuracy__["a" /* LocationAccuracy */],
+                __WEBPACK_IMPORTED_MODULE_31__ionic_native_file_chooser__["a" /* FileChooser */],
+                __WEBPACK_IMPORTED_MODULE_32__ionic_native_file_opener__["a" /* FileOpener */]
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 290:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__ = __webpack_require__(112);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var MyApp = /** @class */ (function () {
+    // rootPage = TabsPage;
+    // page: Array<{ title: string, component: any }>;
+    function MyApp(platform, statusBar, splashScreen) {
+        var _this = this;
+        // this.nav = nav;
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.styleDefault();
+            splashScreen.hide();
+            if (!localStorage.getItem("token")) {
+                _this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_login_login__["a" /* LoginPage */];
+            }
+            else {
+                _this.rootPage = __WEBPACK_IMPORTED_MODULE_5__pages_tabs_tabs__["a" /* TabsPage */];
+            }
+        });
+    }
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/app/app.html"*/'<ion-nav #contentPage [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/app/app.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SettingPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingAccountPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SettingChangePasswordPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SettingFormAccountPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_path__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_camera__ = __webpack_require__(60);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var SettingPage = /** @class */ (function () {
+    function SettingPage(navCtrl, modalCtrl) {
+        // set our app's pages
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.other = [
+            { title: 'Informasi Akun', component: SettingAccountPage, icon: 'information-circle', color: 'primary' },
+            { title: 'Ganti Password', component: SettingChangePasswordPage, icon: 'lock', color: 'bright' },
+        ];
+    }
+    SettingPage.prototype.openModal = function (index) {
+        var modal = this.modalCtrl.create(this.other[index].component);
+        modal.present();
+    };
+    SettingPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-setting',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/setting.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Pengaturan</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list margin-top>\n    <button ion-item *ngFor="let o of other; let i = index" (click)="openModal(i)" class="no-border-top">\n      <ion-icon name="{{o.icon}}" item-start color="{{o.color}}"></ion-icon>\n      {{o.title}}\n    </button>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/setting.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
+    ], SettingPage);
+    return SettingPage;
+}());
+
+var SettingAccountPage = /** @class */ (function () {
+    function SettingAccountPage(events, navCtrl, modalCtrl, viewCtrl, authService) {
+        var _this = this;
+        this.events = events;
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.urlServer = "";
+        this.accountData = {
+            avatar: localStorage.getItem('urlGambar'),
+            noRegistrasi: localStorage.getItem('noRegistrasi'),
+            nama: localStorage.getItem('nama'),
+            jabatan: localStorage.getItem('jabatan'),
+            alamat: localStorage.getItem('alamatLengkap'),
+            noTelp: localStorage.getItem('noTelp'),
+            email: localStorage.getItem('email'),
+            username: localStorage.getItem('username'),
+            userLevel: localStorage.getItem('userLevel'),
+            statusAkses: ''
+        };
+        this.random_ = Math.floor(Math.random() * 20) + 1;
+        this.urlServer = authService.urlServer;
+        if (this.accountData.userLevel == '7') {
+            this.accountData.statusAkses = "Super Admin";
+        }
+        else if (this.accountData.userLevel == '3') {
+            this.accountData.statusAkses = "Operator";
+        }
+        else if (this.accountData.userLevel == '2') {
+            this.accountData.statusAkses = "Penyuluh";
+        }
+        else if (this.accountData.userLevel == '1') {
+            this.accountData.statusAkses = "Lembaga";
+        }
+        events.subscribe('accountPage:reload', function () {
+            _this.refreshData();
+        });
+    }
+    SettingAccountPage.prototype.refreshData = function () {
+        this.accountData = {
+            avatar: localStorage.getItem('urlGambar'),
+            noRegistrasi: localStorage.getItem('noRegistrasi'),
+            nama: localStorage.getItem('nama'),
+            jabatan: localStorage.getItem('jabatan'),
+            alamat: localStorage.getItem('alamatLengkap'),
+            noTelp: localStorage.getItem('noTelp'),
+            email: localStorage.getItem('email'),
+            username: localStorage.getItem('username'),
+            userLevel: localStorage.getItem('userLevel'),
+            statusAkses: this.accountData.statusAkses
+        };
+    };
+    SettingAccountPage.prototype.openForm = function () {
+        var modal = this.modalCtrl.create(SettingFormAccountPage);
+        modal.present();
+    };
+    SettingAccountPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    SettingAccountPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-account',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Manajemen Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openForm()">\n        <ion-icon name="ios-create-outline"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <img src="{{urlServer}}/img/avatar/{{accountData.avatar}}?random={{random_}}" *ngIf="accountData.userLevel != \'1\'">\n        <img src="{{urlServer}}/img/logo/{{accountData.avatar}}?random={{random_}}" *ngIf="accountData.userLevel == \'1\'">\n        <!-- <ion-buttons margin-top>\n          <button class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons> -->\n        <h3>{{accountData.nama}}</h3>\n        <p><b>{{accountData.username}}</b> | {{accountData.statusAkses}}</p>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding margin-top>\n    <!-- <ion-list-header class="text-main">Informasi Akun</ion-list-header> -->\n    <ion-item>\n      <p><b>No Registrasi.</b><br /><br /> {{ accountData.noRegistrasi != "" ? accountData.noRegistrasi : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Jabatan.</b><br /><br /> {{accountData.jabatan != "" ? accountData.jabatan : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Telp.</b><br /><br /> {{accountData.noTelp != "" ? accountData.noTelp : \'-\'}}</p>\n    </ion-item>\n    <ion-item>\n      <p><b>Email.</b><br /><br /> {{accountData.email != "" ? accountData.email : \'-\'}}</p>\n    </ion-item>\n    <ion-item text-wrap>\n      <p><b>Alamat.</b><br /><br /> {{accountData.alamat != "" ? accountData.alamat : \'-\'}}</p>\n    </ion-item>\n  </ion-list>\n  <!-- <ion-list padding no-margin>\n    <ion-list-header class="text-main">Ubah Password</ion-list-header>\n    <ion-item>\n      <ion-label>Password lama (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Password baru (*)</ion-label>\n      <ion-input type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Ulangi Password baru (*)</ion-label>\n      <ion-input type="password" class="no-border"></ion-input>\n    </ion-item>\n  </ion-list>\n  <ion-buttons padding-horizontal padding-bottom text-center>\n    <button ion-button class="no-shadow" color="main" round>Ubah Password</button>\n  </ion-buttons> -->\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/account.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */]])
+    ], SettingAccountPage);
+    return SettingAccountPage;
+}());
+
+var SettingChangePasswordPage = /** @class */ (function () {
+    function SettingChangePasswordPage(navCtrl, modalCtrl, viewCtrl, authService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.data = {
+            status: 'failed',
+            data: '0'
+        };
+        this.accountData = {
+            username: localStorage.getItem('username'),
+            oldPassword: '',
+            newPassword: '',
+            retypePassword: ''
+        };
+    }
+    SettingChangePasswordPage.prototype.changePassword = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.changePassword(this.accountData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+            if (_this.data.status == 'success') {
+                _this.presentToast('Password berhasil diubah!');
+            }
+            else {
+                _this.presentToast('Password gagal diubah, perika kembali Password Anda!');
+            }
+            _this.accountData = {
+                username: localStorage.getItem('username'),
+                oldPassword: '',
+                newPassword: '',
+                retypePassword: ''
+            };
+        }, function (err) {
+            _this.accountData = {
+                username: localStorage.getItem('username'),
+                oldPassword: '',
+                newPassword: '',
+                retypePassword: ''
+            };
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    SettingChangePasswordPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Harap tunggu...'
+        });
+        this.loading.present();
+    };
+    SettingChangePasswordPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    SettingChangePasswordPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    SettingChangePasswordPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-changePassword',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/changePassword.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Ganti Password</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list padding no-margin>\n    <ion-list-header class="no-border-top" text-wrap>Penuhi semua poin pada form berikut untuk dapat mengubah Password Anda.</ion-list-header>\n    <ion-item>\n      <ion-label>Password lama (*)</ion-label>\n      <ion-input [(ngModel)]="accountData.oldPassword" type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Password baru (*)</ion-label>\n      <ion-input [(ngModel)]="accountData.newPassword" type="password"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label>Ulangi Password baru (*)</ion-label>\n      <ion-input [(ngModel)]="accountData.retypePassword" type="password" class="no-border"></ion-input>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button type="button" (click)="changePassword()" class="text-white" ion-button block clear>Ubah Password</button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/changePassword.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], SettingChangePasswordPage);
+    return SettingChangePasswordPage;
+}());
+
+var SettingFormAccountPage = /** @class */ (function () {
+    function SettingFormAccountPage(events, navCtrl, modalCtrl, viewCtrl, authService, loadingCtrl, toastCtrl, camera, transfer, file, filePath, actionSheetCtrl, platform) {
+        this.events = events;
+        this.navCtrl = navCtrl;
+        this.modalCtrl = modalCtrl;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.camera = camera;
+        this.transfer = transfer;
+        this.file = file;
+        this.filePath = filePath;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.platform = platform;
+        this.urlServer = "";
+        this.urlApi = "";
+        this.data = { status: 'failed', data: '0' };
+        this.accountData = {
+            avatar: localStorage.getItem('urlGambar'),
+            nama: localStorage.getItem('nama'),
+            jabatan: localStorage.getItem('jabatan'),
+            alamat: localStorage.getItem('alamat'),
+            noTelp: localStorage.getItem('noTelp'),
+            email: localStorage.getItem('email'),
+            username: localStorage.getItem('username'),
+            noRt: localStorage.getItem('noRt'),
+            noRw: localStorage.getItem('noRw'),
+            kodeKelurahan: localStorage.getItem('kodeKelurahan'),
+            kodeKecamatan: localStorage.getItem('kodeKecamatan'),
+            kodeWilayah: localStorage.getItem('kodeWilayah'),
+            userLevel: localStorage.getItem('userLevel')
+        };
+        this.lastImage = null;
+        this.random_ = Math.floor(Math.random() * 20) + 1;
+        this.loadInit();
+        this.urlServer = authService.urlServer;
+        this.urlApi = authService.urlApi;
+    }
+    SettingFormAccountPage.prototype.loadInit = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getOptionList('wilayah').then(function (result) {
+            _this.wilayah = result;
+            if (_this.accountData.kodeKecamatan != "") {
+                _this.authService.getOptionList('kecamatan', _this.accountData.kodeWilayah).then(function (result) {
+                    _this.kecamatan = result;
+                    if (_this.accountData.kodeKelurahan != "") {
+                        _this.authService.getOptionList('kelurahan', _this.accountData.kodeKecamatan).then(function (result) {
+                            _this.kelurahan = result;
+                            _this.loading.dismiss();
+                        }, function (err) {
+                            _this.loading.dismiss();
+                            _this.presentToast(err);
+                            return false;
+                        });
+                    }
+                    else {
+                        _this.loading.dismiss();
+                    }
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                    return false;
+                });
+            }
+            else {
+                _this.loading.dismiss();
+            }
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    SettingFormAccountPage.prototype.loadKecamatan = function (idWilayah) {
+        var _this = this;
+        if (idWilayah != "") {
+            this.showLoader();
+            this.authService.getOptionList('kecamatan', idWilayah).then(function (result) {
+                _this.kecamatan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kecamatan = [];
+            this.kelurahan = [];
+            this.accountData.kodeKecamatan = "";
+            this.accountData.kodeKelurahan = "";
+        }
+    };
+    SettingFormAccountPage.prototype.loadKelurahan = function (idKecamatan) {
+        var _this = this;
+        if (idKecamatan != "") {
+            this.showLoader();
+            this.authService.getOptionList('kelurahan', idKecamatan).then(function (result) {
+                _this.kelurahan = result;
+                _this.loading.dismiss();
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+                return false;
+            });
+        }
+        else {
+            this.kelurahan = [];
+            this.accountData.kodeKelurahan = "";
+        }
+    };
+    SettingFormAccountPage.prototype.changeAccount = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.changeAccount(this.accountData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            if (_this.data.status == 'success') {
+                localStorage.setItem('nama', _this.accountData.nama);
+                localStorage.setItem('jabatan', _this.accountData.jabatan);
+                localStorage.setItem('alamat', _this.accountData.alamat);
+                localStorage.setItem('noTelp', _this.accountData.noTelp);
+                localStorage.setItem('email', _this.accountData.email);
+                localStorage.setItem('noRt', _this.accountData.noRt);
+                localStorage.setItem('noRw', _this.accountData.noRw);
+                localStorage.setItem('kodeKelurahan', _this.accountData.kodeKelurahan);
+                localStorage.setItem('kodeKecamatan', _this.accountData.kodeKecamatan);
+                localStorage.setItem('kodeWilayah', _this.accountData.kodeWilayah);
+                _this.authService.relogin(_this.accountData).then(function (result) {
+                    _this.loading.dismiss();
+                    _this.presentToast('Informasi Akun berhasil diubah!');
+                    _this.reloginData = result;
+                    localStorage.setItem('nama', _this.reloginData.nama);
+                    localStorage.setItem('jabatan', _this.reloginData.jabatan);
+                    localStorage.setItem('alamat', _this.reloginData.alamat);
+                    localStorage.setItem('alamatLengkap', _this.reloginData.alamatLengkap);
+                    localStorage.setItem('noTelp', _this.reloginData.noTelp);
+                    localStorage.setItem('email', _this.reloginData.email);
+                    // localStorage.setItem('urlGambar', this.reloginData.urlGambar);
+                    localStorage.setItem('noRt', _this.reloginData.noRt);
+                    localStorage.setItem('noRw', _this.reloginData.noRw);
+                    localStorage.setItem('kodeKelurahan', _this.reloginData.kodeKelurahan);
+                    localStorage.setItem('kodeKecamatan', _this.reloginData.kodeKecamatan);
+                    localStorage.setItem('kodeWilayah', _this.reloginData.kodeWilayah);
+                    _this.accountData = {
+                        avatar: localStorage.getItem('urlGambar'),
+                        nama: localStorage.getItem('nama'),
+                        jabatan: localStorage.getItem('jabatan'),
+                        alamat: localStorage.getItem('alamat'),
+                        noTelp: localStorage.getItem('noTelp'),
+                        email: localStorage.getItem('email'),
+                        username: localStorage.getItem('username'),
+                        noRt: localStorage.getItem('noRt'),
+                        noRw: localStorage.getItem('noRw'),
+                        kodeKelurahan: localStorage.getItem('kodeKelurahan'),
+                        kodeKecamatan: localStorage.getItem('kodeKecamatan'),
+                        kodeWilayah: localStorage.getItem('kodeWilayah'),
+                        userLevel: localStorage.getItem('userLevel'),
+                    };
+                    _this.events.publish('accountPage:reload');
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                });
+            }
+            else {
+                _this.presentToast('Informasi Akun gagal diubah, perika kembali inputan Anda!');
+            }
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    SettingFormAccountPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Harap tunggu...'
+        });
+        this.loading.present();
+    };
+    SettingFormAccountPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    SettingFormAccountPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    // UPLOAD package
+    SettingFormAccountPage.prototype.presentActionSheet = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Pilih gambar',
+            buttons: [
+                {
+                    text: 'Galeri',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.PHOTOLIBRARY);
+                    }
+                },
+                {
+                    text: 'Kamera',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.CAMERA);
+                    }
+                },
+                {
+                    text: 'Batalkan',
+                    role: 'cancel'
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    SettingFormAccountPage.prototype.takePicture = function (sourceType) {
+        var _this = this;
+        // Create options for the Camera Dialog
+        var options = {
+            quality: 100,
+            sourceType: sourceType,
+            saveToPhotoAlbum: false,
+            correctOrientation: true
+        };
+        // Get the data of an image
+        this.camera.getPicture(options).then(function (imagePath) {
+            // Special handling for Android library
+            if (_this.platform.is('android') && sourceType === _this.camera.PictureSourceType.PHOTOLIBRARY) {
+                _this.filePath.resolveNativePath(imagePath)
+                    .then(function (filePath) {
+                    var correctPath = filePath.substr(0, filePath.lastIndexOf('/') + 1);
+                    var currentName = imagePath.substring(imagePath.lastIndexOf('/') + 1, imagePath.lastIndexOf('?'));
+                    _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+                });
+            }
+            else {
+                var currentName = imagePath.substr(imagePath.lastIndexOf('/') + 1);
+                var correctPath = imagePath.substr(0, imagePath.lastIndexOf('/') + 1);
+                _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+            }
+        }, function (err) {
+            _this.presentToast('Terjadi kesalahan : Error saat memilih gambar!.');
+        });
+    };
+    // Create a new name for the image
+    SettingFormAccountPage.prototype.createFileName = function () {
+        var d = new Date(), n = d.getTime(), newFileName = n + ".jpg";
+        return newFileName;
+    };
+    // Copy the image to a local folder
+    SettingFormAccountPage.prototype.copyFileToLocalDir = function (namePath, currentName, newFileName) {
+        var _this = this;
+        this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(function (success) {
+            _this.lastImage = newFileName;
+            _this.uploadImage();
+        }, function (error) {
+            _this.presentToast('Terjadi kesalahan : Error saat menyimpan gambar!.');
+        });
+    };
+    // Always get the accurate path to your apps folder
+    SettingFormAccountPage.prototype.pathForImage = function (img) {
+        if (img === null) {
+            return '';
+        }
+        else {
+            return cordova.file.dataDirectory + img;
+        }
+    };
+    SettingFormAccountPage.prototype.uploadImage = function () {
+        var _this = this;
+        // Destination URL
+        var url = this.urlApi + "/public/upload/account/avatar/";
+        // File for Upload
+        var targetPath = this.pathForImage(this.lastImage);
+        // File name only
+        var filename = this.lastImage;
+        var options = {
+            fileKey: "file",
+            fileName: filename,
+            chunkedMode: false,
+            mimeType: "multipart/form-data",
+            params: { 'fileName': filename, 'username': localStorage.getItem('username') }
+        };
+        var fileTransfer = this.transfer.create();
+        this.loading = this.loadingCtrl.create({
+            content: 'Uploading...',
+        });
+        this.loading.present();
+        // Use the FileTransfer to upload the image
+        fileTransfer.upload(targetPath, url, options).then(function (data) {
+            _this.loading.dismissAll();
+            _this.presentToast('Avatar berhasil diubah.');
+            _this.uploadData = data;
+            _this.uploadData.response = JSON.parse(_this.uploadData.response);
+            _this.accountData.avatar = _this.uploadData.response.filename;
+            _this.random_ = Math.floor(Math.random() * 20) + 1;
+            _this.authService.relogin(_this.accountData).then(function (result) {
+                _this.reloginData = result;
+                localStorage.setItem('urlGambar', _this.reloginData.urlGambar);
+                _this.events.publish('accountPage:reload');
+            }, function (err) {
+                _this.loading.dismiss();
+                _this.presentToast(err);
+            });
+        }, function (err) {
+            _this.loading.dismissAll();
+            _this.presentToast('Terjadi kesalahan! gagal mengubah Avatar.');
+        });
+    };
+    SettingFormAccountPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-formAccount',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Form Akun</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-row class="big-avatar-frame">\n      <div class="big-avatar" text-center>\n        <!-- <img src="{{lastImageBase64}}" [hidden]="lastImage === null"> -->\n        <img src="{{urlServer}}/img/avatar/{{accountData.avatar}}?random={{random_}}" *ngIf="accountData.userLevel != \'1\'">\n        <img src="{{urlServer}}/img/logo/{{accountData.avatar}}?random={{random_}}" *ngIf="accountData.userLevel == \'1\'">\n        <ion-buttons margin-top>\n          <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>\n            Unggah avatar\n          </button>\n        </ion-buttons>\n      </div>\n      <ion-item color="dark" text-center class="big-avatar-frame" padding></ion-item>\n      <ion-item></ion-item>\n    </ion-row>\n  </ion-list>\n  <ion-list padding>\n    <ion-row>\n      <ion-item>\n        <ion-label>Nama</ion-label>\n        <ion-input [(ngModel)]="accountData.nama" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Jabatan</ion-label>\n        <ion-input [(ngModel)]="accountData.jabatan" type="text" no-border></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label>Alamat</ion-label>\n        <ion-textarea [(ngModel)]="accountData.alamat" type="text"></ion-textarea>\n      </ion-item>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RT</ion-label>\n          <ion-input [(ngModel)]="accountData.noRt" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-col col-6 no-padding>\n        <ion-item class="no-border-1-layer">\n          <ion-label>RW</ion-label>\n          <ion-input [(ngModel)]="accountData.noRw" type="text"></ion-input>\n        </ion-item>\n      </ion-col>\n      <ion-item>\n        <ion-label>Wilayah</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeWilayah" (ionChange)="loadKecamatan(accountData.kodeWilayah)">\n          <ion-option value="" selected="{{accountData.wilayah == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{accountData.kodeWilayah == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kecamatan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKecamatan" (ionChange)="loadKelurahan(accountData.kodeKecamatan)">\n          <ion-option value="" selected="{{accountData.kecamatan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{accountData.kodeKecamatan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Kelurahan</ion-label>\n        <ion-select [(ngModel)]="accountData.kodeKelurahan">\n          <ion-option value="" selected="{{accountData.kelurahan == \'\' ? selected : \'\' }}"></ion-option>\n          <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{accountData.kodeKelurahan == d.value ? selected : \'\' }}">{{d.caption }}</ion-option>\n        </ion-select>\n      </ion-item>\n      <ion-item>\n        <ion-label>Telp</ion-label>\n        <ion-input [(ngModel)]="accountData.noTelp" type="text"></ion-input>\n      </ion-item>\n      <ion-item class="no-border" margin-bottom>\n        <ion-label>Email</ion-label>\n        <ion-input [(ngModel)]="accountData.email" type="email"></ion-input>\n      </ion-item>\n    </ion-row>\n\n  </ion-list>\n\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main">\n    <button class="text-white" (click)="changeAccount()" ion-button block clear>Ubah data Akun</button>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/setting/formAccount.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Events */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_path__["a" /* FilePath */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */]])
+    ], SettingFormAccountPage);
+    return SettingFormAccountPage;
+}());
+
+//# sourceMappingURL=setting.js.map
+
+/***/ }),
+
+/***/ 55:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(112);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var LoginPage = /** @class */ (function () {
+    function LoginPage(navCtrl, authService, loadingCtrl, toastCtrl) {
+        this.navCtrl = navCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.loginData = { username: '', password: '' };
+    }
+    LoginPage.prototype.doLogin = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.login(this.loginData).then(function (result) {
+            _this.loading.dismiss();
+            _this.data = result;
+            if (_this.data != false) {
+                localStorage.setItem('token', _this.data.userLevel);
+                localStorage.setItem('idData', _this.data.idData);
+                if (_this.data.noRegistrasi == "" || _this.data.noRegistrasi == null) {
+                    localStorage.setItem('userNotif', _this.data.username);
+                }
+                else {
+                    localStorage.setItem('userNotif', _this.data.noRegistrasi);
+                }
+                localStorage.setItem('noRegistrasi', _this.data.noRegistrasi);
+                localStorage.setItem('nama', _this.data.nama);
+                localStorage.setItem('namaLembaga', _this.data.namaLembaga);
+                localStorage.setItem('jabatan', _this.data.jabatan);
+                localStorage.setItem('alamat', _this.data.alamat);
+                localStorage.setItem('alamatLengkap', _this.data.alamatLengkap);
+                localStorage.setItem('noTelp', _this.data.noTelp);
+                localStorage.setItem('email', _this.data.email);
+                localStorage.setItem('username', _this.data.username);
+                localStorage.setItem('urlGambar', _this.data.urlGambar);
+                localStorage.setItem('userLevel', _this.data.userLevel);
+                localStorage.setItem('noRt', _this.data.noRt);
+                localStorage.setItem('noRw', _this.data.noRw);
+                localStorage.setItem('kodeKelurahan', _this.data.kodeKelurahan);
+                localStorage.setItem('kodeKecamatan', _this.data.kodeKecamatan);
+                localStorage.setItem('kodeWilayah', _this.data.kodeWilayah);
+                localStorage.setItem('lingkupArea', _this.data.lingkupArea);
+                localStorage.setItem('idBatasArea', _this.data.idBatasArea);
+                // empty initial 
+                localStorage.setItem('kelembagaan-filter-keyword', '');
+                localStorage.setItem('kelembagaan-filter-bentukLembaga', '');
+                localStorage.setItem('kelembagaan-filter-wilayah', '');
+                localStorage.setItem('kelembagaan-filter-kecamatan', '');
+                localStorage.setItem('kelembagaan-filter-kelurahan', '');
+                localStorage.setItem('kelembagaan-filter-ajuan', '');
+                localStorage.setItem('kelembagaan-filter-valid', '');
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__tabs_tabs__["a" /* TabsPage */]);
+            }
+            else {
+                _this.presentToast('Gagal login, mohon check kembali Username dan Password Anda!');
+            }
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+        });
+    };
+    LoginPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memeriksa...'
+        });
+        this.loading.present();
+    };
+    LoginPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    LoginPage.prototype.loginSuccess = function () {
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__tabs_tabs__["a" /* TabsPage */], {});
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/login/login.html"*/'<ion-content padding center text-center>\n  <ion-img id="logo" width=\'72\'height=\'72\' src="assets/imgs/gedung-sate-200x200_.png"></ion-img>\n  <ion-title>DPLEGA APPS</ion-title>\n  <form (submit)="doLogin()" method="POST">\n    <ion-list class="form-style" padding margin-top> \n      <ion-item>\n        <ion-input [(ngModel)]="loginData.username" name="username" type="text" placeholder="Username"></ion-input>\n      </ion-item>\n      <ion-item class="no-border">\n        <ion-input [(ngModel)]="loginData.password" name="password" placeholder="Password" type="password"></ion-input>\n      </ion-item>\n    </ion-list>\n    <ion-buttons padding>\n      <button color="dark" ion-button full type="submit">Masuk</button>\n    </ion-buttons>\n  </form>\n  <p text-center>Copyright © 2018 Pemerintah Provinsi Jawa Barat.</p>\n  <p text-center>v.01</p>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/login/login.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 56:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return VerificationPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RevisionPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var VerificationPage = /** @class */ (function () {
+    function VerificationPage(platform, params, viewCtrl, authService, modalCtrl, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.modalCtrl = modalCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.statusValid = "";
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.lembaga = params.get('reff2');
+        this.bentukLembaga = params.get('reff3');
+        this.namaLembaga = params.get('reff4');
+        this.loadData();
+    }
+    VerificationPage.prototype.openRevision = function (reff, reff2) {
+        var modal = this.modalCtrl.create(RevisionPage, { reff: reff, reff2: reff2 });
+        modal.present();
+    };
+    VerificationPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('verifikasi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.statusValid = _this.temp[0].statusValid;
+            _this.dataClone = _this.data;
+            _this.dataClone[-1] = { idGrup: 'start' };
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    VerificationPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    VerificationPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    VerificationPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    VerificationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-verification',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/verification/verification.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'main\'>\n    <ion-title>Verifikasi Lembaga</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item color=\'light\' class="no-border">\n      <ion-avatar item-start>\n        <img src="assets/imgs/sample.jpg">\n      </ion-avatar>\n      <h2>{{ namaLembaga }}</h2>\n      <p>{{ bentukLembaga }}</p>\n    </ion-item>\n    <ion-item>\n      <ion-toggle checked="{{ statusValid == \'valid\' ? \'true\' : \'false\' }}"></ion-toggle>\n      <ion-label>\n        Konfimasi keabsahan data\n      </ion-label>\n      <ion-icon color="main" name=\'md-checkmark-circle-outline\' item-start></ion-icon>\n    </ion-item>\n    <button ion-item (click)="openRevision(noRegistrasi, lembaga)" class="no-border">\n      <ion-icon name="chatbubbles" item-start color="secondary"></ion-icon>\n      Catatan revisi\n    </button>\n    <div *ngFor="let d of data; let idx = index;">\n      <ion-list-header color="light" *ngIf="d.idGrup != dataClone[idx-1].idGrup"> {{d.namaGrup}}</ion-list-header>\n      <ion-item-sliding>\n        <ion-item>\n          <ion-label>{{ d.nama }}</ion-label>\n          <ion-checkbox color="main" checked="{{ d.statusVerifikasi == \'1\' ? \'true\' : \'false\' }}"></ion-checkbox>\n        </ion-item>\n        <ion-item-options side="right">\n          <button ion-button color="main">\n            Lihat Berkas\n          </button>\n        </ion-item-options>\n      </ion-item-sliding>\n    </div>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/verification/verification.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], VerificationPage);
+    return VerificationPage;
+}());
+
+var RevisionPage = /** @class */ (function () {
+    function RevisionPage(platform, params, viewCtrl, authService, modalCtrl, loadingCtrl, toastCtrl) {
+        this.platform = platform;
+        this.params = params;
+        this.viewCtrl = viewCtrl;
+        this.authService = authService;
+        this.modalCtrl = modalCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.userLevel = "";
+        this.urlServer = "";
+        this.countData = 0;
+        this.catatanRevisi = "";
+        this.userLevel = localStorage.getItem('userLevel');
+        this.urlServer = authService.urlServer;
+        this.noRegistrasi = params.get('reff');
+        this.lembaga = params.get('reff2');
+        this.loadData();
+    }
+    RevisionPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getKelengkapanLembaga('revisi', this.noRegistrasi).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.dataClone = _this.data;
+            _this.dataClone[-1] = { tanggal: 'start' };
+            _this.countData = Object.keys(_this.data).length;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    RevisionPage.prototype.insertData = function (keyCode) {
+        var _this = this;
+        if (keyCode == 13) {
+            if (this.catatanRevisi != "") {
+                var param = {
+                    noRegistrasi: this.noRegistrasi,
+                    catatan: this.catatanRevisi,
+                    username: localStorage.getItem('username')
+                };
+                this.authService.insertDataLembaga('revisi', param).then(function (result) {
+                    _this.temp = result;
+                    if (_this.temp.status == "success") {
+                        _this.loadData();
+                        _this.catatanRevisi = "";
+                    }
+                    else
+                        _this.presentToast('Terjadi kesalahan! revisi gagal ditambahkan.');
+                }, function (err) {
+                    _this.loading.dismiss();
+                    _this.presentToast(err);
+                    return false;
+                });
+            }
+        }
+    };
+    RevisionPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    RevisionPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    RevisionPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    RevisionPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/verification/revision.html"*/'<ion-header class="static">\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Revisi</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  \n  <ion-list padding>\n    <ion-item class="no-border-top" text-wrap>\n      <p>Historial catatan revisi yang dikirimkan ke Lembaga, terkait verifikasi.</p>\n      <p class="text-main"><b>{{ lembaga }}</b></p>\n      <ion-icon name="chatbubbles" item-end color="secondary"></ion-icon>\n    </ion-item>\n    <ion-item class="no-border">\n      <p>Total data ({{ countData }})</p>\n    </ion-item>\n    <div *ngFor="let d of data; let idx = index; let first = first; let last = last">\n      <ion-list-header color="light" *ngIf="d.tanggal != dataClone[idx-1].tanggal"> {{d.tanggal | date:\'yyyy MMM dd\'}}</ion-list-header>\n      <ion-item *ngIf="d.grup == \'verifikasi\'" text-wrap [class.no-border]="last">\n          <ion-icon name="document" class="text-vibrant" item-start></ion-icon>\n          <h3 class="text-main">{{d.namaPersyaratan}}</h3>\n          <p>({{ d.type }})</p>\n          <p>{{d.catatan}}</p>\n          <ion-note item-end>{{d.jam}}</ion-note>\n      </ion-item>\n      <ion-item *ngIf="d.grup == \'revisi\'" text-wrap [class.no-border]="last">\n          <ion-icon name="ios-chatbubbles" class="text-secondary" item-start></ion-icon>\n          {{d.catatan}}\n          <ion-note item-end>{{d.jam}}</ion-note>\n      </ion-item>\n    </div>\n  </ion-list>\n</ion-content>\n\n<ion-footer *ngIf="userLevel != \'1\' && userLevel !=\'2\'">\n  <ion-toolbar color="clear">\n    <ion-item class="no-border">\n      <ion-input [(ngModel)]="catatanRevisi" (keypress)="insertData($event.keyCode)" type="text" placeholder="Ketik catatan revisi.."></ion-input>\n      <ion-icon item-right name="md-create" (click)="insertData(13)"></ion-icon>\n    </ion-item>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/verification/revision.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], RevisionPage);
+    return RevisionPage;
+}());
+
+//# sourceMappingURL=verification.js.map
+
+/***/ }),
+
+/***/ 61:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return NewsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsDetailPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NewsFormPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_path__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_camera__ = __webpack_require__(60);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var NewsPage = /** @class */ (function () {
+    function NewsPage(modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.page = 1;
+        this.urlServer = "";
+        this.urlServer = authService.urlServer;
+        // get initial data
+        this.getData();
+    }
+    NewsPage.prototype.getData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getListPage('berita', this.page).then(function (result) {
+            _this.data = result;
+            _this.page = _this.page + 1;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    NewsPage.prototype.loadData = function (infiniteScroll) {
+        var _this = this;
+        this.authService.getListPage('berita', this.page).then(function (result) {
+            var temp;
+            temp = result;
+            console.log("row : " + temp.length);
+            for (var i = 0; i < temp.length; i++) {
+                _this.data.push(result[i]);
+            }
+            infiniteScroll.complete();
+            _this.page = _this.page + 1;
+        });
+    };
+    NewsPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    NewsPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    NewsPage.prototype.openModal = function (newsId) {
+        var modal = this.modalCtrl.create(NewsDetailPage, { newsId: newsId });
+        modal.present();
+    };
+    NewsPage.prototype.openForm = function (newsId) {
+        var modal = this.modalCtrl.create(NewsFormPage, { newsId: newsId });
+        modal.present();
+    };
+    NewsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-news',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/news/news.html"*/'<ion-header>\n  <ion-navbar color=\'main\' hideBackButton>\n    <ion-title>Berita</ion-title>\n    <ion-buttons left>\n      <button ion-button navPop icon-only>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-buttons end>\n      <button ion-button icon-only (click)="openForm()">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-card *ngFor="let d of data" margin-bottom>\n    <img src="{{urlServer}}/img/news/{{d.urlGambar}}" />\n    <ion-card-content padding-right>\n      <ion-card-title>{{d.judulBerita}}</ion-card-title>\n      <p margin-bottom><ion-icon name=\'time\'></ion-icon> {{d.createdDate}} oleh <b class="capitalize">{{d.createdBy}}</b></p>\n      <p>{{d.deskripsi}} ...</p>\n    </ion-card-content>\n\n    <ion-row no-padding>\n      <ion-col>\n        <button ion-button clear small color="vibrant" icon-start (click)="openModal(d.idData)">\n          <ion-icon name=\'search\'></ion-icon>\n          Baca berita\n        </button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button clear small color="vibrant" icon-start (click)="openForm(d.idData)">\n          <ion-icon name=\'md-create\'></ion-icon>\n          Ubah\n        </button>\n      </ion-col>\n      <ion-col text-center>\n        <button ion-button clear small color="vibrant" icon-start>\n          <ion-icon name=\'trash\'></ion-icon>\n          Hapus\n        </button>\n      </ion-col>\n    </ion-row>\n  </ion-card>\n\n  <ion-infinite-scroll (ionInfinite)="loadData($event)" threshold="100px">\n    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Memuat data...">\n    </ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/news/news.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */], __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], NewsPage);
+    return NewsPage;
+}());
+
+var NewsDetailPage = /** @class */ (function () {
+    function NewsDetailPage(viewCtrl, params, modalCtrl, authService, loadingCtrl, toastCtrl) {
+        this.viewCtrl = viewCtrl;
+        this.params = params;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.urlServer = "";
+        this.idData = "";
+        this.data = {
+            idData: "",
+            judulBerita: "",
+            deskripsi: "",
+            urlGambar: "",
+            createdBy: "",
+            createdDate: ""
+        };
+        this.urlServer = authService.urlServer;
+        this.idData = params.get('newsId');
+        this.loadData();
+    }
+    NewsDetailPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getDataById('berita', this.idData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    NewsDetailPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    NewsDetailPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    NewsDetailPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    NewsDetailPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-detail',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/news/detail.html"*/'<ion-header class="static">\n  <ion-toolbar color=\'dark\'>\n    <ion-title>Baca berita</ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-list>\n    <ion-item>\n      <h1>{{ data.judulBerita }}</h1>\n      <p>{{ data.createdDate }} oleh {{ data.createdBy }}</p>\n    </ion-item>\n    <ion-item><img src="{{urlServer}}/img/news/{{data.urlGambar}}" /></ion-item>\n    <ion-item text-wrap>\n      {{ data.deskripsi }}\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/news/detail.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */]])
+    ], NewsDetailPage);
+    return NewsDetailPage;
+}());
+
+var NewsFormPage = /** @class */ (function () {
+    function NewsFormPage(viewCtrl, params, modalCtrl, authService, loadingCtrl, toastCtrl, camera, transfer, file, filePath, actionSheetCtrl, platform) {
+        this.viewCtrl = viewCtrl;
+        this.params = params;
+        this.modalCtrl = modalCtrl;
+        this.authService = authService;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.camera = camera;
+        this.transfer = transfer;
+        this.file = file;
+        this.filePath = filePath;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.platform = platform;
+        this.urlServer = "";
+        this.urlApi = "";
+        this.idData = "";
+        this.data = {
+            idData: "",
+            judulBerita: "",
+            deskripsi: "",
+            urlGambar: "",
+            createdBy: "",
+            createdDate: ""
+        };
+        this.lastImage = null;
+        this.random_ = Math.floor(Math.random() * 20) + 1;
+        this.urlServer = authService.urlServer;
+        this.idData = params.get('newsId');
+        this.loadData();
+    }
+    NewsFormPage.prototype.loadData = function () {
+        var _this = this;
+        this.showLoader();
+        this.authService.getDataById('berita', this.idData).then(function (result) {
+            _this.temp = result;
+            _this.data = _this.temp;
+            _this.loading.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast(err);
+            return false;
+        });
+    };
+    NewsFormPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    NewsFormPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: 'Memuat data...'
+        });
+        this.loading.present();
+    };
+    NewsFormPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    // UPLOAD package
+    NewsFormPage.prototype.presentActionSheet = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Pilih gambar',
+            buttons: [
+                {
+                    text: 'Galeri',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.PHOTOLIBRARY);
+                    }
+                },
+                {
+                    text: 'Kamera',
+                    handler: function () {
+                        _this.takePicture(_this.camera.PictureSourceType.CAMERA);
+                    }
+                },
+                {
+                    text: 'Batalkan',
+                    role: 'cancel'
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    NewsFormPage.prototype.takePicture = function (sourceType) {
+        var _this = this;
+        // Create options for the Camera Dialog
+        var options = {
+            quality: 100,
+            sourceType: sourceType,
+            saveToPhotoAlbum: false,
+            correctOrientation: true
+        };
+        // Get the data of an image
+        this.camera.getPicture(options).then(function (imagePath) {
+            // Special handling for Android library
+            if (_this.platform.is('android') && sourceType === _this.camera.PictureSourceType.PHOTOLIBRARY) {
+                _this.filePath.resolveNativePath(imagePath)
+                    .then(function (filePath) {
+                    var correctPath = filePath.substr(0, filePath.lastIndexOf('/') + 1);
+                    var currentName = imagePath.substring(imagePath.lastIndexOf('/') + 1, imagePath.lastIndexOf('?'));
+                    _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+                });
+            }
+            else {
+                var currentName = imagePath.substr(imagePath.lastIndexOf('/') + 1);
+                var correctPath = imagePath.substr(0, imagePath.lastIndexOf('/') + 1);
+                _this.copyFileToLocalDir(correctPath, currentName, _this.createFileName());
+            }
+        }, function (err) {
+            _this.presentToast('Terjadi kesalahan : Error saat memilih gambar!.');
+        });
+    };
+    // Create a new name for the image
+    NewsFormPage.prototype.createFileName = function () {
+        var d = new Date(), n = d.getTime(), newFileName = n + ".jpg";
+        return newFileName;
+    };
+    // Copy the image to a local folder
+    NewsFormPage.prototype.copyFileToLocalDir = function (namePath, currentName, newFileName) {
+        var _this = this;
+        this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(function (success) {
+            _this.lastImage = newFileName;
+            // this.uploadImage();
+        }, function (error) {
+            _this.presentToast('Terjadi kesalahan : Error saat menyimpan gambar!.');
+        });
+    };
+    // Always get the accurate path to your apps folder
+    NewsFormPage.prototype.pathForImage = function (img) {
+        if (img === null) {
+            return '';
+        }
+        else {
+            return cordova.file.dataDirectory + img;
+        }
+    };
+    NewsFormPage.prototype.uploadImage = function () {
+        var _this = this;
+        // Destination URL
+        var url = this.urlApi + "/public/upload/berita/gambar/";
+        // File for Upload
+        var targetPath = this.pathForImage(this.lastImage);
+        // File name only
+        var filename = this.lastImage;
+        var options = {
+            fileKey: "file",
+            fileName: filename,
+            chunkedMode: false,
+            mimeType: "multipart/form-data",
+            params: { 'fileName': filename, 'idData': this.idData }
+        };
+        var fileTransfer = this.transfer.create();
+        this.loading = this.loadingCtrl.create({
+            content: 'Uploading...',
+        });
+        this.loading.present();
+        // Use the FileTransfer to upload the image
+        fileTransfer.upload(targetPath, url, options).then(function (data) {
+            _this.loading.dismissAll();
+            _this.presentToast('Logo berhasil diubah.');
+            // this.uploadData = data;
+            // this.uploadData.response = JSON.parse(this.uploadData.response);
+            // this.data.avatar = this.uploadData.response.filename;
+            // this.random_ = Math.floor(Math.random() * 20) + 1;
+        }, function (err) {
+            _this.loading.dismissAll();
+            _this.presentToast('Terjadi kesalahan! gagal mengubah logo.');
+        });
+    };
+    NewsFormPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-form',template:/*ion-inline-start:"/Users/megan/Ionic App/dplegamobile/src/pages/news/form.html"*/'<ion-header class="static">\n  <ion-navbar color=\'dark\' hideBackButton>\n    <ion-title>Form berita</ion-title>\n    <ion-buttons left>\n      <button ion-button (click)="dismiss()" icon-only showWhen="android,windows">\n        <span ion-text color="clear" showWhen="ios">Cancel</span>\n        <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>\n      </button>\n      <button ion-button (click)="dismiss()" showWhen="ios">\n        <span ion-text color="clear">Cancel</span>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-list>\n    <ion-item><p>Catatan : Setiap poin pada form ini wajib diisi.</p></ion-item>\n    <ion-item>\n      <img src="assets/imgs/sample.jpg" *ngIf="idData == \'\'">\n      <img src="{{urlServer}}/img/news/{{data.urlGambar}}" *ngIf="idData != \'\'">\n      <ion-buttons margin-top>\n        <button class="no-shadow" color="bright" (click)="presentActionSheet()" ion-button text-capitalize small round>Unggah gambar</button>\n      </ion-buttons>\n    </ion-item>\n    <ion-item>\n      <ion-label>Judul berita</ion-label>\n      <ion-textarea [(ngModel)]="data.judulBerita" type="text"></ion-textarea>\n    </ion-item>\n    <ion-item class="no-border">\n      <ion-label>Isi berita</ion-label>\n      <ion-textarea [(ngModel)]="data.deskripsi" type="text"></ion-textarea>\n    </ion-item>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-toolbar color="main" text-center>\n    <button class="text-white" ion-button clear>Simpan</button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/megan/Ionic App/dplegamobile/src/pages/news/form.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_transfer__["a" /* Transfer */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_file_path__["a" /* FilePath */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */]])
+    ], NewsFormPage);
+    return NewsFormPage;
+}());
+
+//# sourceMappingURL=news.js.map
+
+/***/ })
+
+},[217]);
+//# sourceMappingURL=main.js.map

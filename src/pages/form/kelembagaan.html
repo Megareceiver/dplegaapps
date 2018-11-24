@@ -14,12 +14,12 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list *ngIf="noRegistrasi != ''">
     <ion-row class="big-avatar-frame">
       <div class="big-avatar">
         <!-- <img src="lastImage" [hidden]="lastImage === null"> -->
         <img src="{{urlServer}}/img/logo/{{data.avatar}}?random={{random_}}" [hidden]="data.avatar === null && data.avatar != ''">
-        <img src="{{urlServer}}/img/logo/avatar-1.jpg" [hidden]="noRegistrasi != null">
+        <img src="{{urlServer}}/img/logo/avatar-1.jpg" [hidden]="noRegistrasi != '' && noRegistrasi != null">
         <ion-buttons margin-top>
           <button (click)="presentActionSheet()" class="no-shadow" color="bright" ion-button text-capitalize small round>
             Unggah logo
@@ -32,10 +32,11 @@
   </ion-list>
   <ion-list padding>
     <ion-list-header class="text-main no-border-top">Kelembagaan</ion-list-header>
+    <!-- <ion-note>Catatan : Wajib mengisi semua poin yang ditandai (*).</ion-note> -->
     <ion-row margin-bottom>
       <ion-item>
         <ion-label>Bentuk lembaga (*)</ion-label>
-        <ion-select [(ngModel)]="data.kodeBentukLembaga" disabled="{{ noRegistrasi != null }}">
+        <ion-select [(ngModel)]="data.kodeBentukLembaga" disabled="{{ noRegistrasi != '' && noRegistrasi != null }}">
           <ion-option *ngFor="let d of bentukLembaga" value="{{ d.value }}" selected="{{ data.kodeBentukLembaga == d.value ? selected : '' }}">{{ d.caption }}</ion-option>
         </ion-select>
       </ion-item>
@@ -60,7 +61,7 @@
         </ion-item>
       </ion-col>
       <ion-item>
-        <ion-label>Wilayah</ion-label>
+        <ion-label>Wilayah (*)</ion-label>
         <ion-select [(ngModel)]="data.kodeWilayah" (ionChange)="loadKecamatan(data.kodeWilayah)">
           <ion-option value="" selected="{{data.wilayah == '' ? selected : '' }}"></ion-option>
           <ion-option *ngFor="let d of wilayah" value="{{ d.value }}" selected="{{data.kodeWilayah == d.value ? selected : '' }}">{{d.caption
@@ -68,7 +69,7 @@
         </ion-select>
       </ion-item>
       <ion-item>
-        <ion-label>Kecamatan</ion-label>
+        <ion-label>Kecamatan (*)</ion-label>
         <ion-select [(ngModel)]="data.kodeKecamatan" (ionChange)="loadKelurahan(data.kodeKecamatan)">
           <ion-option value="" selected="{{data.kecamatan == '' ? selected : '' }}"></ion-option>
           <ion-option *ngFor="let d of kecamatan" value="{{ d.value }}" selected="{{data.kodeKecamatan == d.value ? selected : '' }}">{{d.caption
@@ -76,7 +77,7 @@
         </ion-select>
       </ion-item>
       <ion-item>
-        <ion-label>Kelurahan</ion-label>
+        <ion-label>Kelurahan (*)</ion-label>
         <ion-select [(ngModel)]="data.kodeKelurahan">
           <ion-option value="" selected="{{data.kelurahan == '' ? selected : '' }}"></ion-option>
           <ion-option *ngFor="let d of kelurahan" value="{{ d.value }}" selected="{{data.kodeKelurahan == d.value ? selected : '' }}">{{d.caption
@@ -146,7 +147,7 @@
 
 <ion-footer>
   <ion-toolbar color="main">
-    <button *ngIf="noRegistrasi == ''" class="text-white" ion-button block clear>Daftarkan</button>
-    <button *ngIf="noRegistrasi != ''" class="text-white" ion-button block clear>Simpan</button>
+    <button *ngIf="noRegistrasi == ''" (click)="insertLembaga()" class="text-white" ion-button block clear>Daftarkan</button>
+    <button *ngIf="noRegistrasi != ''" (click)="updateLembaga()" class="text-white" ion-button block clear>Simpan</button>
   </ion-toolbar>
 </ion-footer>

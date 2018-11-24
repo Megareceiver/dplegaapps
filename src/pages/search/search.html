@@ -47,4 +47,9 @@
       </button>
     </div>
   </ion-list>
+
+  <div *ngIf="countData == 0 || countData == null" class="empty-frame">
+    <ion-icon color="light" name="search" class="icon-big"></ion-icon>
+    <p>Belum ada hasil pencarian.</p>
+  </div>
 </ion-content>

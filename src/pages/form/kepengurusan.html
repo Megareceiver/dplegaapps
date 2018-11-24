@@ -24,10 +24,10 @@
       <ion-label>Penanggung Jawab</ion-label>
       <ion-input text-right [(ngModel)]="data.penanggungJawab" type="text" no-border></ion-input>
     </ion-item>
-    <!-- <ion-item>
-      <ion-label>No. KTP</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item> -->
+    <ion-item>
+      <ion-label>Jabatan</ion-label>
+      <ion-input text-right [(ngModel)]="data.jabatan" type="text"></ion-input>
+    </ion-item>
     <ion-item>
       <ion-label>Alamat</ion-label>
       <ion-textarea [(ngModel)]="data.alamat" type="text"></ion-textarea>
@@ -131,6 +131,6 @@
 
 <ion-footer>
   <ion-toolbar color="main" text-center>
-    <button class="text-white" ion-button clear>Simpan</button>
+    <button class="text-white" (click)="updateLembaga()" ion-button clear>Simpan</button>
   </ion-toolbar>
 </ion-footer>

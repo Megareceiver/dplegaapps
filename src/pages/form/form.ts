@@ -80,9 +80,9 @@ export class FormKelembagaanPage {
   loading: any;
   temp: any;
   data = {
+    noRegistrasi: "",
     avatar: null,
     nama: "",
-    jabatan: "",
     alamat: "",
     telp: "",
     email: "",
@@ -158,8 +158,9 @@ export class FormKelembagaanPage {
     });
 
     this.urlServer = authService.urlServer;
-    this.noRegistrasi = params.get('noRegistrasi');
+    this.noRegistrasi = (params.get('noRegistrasi') != undefined ? params.get('noRegistrasi') : '');
     this.loadInit();
+
   }
 
   loadInit() {
@@ -172,12 +173,11 @@ export class FormKelembagaanPage {
         this.authService.getOptionList('wilayah').then((result) => {
           this.wilayah = result;
 
-          if(this.noRegistrasi != null){
+          if(this.noRegistrasi != null && this.noRegistrasi != ''){
             this.authService.getDetailLembaga(this.noRegistrasi).then((result) => {
               this.temp = result;
               this.data = this.temp;
               this.loading.dismiss();
-
             }, (err) => {
               this.loading.dismiss();
               this.presentToast(err);
@@ -261,6 +261,60 @@ export class FormKelembagaanPage {
       // data can be a set of coordinates, or an error (if an error occurred).
       // data.coords.latitude
       // data.coords.longitude
+    });
+  }
+
+  updateLembaga() {
+    this.data.noRegistrasi = this.noRegistrasi;
+    this.showLoader();
+    this.authService.updateDataLembaga('', this.data).then((result) => {
+      this.temp = result;
+      if (this.temp.status == 'success') {
+        this.dismiss();
+        this.presentToast('Data kelembagaan berhasil diperbarui.');
+      } else {
+        this.presentToast('Data kelembagaan gagal diperbarui, periksa kembali inputan Anda!');
+      }
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  insertLembaga() {
+    if(
+        this.data.kodeBentukLembaga == "" ||
+        this.data.nama == "" ||
+        this.data.alamat_ == "" ||
+        this.data.noRt == "" ||
+        this.data.noRw == "" ||
+        this.data.kodeWilayah == "" ||
+        this.data.kodeKecamatan == "" ||
+        this.data.kodeKelurahan == "" ||
+        this.data.telp == "" ||
+        this.data.email == ""
+      ){
+
+      this.presentToast("Harap mengisi semua poin yang ditandai (*).");
+      return false; 
+    }
+
+    this.showLoader();
+    this.authService.insertNewLembaga(this.data).then((result) => {
+      this.temp = result;
+      if (this.temp.status == 'success') {
+        this.dismiss();
+        this.presentToast('Data kelembagaan berhasil didaftarkan.');
+      } else {
+        this.presentToast('Data kelembagaan gagal didaftarkan, periksa kembali inputan Anda!');
+      }
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
     });
   }
 
@@ -359,7 +413,7 @@ export class FormKelembagaanPage {
   private copyFileToLocalDir(namePath, currentName, newFileName) {
     this.file.copyFile(namePath, currentName, cordova.file.dataDirectory, newFileName).then(success => {
       this.lastImage = newFileName;
-      // this.uploadImage();
+      this.uploadImage();
     }, error => {
       this.presentToast('Terjadi kesalahan : Error saat menyimpan gambar!.');
     });
@@ -391,8 +445,11 @@ export class FormKelembagaanPage {
       fileName: filename,
       chunkedMode: false,
       mimeType: "multipart/form-data",
-      params: { 'fileName': filename, 'noRegistrasi': this.noRegistrasi }
+      params: { 'filename': filename, 'noRegistrasi': this.noRegistrasi }
     };
+
+    console.log(targetPath);
+    console.log(options);
 
     const fileTransfer: TransferObject = this.transfer.create();
 
@@ -403,15 +460,17 @@ export class FormKelembagaanPage {
 
     // Use the FileTransfer to upload the image
     fileTransfer.upload(targetPath, url, options).then(data => {
+      console.log(data);
       this.loading.dismissAll()
       this.presentToast('Logo berhasil diubah.');
 
-      this.uploadData = data;
-      this.uploadData.response = JSON.parse(this.uploadData.response);
-      this.data.avatar = this.uploadData.response.filename;
-      this.random_ = Math.floor(Math.random() * 20) + 1;
+      // this.uploadData = data;
+      // this.uploadData.response = JSON.parse(this.uploadData.response);
+      // this.data.avatar = this.uploadData.response.filename;
+      // this.random_ = Math.floor(Math.random() * 20) + 1;
 
     }, err => {
+      console.log(err);
       this.loading.dismissAll()
       this.presentToast('Terjadi kesalahan! gagal mengubah logo.');
     });
@@ -425,10 +484,14 @@ export class FormKelembagaanPage {
 })
 export class FormLegalitasPage {
   urlServer = "";
+  urlApi = "";
   noRegistrasi: string;
   namaLembaga: string;
   loading: any;
   data: any;
+  temp: any;
+  formData: any;
+  chooserDumb= [];
 
   constructor(
     public params: NavParams,
@@ -438,7 +501,10 @@ export class FormLegalitasPage {
     private toastCtrl: ToastController,
     private fileChooser: FileChooser,
     private filePath: FilePath,
+    private transfer: Transfer, 
+    public alertCtrl: AlertController
   ) {
+    this.urlApi = authService.urlApi;
     this.urlServer = authService.urlServer;
     this.noRegistrasi = params.get('noRegistrasi');
     this.namaLembaga = params.get('namaLembaga');
@@ -448,10 +514,130 @@ export class FormLegalitasPage {
   loadInit() {
     this.authService.getKelengkapanLembaga('legalitas-form', this.noRegistrasi).then((result) => {
       this.data = result;
+      this.formData = result;
     }, (err) => {
       this.presentToast(err);
       return false;
     });
+  }
+
+  openChooser(index) {
+    this.fileChooser.open().then(uri => {
+      this.filePath.resolveNativePath(uri).then(filePathResolved => {
+        console.log('resolved' + filePathResolved);
+        console.log('uri' + uri);
+        this.chooserDumb[index] = {
+          uri: uri,
+          resolved: filePathResolved,
+          filename: filePathResolved.substring(filePathResolved.lastIndexOf('/') + 1)
+        };
+      }).catch(e => console.log(e));
+    }).catch(e => console.log(e));
+  }
+
+  updateLembaga(index) {
+    console.log(this.formData[index]);
+    if (this.formData[index].statusVerifikasi == '1'){
+      const confirm = this.alertCtrl.create({
+        title: 'Konfirmasi',
+        message: 'Mengubah legalitas akan mengubah status legalitas menjadi "Belum verifikasi", Apa Anda yakin mengubah legalitas?',
+        buttons: [
+          {
+            text: 'Tidak',
+            handler: () => {
+              
+            }
+          },
+          {
+            text: 'Ya',
+            handler: () => {
+              this.updateLembaga_(index);
+            }
+          }
+        ]
+      });
+      confirm.present();
+    }else{
+      this.updateLembaga_(index);
+    }
+  }
+
+  updateLembaga_(index){
+    this.formData[index].noRegistrasi = this.noRegistrasi;
+    this.formData[index].filename = "";
+
+    if (this.chooserDumb[index] == undefined) {
+      this.chooserDumb[index] = {
+        uri: '',
+        resolved: '',
+        filename: ''
+      };
+    }
+
+    if (this.chooserDumb[index].filename != "") {
+      console.log('upload file');
+      // Destination URL
+      var url = this.urlApi + "/public/update/lembaga/legalitas";
+
+      // File for Upload
+      var targetPath = this.chooserDumb[index].uri;
+
+      // File name only
+      var filename = this.chooserDumb[index].filename;
+      this.formData[index].filename = filename;
+
+      var options = {
+        fileKey: "file",
+        fileName: filename,
+        chunkedMode: false,
+        mimeType: "multipart/form-data",
+        params: this.formData[index]
+      };
+
+      const fileTransfer: TransferObject = this.transfer.create();
+
+      this.loading = this.loadingCtrl.create({
+        content: 'Uploading...',
+      });
+      this.loading.present();
+
+      // Use the FileTransfer to upload the image
+      fileTransfer.upload(targetPath, url, options).then(data => {
+        console.log('--- hasil upload');
+        console.log(data);
+        this.loading.dismissAll()
+        this.presentToast('Data legalitas berhasil diperbarui.');
+        this.dismiss();
+      }, err => {
+        console.log(err);
+        this.loading.dismissAll()
+        this.presentToast('Data legalitas gagal diperbarui, periksa kembali inputan Anda!');
+      });
+    } else {
+      console.log('gk upload file');
+      this.showLoader();
+      this.authService.updateDataLembaga('legalitas', this.formData[index]).then((result) => {
+        this.temp = result;
+        console.log(result);
+        if (this.temp.status == 'success') {
+          this.presentToast('Data legalitas berhasil diperbarui.');
+          this.dismiss();
+        } else {
+          this.presentToast('Data legalitas gagal diperbarui, periksa kembali inputan Anda!');
+        }
+        this.loading.dismiss();
+      }, (err) => {
+        this.loading.dismiss();
+        this.presentToast(err);
+        return false;
+      });
+    }
+
+    this.chooserDumb[index] = {
+      uri: '',
+      resolved: '',
+      filename: ''
+    };
   }
 
   dismiss() {
@@ -479,15 +665,6 @@ export class FormLegalitasPage {
     });
 
     toast.present();
-  }
-
-  openChooser(){
-    this.fileChooser.open().then(uri => {
-      this.filePath.resolveNativePath(uri).then(filePathResolved => {
-        console.log('resolved' + filePathResolved);
-        console.log('uri' + uri);
-      }).catch (e => console.log(e));
-    }).catch(e => console.log(e));
   }
 }
 
@@ -545,6 +722,25 @@ export class FormSejarahPage {
       this.temp = result;
       this.data = this.temp;
     }, (err) => {
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  updateLembaga() {
+    this.data.noRegistrasi = this.noRegistrasi;
+    this.showLoader();
+    this.authService.updateDataLembaga('sejarah', this.data).then((result) => {
+      this.temp = result;
+      if (this.temp.status == 'success') {
+        this.dismiss();
+        this.presentToast('Data sejarah berhasil diperbarui.');
+      } else {
+        this.presentToast('Data sejarah gagal diperbarui, periksa kembali inputan Anda!');
+      }
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
       this.presentToast(err);
       return false;
     });
@@ -685,6 +881,25 @@ export class FormKepengurusanPage {
     }
   }
 
+  updateLembaga() {
+    this.data.noRegistrasi = this.noRegistrasi;
+    this.showLoader();
+    this.authService.updateDataLembaga('kepengurusan', this.data).then((result) => {
+      this.temp = result;
+      if (this.temp.status == 'success') {
+        this.dismiss();
+        this.presentToast('Data kepengurusan berhasil diperbarui.');
+      } else {
+        this.presentToast('Data kepengurusan gagal diperbarui, periksa kembali inputan Anda!');
+      }
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
+  }
+
   dismiss() {
     this.viewCtrl.dismiss();
   }
@@ -751,6 +966,25 @@ export class FormUsahaPage {
       this.temp = result;
       this.data = this.temp;
     }, (err) => {
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  updateLembaga() {
+    this.data.noRegistrasi = this.noRegistrasi;
+    this.showLoader();
+    this.authService.updateDataLembaga('usaha', this.data).then((result) => {
+      this.temp = result;
+      if (this.temp.status == 'success') {
+        this.dismiss();
+        this.presentToast('Data usaha berhasil diperbarui.');
+      } else {
+        this.presentToast('Data usaha gagal diperbarui, periksa kembali inputan Anda!');
+      }
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
       this.presentToast(err);
       return false;
     });

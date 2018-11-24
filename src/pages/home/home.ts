@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { App, NavController, LoadingController, ToastController } from 'ionic-angular';
+import { App, NavController, LoadingController, ToastController, ModalController } from 'ionic-angular';
 
 import { DashboardPage } from '../dashboard/dashboard';
 import { KelembagaanPage } from '../kelembagaan/kelembagaan';
@@ -23,7 +23,7 @@ export class HomePage {
   loading: any;
   userLevel = "";
   
-  constructor(public app: App, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController, public appCtrl: App, public navCtrl: NavController) {
+  constructor(public app: App, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController, public appCtrl: App, public navCtrl: NavController, public modalCtrl: ModalController) {
     this.userLevel = localStorage.getItem('userLevel');
 
     // set our app's pages
@@ -81,7 +81,13 @@ export class HomePage {
   }
 
   navigateTo(pages) {
-    // Let's navigate from TabsPage to Page1
-    this.navCtrl.push(pages.component);
+    // Let's navigate from TabsPage to Page
+    
+    if (pages.icon == "add"){
+      let modal = this.modalCtrl.create(pages.component);
+      modal.present();
+    }else{
+      this.navCtrl.push(pages.component);
+    }
   }
 }

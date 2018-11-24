@@ -42,7 +42,7 @@
   </ion-list>
 </ion-content>
 
-<ion-footer>
+<ion-footer *ngIf="userLevel != '1' && userLevel !='2'">
   <ion-toolbar color="clear">
     <ion-item class="no-border">
       <ion-input [(ngModel)]="catatanRevisi" (keypress)="insertData($event.keyCode)" type="text" placeholder="Ketik catatan revisi.."></ion-input>

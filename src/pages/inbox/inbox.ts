@@ -11,6 +11,7 @@ export class InboxPage {
   loading: any;
   data: any;
   dataClone: any;
+  countData: number = 0;
   // groupedData: [];
 
   constructor(public modalCtrl: ModalController, public authService: AuthService, public loadingCtrl: LoadingController, private toastCtrl: ToastController) {
@@ -27,8 +28,11 @@ export class InboxPage {
     this.showLoader();
     this.authService.getListNotifications().then((result) => {
       this.data = result;
-      this.dataClone = this.data;
-      this.dataClone[-1] = { tanggal: 'start' };
+      this.countData = Object.keys(this.data).length;
+      if (this.countData > 0){
+        this.dataClone = this.data;
+        this.dataClone[-1] = { tanggal: 'start' };
+      }
       this.loading.dismiss();
     }, (err) => {
       this.loading.dismiss();

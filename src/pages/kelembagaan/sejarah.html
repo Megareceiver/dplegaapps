@@ -19,6 +19,10 @@
 </ion-header>
 
 <ion-content>
+  <ion-refresher (ionRefresh)="reloadData($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  
   <ion-list>
     <ion-row padding>
       <ion-item text-wrap>

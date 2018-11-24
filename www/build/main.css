@@ -36583,6 +36583,16 @@ ion-note {
   background: red;
 }
 
+page-inbox .empty-frame {
+  margin-top: 30vh;
+  text-align: center;
+}
+
+page-inbox .icon-big {
+  font-size: 75px;
+  margin-bottom: 30px;
+}
+
 .searchbar-ios {
   background: #fff;
   border-bottom: 0;
@@ -36614,4 +36624,14 @@ page-news textarea {
   max-width: 100%;
   width: 100%;
   height: 30vh;
+}
+
+page-search .empty-frame {
+  margin-top: 30vh;
+  text-align: center;
+}
+
+page-search .icon-big {
+  font-size: 75px;
+  margin-bottom: 30px;
 }

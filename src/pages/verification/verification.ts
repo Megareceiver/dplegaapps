@@ -90,6 +90,7 @@ export class VerificationPage {
   templateUrl: 'revision.html'
 })
 export class RevisionPage {
+  userLevel = "";
   urlServer = "";
   noRegistrasi: string;
   lembaga: string;
@@ -109,6 +110,7 @@ export class RevisionPage {
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
   ) {
+    this.userLevel = localStorage.getItem('userLevel');
     this.urlServer = authService.urlServer;
     this.noRegistrasi = params.get('reff');
     this.lembaga = params.get('reff2');

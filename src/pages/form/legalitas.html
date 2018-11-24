@@ -25,28 +25,31 @@
       </ion-row>
     </ion-list>
   </ion-card>
-  <ion-card *ngFor="let d of data" margin-top>
-    <ion-card-header text-uppercase>{{d.namaPersyaratan}}</ion-card-header>
+  <ion-card *ngFor="let d of data;let i=index" margin-top>
+    <ion-card-header>
+      <span text-uppercase>{{d.namaPersyaratan}}</span> &nbsp;
+      <span class="text-{{d.statusVerifikasi == '0' ? 'danger' : 'secondary'}}">({{d.statusVerifikasi == '0' ? 'Belum verifikasi' : 'Sudah Verifikasi'}})</span>
+    </ion-card-header>
     <ion-card-content no-padding>
       <ion-list>
         <ion-item class="border-bottom">
           <ion-label>Nomor (*)</ion-label>
-          <ion-input text-right [(ngModel)]="d.noLegalitas" type="text" no-border></ion-input>
+          <ion-input text-right [(ngModel)]="formData[i].noLegalitas" type="text" no-border></ion-input>
         </ion-item>
         <ion-item class="border-bottom">
           <ion-label>Tanggal (*)</ion-label>
-          <ion-datetime [(ngModel)]="d.tanggalLegalitas" displayFormat="DD/MM/YYYY"></ion-datetime>
+          <ion-datetime [(ngModel)]="formData[i].tanggalLegalitas" displayFormat="DD/MM/YYYY"></ion-datetime>
         </ion-item>
         <ion-item class="border-bottom">
           <ion-buttons item-start>
-            <button (click)="openChooser()" color="bright" ion-button text-capitalize small round>Unggah berkas</button>
+            <button (click)="openChooser(i)" color="bright" ion-button text-capitalize small round>Unggah berkas</button>
           </ion-buttons>
           <span *ngIf="d.urlFile == ''">Berkas belum diunggah...</span>
           <span *ngIf="d.urlFile != ''">{{d.urlFile}}</span>
         </ion-item>
       </ion-list>
       <ion-buttons text-center>
-        <button color="main" ion-button full>Simpan</button>
+        <button color="main" (click)="updateLembaga(i)" ion-button full>Simpan</button>
       </ion-buttons>
     </ion-card-content>
   </ion-card>

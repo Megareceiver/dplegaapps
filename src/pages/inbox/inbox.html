@@ -19,4 +19,9 @@
       </div>
     </ion-item-group>
   </ion-list>
+
+  <div *ngIf="countData == 0 || countData == null" class="empty-frame">
+    <ion-icon color="light" name="notifications" class="icon-big"></ion-icon>
+    <p>Belum ada pesan.</p>
+  </div>
 </ion-content>
