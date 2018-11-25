@@ -3,10 +3,10 @@
   <ion-list>
     <ion-item color='light' [hidden]="session_noRegistrasi === null">
       <ion-avatar item-start>
-        <img src="assets/imgs/sample.jpg">
+        <img src="{{urlServer}}/img/logo/{{session_urlGambarLogo}}">
       </ion-avatar>
-      <h2>Nama lembaganya</h2>
-      <p>Yayasan</p>
+      <h2>{{ session_nama }}</h2>
+      <p>{{ session_namaBentukLembaga }}</p>
       <ion-buttons item-end>
         <button ion-button clear (click)="showConfirm()">
           <ion-icon color="dark" name="md-close"></ion-icon>
@@ -21,22 +21,22 @@
       <ion-icon name="contact" item-start color="primary"></ion-icon>
       Kelembagaan
     </button>
-    <button ion-item (click)="openModal(1)" disabled="{{ session_noRegistrasi == null ? 'true' : 'false' }}">
+    <button ion-item (click)="openModal(1)" [disabled]="session_noRegistrasi === null">
       <ion-icon name="paper" item-start color="main"></ion-icon>
       Legalitas
     </button>
   </ion-list>
   <ion-list>
     <ion-list-header color="clear">Kelengkapan lainnya</ion-list-header>
-    <button ion-item (click)="openModal(2)" disabled="{{ session_noRegistrasi == null ? 'true' : 'false' }}">
+    <button ion-item (click)="openModal(2)" [disabled]="session_noRegistrasi === null">
       <ion-icon name="time" item-start color="bright"></ion-icon>
       Sejarah
     </button>
-    <button ion-item (click)="openModal(3)" disabled="{{ session_noRegistrasi == null ? 'true' : 'false' }}">
+    <button ion-item (click)="openModal(3)" [disabled]="session_noRegistrasi === null">
       <ion-icon name="people" item-start color="vibrant"></ion-icon>
       Kepengurusan
     </button>
-    <button ion-item (click)="openModal(4)" disabled="{{ session_noRegistrasi == null ? 'true' : 'false' }}">
+    <button ion-item (click)="openModal(4)" [disabled]="session_noRegistrasi === null">
       <ion-icon name="pricetag" item-start color="primary"></ion-icon>
       Usaha
     </button>
@@ -44,11 +44,11 @@
       <ion-icon name="list-box" item-start color="dark"></ion-icon>
       Hirarki
     </button> -->
-    <button ion-item (click)="openModal(6)" disabled="{{ session_noRegistrasi == null ? 'true' : 'false' }}">
+    <button ion-item (click)="openModal(6)" [disabled]="session_noRegistrasi === null">
       <ion-icon name="trophy" item-start color="bright"></ion-icon>
       Prestasi
     </button>
-    <button ion-item (click)="openModal(7)" disabled="{{ session_noRegistrasi == null ? 'true' : 'false' }}">
+    <button ion-item (click)="openModal(7)" [disabled]="session_noRegistrasi === null">
       <ion-icon name="book" item-start color="secondary"></ion-icon>
       Koleksi
     </button>

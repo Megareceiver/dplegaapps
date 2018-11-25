@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalController, AlertController, ViewController, NavParams, LoadingController, ToastController, ActionSheetController, Platform  } from 'ionic-angular';
+import { NavController, Events, ModalController, AlertController, ViewController, NavParams, LoadingController, ToastController, ActionSheetController, Platform  } from 'ionic-angular';
 import { AuthService } from '../../providers/auth-service/auth-service';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LocationAccuracy } from '@ionic-native/location-accuracy';
@@ -19,8 +19,13 @@ declare var cordova: any;
 export class FormPage {
   formPage: Array<any>;
   session_noRegistrasi: string = null;
+  session_nama: string = null;
+  session_namaBentukLembaga: string = null;
+  session_urlGambarLogo: string = null;
+
+  urlServer = "";
   userLevel = "";
-  constructor(public modalCtrl: ModalController, public alertCtrl: AlertController) {
+  constructor(public modalCtrl: ModalController, public alertCtrl: AlertController, public events: Events, public authService: AuthService) {
 
     this.formPage = [
       FormKelembagaanPage,
@@ -34,11 +39,30 @@ export class FormPage {
     ];
 
     this.userLevel = localStorage.getItem('userLevel');
+    this.urlServer = authService.urlServer;
+    this.refreshData();
+
+    events.subscribe('formPage:reload', () => {
+      this.refreshData();
+    });
+  }
+
+  refreshData() {
+    if (localStorage.getItem("session-add-noRegistrasi") != "null"){
+      this.session_noRegistrasi = localStorage.getItem("session-add-noRegistrasi");
+      this.session_nama = localStorage.getItem("session-add-nama");
+      this.session_namaBentukLembaga = localStorage.getItem("session-add-namaBentukLembaga");
+      this.session_urlGambarLogo = localStorage.getItem("session-add-urlGambarLogo");
+    }
   }
 
   openModal(index) {
-
-    let modal = this.modalCtrl.create(this.formPage[index]);
+    let modal : any;
+    if(this.session_noRegistrasi === null){
+      modal = this.modalCtrl.create(this.formPage[index]);
+    }else{
+      modal = this.modalCtrl.create(this.formPage[index], { noRegistrasi: this.session_noRegistrasi, namaLembaga: this.session_namaBentukLembaga + " " + this.session_nama });
+    }
     modal.present();
   }
 
@@ -56,7 +80,15 @@ export class FormPage {
         {
           text: 'Ya',
           handler: () => {
-            console.log('Agree clicked');
+            localStorage.setItem("session-add-noRegistrasi", null);
+            localStorage.setItem("session-add-nama", null);
+            localStorage.setItem("session-add-namaBentukLembaga", null);
+            localStorage.setItem("session-add-urlGambarLogo", null);
+
+            this.session_noRegistrasi = null;
+            this.session_nama = null;
+            this.session_namaBentukLembaga = null;
+            this.session_urlGambarLogo = null;
           }
         }
       ]
@@ -75,6 +107,7 @@ export class FormPage {
 export class FormKelembagaanPage {
   urlServer = "";
   urlApi = "";
+  userLevel = "";
   noRegistrasi: string;
   namaLembaga: string;
   loading: any;
@@ -141,8 +174,10 @@ export class FormKelembagaanPage {
     private filePath: FilePath,
     public actionSheetCtrl: ActionSheetController,
     public platform: Platform, 
+    public navCtrl: NavController,
+    public events: Events
     ) {
-
+    
     this.locationAccuracy.canRequest().then((canRequest: boolean) => {
 
       if (canRequest) {
@@ -157,10 +192,10 @@ export class FormKelembagaanPage {
       console.log(err);
     });
 
+    this.userLevel = localStorage.getItem('userLevel');
     this.urlServer = authService.urlServer;
     this.noRegistrasi = (params.get('noRegistrasi') != undefined ? params.get('noRegistrasi') : '');
     this.loadInit();
-
   }
 
   loadInit() {
@@ -307,6 +342,14 @@ export class FormKelembagaanPage {
       if (this.temp.status == 'success') {
         this.dismiss();
         this.presentToast('Data kelembagaan berhasil didaftarkan.');
+
+        if (this.userLevel == "7" || this.userLevel == "3"){
+          localStorage.setItem("session-add-noRegistrasi", this.temp.noRegistrasi);
+          localStorage.setItem("session-add-nama", this.temp.nama);
+          localStorage.setItem("session-add-namaBentukLembaga", this.temp.namaBentukLembaga);
+          localStorage.setItem("session-add-urlGambarLogo", this.temp.urlGambarLogo);
+          this.events.publish('formPage:reload');
+        }
       } else {
         this.presentToast('Data kelembagaan gagal didaftarkan, periksa kembali inputan Anda!');
       }
@@ -513,8 +556,10 @@ export class FormLegalitasPage {
 
   loadInit() {
     this.authService.getKelengkapanLembaga('legalitas-form', this.noRegistrasi).then((result) => {
-      this.data = result;
-      this.formData = result;
+      if (result != false) {
+        this.data = result;
+        this.formData = result;
+      }
     }, (err) => {
       this.presentToast(err);
       return false;
@@ -719,8 +764,10 @@ export class FormSejarahPage {
 
   loadInit() {
     this.authService.getKelengkapanLembaga('sejarah', this.noRegistrasi).then((result) => {
-      this.temp = result;
-      this.data = this.temp;
+      if (result != false) {
+        this.temp = result;
+        this.data = this.temp;
+      }
     }, (err) => {
       this.presentToast(err);
       return false;
@@ -833,10 +880,11 @@ export class FormKepengurusanPage {
         this.wilayah = result;
 
         this.authService.getKelengkapanLembaga('kepengurusan', this.noRegistrasi).then((result) => {
-          this.temp = result;
-          this.data = this.temp;
+          if (result != false) {
+            this.temp = result;
+            this.data = this.temp;
+          }
           this.loading.dismiss();
-
         }, (err) => {
           this.loading.dismiss();
           this.presentToast(err);
@@ -963,8 +1011,10 @@ export class FormUsahaPage {
 
   loadInit() {
     this.authService.getKelengkapanLembaga('usaha', this.noRegistrasi).then((result) => {
-      this.temp = result;
-      this.data = this.temp;
+      if (result != false){
+        this.temp = result;
+        this.data = this.temp;
+      }
     }, (err) => {
       this.presentToast(err);
       return false;
@@ -1045,31 +1095,75 @@ export class FormKoleksiPage {
   namaLembaga: string;
   loading: any;
   temp: any;
-  data = {
+  data: any;
+  countData: number = 0;
+  formData = {
     noRegistrasi: "",
     judulKoleksi: "",
     jenisKoleksi: "",
-    deskripsi: "",
+    deskripsi: ""
   }
 
   constructor(
+    public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
     public authService: AuthService,
     public loadingCtrl: LoadingController,
     private toastCtrl: ToastController
-    ) {
+  ) {
+
     this.urlServer = authService.urlServer;
     this.noRegistrasi = params.get('noRegistrasi');
     this.namaLembaga = params.get('namaLembaga');
-    this.loadInit();
+    this.loadData();
   }
 
-  loadInit() {
+  loadData() {
+    this.showLoader();
     this.authService.getKelengkapanLembaga('koleksi', this.noRegistrasi).then((result) => {
       this.temp = result;
       this.data = this.temp;
+      this.countData = Object.keys(this.data).length;
+      this.loading.dismiss();
     }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  reloadData(refresher) {
+    this.authService.getKelengkapanLembaga('koleksi', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+
+      refresher.complete();
+    }, (err) => {
+      refresher.complete();
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  updateLembaga() {
+    this.formData.noRegistrasi = this.noRegistrasi;
+    console.log(this.formData);
+    this.showLoader();
+    this.authService.updateDataLembaga('koleksi', this.formData).then((result) => {
+      this.temp = result;
+      if (this.temp.status == 'success') {
+        this.presentToast('Data koleksi berhasil diperbarui.');
+      } else {
+        this.presentToast('Data koleksi gagal diperbarui, perika kembali inputan Anda!');
+      }
+      this.formData.judulKoleksi = "";
+      this.formData.jenisKoleksi = "";
+      this.formData.deskripsi = "";
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
       this.presentToast(err);
       return false;
     });
@@ -1109,18 +1203,104 @@ export class FormKoleksiPage {
   templateUrl: 'prestasi.html'
 })
 export class FormPrestasiPage {
-  data: Array<{ noreg: string, nama_prestasi: string, nama_lembaga: string, bentuk_lembaga: string }>;
+  urlServer = "";
+  noRegistrasi: string;
+  namaLembaga: string;
+  loading: any;
+  temp: any;
+  data: any;
+  form = {
+    noRegistrasi: "",
+    deskripsi: ""
+  }
+  countData: number = 0;
 
-  constructor(public viewCtrl: ViewController) {
-    this.data = [
-      { noreg: '1', nama_prestasi: 'Prestasi 1', nama_lembaga: 'Lembaga 1', bentuk_lembaga: 'Yayasan' },
-      { noreg: '2', nama_prestasi: 'Prestasi 2', nama_lembaga: 'Lembaga 2', bentuk_lembaga: 'Pondok pesantren' },
-      { noreg: '3', nama_prestasi: 'Prestasi 3', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-      { noreg: '3', nama_prestasi: 'Prestasi 4', nama_lembaga: 'Lembaga 3', bentuk_lembaga: 'Madrasah Aliyah' },
-    ]
+  constructor(
+    public platform: Platform,
+    public params: NavParams,
+    public viewCtrl: ViewController,
+    public modalCtrl: ModalController,
+    public authService: AuthService,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController
+  ) {
+
+    this.urlServer = authService.urlServer;
+    this.noRegistrasi = params.get('noRegistrasi');
+    this.namaLembaga = params.get('namaLembaga');
+    this.loadData();
+  }
+
+  loadData() {
+    this.showLoader();
+    this.authService.getKelengkapanLembaga('prestasi', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+      this.countData = Object.keys(this.data).length;
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  reloadData(refresher) {
+    this.authService.getKelengkapanLembaga('prestasi', this.noRegistrasi).then((result) => {
+      this.temp = result;
+      this.data = this.temp;
+
+      refresher.complete();
+    }, (err) => {
+      refresher.complete();
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  updateLembaga() {
+    this.form.noRegistrasi = this.noRegistrasi;
+    this.showLoader();
+    this.authService.updateDataLembaga('prestasi', this.form).then((result) => {
+      this.temp = result;
+      if (this.temp.status == 'success') {
+        this.presentToast('Data prestasi berhasil diperbarui.');
+      } else {
+        this.presentToast('Data prestasi gagal diperbarui, perika kembali inputan Anda!');
+      }
+      this.form.deskripsi = "";
+      this.loading.dismiss();
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
   }
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Memuat data...'
+    });
+
+    this.loading.present();
+  }
+
+  presentToast(msg) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000,
+      position: 'bottom',
+      dismissOnPageChange: true
+    });
+
+    toast.onDidDismiss(() => {
+      console.log('Dismissed toast');
+    });
+
+    toast.present();
   }
 }

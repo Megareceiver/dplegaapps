@@ -28,7 +28,7 @@
   <ion-card *ngFor="let d of data;let i=index" margin-top>
     <ion-card-header>
       <span text-uppercase>{{d.namaPersyaratan}}</span> &nbsp;
-      <span class="text-{{d.statusVerifikasi == '0' ? 'danger' : 'secondary'}}">({{d.statusVerifikasi == '0' ? 'Belum verifikasi' : 'Sudah Verifikasi'}})</span>
+      <span class="text-{{d.statusVerifikasi == '1' ? 'secondary' : 'danger'}}">({{d.statusVerifikasi == '1' ? 'Sudah Verifikasi' : 'Belum verifikasi'}})</span>
     </ion-card-header>
     <ion-card-content no-padding>
       <ion-list>
