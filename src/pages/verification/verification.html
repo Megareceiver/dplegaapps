@@ -16,10 +16,7 @@
 <ion-content>
   <ion-list>
     <ion-item color='light' class="no-border">
-      <ion-avatar item-start>
-        <img src="assets/imgs/sample.jpg">
-      </ion-avatar>
-      <h2>{{ namaLembaga }}</h2>
+      <h1>{{ namaLembaga }}</h1>
       <p>{{ bentukLembaga }}</p>
     </ion-item>
     <ion-item>
@@ -38,7 +35,7 @@
       <ion-item-sliding>
         <ion-item>
           <ion-label>{{ d.nama }}</ion-label>
-          <ion-checkbox color="main" checked="{{ d.statusVerifikasi == '1' ? 'true' : 'false' }}"></ion-checkbox>
+          <ion-checkbox color="main" [(ngModel)]="d.statusVerifikasi" (click)="verifying(d.kode, d.idGrup, idx)"></ion-checkbox>
         </ion-item>
         <ion-item-options side="right">
           <button ion-button color="main">

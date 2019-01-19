@@ -17,6 +17,7 @@ export class VerificationPage {
   data: any;
   dataClone: any;
   statusValid: string = "";
+  checkData = [];
 
   constructor(
     public platform: Platform,
@@ -49,6 +50,42 @@ export class VerificationPage {
       this.statusValid = this.temp[0].statusValid;
       this.dataClone = this.data;
       this.dataClone[-1] = { idGrup: 'start' };
+      this.loading.dismiss();
+      console.log(this.data);
+    }, (err) => {
+      this.loading.dismiss();
+      this.presentToast(err);
+      return false;
+    });
+  }
+
+  verifying(kodePersyaratan, grup, index){
+    // console.log("kodepersyaratan : " + kodePersyaratan);
+    // console.log("index : " + index);
+    // console.log("grup : " + grup);
+    // console.log("value : " + this.data[index].statusVerifikasi);
+    var statusVerifikasi = 0;
+
+    if (this.data[index].statusVerifikasi === true){
+      statusVerifikasi = 1;
+    }
+
+    var dumb = {
+      noRegistrasi: this.noRegistrasi,
+      kodePersyaratan: kodePersyaratan,
+      grup: grup,
+      statusVerifikasi: statusVerifikasi
+    }
+
+    console.log("Data post");
+    console.log(dumb);
+    // return false;
+
+    this.showLoader();
+    this.authService.updateDataLembaga('verifikasi', dumb).then((result) => {
+      // this.temp = result;
+      console.log("Data result");
+      console.log(result);
       this.loading.dismiss();
     }, (err) => {
       this.loading.dismiss();

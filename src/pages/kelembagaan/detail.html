@@ -35,6 +35,9 @@
       </ion-item>
     </ion-list>
     <ion-list padding>
+      <ion-item *ngIf="userLevel != '1'">
+        <p><b>Username.</b><br/><br /> {{ detail.username }}</p>
+      </ion-item>
       <ion-item>
         <p><b>No Registrasi.</b><br/><br /> {{ detail.noreg }}</p>
       </ion-item>
